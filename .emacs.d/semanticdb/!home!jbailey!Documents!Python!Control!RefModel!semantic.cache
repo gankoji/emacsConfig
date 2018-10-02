@@ -1,0 +1,81 @@
+;; Object semanticdb-project-database-file-1c53154
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1c53154"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1c53160"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("GNCUtilities" include nil nil [32 58])
+            ("EOM" include nil nil [60 70])
+            ("toc" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [127 142])
+                            ("self" variable nil (reparse-symbol indented_block_body) [151 168])
+                            ("self" variable nil (reparse-symbol indented_block_body) [177 197])
+                            ("self" variable nil (reparse-symbol indented_block_body) [206 230])
+                            ("self" variable nil (reparse-symbol indented_block_body) [239 258])
+                            ("self" variable nil (reparse-symbol indented_block_body) [267 308])
+                            ("self" variable nil (reparse-symbol indented_block_body) [318 334])
+                            ("self" variable nil (reparse-symbol indented_block_body) [343 359])
+                            ("self" variable nil (reparse-symbol indented_block_body) [369 385])
+                            ("self" variable nil (reparse-symbol indented_block_body) [394 407])
+                            ("self" variable nil (reparse-symbol indented_block_body) [416 430]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [100 104])
+                            ("vlim" variable nil (reparse-symbol function_parameters) [106 110])
+                            ("alim" variable nil (reparse-symbol function_parameters) [112 116]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [87 439])
+                    ("TOC" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [460 464])
+                            ("x" variable nil (reparse-symbol function_parameters) [466 467])
+                            ("v" variable nil (reparse-symbol function_parameters) [469 470])
+                            ("xf" variable nil (reparse-symbol function_parameters) [472 474]))                          )
+                        (reparse-symbol indented_block_body) [452 891])
+                    ("firstPass" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [910 914])
+                            ("cmd_b_i" variable nil (reparse-symbol function_parameters) [916 923])
+                            ("nav_b_i" variable nil (reparse-symbol function_parameters) [925 932]))                          )
+                        (reparse-symbol indented_block_body) [896 1370])
+                    ("getCommands" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1391 1395])
+                            ("nav_b_i" variable nil (reparse-symbol function_parameters) [1397 1404])
+                            ("body_rates" variable nil (reparse-symbol function_parameters) [1406 1416]))                          )
+                        (reparse-symbol indented_block_body) [1375 2864])
+                    ("magLimit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2882 2886])
+                            ("value" variable nil (reparse-symbol function_parameters) [2888 2893])
+                            ("val_max" variable nil (reparse-symbol function_parameters) [2895 2902]))                          )
+                        (reparse-symbol indented_block_body) [2869 3060]))                  
+                :type "class")
+                nil [72 3060]))          
+      :file "TOC.py"
+      :pointmax 3060
+      :fsize 3059
+      :lastmodtime '(23240 62154 630445 600000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-19e6b98"
+      :file "GNCUtilities.py"
+      :fsize 3628
+      :lastmodtime '(23236 11746 87735 0))
+    (semanticdb-table "semanticdb-table-1606108"
+      :file "EOM.py"
+      :fsize 5048
+      :lastmodtime '(23236 11865 181581 800000)))
+  :file "!home!jbailey!Documents!Python!Control!RefModel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

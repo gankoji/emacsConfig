@@ -1,0 +1,50 @@
+;; Object semanticdb-project-database-file-1ca1adc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ca1adc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ca1ae8"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("scipy.optimize" include nil nil [20 48])
+            ("matplotlib.pyplot" include nil nil [49 80])
+            ("math" include nil nil [82 93])
+            ("random" include nil nil [94 107])
+            ("costFunction" function (:arguments 
+              ( ("time" variable nil (reparse-symbol function_parameters) [565 569])
+                ("path" variable nil (reparse-symbol function_parameters) [571 575])
+                ("control" variable nil (reparse-symbol function_parameters) [577 584])
+                ("tc0" variable nil (reparse-symbol function_parameters) [586 589])
+                ("tcf" variable nil (reparse-symbol function_parameters) [591 594])
+                ("xc0" variable nil (reparse-symbol function_parameters) [596 599])
+                ("xcf" variable nil (reparse-symbol function_parameters) [601 604]))              ) nil [548 1164])
+            ("nPoints" variable nil nil [1165 1177])
+            ("tc0" variable nil nil [1178 1185])
+            ("tcf" variable nil nil [1186 1194])
+            ("xc0" variable nil nil [1195 1202])
+            ("xcf" variable nil nil [1203 1211])
+            ("path" variable nil nil [1212 1239])
+            ("control" variable nil nil [1240 1270])
+            ("time" variable nil nil [1271 1308])
+            ("print" code nil nil [1310 1370])
+            ("cfWrapper" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [1634 1635])
+                ("args" variable nil (reparse-symbol function_parameters) [1637 1642]))              ) nil [1620 1843])
+            ("x" variable nil nil [1844 1877])
+            ("x" variable nil nil [1878 1911])
+            ("print" code nil nil [1913 1961])
+            ("res" variable nil nil [1963 2042])
+            ("print" code nil nil [2044 2056]))          
+      :file "FirstCut.py"
+      :pointmax 2222
+      :fsize 2221
+      :lastmodtime '(23326 2712 952190 645000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1a9f1c8"
+      :file "GNCUtilities.py"
+      :fsize 2893
+      :lastmodtime '(23327 16943 729642 420000)))
+  :file "!home!jbailey!Documents!Python!Guidance!OptimalGuidanceBasics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

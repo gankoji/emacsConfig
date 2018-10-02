@@ -1,0 +1,19 @@
+;; Object semanticdb-project-database-file-154fc58
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-154fc58"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-154fc74"
+      :major-mode python-mode
+      :tags 
+        '( ("distutils.core" include nil nil [1 33])
+            ("distutils.command.install_data" include nil nil [34 89])
+            ("setup" code nil nil [91 823]))          
+      :file "setup.py"
+      :pointmax 824
+      :fsize 823
+      :lastmodtime '(23339 29337 0 0)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Python!SEATN!pymath3d-master!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

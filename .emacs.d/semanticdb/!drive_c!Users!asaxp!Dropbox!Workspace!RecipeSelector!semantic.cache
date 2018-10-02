@@ -1,0 +1,41 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("csv" include nil nil [196 206])
+            ("random" include nil nil [207 220])
+            ("getRecipes" function nil nil [222 1045])
+            ("genMenu" function nil nil [1079 1640])
+            ("saveMenu" function (:arguments 
+              ( ("fileName" variable nil (reparse-symbol function_parameters) [1703 1711]))              ) nil [1690 2022])
+            ("loadMenu" function (:arguments 
+              ( ("fileName" variable nil (reparse-symbol function_parameters) [2064 2072]))              ) nil [2051 2286])
+            ("reRoll" function nil nil [2353 2583])
+            ("rollSpot" function (:arguments 
+              ( ("day" variable nil (reparse-symbol function_parameters) [2753 2756])
+                ("dish" variable nil (reparse-symbol function_parameters) [2758 2762]))              ) nil [2740 3170])
+            ("dinnerMenu" variable nil nil [3234 3249])
+            ("entrees" variable nil nil [3250 3262])
+            ("starches" variable nil nil [3263 3276])
+            ("veggies" variable nil nil [3277 3289])
+            ("numDays" variable nil nil [3355 3366])
+            ("numItems" variable nil nil [3367 3379])
+            ("tasteSatisfied" variable nil nil [3381 3403])
+            ("getRecipes" code nil nil [3422 3434])
+            ("genMenu" code nil nil [3435 3444])
+            ("while" code nil nil [3446 3661])
+            ("keyed" variable nil nil [3662 3727])
+            ("if" code nil nil [3729 3897])
+            ("print" code nil nil [3898 3923]))          
+      :file "RecipeSelector.py"
+      :pointmax 3924
+      :fsize 4056
+      :lastmodtime '(23104 22759 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_c!Users!asaxp!Dropbox!Workspace!RecipeSelector!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

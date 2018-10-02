@@ -1,0 +1,33 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("pykep" include nil nil [32 44])
+            ("numba" include nil nil [45 67])
+            ("numba" include nil nil [68 89])
+            ("lambert" function
+               (:decorators 
+                  ( ("cuda.jit" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("r1" variable nil (reparse-symbol function_parameters) [113 115])
+                    ("r2" variable nil (reparse-symbol function_parameters) [117 119])
+                    ("tof" variable nil (reparse-symbol function_parameters) [121 124]))                  )
+                nil [91 224])
+            ("p1" variable nil nil [273 301])
+            ("p2" variable nil nil [302 333])
+            ("v" variable nil nil [334 359])
+            ("print" code nil nil [394 402]))          
+      :file "lambert.py"
+      :pointmax 408
+      :fsize 407
+      :lastmodtime '(23285 59236 156695 24000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Python!Lambert!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file-111d43c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-111d43c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-111d448"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("matplotlib.pyplot" include nil nil [20 51])
+            ("math" include nil nil [52 63])
+            ("inertia" variable nil nil [65 76])
+            ("high" variable nil nil [77 87])
+            ("low" variable nil nil [88 97])
+            ("krat" variable nil nil [99 109])
+            ("kpos" variable nil nil [110 121])
+            ("magLimit" function (:arguments 
+              ( ("value" variable nil (reparse-symbol function_parameters) [136 141])
+                ("limit" variable nil (reparse-symbol function_parameters) [143 148]))              ) nil [123 304])
+            ("runSim" function (:arguments 
+              ( ("krat" variable nil (reparse-symbol function_parameters) [320 324])
+                ("kpos" variable nil (reparse-symbol function_parameters) [326 330]))              ) nil [309 1267])
+            ("krat" variable nil nil [1268 1299])
+            ("kpos" variable nil nil [1300 1331])
+            ("minTime" variable nil nil [1333 1347])
+            ("minI" variable nil nil [1348 1356])
+            ("minJ" variable nil nil [1357 1365])
+            ("for" code nil nil [1367 1584])
+            ("print" code nil nil [1585 1602])
+            ("print" code nil nil [1603 1620])
+            ("print" code nil nil [1621 1635]))          
+      :file "Main.py"
+      :pointmax 1881
+      :fsize 1963
+      :lastmodtime '(23256 9719 508191 200000)
+      :unmatched-syntax nil))
+  :file "!mnt!windows!Users!asaxp!Documents!Workspace!Python!Autopilot!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

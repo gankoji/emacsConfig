@@ -1,0 +1,268 @@
+;; Object semanticdb-project-database-file-16049c0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-16049c0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-8e16a68"
+      :major-mode c++-mode
+      :tags 
+        '( ("AccelData.h" include nil nil [11 33])
+            ("init" function
+               (:parent "AccelDataClass"
+                :type "void")
+                nil [35 96])
+            ("AccelData" variable (:type ("AccelDataClass" type (:type "class") nil nil)) nil [98 123]))          
+      :file "AccelData.cpp"
+      :pointmax 123
+      :fsize 135
+      :lastmodtime '(21459 12272 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-8ee6958"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ACCELDATA_h" variable (:constant-flag t) nil [46 58])
+            ("WProgram.h" include nil nil [127 149])
+            ("AccelDataClass" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [182 189])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [191 203])
+                    ("ax" variable (:type "float") (reparse-symbol classsubparts) [206 223])
+                    ("ay" variable (:type "float") (reparse-symbol classsubparts) [206 223])
+                    ("az" variable (:type "float") (reparse-symbol classsubparts) [206 223]))                  
+                :type "class")
+                nil [158 226])
+            ("AccelData" variable
+               (:typemodifiers ("extern")
+                :type ("AccelDataClass" type (:type "class") nil nil))
+                nil [228 260]))          
+      :file "AccelData.h"
+      :pointmax 270
+      :fsize 292
+      :lastmodtime '(21457 40765 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ACCELDATA_h")
+          )
+)
+    (semanticdb-table "semanticdb-table-8e70c80"
+      :major-mode c++-mode
+      :tags 
+        '( ("AttitudeData.h" include nil nil [11 36])
+            ("init" function
+               (:parent "AttitudeDataClass"
+                :type "void")
+                nil [38 107])
+            ("AttitudeData" variable (:type ("AttitudeDataClass" type (:type "class") nil nil)) nil [109 140]))          
+      :file "AttitudeData.cpp"
+      :pointmax 140
+      :fsize 152
+      :lastmodtime '(21459 12274 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-8e10f50"
+      :major-mode c++-mode
+      :tags 
+        '( ("_ATTITUDEDATA_h" variable (:constant-flag t) nil [52 67])
+            ("WProgram.h" include nil nil [136 158])
+            ("AttitudeDataClass" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [194 201])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [203 215])
+                    ("phi" variable (:type "float") (reparse-symbol classsubparts) [218 240])
+                    ("theta" variable (:type "float") (reparse-symbol classsubparts) [218 240])
+                    ("psi" variable (:type "float") (reparse-symbol classsubparts) [218 240]))                  
+                :type "class")
+                nil [167 243])
+            ("AttitudeData" variable
+               (:typemodifiers ("extern")
+                :type ("AttitudeDataClass" type (:type "class") nil nil))
+                nil [245 283]))          
+      :file "AttitudeData.h"
+      :pointmax 293
+      :fsize 315
+      :lastmodtime '(21457 43460 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ATTITUDEDATA_h")
+          )
+)
+    (semanticdb-table "semanticdb-table-161fb70"
+      :major-mode c++-mode
+      :tags 
+        '( ("AttitudeFilter.h" include nil nil [11 38])
+            ("AttitudeFilterClass" function
+               (:constructor-flag t
+                :parent "AttitudeFilterClass"
+                :type ("AttitudeFilterClass" type (:type "class") nil nil))
+                nil [40 86])
+            ("AttitudeFilterClass" function
+               (:constructor-flag t
+                :parent "AttitudeFilterClass"
+                :arguments 
+                  ( ("samplePeriod" variable (:type "float") (reparse-symbol arg-sub-list) [129 148]))                  
+                :type ("AttitudeFilterClass" type (:type "class") nil nil))
+                nil [88 181])
+            ("AttitudeFilterClass" function
+               (:destructor-flag t
+                :parent "AttitudeFilterClass"
+                :type "void")
+                nil [183 230])
+            ("init" function
+               (:parent "AttitudeFilterClass"
+                :type "void")
+                nil [232 643])
+            ("updateFilter" function
+               (:parent "AttitudeFilterClass"
+                :type "void")
+                nil [645 1529])
+            ("getAttitude" function
+               (:parent "AttitudeFilterClass"
+                :type ("AttitudeDataClass" type (:type "class") nil nil))
+                nil [1531 1609])
+            ("getRaw" function
+               (:parent "AttitudeFilterClass"
+                :type ("SensorDataClass" type (:type "class") nil nil))
+                nil [1611 1682])
+            ("setSensorInputs" function
+               (:parent "AttitudeFilterClass"
+                :arguments 
+                  ( ("data" variable (:type ("SensorDataClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1726 1747]))                  
+                :type "void")
+                nil [1684 1773])
+            ("accel2Euler" function
+               (:parent "AttitudeFilterClass"
+                :arguments 
+                  ( ("attData" variable (:type ("AttitudeDataClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1813 1839]))                  
+                :type "void")
+                nil [1775 3435])
+            ("euler2Quaternion" function
+               (:parent "AttitudeFilterClass"
+                :type "void")
+                nil [3437 5005])
+            ("mag2Euler" function
+               (:parent "AttitudeFilterClass"
+                :arguments 
+                  ( ("attData" variable (:type ("AttitudeDataClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5043 5069]))                  
+                :type "void")
+                nil [5007 6132])
+            ("quaternion2Euler" function
+               (:parent "AttitudeFilterClass"
+                :arguments 
+                  ( ("q" variable (:type ("QuaternionClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6177 6195]))                  
+                :type "void")
+                nil [6134 7218])
+            ("kCovariancePredict" function
+               (:parent "AttitudeFilterClass"
+                :type "void")
+                nil [7220 7660])
+            ("kCovarianceUpdate" function
+               (:parent "AttitudeFilterClass"
+                :type "void")
+                nil [7662 8161])
+            ("kEstimate" function
+               (:parent "AttitudeFilterClass"
+                :type "void")
+                nil [8163 9398])
+            ("kGain" function
+               (:parent "AttitudeFilterClass"
+                :type "void")
+                nil [9400 9930])
+            ("kStatePredict" function
+               (:parent "AttitudeFilterClass"
+                :type "void")
+                nil [9932 10549])
+            ("kStateMatrixUpdate" function
+               (:parent "AttitudeFilterClass"
+                :type "void")
+                nil [10551 10861])
+            ("setIronOffsets" function
+               (:parent "AttitudeFilterClass"
+                :arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [10904 10912])
+                    ("y" variable (:type "float") (reparse-symbol arg-sub-list) [10913 10921])
+                    ("z" variable (:type "float") (reparse-symbol arg-sub-list) [10922 10930]))                  
+                :type "void")
+                nil [10863 10961])
+            ("setAttitudeOffsets" function
+               (:parent "AttitudeFilterClass"
+                :arguments 
+                  ( ("r" variable (:type "float") (reparse-symbol arg-sub-list) [11008 11016])
+                    ("p" variable (:type "float") (reparse-symbol arg-sub-list) [11017 11025]))                  
+                :type "void")
+                nil [10963 11064])
+            ("setSamplePeriod" function
+               (:parent "AttitudeFilterClass"
+                :arguments 
+                  ( ("T" variable (:type "float") (reparse-symbol arg-sub-list) [11108 11116]))                  
+                :type "void")
+                nil [11066 11139])
+            ("AttitudeFilter" variable (:type ("AttitudeFilterClass" type (:type "class") nil nil)) nil [11141 11176]))          
+      :file "AttitudeFilter.cpp"
+      :pointmax 11177
+      :fsize 11667
+      :lastmodtime '(23324 38682 507499 200000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-16706d8"
+      :file "AttitudeFilter.h"
+      :fsize 1831
+      :lastmodtime '(21483 60795 0 0))
+    (semanticdb-table "semanticdb-table-92038a8"
+      :major-mode c++-mode
+      :tags 
+        '( ("Control.h" include nil nil [11 31])
+            ("ControlClass" function
+               (:constructor-flag t
+                :parent "ControlClass"
+                :type ("ControlClass" type (:type "class") nil nil))
+                nil [33 66])
+            ("ControlClass" function
+               (:destructor-flag t
+                :parent "ControlClass"
+                :type "void")
+                nil [68 104])
+            ("init" function
+               (:parent "ControlClass"
+                :type "void")
+                nil [106 994])
+            ("mainLoop" function
+               (:parent "ControlClass"
+                :type "void")
+                nil [996 1643])
+            ("readMagOffsets" function
+               (:parent "ControlClass"
+                :type "void")
+                nil [1645 1840])
+            ("writeMagOffsets" function
+               (:parent "ControlClass"
+                :type "void")
+                nil [1842 2053])
+            ("calibrateMagnetometer" function
+               (:parent "ControlClass"
+                :type "void")
+                nil [2055 4220])
+            ("updateFilter" function
+               (:parent "ControlClass"
+                :type "void")
+                nil [4222 4370])
+            ("displayResults" function
+               (:parent "ControlClass"
+                :type "void")
+                nil [4372 4720])
+            ("Control" variable (:type ("ControlClass" type (:type "class") nil nil)) nil [4722 4743]))          
+      :file "Control.cpp"
+      :pointmax 4744
+      :fsize 5004
+      :lastmodtime '(21475 63056 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-666282c"
+      :file "Control.h"
+      :fsize 1277
+      :lastmodtime '(21475 58531 0 0)))
+  :file "!mnt!raid!Sync!Academics!Thesis Files!Code!QSE_Final_Version!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

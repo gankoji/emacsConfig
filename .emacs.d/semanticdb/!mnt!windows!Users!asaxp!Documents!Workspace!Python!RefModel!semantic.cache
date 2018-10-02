@@ -1,0 +1,159 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [20 38])
+            ("matplotlib.pyplot" include nil nil [39 70])
+            ("math" include nil nil [71 82])
+            ("EOM" include nil nil [84 94])
+            ("TOC" include nil nil [95 105])
+            ("GNCUtilities" include nil nil [106 125])
+            ("TOC" variable nil nil [127 150])
+            ("endTime" variable nil nil [152 165])
+            ("dt" variable nil nil [166 176])
+            ("simLength" variable nil nil [177 220])
+            ("EOM" variable nil nil [222 248])
+            ("simTime" variable nil nil [249 297])
+            ("Mass" variable nil nil [312 320])
+            ("Inertia" variable nil nil [321 438])
+            ("Moments" variable nil nil [440 469])
+            ("Forces" variable nil nil [470 499])
+            ("yaw" variable nil nil [501 510])
+            ("roll" variable nil nil [523 533])
+            ("d2r" code nil nil [534 555])
+            ("command_i_b" variable nil nil [557 622])
+            ("command_i_b" variable nil nil [623 665])
+            ("inertialPoint" variable nil nil [667 735])
+            ("inertialPoint" code nil nil [736 795])
+            ("points" variable nil nil [797 829])
+            ("q_i_b0" variable nil nil [852 877])
+            ("nav_i_b0" variable nil nil [878 918])
+            ("TOC" code nil nil [920 957])
+            ("for" code nil nil [959 1374])
+            ("outputData" variable nil nil [1375 1396])
+            ("eulerData" variable nil nil [1398 1433])
+            ("for" code nil nil [1435 1535])
+            ("fig, ax" code nil nil [1540 1564])
+            ("ax" code nil nil [1565 1600])
+            ("ax" code nil nil [1601 1684])
+            ("ax" code nil nil [1685 1718])
+            ("fig1, ax1" code nil nil [1720 1746])
+            ("ax1" code nil nil [1747 1780])
+            ("ax1" code nil nil [1781 1876])
+            ("ax1" code nil nil [1877 1902])
+            ("plt" code nil nil [1904 1914]))          
+      :file "Main.py"
+      :pointmax 1915
+      :fsize 1993
+      :lastmodtime '(23240 23028 558482 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("pi" variable nil nil [33 47])
+            ("r2d" code nil nil [48 62])
+            ("d2r" code nil nil [63 77])
+            ("EulD2Quat" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [93 96]))              ) nil [79 222])
+            ("Eul2Quat" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [236 239]))              ) nil [223 626])
+            ("EulD2DCM" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [640 643]))              ) nil [627 702])
+            ("Eul2DCM" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [715 718]))              ) nil [703 853])
+            ("Quat2Eul" function (:arguments 
+              ( ("q" variable nil (reparse-symbol function_parameters) [867 868]))              ) nil [854 1194])
+            ("DCM2Quat" function (:arguments 
+              ( ("dcm" variable nil (reparse-symbol function_parameters) [1208 1211]))              ) nil [1195 1476])
+            ("Quat2DCM" function (:arguments 
+              ( ("q" variable nil (reparse-symbol function_parameters) [1490 1491]))              ) nil [1477 2015])
+            ("C_x" function (:arguments 
+              ( ("theta" variable nil (reparse-symbol function_parameters) [2075 2080]))              ) nil [2067 2313])
+            ("C_y" function (:arguments 
+              ( ("theta" variable nil (reparse-symbol function_parameters) [2322 2327]))              ) nil [2314 2572])
+            ("C_z" function (:arguments 
+              ( ("theta" variable nil (reparse-symbol function_parameters) [2581 2586]))              ) nil [2573 2822])
+            ("quatMult" function (:arguments 
+              ( ("p" variable nil (reparse-symbol function_parameters) [2836 2837])
+                ("q" variable nil (reparse-symbol function_parameters) [2838 2839]))              ) nil [2823 3102])
+            ("DCM2Eul" function (:arguments 
+              ( ("dcm" variable nil (reparse-symbol function_parameters) [3115 3118]))              ) nil [3103 3470]))          
+      :file "GNCUtilities.py"
+      :pointmax 3470
+      :fsize 3628
+      :lastmodtime '(23236 11746 87735 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("GNCUtilities" include nil nil [32 58])
+            ("EOM" include nil nil [60 70])
+            ("toc" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [127 142])
+                            ("self" variable nil (reparse-symbol indented_block_body) [151 168])
+                            ("self" variable nil (reparse-symbol indented_block_body) [177 197])
+                            ("self" variable nil (reparse-symbol indented_block_body) [206 230])
+                            ("self" variable nil (reparse-symbol indented_block_body) [239 258])
+                            ("self" variable nil (reparse-symbol indented_block_body) [267 308])
+                            ("self" variable nil (reparse-symbol indented_block_body) [318 334])
+                            ("self" variable nil (reparse-symbol indented_block_body) [343 359])
+                            ("self" variable nil (reparse-symbol indented_block_body) [369 385])
+                            ("self" variable nil (reparse-symbol indented_block_body) [394 407])
+                            ("self" variable nil (reparse-symbol indented_block_body) [416 430]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [100 104])
+                            ("vlim" variable nil (reparse-symbol function_parameters) [106 110])
+                            ("alim" variable nil (reparse-symbol function_parameters) [112 116]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [87 439])
+                    ("TOC" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [460 464])
+                            ("x" variable nil (reparse-symbol function_parameters) [466 467])
+                            ("v" variable nil (reparse-symbol function_parameters) [469 470])
+                            ("xf" variable nil (reparse-symbol function_parameters) [472 474]))                          )
+                        (reparse-symbol indented_block_body) [452 891])
+                    ("firstPass" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [910 914])
+                            ("cmd_b_i" variable nil (reparse-symbol function_parameters) [916 923])
+                            ("nav_b_i" variable nil (reparse-symbol function_parameters) [925 932]))                          )
+                        (reparse-symbol indented_block_body) [896 1370])
+                    ("getCommands" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1391 1395])
+                            ("nav_b_i" variable nil (reparse-symbol function_parameters) [1397 1404])
+                            ("body_rates" variable nil (reparse-symbol function_parameters) [1406 1416]))                          )
+                        (reparse-symbol indented_block_body) [1375 2864])
+                    ("magLimit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2882 2886])
+                            ("value" variable nil (reparse-symbol function_parameters) [2888 2893])
+                            ("val_max" variable nil (reparse-symbol function_parameters) [2895 2902]))                          )
+                        (reparse-symbol indented_block_body) [2869 3060]))                  
+                :type "class")
+                nil [72 3060]))          
+      :file "TOC.py"
+      :pointmax 3060
+      :fsize 3171
+      :lastmodtime '(23236 13829 731909 600000)
+      :unmatched-syntax nil))
+  :file "!mnt!windows!Users!asaxp!Documents!Workspace!Python!RefModel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,86 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("pycuda.driver" include nil nil [1 29])
+            ("pycuda.autoinit" include nil nil [30 52])
+            ("pycuda.compiler" include nil nil [53 93])
+            ("pycuda.gpuarray" include nil nil [94 128])
+            ("numpy" include nil nil [130 142])
+            ("a" variable nil nil [144 171])
+            ("a" variable nil nil [172 199])
+            ("a_gpu" variable nil nil [201 233])
+            ("cuda" code nil nil [234 260])
+            ("mod" variable nil nil [262 396])
+            ("func" variable nil nil [398 433])
+            ("func" code nil nil [434 460])
+            ("a_doubled" variable nil nil [462 493])
+            ("cuda" code nil nil [494 528])
+            ("print" code nil nil [529 545])
+            ("print" code nil nil [546 554])
+            ("a_gpu" variable nil nil [556 630])
+            ("a_doubled" variable nil nil [631 658])
+            ("print" code nil nil [659 675])
+            ("print" code nil nil [676 688])
+            ("numba" include nil nil [690 717])
+            ("timeit" include nil nil [718 731])
+            ("functools" include nil nil [732 761])
+            ("" code nil nil [773 819])
+            ("Add" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [828 829])
+                ("b" variable nil (reparse-symbol function_parameters) [831 832]))              ) nil [820 852])
+            ("slowAdd" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [865 866])
+                ("b" variable nil (reparse-symbol function_parameters) [868 869]))              ) nil [853 889])
+            ("N" variable nil nil [910 925])
+            ("A" variable nil nil [926 964])
+            ("B" variable nil nil [965 1003])
+            ("C" variable nil nil [1004 1042])
+            ("nRepeat" variable nil nil [1366 1377])
+            ("nRuns" variable nil nil [1378 1388])
+            ("times" variable nil nil [1390 1453])
+            ("time_taken" code nil nil [1455 1484])
+            ("print" code nil nil [1485 1502])
+            ("times" variable nil nil [1504 1570])
+            ("time_taken" code nil nil [1572 1601])
+            ("print" code nil nil [1602 1619])
+            ("print" code nil nil [1620 1632]))          
+      :file "pycudaTest.py"
+      :pointmax 1635
+      :fsize 1634
+      :lastmodtime '(23284 30455 620435 29000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 32])
+            ("numba" include nil nil [33 55])
+            ("numpy" include nil nil [56 68])
+            ("math" include nil nil [69 80])
+            ("timeit" include nil nil [81 94])
+            ("my_kernel" function
+               (:decorators 
+                  ( ("cuda.jit" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("io_array" variable nil (reparse-symbol function_parameters) [263 271]))                  )
+                nil [239 351])
+            ("data" variable nil nil [374 402])
+            ("print" code nil nil [403 420])
+            ("threadsperblock" variable nil nil [421 442])
+            ("blockspergrid" variable nil nil [443 506])
+            ("start_time2" variable nil nil [508 544])
+            ("my_kernel" code nil nil [545 592])
+            ("print" code nil nil [593 604])
+            ("print" code nil nil [605 648]))          
+      :file "numbaJitTest.py"
+      :pointmax 651
+      :fsize 650
+      :lastmodtime '(23284 55981 182294 906000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Python!CUDA!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

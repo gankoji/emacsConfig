@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("random" include nil nil [32 45])
+            ("matplotlib.pyplot" include nil nil [46 77])
+            ("radarMeasure" function (:arguments 
+              ( ("trueState" variable nil (reparse-symbol function_parameters) [371 380]))              ) nil [354 566])
+            ("searchAreaDims" variable nil nil [607 644])
+            ("numTargets" variable nil nil [645 660])
+            ("coordinates" variable nil nil [661 699])
+            ("timeSteps" variable nil nil [700 716])
+            ("dt" variable nil nil [717 726])
+            ("for" code nil nil [807 1024])
+            ("averagedMeasurements" variable nil nil [1357 1405])
+            ("for" code nil nil [1407 1583])
+            ("A" variable nil nil [1810 1867])
+            ("H" variable nil nil [1868 1881])
+            ("sigProcess" variable nil nil [1980 1998])
+            ("sigMeas" variable nil nil [1999 2014])
+            ("Q" code nil nil [2015 2031])
+            ("R" code nil nil [2032 2045])
+            ("estimates" variable nil nil [2089 2137])
+            ("predictions" variable nil nil [2138 2177])
+            ("predMeas" variable nil nil [2178 2214])
+            ("covPred" variable nil nil [2215 2264])
+            ("covEst" variable nil nil [2265 2297])
+            ("covMeas" variable nil nil [2298 2346])
+            ("for" code nil nil [2370 2638])
+            ("for" code nil nil [2716 3640])
+            ("fig" variable nil nil [3687 3705])
+            ("ax" variable nil nil [3706 3720])
+            ("plt" code nil nil [3823 3852])
+            ("plt" code nil nil [3853 3882])
+            ("plt" code nil nil [3883 3929])
+            ("plt" code nil nil [3930 3994])
+            ("plt" code nil nil [3995 4045])
+            ("plt" code nil nil [4046 4102])
+            ("plt" code nil nil [4103 4113])
+            ("plt" code nil nil [4358 4368]))          
+      :file "BaseRadarSim.py"
+      :pointmax 4371
+      :fsize 4370
+      :lastmodtime '(23310 10538)
+      :unmatched-syntax nil))
+  :file "!ssh:ec2-user@ec2-18-221-216-85.us-east-2.compute.amazonaws.com:!jet!prs!PlainJane!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

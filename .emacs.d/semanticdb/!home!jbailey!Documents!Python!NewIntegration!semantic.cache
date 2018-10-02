@@ -1,0 +1,64 @@
+;; Object semanticdb-project-database-file-3ac0058
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-3ac0058"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-38a4fa4"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [80 98])
+            ("math" include nil nil [99 110])
+            ("eom" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("simLength" variable nil (reparse-symbol indented_block_body) [183 227])
+                            ("self" variable nil (reparse-symbol indented_block_body) [876 901])
+                            ("self" variable nil (reparse-symbol indented_block_body) [910 965])
+                            ("self" variable nil (reparse-symbol indented_block_body) [974 1026])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1035 1082])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1092 1110])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1119 1162])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1171 1183]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [140 144])
+                            ("dt" variable nil (reparse-symbol function_parameters) [146 148])
+                            ("end_time" variable nil (reparse-symbol function_parameters) [150 158])
+                            ("initialState" variable nil (reparse-symbol function_parameters) [160 172]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [127 1184])
+                    ("getInputs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1203 1207])
+                            ("forces" variable nil (reparse-symbol function_parameters) [1209 1215])
+                            ("moments" variable nil (reparse-symbol function_parameters) [1217 1224])
+                            ("mass" variable nil (reparse-symbol function_parameters) [1226 1230])
+                            ("inertia" variable nil (reparse-symbol function_parameters) [1232 1239]))                          )
+                        (reparse-symbol indented_block_body) [1189 1802])
+                    ("getOutputs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1822 1826]))                          )
+                        (reparse-symbol indented_block_body) [1807 1873])
+                    ("integrateStates" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1898 1902]))                          )
+                        (reparse-symbol indented_block_body) [1878 2644])
+                    ("updateDerivatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2671 2675]))                          )
+                        (reparse-symbol indented_block_body) [2649 3899]))                  
+                :type "class")
+                nil [112 3899]))          
+      :file "NewEOM.py"
+      :pointmax 3899
+      :fsize 4010
+      :lastmodtime '(23262 48411 676039 500000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Python!NewIntegration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

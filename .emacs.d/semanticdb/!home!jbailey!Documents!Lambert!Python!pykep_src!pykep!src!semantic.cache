@@ -1,0 +1,253 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("boost/math/special_functions/acosh.hpp" include (:system-flag t) nil [1899 1948])
+            ("boost/math/special_functions/asinh.hpp" include (:system-flag t) nil [1949 1998])
+            ("core_functions/array3D_operations.h" include nil nil [2000 2046])
+            ("exceptions.h" include nil nil [2047 2070])
+            ("lambert_problem.h" include nil nil [2071 2099])
+            ("kep_toolbox" type
+               (:members 
+                  ( ("lambert_problem::default_r1" variable
+                       (:constant-flag t
+                        :default-value "{{1.0, 0.0, 0.0}}"
+                        :type ("array3D" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2126 2188])
+                    ("lambert_problem::default_r2" variable
+                       (:constant-flag t
+                        :default-value "{{0.0, 1.0, 0.0}}"
+                        :type ("array3D" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2189 2251])
+                    ("lambert_problem" function
+                       (:constructor-flag t
+                        :parent "lambert_problem"
+                        :arguments 
+                          ( ("r1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array3D" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2632 2650])
+                            ("r2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("array3D" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2651 2669])
+                            ("tof" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2670 2688])
+                            ("mu" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2689 2706])
+                            ("cw" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2740 2754])
+                            ("multi_revs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2755 2777]))                          
+                        :type ("lambert_problem" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2599 7684])
+                    ("householder" function
+                       (:parent "lambert_problem"
+                        :arguments 
+                          ( ("T" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [7719 7734])
+                            ("x0" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [7735 7746])
+                            ("N" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7747 7759])
+                            ("eps" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [7760 7777])
+                            ("iter_max" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7778 7797]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [7686 8293])
+                    ("dTdx" function
+                       (:parent "lambert_problem"
+                        :arguments 
+                          ( ("DT" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8322 8333])
+                            ("DDT" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8334 8346])
+                            ("DDDT" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8347 8360])
+                            ("x" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8361 8376])
+                            ("T" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8377 8392]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8295 8815])
+                    ("x2tof2" function
+                       (:parent "lambert_problem"
+                        :arguments 
+                          ( ("tof" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8846 8858])
+                            ("x" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8859 8874])
+                            ("N" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [8875 8887]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8817 9476])
+                    ("x2tof" function
+                       (:parent "lambert_problem"
+                        :arguments 
+                          ( ("tof" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [9506 9518])
+                            ("x" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [9519 9534])
+                            ("N" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [9535 9547]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9478 10619])
+                    ("hypergeometricF" function
+                       (:parent "lambert_problem"
+                        :arguments 
+                          ( ("z" variable (:type "double") (reparse-symbol arg-sub-list) [10661 10670])
+                            ("tol" variable (:type "double") (reparse-symbol arg-sub-list) [10671 10682]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [10621 11026])
+                    ("get_v1" function
+                       (:methodconst-flag t
+                        :parent "lambert_problem"
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("array3D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11195 11275])
+                    ("get_v2" function
+                       (:methodconst-flag t
+                        :parent "lambert_problem"
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("array3D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11444 11524])
+                    ("get_r1" function
+                       (:methodconst-flag t
+                        :parent "lambert_problem"
+                        :constant-flag t
+                        :type ("array3D" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11608 11675])
+                    ("get_r2" function
+                       (:methodconst-flag t
+                        :parent "lambert_problem"
+                        :constant-flag t
+                        :type ("array3D" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11759 11826])
+                    ("get_tof" function
+                       (:methodconst-flag t
+                        :parent "lambert_problem"
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [11915 11983])
+                    ("get_x" function
+                       (:methodconst-flag t
+                        :parent "lambert_problem"
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [12143 12220])
+                    ("get_mu" function
+                       (:methodconst-flag t
+                        :parent "lambert_problem"
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [12305 12371])
+                    ("get_iters" function
+                       (:methodconst-flag t
+                        :parent "lambert_problem"
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [12509 12591])
+                    ("get_Nmax" function
+                       (:methodconst-flag t
+                        :parent "lambert_problem"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12722 12782])
+                    ("<<" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12832 12848])
+                            ("lp" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("lambert_problem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12849 12875]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12807 14391]))                  
+                :type "namespace")
+                nil [2101 14394]))          
+      :file "lambert_problem.cpp"
+      :pointmax 14409
+      :fsize 14408
+      :lastmodtime '(23282 25587 338029 955000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "exceptions.h"
+      :fsize 2544
+      :lastmodtime '(23282 25587 338029 955000))
+    (semanticdb-table "semanticdb-table"
+      :file "lambert_problem.h"
+      :fsize 5190
+      :lastmodtime '(23282 25587 342029 990000)))
+  :file "!home!jbailey!Documents!Lambert!Python!pykep_src!pykep!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

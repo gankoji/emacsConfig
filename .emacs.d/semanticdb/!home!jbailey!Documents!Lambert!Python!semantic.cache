@@ -1,0 +1,147 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("pykep" include nil nil [32 44])
+            ("lambert" function (:arguments 
+              ( ("r1" variable nil (reparse-symbol function_parameters) [58 60])
+                ("r2" variable nil (reparse-symbol function_parameters) [62 64])
+                ("tof" variable nil (reparse-symbol function_parameters) [66 69]))              ) nil [46 169])
+            ("p1" variable nil nil [169 197])
+            ("p2" variable nil nil [198 229])
+            ("v" variable nil nil [230 255])
+            ("print" code nil nil [257 265]))          
+      :file "lambert.py"
+      :pointmax 271
+      :fsize 393
+      :lastmodtime '(23284 39057 413919 653000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 32])
+            ("numba" include nil nil [33 55])
+            ("numpy" include nil nil [56 68])
+            ("math" include nil nil [69 80])
+            ("timeit" include nil nil [81 94])
+            ("my_kernel" function
+               (:decorators 
+                  ( ("cuda.jit" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("io_array" variable nil (reparse-symbol function_parameters) [263 271]))                  )
+                nil [239 351])
+            ("data" variable nil nil [374 402])
+            ("threadsperblock" variable nil nil [421 442])
+            ("blockspergrid" variable nil nil [443 506])
+            ("start_time2" variable nil nil [508 544])
+            ("my_kernel" code nil nil [545 592])
+            ("print" code nil nil [593 604])
+            ("print" code nil nil [605 648]))          
+      :file "pycudaTest.py"
+      :pointmax 651
+      :fsize 1634
+      :lastmodtime '(23284 30455 620435 29000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 32])
+            ("numba" include nil nil [33 55])
+            ("numpy" include nil nil [56 68])
+            ("math" include nil nil [69 80])
+            ("my_kernel_2D" function
+               (:decorators 
+                  ( ("cuda.jit" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("io_array" variable nil (reparse-symbol function_parameters) [109 117]))                  )
+                nil [82 238])
+            ("data" variable nil nil [240 267])
+            ("threadsperblock" variable nil nil [268 294])
+            ("blockspergrid_x" variable nil nil [295 363])
+            ("blockspergrid_y" variable nil nil [364 432])
+            ("blockspergrid" variable nil nil [433 483])
+            ("my_kernel_2D" code nil nil [484 534])
+            ("print" code nil nil [535 546]))          
+      :file "challenge1.py"
+      :pointmax 547
+      :fsize 546
+      :lastmodtime '(23284 61365 359176 82000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 32])
+            ("numba" include nil nil [33 55])
+            ("numpy" include nil nil [56 68])
+            ("math" include nil nil [69 80])
+            ("matmul" function
+               (:documentation "Perform matrix multiplication of C = A * B
+    "
+                :arguments 
+                  ( ("A" variable nil (reparse-symbol function_parameters) [117 118])
+                    ("B" variable nil (reparse-symbol function_parameters) [120 121])
+                    ("C" variable nil (reparse-symbol function_parameters) [123 124]))                  
+                :decorators 
+                  ( ("cuda.jit" function (:type "decorator") nil nil))                  )
+                nil [96 379])
+            ("A" variable nil nil [430 470])
+            ("B" variable nil nil [499 539])
+            ("A_global_mem" variable nil nil [601 633])
+            ("B_global_mem" variable nil nil [634 666])
+            ("C_global_mem" variable nil nil [715 757])
+            ("threadsperblock" variable nil nil [782 808])
+            ("blockspergrid_x" variable nil nil [809 874])
+            ("blockspergrid_y" variable nil nil [875 940])
+            ("blockspergrid" variable nil nil [941 991])
+            ("matmul" code nil nil [1013 1093])
+            ("C" variable nil nil [1130 1161])
+            ("print" code nil nil [1163 1171]))          
+      :file "example2.py"
+      :pointmax 1172
+      :fsize 1171
+      :lastmodtime '(23284 61398 699502 247000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 32])
+            ("numba" include nil nil [33 64])
+            ("numpy" include nil nil [65 77])
+            ("math" include nil nil [78 89])
+            ("TPB" variable nil nil [207 215])
+            ("fast_matmul" function
+               (:documentation "
+    Perform matrix multiplication of C = A * B
+    Each thread computes one element of the result matrix C
+    "
+                :arguments 
+                  ( ("A" variable nil (reparse-symbol function_parameters) [243 244])
+                    ("B" variable nil (reparse-symbol function_parameters) [246 247])
+                    ("C" variable nil (reparse-symbol function_parameters) [249 250]))                  
+                :decorators 
+                  ( ("cuda.jit" function (:type "decorator") nil nil))                  )
+                nil [217 1425])
+            ("A" variable nil nil [1443 1489])
+            ("B" variable nil nil [1528 1574])
+            ("C_global_mem" variable nil nil [1680 1728])
+            ("threadsperblock" variable nil nil [1779 1807])
+            ("blockspergrid_x" variable nil nil [1808 1873])
+            ("blockspergrid_y" variable nil nil [1874 1939])
+            ("blockspergrid" variable nil nil [1940 1990])
+            ("fast_matmul" code nil nil [2012 2097])
+            ("res" variable nil nil [2098 2131])
+            ("print" code nil nil [2133 2143]))          
+      :file "example3.py"
+      :pointmax 2144
+      :fsize 2143
+      :lastmodtime '(23285 58781 253306 577000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Lambert!Python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

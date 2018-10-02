@@ -1,0 +1,35 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("Documents"
+ (filename . "~/Documents/")
+ (front-context-string . "EmacsSrc\n  drwxr")
+ (rear-context-string . "96 May 23 18:44 ")
+ (position . 286))
+("Org"
+ (filename . "~/Org/")
+ (front-context-string . "20180507_AmazonW")
+ (rear-context-string . "30 May 11 16:40 ")
+ (position . 800))
+("LKF"
+ (filename . "~/Documents/Python/KalmanFiltering/PlainJane/")
+ (front-context-string . "EstimationProble")
+ (rear-context-string . "76 May 29 10:12 ")
+ (position . 332))
+("ec2"
+ (filename . "/ssh:ec2-user@ec2-18-221-216-85.us-east-2.compute.amazonaws.com:/workspace/PlainJane/")
+ (front-context-string . "EstimationProble")
+ (rear-context-string . "76 May 30 03:46 ")
+ (position . 330))
+("goals"
+ (filename . "~/Org/TechnicalGoals.org")
+ (front-context-string)
+ (rear-context-string . "bust controller\n")
+ (position . 1973))
+("org-capture-last-stored"
+ (filename . "~/Org/notes.org")
+ (front-context-string . "** TODO One more")
+ (rear-context-string)
+ (position . 9))
+)

@@ -1,0 +1,43 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [659 677])
+            ("cuda_runtime.h" include (:system-flag t) nil [736 761])
+            ("helper_cuda.h" include (:system-flag t) nil [763 787])
+            ("vectorAdd" function
+               (:arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [966 981])
+                    ("B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [982 997])
+                    ("C" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [998 1007])
+                    ("numElements" variable (:type "int") (reparse-symbol arg-sub-list) [1008 1024]))                  
+                :type "void")
+                nil [951 1145])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1185 1190]))                  
+                :type "int")
+                nil [1176 5648]))          
+      :file "vectorAdd.cu"
+      :pointmax 5650
+      :fsize 5649
+      :lastmodtime '(23073 59288 0 0)
+      :unmatched-syntax '((symbol 940 . 950))))
+  :file "!usr!local!cuda-9.1!samples!0_Simple!vectorAdd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

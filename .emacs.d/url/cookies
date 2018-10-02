@@ -1,0 +1,76 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".google.com"
+  [url-cookie "NID" "130=NJLasgM3LMdZLaWwjgYC7rVDoQ7M8URvjmJGYsZqcLhkZBCp9JbyphQOYJXvqz08a6o5zgo7bnnAp8eAHVDrLP2_ne2D834-mE837hjuH0eE5a5Lrqxt_noZ7qEQz7fxtB2pMWZF7GjrAIJ8QLheQGyLMyWlBheI7GE1XS2PYikMBAP3Ekt624Zbf_usVnxGH6OIU_TccDwRu8K9ztlKMcniYl0VM_Ysm8Acr5SN" "11-Nov-2018 03:15:10.00 GMT" "/" ".google.com" nil]
+  [url-cookie "1P_JAR" "2018-07-22-18" "Tue, 21-Aug-2018 18:08:39 GMT" "/" ".google.com" nil]
+  [url-cookie "SID" "HAYr0kXKm5L5v6AIIHWVa0NUiGvgqyJ2wmlxgsKU6Nqm80BZkM7oArjYb01bMZ0Lb-F30g." "11-May-2020 03:14:02.00 GMT" "/" ".google.com" nil]
+  [url-cookie "HSID" "AoK8B1UY515BClNoN" "11-May-2020 03:14:02.00 GMT" "/" ".google.com" nil]
+  [url-cookie "APISID" "XGmbRXuj2mKOyM0s/A3OFcDr2HaaBCKVrT" "11-May-2020 03:14:02.00 GMT" "/" ".google.com" nil]
+  [url-cookie "SIDCC" "AGIhQKQGeHv20n-BYZpm05URJc41_tGALZ84MeRoEDbpnxpFsMtXQHjDPKFoaJgzdeH0xhO8" "Sat, 20-Oct-2018 18:08:39 GMT" "/" ".google.com" nil]
+  [url-cookie "CGIC" "IgMqLyo" "Mon, 21-Jan-2019 09:03:15 GMT" "/complete/search" ".google.com" nil]
+  [url-cookie "CGIC" "IgMqLyo" "Mon, 21-Jan-2019 09:03:15 GMT" "/search" ".google.com" nil])
+ (".burrowsapps.com"
+  [url-cookie "HttpOnly" nil "24 May 19 01:53:30 [GMT]" "/" ".burrowsapps.com" nil]
+  [url-cookie "__cfduid" "d61c4802d70173a929f57b753f97ac6681527126810" "24 May 19 01:53:30 [GMT]" "/" ".burrowsapps.com" nil])
+ (".askubuntu.com"
+  [url-cookie "HttpOnly" nil "01-Jan-2055 00:00:00.00 GMT" "/" ".askubuntu.com" nil]
+  [url-cookie "prov" "1d9d19fb-2012-0840-fb4c-5d0e084b041d" "01-Jan-2055 00:00:00.00 GMT" "/" ".askubuntu.com" nil])
+ (".git-scm.com"
+  [url-cookie "HttpOnly" nil "12 May 19 01:58:17 [GMT]" "/" ".git-scm.com" nil]
+  [url-cookie "__cfduid" "de00368a0934170caced216e77b3dc6411526090297" "12 May 19 01:58:17 [GMT]" "/" ".git-scm.com" nil])
+ (".stackexchange.com"
+  [url-cookie "HttpOnly" nil "01-Jan-2055 00:00:00.00 GMT" "/" ".stackexchange.com" nil]
+  [url-cookie "prov" "b0f08064-3179-a8b4-7447-2842215b9a96" "01-Jan-2055 00:00:00.00 GMT" "/" ".stackexchange.com" nil])
+ (".ycombinator.com"
+  [url-cookie "__cfduid" "d08533b68a64da6d5e4c79b311390e0651526104246" "12 May 19 05:50:46 [GMT]" "/" ".ycombinator.com" nil]
+  [url-cookie "HttpOnly" nil "12 May 19 05:50:46 [GMT]" "/" ".ycombinator.com" nil])
+ (".genius.com"
+  [url-cookie "__cfduid" "d9f0cdbda11b3d1a3252768f19e2066c61526860321" "20 May 19 23:52:01 [GMT]" "/" ".genius.com" nil]
+  [url-cookie "HttpOnly" nil "20 May 19 23:52:01 [GMT]" "/" ".genius.com" nil])
+ (".wikia.com"
+  [url-cookie "wikia_beacon_id" "8EkFkt8aDE" "Sun, 02 Dec 2018 03:06:48 GMT" "/" ".wikia.com" nil])
+ (".amazon.com"
+  [url-cookie "session-id" "146-5363942-6219168" "Tue, 01-Jan-2036 08:00:01 GMT" "/" ".amazon.com" nil]
+  [url-cookie "session-id-time" "2082787201l" "Tue, 01-Jan-2036 08:00:01 GMT" "/" ".amazon.com" nil]
+  [url-cookie "ubid-main" "135-1013371-9432427" "Tue, 01-Jan-2036 08:00:01 GMT" "/" ".amazon.com" nil]
+  [url-cookie "session-token" "2h7N2XdK/sf0OeHMheW0EYf2/4ZHzs5f08oabXNbEJCNYRHfJFf2G+5KUHpAQ3wFFzyp0S4z1J7MdajdknoFPcEqwr6Vya1u0Tz+ypwn26vT2/rRWxsfYfEsce7ngU7SWeURsf3g+EmlTWAOOgxDw9s2lVHvSdr26qgGOUwN2wkocoANcYVetz3AHNdoOeoARQBfooEixgrsQ7eearRzLl3fSe9wI58bVV819RfeMCQ=" "Sun Jun 06 03:08:23 2038 GMT" "/" ".amazon.com" nil]
+  [url-cookie "x-main" "68zgRlo@KxVgIkiJ@3UVSmNTxahGbvHu" "Sun Jun 06 03:08:23 2038 GMT" "/" ".amazon.com" nil]
+  [url-cookie "x-wl-uid" "1j7Makgh4Vn+YbvcNiuB38++a3B/jCXAmAt7Hs5fJaq9CMdXkOID41Ki9a70K+ySNDFzTJ9H42YsXIVE32RhiBw==" "Tue, 01-Jan-2036 08:00:01 GMT" "/" ".amazon.com" nil])
+ (".stackoverflow.com"
+  [url-cookie "HttpOnly" nil "01-Jan-2055 00:00:00.00 GMT" "/" ".stackoverflow.com" nil]
+  [url-cookie "prov" "ad61119a-5298-2e68-e218-33cd02e9a36b" "01-Jan-2055 00:00:00.00 GMT" "/" ".stackoverflow.com" nil]))
+)
+(setq url-cookie-secure-storage
+ '(("accounts.google.com"
+  [url-cookie "GAPS" "1:yR20QXP5HJJi5um4VitHSR4dBkhEROtMKBeYkohBt8-QBivq-MSUHwl6KKSGDTXnBgjlLdkwjbRdXNX4kSte_ac-H6OpqA:QW1069sPRLUk4MoW" "11-May-2020 03:14:02.00 GMT" "/" "accounts.google.com" t]
+  [url-cookie "HttpOnly" nil "11-May-2020 03:14:02.00 GMT" "/" "accounts.google.com" t]
+  [url-cookie "Priority" "HIGH" "11-May-2020 03:14:02.00 GMT" "/" "accounts.google.com" t]
+  [url-cookie "LSID" "mail|o.mail.google.com|ss:HAYr0r39dLNY4sVqWr8HMZP4LdE39G-j4_sl2yaJgKC-jn8OIksE4TAWWi9_4uvQXlbcqg." "11-May-2020 03:14:02.00 GMT" "/" "accounts.google.com" t]
+  [url-cookie "ACCOUNT_CHOOSER" "AFx_qI7HtbyrLdIljyrKzUwU7YluL8SKyE5_komkkY15-ml6WujVOO44hqfYU_KJ1MjqeSR6KBQkh_TLR-R7PbsEBfOWBzRM611GshCrp3T8umjVcEXvxghkr4CcFyKaiKmx3c6zevAD" "11-May-2020 03:14:02.00 GMT" "/" "accounts.google.com" t])
+ (".wikipedia.org"
+  [url-cookie "WMF-Last-Access-Global" "03-Jul-2018" "Sat, 04 Aug 2018 00:00:00 GMT" "/" ".wikipedia.org" t])
+ ("wikipedia.org"
+  [url-cookie "WMF-Last-Access" "03-Jul-2018" "Sat, 04 Aug 2018 00:00:00 GMT" "/" "wikipedia.org" t])
+ (".github.com"
+  [url-cookie "HttpOnly" nil "Mon, 24 May 2038 01:40:30 -0000" "/" ".github.com" t]
+  [url-cookie "logged_in" "no" "Mon, 24 May 2038 01:40:30 -0000" "/" ".github.com" t])
+ (".matplotlib.org"
+  [url-cookie "HttpOnly" nil "16 May 19 04:58:49 [GMT]" "/" ".matplotlib.org" t]
+  [url-cookie "__cfduid" "dee30165ea452e6709c48261ade3ce39d1526446729" "16 May 19 04:58:49 [GMT]" "/" ".matplotlib.org" t])
+ (".amazon.com"
+  [url-cookie "at-main" "Atza|IwEBIPhr1PJsELWIDOTvwhLvcR-dE_Kn5vuY8a11mW1NjT2vp75PhLkJFo6KLbyC2wCUdLS8uDdbnQAWvQYlN2_ts1plpk0vKtN7tNGu5FKc3n9toBpb20vjRaANV4MMk3p5jceoUAe-B0ACNal6SWl7rOlnSHMWLFTKaE-UB4TC7x5VhowtdVplQ5akG8KYGd_8iICg94tZbmNkVp_LKoO9HDSdamWeTM8YC179N0SRaIOt_IUv40I9G6LfU4bn3YbHNvERQYw-C7fLM6Nuj55BwGkzzyUAA7qQHybQkduD2m68YobuvBwSnVizCxa-BjmWuh9G2bad7e1sMdOA7-sY2xconD9NoTOYUiRxazSKEisJkMGoBoiYefFWZimD0QmI3GEYTZ7CA01kflE4biE4jqt3" "Sun, 06-Jun-2038 03:08:23 GMT" "/" ".amazon.com" t]
+  [url-cookie "sess-at-main" "ayaQKe0ZCl9hd7E37DR9+nHOlwIKis5s1XpS2paMwLk=" "Sun Jun 06 03:08:23 2038 GMT" "/" ".amazon.com" t]
+  [url-cookie "sst-main" "Sst1|PQE76uAVRqvJluqdwAZBRShqC2N8yey4d_hDlTrEigvls8_WvCrlcEqbAyFWRAC7Ojkh3ZyqVcnS657B4jLOcD2meLqgNA6cmoPg5vFLZa_vFDgYSo66NvQtDRJ40XDIZEBLuI4u5BDZNIHBzEtQHK5GmDj1fEiHZupoUu3vFF727XOtach4h0wpVIpee8q6P9soAY2xk7MlP2UOLygtNnvQ3-QE3zM2UPL9QwxFJlWBCNweebOFihW9Lm7w-N3wnbzTAAlI-So4pfHx9za_cmyfduMn4Pg663oDIrfyfE0poQxJ2d6TAkg9s5EKZLSv9cf00ChXt2Ofv3poxNjEGNnEmA" "Sun, 06-Jun-2038 03:08:23 GMT" "/" ".amazon.com" t])
+ (".google.com"
+  [url-cookie "SSID" "A0ELuoZEZnTa0-FwM" "11-May-2020 03:14:02.00 GMT" "/" ".google.com" t]
+  [url-cookie "HttpOnly" nil "11-May-2020 03:14:02.00 GMT" "/" ".google.com" t]
+  [url-cookie "Priority" "HIGH" "11-May-2020 03:14:02.00 GMT" "/" ".google.com" t]
+  [url-cookie "SAPISID" "Po40f63CF7jbuxij/A_NyqNbcUZqFnNfQ7" "11-May-2020 03:14:02.00 GMT" "/" ".google.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

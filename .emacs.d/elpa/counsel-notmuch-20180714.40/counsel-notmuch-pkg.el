@@ -1,0 +1,2 @@
+;;; -*- no-byte-compile: t -*-
+(define-package "counsel-notmuch" "20180714.40" "Search emails in Notmuch asynchronously with Ivy" '((emacs "24") (ivy "0.10.0") (notmuch "0.21") (s "1.12.0")) :commit "f4c864eca400abe0bb7420bcee80f2f8259ca0ff" :keywords '("mail") :authors '(("Alexander Fu Xi" . "fuxialexander@gmail.com")) :maintainer '("Alexander Fu Xi" . "fuxialexander@gmail.com") :url "https://github.com/fuxialexander/counsel-notmuch")

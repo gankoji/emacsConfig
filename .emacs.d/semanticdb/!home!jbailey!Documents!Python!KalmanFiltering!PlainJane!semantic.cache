@@ -1,0 +1,63 @@
+;; Object semanticdb-project-database-file-660e8f4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-660e8f4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-660e8d4"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("random" include nil nil [32 45])
+            ("matplotlib.pyplot" include nil nil [46 77])
+            ("radarMeasure" function (:arguments 
+              ( ("trueState" variable nil (reparse-symbol function_parameters) [371 380]))              ) nil [354 566])
+            ("timeSteps" variable nil nil [607 623])
+            ("dt" variable nil nil [624 633])
+            ("searchAreaDims" variable nil nil [634 671])
+            ("targetVelLim" variable nil nil [672 698])
+            ("numTargets" variable nil nil [699 714])
+            ("coordinates" variable nil nil [715 753])
+            ("truthPositions" variable nil nil [754 807])
+            ("for" code nil nil [888 1199])
+            ("truthPositions" variable nil nil [1201 1236])
+            ("for" code nil nil [1282 1629])
+            ("averagedMeasurements" variable nil nil [1805 1853])
+            ("nTaps" variable nil nil [1854 1864])
+            ("measBuffer" variable nil nil [1865 1910])
+            ("for" code nil nil [1911 2224])
+            ("A" variable nil nil [2452 2509])
+            ("H" variable nil nil [2510 2523])
+            ("sigProcess" variable nil nil [2622 2640])
+            ("sigMeas" variable nil nil [2641 2656])
+            ("Q" code nil nil [2657 2673])
+            ("R" code nil nil [2674 2687])
+            ("estimates" variable nil nil [2731 2779])
+            ("predictions" variable nil nil [2780 2819])
+            ("predMeas" variable nil nil [2820 2856])
+            ("covPred" variable nil nil [2857 2906])
+            ("covEst" variable nil nil [2907 2939])
+            ("covMeas" variable nil nil [2940 2988])
+            ("for" code nil nil [3012 3280])
+            ("for" code nil nil [3358 5364])
+            ("fig" variable nil nil [5411 5429])
+            ("ax" variable nil nil [5430 5444])
+            ("ax" code nil nil [5482 5532])
+            ("ax" code nil nil [5533 5583])
+            ("plt" code nil nil [5615 5644])
+            ("plt" code nil nil [5645 5674])
+            ("plt" code nil nil [5708 5769])
+            ("plt" code nil nil [5800 5864])
+            ("plt" code nil nil [5886 5936])
+            ("plt" code nil nil [5992 6048])
+            ("plt" code nil nil [6049 6059])
+            ("plt" code nil nil [6097 6131])
+            ("plt" code nil nil [6173 6183]))          
+      :file "BaseRadarSim.py"
+      :pointmax 6186
+      :fsize 6185
+      :lastmodtime '(23324 6859 776087 609000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Python!KalmanFiltering!PlainJane!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

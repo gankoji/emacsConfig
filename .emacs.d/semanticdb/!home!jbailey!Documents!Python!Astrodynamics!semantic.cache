@@ -1,0 +1,80 @@
+;; Object semanticdb-project-database-file-164d570
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-164d570"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-16b62d8"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [83 101])
+            ("math" include nil nil [102 113])
+            ("matplotlib.pyplot" include nil nil [114 145])
+            ("mu" variable nil nil [159 167])
+            ("ft2DU" code nil nil [168 190])
+            ("nm2DU" code nil nil [191 214])
+            ("s2TU" code nil nil [215 240])
+            ("d2r" code nil nil [241 260])
+            ("problem1" function nil nil [366 892])
+            ("problem1" code nil nil [893 903])
+            ("problem2" function nil nil [1005 1759])
+            ("problem2" code nil nil [1760 1770])
+            ("problem3" function nil nil [1844 2164])
+            ("problem3" code nil nil [2165 2175])
+            ("problem5" function nil nil [2323 2839])
+            ("problem5" code nil nil [2840 2850])
+            ("problem14" function nil nil [3166 3553])
+            ("problem14" code nil nil [3555 3566]))          
+      :file "Chapter1.py"
+      :pointmax 3600
+      :fsize 3599
+      :lastmodtime '(23297 52683 154342 139000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-16b6270"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("matplotlib.pyplot" include nil nil [32 63])
+            ("mu" variable nil nil [77 85])
+            ("ft2DU" code nil nil [86 108])
+            ("nm2DU" code nil nil [109 132])
+            ("s2TU" code nil nil [133 158])
+            ("d2r" code nil nil [159 178])
+            ("orbitalElementsAtEpoch" function (:arguments 
+              ( ("r" variable nil (reparse-symbol function_parameters) [207 208])
+                ("v" variable nil (reparse-symbol function_parameters) [210 211]))              ) nil [180 1940]))          
+      :file "Utilities.py"
+      :pointmax 1940
+      :fsize 1939
+      :lastmodtime '(23297 56768 912915 8000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-16b6290"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [60 78])
+            ("math" include nil nil [79 90])
+            ("matplotlib.pyplot" include nil nil [91 122])
+            ("mu" variable nil nil [136 144])
+            ("ft2DU" code nil nil [145 167])
+            ("nm2DU" code nil nil [168 191])
+            ("s2TU" code nil nil [192 217])
+            ("d2r" code nil nil [218 237])
+            ("problem1" function nil nil [323 2534])
+            ("problem1" code nil nil [2539 2549])
+            ("problem2" function nil nil [2650 4959])
+            ("problem2" code nil nil [4960 4970])
+            ("problem3" function nil nil [4984 6055])
+            ("problem3" code nil nil [6215 6225])
+            ("problem4" function nil nil [6227 6981])
+            ("problem4" code nil nil [6982 6992])
+            ("Utilities" include nil nil [6994 7010])
+            ("problem5" function nil nil [7012 7495])
+            ("problem5" code nil nil [7500 7510]))          
+      :file "Chapter2.py"
+      :pointmax 7517
+      :fsize 7516
+      :lastmodtime '(23324 2677 515061 797000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Python!Astrodynamics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

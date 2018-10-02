@@ -1,0 +1,625 @@
+;; Object semanticdb-project-database-file-18cfc94
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18cfc94"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1966b00"
+      :major-mode c++-mode
+      :tags 
+        '( ("estimator_21states.h" include nil nil [1 32])
+            ("string.h" include (:system-flag t) nil [34 53])
+            ("stdio.h" include (:system-flag t) nil [54 72])
+            ("EKF_COVARIANCE_DIVERGED" variable (:constant-flag t) nil [82 105])
+            ("AttPosEKF" function
+               (:constructor-flag t
+                :parent "AttPosEKF"
+                :type ("AttPosEKF" type (:type "class") nil nil))
+                nil [114 570])
+            ("AttPosEKF" function
+               (:destructor-flag t
+                :parent "AttPosEKF"
+                :type "void")
+                nil [572 599])
+            ("UpdateStrapdownEquationsNED" function
+               (:parent "AttPosEKF"
+                :type "void")
+                nil [601 5048])
+            ("CovariancePrediction" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("dt" variable (:type "float") (reparse-symbol arg-sub-list) [5087 5096]))                  
+                :type "void")
+                nil [5050 79008])
+            ("FuseVelposNED" function
+               (:parent "AttPosEKF"
+                :type "void")
+                nil [79010 88017])
+            ("FuseMagnetometer" function
+               (:parent "AttPosEKF"
+                :type "void")
+                nil [88019 115837])
+            ("FuseAirspeed" function
+               (:parent "AttPosEKF"
+                :type "void")
+                nil [115839 122953])
+            ("zeroRows" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [122980 122995])
+                    ("first" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123017 123031])
+                    ("last" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123032 123045]))                  
+                :type "void")
+                nil [122955 123230])
+            ("zeroCols" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [123257 123272])
+                    ("first" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123294 123308])
+                    ("last" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123309 123322]))                  
+                :type "void")
+                nil [123232 123509])
+            ("sq" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("valIn" variable (:type "float") (reparse-symbol arg-sub-list) [123531 123543]))                  
+                :type "float")
+                nil [123511 123571])
+            ("StoreStates" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("timestamp_ms" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123658 123680]))                  
+                :type "void")
+                nil [123630 123902])
+            ("ResetStoredStates" function
+               (:parent "AttPosEKF"
+                :type "void")
+                nil [123904 124387])
+            ("RecallStates" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("statesForFusion" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [124504 124536])
+                    ("msec" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124537 124551]))                  
+                :type "int")
+                nil [124476 126115])
+            ("quat2Tnb" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("Tnb" variable
+                       (:reference 1
+                        :type ("Mat3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [126142 126153])
+                    ("" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [126154 126173]))                  
+                :type "void")
+                nil [126117 126834])
+            ("quat2Tbn" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("Tbn" variable
+                       (:reference 1
+                        :type ("Mat3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [126861 126872])
+                    ("" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [126873 126892]))                  
+                :type "void")
+                nil [126836 127553])
+            ("eul2quat" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [127580 127593])
+                    ("" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [127598 127616]))                  
+                :type "void")
+                nil [127555 127954])
+            ("quat2eul" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [127981 127991])
+                    ("" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [127996 128012]))                  
+                :type "void")
+                nil [127956 128253])
+            ("calcvelNED" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [128282 128297])
+                    ("gpsCourse" variable (:type "float") (reparse-symbol arg-sub-list) [128302 128318])
+                    ("gpsGndSpd" variable (:type "float") (reparse-symbol arg-sub-list) [128319 128335])
+                    ("gpsVelD" variable (:type "float") (reparse-symbol arg-sub-list) [128336 128350]))                  
+                :type "void")
+                nil [128255 128465])
+            ("calcposNED" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [128494 128509])
+                    ("lat" variable (:type "float") (reparse-symbol arg-sub-list) [128514 128524])
+                    ("lon" variable (:type "float") (reparse-symbol arg-sub-list) [128525 128535])
+                    ("hgt" variable (:type "float") (reparse-symbol arg-sub-list) [128536 128546])
+                    ("latRef" variable (:type "float") (reparse-symbol arg-sub-list) [128547 128560])
+                    ("lonRef" variable (:type "float") (reparse-symbol arg-sub-list) [128561 128574])
+                    ("hgtRef" variable (:type "float") (reparse-symbol arg-sub-list) [128575 128588]))                  
+                :type "void")
+                nil [128467 128731])
+            ("calcLLH" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [128757 128772])
+                    ("lat" variable (:type "float") (reparse-symbol arg-sub-list) [128777 128787])
+                    ("lon" variable (:type "float") (reparse-symbol arg-sub-list) [128788 128798])
+                    ("hgt" variable (:type "float") (reparse-symbol arg-sub-list) [128799 128809])
+                    ("latRef" variable (:type "float") (reparse-symbol arg-sub-list) [128810 128823])
+                    ("lonRef" variable (:type "float") (reparse-symbol arg-sub-list) [128824 128837])
+                    ("hgtRef" variable (:type "float") (reparse-symbol arg-sub-list) [128838 128851]))                  
+                :type "void")
+                nil [128733 128993])
+            ("OnGroundCheck" function
+               (:parent "AttPosEKF"
+                :type "void")
+                nil [128995 129202])
+            ("calcEarthRateNED" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("omega" variable
+                       (:reference 1
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129237 129253])
+                    ("latitude" variable (:type "float") (reparse-symbol arg-sub-list) [129254 129269]))                  
+                :type "void")
+                nil [129204 129440])
+            ("CovarianceInit" function
+               (:parent "AttPosEKF"
+                :type "void")
+                nil [129442 130155])
+            ("ConstrainFloat" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("val" variable (:type "float") (reparse-symbol arg-sub-list) [130189 130199])
+                    ("min" variable (:type "float") (reparse-symbol arg-sub-list) [130200 130210])
+                    ("max" variable (:type "float") (reparse-symbol arg-sub-list) [130211 130221]))                  
+                :type "float")
+                nil [130157 130383])
+            ("ConstrainVariances" function
+               (:parent "AttPosEKF"
+                :type "void")
+                nil [130385 131838])
+            ("ConstrainStates" function
+               (:parent "AttPosEKF"
+                :type "void")
+                nil [131840 133576])
+            ("ForceSymmetry" function
+               (:parent "AttPosEKF"
+                :type "void")
+                nil [133578 134495])
+            ("FilterHealthy" function
+               (:parent "AttPosEKF"
+                :type "bool")
+                nil [134497 134885])
+            ("ResetPosition" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [135062 135067]))                  
+                :type "void")
+                nil [135032 135302])
+            ("ResetHeight" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [135438 135443]))                  
+                :type "void")
+                nil [135410 135507])
+            ("ResetVelocity" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [135576 135581]))                  
+                :type "void")
+                nil [135546 135936])
+            ("FillErrorReport" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("err" variable
+                       (:pointer 1
+                        :type ("ekf_status_report" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [135971 136001]))                  
+                :type "void")
+                nil [135939 136430])
+            ("StatesNaN" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("err_report" variable
+                       (:pointer 1
+                        :type ("ekf_status_report" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [136458 136495]))                  
+                :type "bool")
+                nil [136432 137545])
+            ("CheckAndBound" function
+               (:parent "AttPosEKF"
+                :type "int")
+                nil [137846 138675])
+            ("AttitudeInit" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("ax" variable (:type "float") (reparse-symbol arg-sub-list) [138706 138715])
+                    ("ay" variable (:type "float") (reparse-symbol arg-sub-list) [138716 138725])
+                    ("az" variable (:type "float") (reparse-symbol arg-sub-list) [138726 138735])
+                    ("mx" variable (:type "float") (reparse-symbol arg-sub-list) [138736 138745])
+                    ("my" variable (:type "float") (reparse-symbol arg-sub-list) [138746 138755])
+                    ("mz" variable (:type "float") (reparse-symbol arg-sub-list) [138756 138765])
+                    ("declination" variable (:type "float") (reparse-symbol arg-sub-list) [138766 138784])
+                    ("initQuat" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [138785 138801]))                  
+                :type "void")
+                nil [138677 140008])
+            ("InitializeDynamic" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [140044 140063])
+                    ("declination" variable (:type "float") (reparse-symbol arg-sub-list) [140068 140086]))                  
+                :type "void")
+                nil [140010 141986])
+            ("InitialiseFilter" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [142021 142040])
+                    ("referenceLat" variable (:type "double") (reparse-symbol arg-sub-list) [142045 142065])
+                    ("referenceLon" variable (:type "double") (reparse-symbol arg-sub-list) [142066 142086])
+                    ("referenceHgt" variable (:type "float") (reparse-symbol arg-sub-list) [142087 142106])
+                    ("declination" variable (:type "float") (reparse-symbol arg-sub-list) [142107 142125]))                  
+                :type "void")
+                nil [141988 142579])
+            ("ZeroVariables" function
+               (:parent "AttPosEKF"
+                :type "void")
+                nil [142581 143315])
+            ("GetFilterState" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type ("ekf_status_report" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [143348 143380]))                  
+                :type "void")
+                nil [143317 143439])
+            ("GetLastErrorState" function
+               (:parent "AttPosEKF"
+                :arguments 
+                  ( ("last_error" variable
+                       (:pointer 1
+                        :type ("ekf_status_report" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [143475 143512]))                  
+                :type "void")
+                nil [143441 143578]))          
+      :file "estimator_21states.cpp"
+      :pointmax 143579
+      :fsize 143578
+      :lastmodtime '(22554 56677 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EKF_COVARIANCE_DIVERGED" . ((number "1.0e8f" 106 . 112)))
+          )
+)
+    (semanticdb-table "semanticdb-table-137d354"
+      :file "estimator_21states.h"
+      :fsize 9737
+      :lastmodtime '(22554 56677 0 0))
+    (semanticdb-table "semanticdb-table-156a540"
+      :major-mode c++-mode
+      :tags 
+        '( ("estimator_utilities.h" include nil nil [1859 1891])
+            ("algorithm" include (:system-flag t) nil [1892 1912])
+            ("ekf_debug" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2439 2455])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2456 2460]))                  
+                :type "void")
+                nil [2424 2475])
+            ("length" function
+               (:methodconst-flag t
+                :parent "Vector2f"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2507 2512]))                  
+                :type "float")
+                nil [2484 2550])
+            ("zero" function
+               (:parent "Vector2f"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2572 2577]))                  
+                :type "void")
+                nil [2552 2609])
+            ("length" function
+               (:methodconst-flag t
+                :parent "Vector3f"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2634 2639]))                  
+                :type "float")
+                nil [2611 2683])
+            ("zero" function
+               (:parent "Vector3f"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2705 2710]))                  
+                :type "void")
+                nil [2685 2756])
+            ("Mat3f" function
+               (:constructor-flag t
+                :parent "Mat3f"
+                :type ("Mat3f" type (:type "class") nil nil))
+                nil [2758 2852])
+            ("identity" function
+               (:parent "Mat3f"
+                :type "void")
+                nil [2854 3026])
+            ("transpose" function
+               (:methodconst-flag t
+                :parent "Mat3f"
+                :type ("Mat3f" type (:type "class") nil nil))
+                nil [3028 3200])
+            ("calcvelNED" function
+               (:arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [3218 3234])
+                    ("gpsCourse" variable (:type "float") (reparse-symbol arg-sub-list) [3239 3255])
+                    ("gpsGndSpd" variable (:type "float") (reparse-symbol arg-sub-list) [3256 3272])
+                    ("gpsVelD" variable (:type "float") (reparse-symbol arg-sub-list) [3273 3287]))                  
+                :type "void")
+                nil [3202 3405])
+            ("calcposNED" function
+               (:arguments 
+                  ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [3423 3439])
+                    ("lat" variable (:type "double") (reparse-symbol arg-sub-list) [3444 3455])
+                    ("lon" variable (:type "double") (reparse-symbol arg-sub-list) [3456 3467])
+                    ("hgt" variable (:type "float") (reparse-symbol arg-sub-list) [3468 3478])
+                    ("latReference" variable (:type "double") (reparse-symbol arg-sub-list) [3479 3499])
+                    ("lonReference" variable (:type "double") (reparse-symbol arg-sub-list) [3500 3520])
+                    ("hgtReference" variable (:type "float") (reparse-symbol arg-sub-list) [3521 3540]))                  
+                :type "void")
+                nil [3407 3710])
+            ("calcLLH" function
+               (:arguments 
+                  ( ("posNEDi" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3725 3742])
+                    ("lat" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3743 3755])
+                    ("lon" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3756 3768])
+                    ("hgt" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3769 3780])
+                    ("latRef" variable (:type "double") (reparse-symbol arg-sub-list) [3781 3795])
+                    ("lonRef" variable (:type "double") (reparse-symbol arg-sub-list) [3796 3810])
+                    ("hgtRef" variable (:type "float") (reparse-symbol arg-sub-list) [3811 3824]))                  
+                :type "void")
+                nil [3712 3985])
+            ("+" function
+               (:operator-flag t
+                :arguments 
+                  ( ("vecIn1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4058 4081])
+                    ("vecIn2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4082 4105]))                  
+                :type ("Vector2f" type (:type "class") nil nil))
+                nil [4039 4221])
+            ("-" function
+               (:operator-flag t
+                :arguments 
+                  ( ("vecIn1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4297 4320])
+                    ("vecIn2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4321 4344]))                  
+                :type ("Vector2f" type (:type "class") nil nil))
+                nil [4278 4460])
+            ("+" function
+               (:operator-flag t
+                :arguments 
+                  ( ("vecIn1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4533 4556])
+                    ("vecIn2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4557 4580]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [4514 4732])
+            ("-" function
+               (:operator-flag t
+                :arguments 
+                  ( ("vecIn1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4808 4831])
+                    ("vecIn2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4832 4855]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [4789 5007])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("matIn" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5086 5105])
+                    ("vecIn" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5106 5128]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [5067 5394])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("matIn1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5463 5483])
+                    ("matIn2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Mat3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5484 5504]))                  
+                :type ("Mat3f" type (:type "class") nil nil))
+                nil [5447 6340])
+            ("%" function
+               (:operator-flag t
+                :arguments 
+                  ( ("vecIn1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6418 6441])
+                    ("vecIn2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6442 6465]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [6399 6671])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("vecIn1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6750 6773])
+                    ("sclIn1" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [6774 6793]))                  
+                :type ("Vector2f" type (:type "class") nil nil))
+                nil [6731 6905])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("sclIn1" variable (:type "float") (reparse-symbol arg-sub-list) [6984 6997])
+                    ("vecIn1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6998 7021]))                  
+                :type ("Vector2f" type (:type "class") nil nil))
+                nil [6965 7133])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("vecIn1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7212 7235])
+                    ("sclIn1" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [7236 7255]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [7193 7401])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("sclIn1" variable (:type "float") (reparse-symbol arg-sub-list) [7480 7493])
+                    ("vecIn1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7494 7517]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [7461 7663])
+            ("/" function
+               (:operator-flag t
+                :arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector2f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7743 7763])
+                    ("scalar" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [7764 7783]))                  
+                :type ("Vector2f" type (:type "class") nil nil))
+                nil [7724 7889])
+            ("/" function
+               (:operator-flag t
+                :arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7969 7989])
+                    ("scalar" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [7990 8009]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [7950 8146]))          
+      :file "estimator_utilities.cpp"
+      :pointmax 8147
+      :fsize 8146
+      :lastmodtime '(22554 56677 0 0)
+      :unmatched-syntax '((semantic-list 3439 . 3442) (semantic-list 3429 . 3439) (semantic-list 3234 . 3237) (semantic-list 3224 . 3234)))
+    (semanticdb-table "semanticdb-table-146dac0"
+      :file "estimator_utilities.h"
+      :fsize 4633
+      :lastmodtime '(22554 56677 0 0)))
+  :file "!home!jbailey!Downloads!InertialNav-master!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

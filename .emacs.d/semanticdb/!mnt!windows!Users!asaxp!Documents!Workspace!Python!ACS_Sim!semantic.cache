@@ -1,0 +1,67 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [44 62])
+            ("math" include nil nil [63 74])
+            ("eom" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("N" code nil (reparse-symbol indented_block_body) [133 163])
+                            ("n_states" code nil (reparse-symbol indented_block_body) [172 212])
+                            ("self" variable nil (reparse-symbol indented_block_body) [514 549])
+                            ("att_0" variable nil (reparse-symbol indented_block_body) [558 585])
+                            ("x_0" variable nil (reparse-symbol indented_block_body) [594 626])
+                            ("v_0" variable nil (reparse-symbol indented_block_body) [635 666])
+                            ("self" variable nil (reparse-symbol indented_block_body) [675 699])
+                            ("self" variable nil (reparse-symbol indented_block_body) [708 732])
+                            ("self" variable nil (reparse-symbol indented_block_body) [741 765])
+                            ("self" code nil (reparse-symbol indented_block_body) [783 802]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [105 109])
+                            ("dt" variable nil (reparse-symbol function_parameters) [111 113])
+                            ("endTime" variable nil (reparse-symbol function_parameters) [115 122]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [92 803])
+                    ("getInputs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [822 826])
+                            ("moments" variable nil (reparse-symbol function_parameters) [828 835])
+                            ("forces" variable nil (reparse-symbol function_parameters) [837 843])
+                            ("mass" variable nil (reparse-symbol function_parameters) [845 849])
+                            ("inertia" variable nil (reparse-symbol function_parameters) [851 858]))                          )
+                        (reparse-symbol indented_block_body) [808 1512])
+                    ("updateDerivatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1539 1543])
+                            ("dt" variable nil (reparse-symbol function_parameters) [1545 1547]))                          )
+                        (reparse-symbol indented_block_body) [1517 3429])
+                    ("getOutputs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3534 3538]))                          )
+                        (reparse-symbol indented_block_body) [3519 3585])
+                    ("Quat2DCM" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3603 3607])
+                            ("q" variable nil (reparse-symbol function_parameters) [3609 3610]))                          )
+                        (reparse-symbol indented_block_body) [3590 4186]))                  
+                :type "class")
+                nil [76 4186]))          
+      :file "EOM.py"
+      :pointmax 4186
+      :fsize 4300
+      :lastmodtime '(23190 8419 43837 300000)
+      :unmatched-syntax nil))
+  :file "!mnt!windows!Users!asaxp!Documents!Workspace!Python!ACS_Sim!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

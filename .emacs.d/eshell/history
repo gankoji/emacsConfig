@@ -1,0 +1,128 @@
+cd ../../SEATN/
+ls
+rm ./*py
+ls
+cd ../Control/
+cd ../SEATN/
+ls
+ls
+ls -al
+chmod 644 ./*
+python Main.py 
+git status
+rm ../UAVSim/#TargetStateEstimation.org\# 
+git status
+ls -a
+cd ..
+git status
+git add *
+git commit "Working on the SEATN preso"
+git commit -m "Working on the SEATN preso"
+git status
+cd SEATN/
+ls
+clear
+ls -a
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+clearLow Rate: [3.    0.    0.    0.258 0.15  0.   ]
+clear
+clear
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+clearHigh Rate: [1.    0.    0.    0.998 0.05  0.   ]
+claer
+clear
+python IMU_Base.py 
+clear
+python IMU_Base.py 
+python IMU_Base.py 
+cd ../Documents/Python/SEATN/
+ls
+git status
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python IMU_Base.py 
+python HG1700.py 
+python HG1700.py 
+python HG1700.py 
+python Fibersense.py 
+python Fibersense.py 
+python Main.py 
+python Main.py 
+python Main.py 
+python Main.py 
+python Main.py 
+ls
+rm ./*pyc
+ls
+rm ./*~
+ls
+python Main.py 
+git status
+git add *
+git commit -m "Updating the consensus filter."
+git status
+git rm math3d/*
+git rm pymath3d-master/*
+git status
+git commit -m "Cleaning up the repo a bit"
+git status
+ls
+unzip GraphicsGems-master.zip 
+ls
+git status
+cd ../..
+cd ..
+git status
+git add *
+git commit -m "Updated notes on the new campaign for sunday's group."
+git config --global user.email "asaxplayinghorse@gmail.com"
+git config --global user.name "Jake Bailey"
+git commit -m "Updated notes on the new campaign for sunday's group."
+git status
+git add .gitignore
+git commit -m "Readding gitignore"
+git status
+clear

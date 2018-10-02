@@ -1,0 +1,33 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("EOM" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [89 101])
+                            ("self" variable nil (reparse-symbol indented_block_body) [110 132]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [61 65])
+                            ("dt" variable nil (reparse-symbol function_parameters) [67 69])
+                            ("endTime" variable nil (reparse-symbol function_parameters) [71 78]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [48 133]))                  
+                :type "class")
+                nil [33 197]))          
+      :file "EOM.py"
+      :pointmax 206
+      :fsize 205
+      :lastmodtime '(23307 28737 640127 415000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Python!KalmanFiltering!UAVSim!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

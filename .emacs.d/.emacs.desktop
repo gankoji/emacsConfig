@@ -1,0 +1,67 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Oct  2 11:31:17 2018
+;; Desktop file format version 208
+;; Emacs version 27.0.50
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23475 47477 498767 897000) (desktop . "208") "jbailey@jbailey-UX430UA" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-CYEL-Iosevka-normal-normal-normal-*-19-*-*-*-d-0-iso10646-1") (font-parameter . "Iosevka-14") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#eeeeec") (background-color . "#2e3436") (mouse-color . "OrangeRed") (border-color . "gold") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "WhiteSmoke") (scroll-bar-background . "grey75") (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen . fullboth) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#415160") (sticky) (environment) (frameset--id . "8A6B-B10D-F36D-69F6") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (fullscreen-restore . maximized) (last-focus-update . t) (height . 46) (width . 190) (left . 0) (top . 0)) ((min-height . 4) (min-width . 20) (min-height-ignore . 2) (min-width-ignore . 8) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 92) (min-pixel-width . 200) (min-pixel-height-ignore . 46) (min-pixel-width-ignore . 80) (min-pixel-height-safe . 23) (min-pixel-width-safe . 40)) hc (pixel-width . 1920) (pixel-height . 1057) (total-width . 192) (total-height . 45) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 960) (pixel-height . 1057) (total-width . 96) (total-height . 45) (normal-height . 1.0) (normal-width . 0.5) (buffer "559_Notes.org" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 10251) (start . 1))) (leaf (last . t) (pixel-width . 960) (pixel-height . 1057) (total-width . 96) (total-height . 45) (normal-height . 1.0) (normal-width . 0.5) (buffer ".emacs" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 4093) (start . 3511)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name "/home/jbailey/Documents/Python/CUDA/TAGS")
+(setq tags-table-list '("/home/jbailey/Documents/Python/CUDA/TAGS"))
+(setq search-ring '(#("ivy" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("counsel" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("package" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("use-package" 0 11 (isearch-regexp-function nil isearch-case-fold-search t)) #("flycheck-pycheckers" 0 19 (isearch-regexp-function nil isearch-case-fold-search t)) #("cmd_vec" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("GNCU" 0 4 (isearch-regexp-function nil isearch-case-fold-search nil)) #("package-initialize" 0 18 (isearch-regexp-function nil isearch-case-fold-search t)) #("quatMult" 0 8 (isearch-case-fold-search nil isearch-regexp-function nil)) #("self.Quat" 0 9 (isearch-case-fold-search nil isearch-regexp-function nil)) #("dt" 0 2 (isearch-case-fold-search t isearch-regexp-function nil)) #("print" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("EOM" 0 3 (isearch-regexp-function nil isearch-case-fold-search nil)) #("link" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("CS" 0 2 (isearch-case-fold-search nil isearch-regexp-function nil)) #("emacs" 0 5 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq regexp-search-ring '("magit" "add" "add-to-list" "agenda" "python" "QuatMult" "Quat2Eul" "eul" "python" "slime" "org" "imu" "DCM2Eul"))
+(setq register-alist '((49 file . "/home/jbailey/.emacs") (97 "A regi" "      " "C-x r " " Copy " "C-x r " " Inser" "      " "The C-")))
+(setq file-name-history '(#("/home/jbailey/Dropbox/Academics/AME557/557_Notes.org" 0 52 (ivy-index 0)) #("/home/jbailey/Dropbox/Academics/AME559/559_Notes.org" 0 52 (ivy-index 0)) #("/home/jbailey/Dropbox/Org" 0 25 (ivy-index 0)) #("/home/jbailey/Dropbox/Academics/AME559/Notes.org\n20180823_ClassNotes.org" 0 72 (ivy-index 0)) #("/home/jbailey/Dropbox/Academics/AME559/20180823_ClassNotes.org" 0 62 (ivy-index 0)) #("/home/jbailey/Dropbox/Academics/AME557/Notes.org" 0 48 (face ivy-virtual)) #("/home/jbailey/Dropbox/Academics/AME557/20180821_ClassNotes.org" 0 62 (ivy-index 3)) #("/home/jbailey/Dropbox/Python/SEATN/FOVM.py" 0 42 (ivy-index 0)) #("/home/jbailey/Dropbox/Python/SEATN/" 0 35 (ivy-index 0)) "/home/jbailey/.emacs" #("/home/jbailey/Dropbox/Python/SEATN/Main_ManyIMU.py" 0 50 (ivy-index 1)) #("/home/jbailey/Dropbox/EVE/PI_Opt.py" 0 35 (ivy-index 0)) #("/home/jbailey/Dropbox/EVE/PI_OptimizerNotes.org" 0 47 (ivy-index 0)) #("/home/jbailey/Dropbox/EVE/" 0 26 (ivy-index 0)) #("/home/jbailey/Dropbox/DnD/PCNotes/DiscordWednesdays/" 0 52 (ivy-index 2)) #("/home/jbailey/Dropbox/Dnd" 0 25 (ivy-index 0)) #("/home/jbailey/.emacs" 0 20 (ivy-index 2)) #("/home/jbailey/Documents/Academics/.gitignore" 0 44 (ivy-index 0)) #("/home/jbailey/Documents/Academics/AME559/20180823_ClassNotes.org" 0 64 (ivy-index 0)) "/home/jbailey/Documents/Academics/AME557/20180821_ClassNotes.org" #("/media/jbailey/2BC6-2F5B/Academics/AME557/20180821_ClassNotes.org" 0 65 (ivy-index 0)) #("/home/jbailey/Documents/DnD/DMNotes/RMSGroup/HoardOfTheDragonQueen/20180805_Session0.org" 0 88 (ivy-index 0)) #("/home/jbailey/Documents/DnD/DMNotes/RMSGroup/LMoP" 0 49 (ivy-index 0)) #("/home/jbailey/Documents/DnD/DMNotes/RMSGroup/LMoD/" 0 50 (ivy-index 0)) #("/home/jbailey/Documents/" 0 24 (ivy-index 0)) "/home/jbailey/Documents/Python/SEATN/MEMS.py" #("/home/jbailey/Documents/Python/SEATN/EulerAngles.py" 0 51 (face ivy-virtual)) #("/home/jbailey/Documents/Python/SEATN/euler_angle/EulerSample.c" 0 62 (ivy-index 8)) #("/home/jbailey/Documents/Python/SEATN/euler_angle/EulerAngles.py" 0 63 (ivy-index 0)) #("/home/jbailey/Documents/Python/SEATN/euler_angle/EulerAngles.c" 0 62 (ivy-index 3)) #("/home/jbailey/Documents/Python/SEATN/" 0 37 (ivy-index 0)) #("/home/jbailey/Downloads/" 0 24 (ivy-index 0)) #("/home/jbailey/Documents/Python/SEATN/NAV.py" 0 43 (ivy-index 0)) "/home/jbailey/Documents/Python/SEATN/Main_ManyIMU.py" #("/home/jbailey/Documents/Python/SEATN/Main.py" 0 44 (ivy-index 0)) #("/home/jbailey/Documents/Python/SEATN/HG1700.py" 0 46 (ivy-index 0)) #("/home/jbailey/Documents/Python/SEATN/Fibersense.py" 0 50 (ivy-index 0)) #("/home/jbailey/Documents/Python/SEATN/ConsensusFiltering.py" 0 58 (ivy-index 7)) #("/home/jbailey/Documents/Python/SEATN/Main_TwoIMU.py" 0 51 (ivy-index 23)) #("/media/jbailey/2BC6-2F5B/Python/SEATN/ConsensusFiltering.py" 0 59 (ivy-index 0)) #("/media/jbailey/2BC6-2F5B/Python/SEATN/Main_TwoIMU.py" 0 52 (ivy-index 27)) #("/home/jbailey/Documents/stuff.org" 0 33 (ivy-index 0)) #("/home/jbailey/Documents/DnD/PCNotes/DiscordWednesdays/CheatSheet.org" 0 68 (ivy-index 0)) #("/home/jbailey/Documents/DnD/" 0 28 (ivy-index 0)) #("/home/jbailey/Documents/Python/SEATN/NavFilter.py" 0 49 (ivy-index 0)) #("/home/jbailey/Documents/Python/SEATN/Makefile" 0 45 (ivy-index 0)) #("/home/jbailey/Documents/Python/SEATN/ACS.py" 0 43 (ivy-index 0)) "/home/jbailey/Documents/Python/SEATN/IMU_Perfect.py" #("/home/jbailey/Documents/Python/SEATN/IMU_Base.py" 0 48 (ivy-index 0)) #("/home/jbailey/Documents/Python/SEATN/ProNav.py" 0 46 (ivy-index 0)) #("/home/jbailey/Documents/Python/SEATN/SimNotes.org" 0 49 (ivy-index 0)) #("/home/jbailey/Documents/Python/.gitignore" 0 41 (ivy-index 0)) #("/home/jbailey/Documents/Python/SEATN/FOVM.py" 0 44 (ivy-index 0)) "/home/jbailey/Documents/Python/SEATN/pymath3d-master/setup.py" "/media/jbailey/JakesDrive/Python/SEATN/Main.py" "~/Documents/Python/SEATN/Main.py" "/media/jbailey/JakesDrive/Python/SEATN/SimNotes.org" "/home/jbailey/Documents/Python/SEATN/GNCUtilities.py" "/home/jbailey/Documents/Python/SEATN/TOC.py" "/home/jbailey/Documents/Python/SEATN/1D_TimeOptimal.py" "/home/jbailey/Documents/Python/SEATN/TOC.py" "/home/jbailey/Documents/Python/SEATN/TOC" "/home/jbailey/Documents/Python/SEATN/EOM.py" "/home/jbailey/Documents/Python/SEATN/1D_TimeOptimal.py" "~/Documents/Python/SEATN/" "~/Documents/Python/Control/3D RefModel/TOC.py" "~/Documents/Python/SEATN/" "~/Documents/Python/" "~/Documents/Python/CUDA/" "~/Documents/Python/Astrodynamics/CUD" "~/Documents/Python/Control" "~/Documents/Python/Guidance/OptimalGuidanceBasics/" "~/Documents/Python/Guidance" "~/Documents/Python/Autopilot/" "~/Documents/Python/Astrodynamics/" "/home/jbailey/Org/TechnicalGoals.org" "/home/jbailey/Org/TechnicalGoals.org_archive" "/home/jbailey/Org/MealPlanning.org" "/home/jbailey/Org/ProjectIdeas.org" "/home/jbailey/.wine/drive_c/Program Files (x86)/Steam/config/config.vdf" "/home/jbailey/Documents/Projects/Ideas.org" "~/Documents/Projects" "/mnt/windows/Users/asaxp/Downloads/Crypto/" "/etc/grub.d" "/home/jbailey/Documents/DnD/PCNotes/DiscordWednesdays/20180613_PostKightstone.org" "~/Documents/Python/GuidanceOptimization/" "/home/jbailey/Documents/Python/GuidanceOptimization/ThreeDimensions.py" "~/Documents/Python/" "/home/jbailey/Documents/Python/GuidanceOptimization/Guidance.org" "/home/jbailey/Documents/Python/GuidanceOptimization/Guidance.orl" "/home/jbailey/Documents/Python/GuidanceOptimization/FirstCut.py" "~/Documents/Python/" "~/Documents/" "/home/jbailey/startup.sh" "/home/jbailey/Org/TechnicalGoals.org" "/mnt/raid/Sync/Academics/Thesis Files/Code/" "/home/jbailey/Documents/Python/KalmanFiltering/PlainJane/BaseRadarSim.py" "/home/jbailey/Documents/Python/Astrodynamics/Chapter1.py" "/home/jbailey"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/jbailey/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(eldoc-mode yas-minor-mode flycheck-mode company-mode override-global-mode ivy-mode)
+  4093
+  '(4093 nil)
+  nil
+  nil
+  '((buffer-display-time 23475 47458 824610 959000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (4025 4019 4018 10060 12364 13420))))
+
+(desktop-create-buffer 208
+  "/home/jbailey/Dropbox/Academics/AME559/559_Notes.org"
+  "559_Notes.org"
+  'org-mode
+  '(yas-minor-mode flycheck-mode company-mode override-global-mode ivy-mode auto-revert-mode magit-file-mode)
+  10251
+  '(9255 nil)
+  nil
+  nil
+  '((buffer-display-time 23475 47454 654421 19000) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/jbailey/Dropbox/Academics/AME557/557_Notes.org"
+  "557_Notes.org"
+  'org-mode
+  '(yas-minor-mode flycheck-mode company-mode override-global-mode ivy-mode auto-revert-mode magit-file-mode)
+  1204
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 23475 46716 266143 205000) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/jbailey/Dropbox/Academics/AME557/20180821_ClassNotes.org"
+  "20180821_ClassNotes.org"
+  'org-mode
+  '(yas-minor-mode flycheck-mode company-mode override-global-mode ivy-mode magit-file-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+

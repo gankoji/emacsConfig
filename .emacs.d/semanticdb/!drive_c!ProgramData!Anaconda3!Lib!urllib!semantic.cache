@@ -1,0 +1,601 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Parse (absolute and relative) URLs.
+
+urlparse module is based upon the following RFC specifications.
+
+RFC 3986 (STD66): \"Uniform Resource Identifiers\" by T. Berners-Lee, R. Fielding
+and L.  Masinter, January 2005.
+
+RFC 2732 : \"Format for Literal IPv6 Addresses in URL's by R.Hinden, B.Carpenter
+and L.Masinter, December 1999.
+
+RFC 2396:  \"Uniform Resource Identifiers (URI)\": Generic Syntax by T.
+Berners-Lee, R. Fielding, and L. Masinter, August 1998.
+
+RFC 2368: \"The mailto URL scheme\", by P.Hoffman , L Masinter, J. Zawinski, July 1998.
+
+RFC 1808: \"Relative Uniform Resource Locators\", by R. Fielding, UC Irvine, June
+1995.
+
+RFC 1738: \"Uniform Resource Locators (URL)\" by T. Berners-Lee, L. Masinter, M.
+McCahill, December 1994
+
+RFC 3986 is considered the current standard and any future changes to
+urlparse module should conform with it.  The urlparse module is
+currently not entirely compliant with this RFC due to defacto
+scenarios for parsing, and for backward compatibility purposes, some
+parsing quirks from older RFCs are retained. The testcases in
+test_urlparse.py provides a good indicator of parsing behavior.
+\"\"\"" code nil nil [1 1130])
+            ("re" include nil nil [1132 1141])
+            ("sys" include nil nil [1142 1152])
+            ("collections" include nil nil [1153 1171])
+            ("__all__" variable nil nil [1173 1549])
+            ("uses_relative" variable nil nil [1709 1930])
+            ("uses_netloc" variable nil nil [1932 2213])
+            ("uses_params" variable nil nil [2215 2377])
+            ("non_hierarchical" variable nil nil [2524 2648])
+            ("uses_query" variable nil nil [2650 2772])
+            ("uses_fragment" variable nil nil [2774 2931])
+            ("scheme_chars" variable nil nil [2968 3109])
+            ("MAX_CACHE_SIZE" variable nil nil [3162 3181])
+            ("_parse_cache" variable nil nil [3182 3199])
+            ("clear_cache" function (:documentation "Clear the parse cache and the quoters cache.") nil [3201 3326])
+            ("_implicit_encoding" variable nil nil [3584 3612])
+            ("_implicit_errors" variable nil nil [3613 3640])
+            ("_noop" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [3652 3655]))              ) nil [3642 3673])
+            ("_encode_result" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [3693 3696])
+                ("encoding" variable nil (reparse-symbol function_parameters) [3698 3706])
+                ("errors" variable nil (reparse-symbol function_parameters) [3751 3757]))              ) nil [3674 3817])
+            ("_decode_args" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [3835 3839])
+                ("encoding" variable nil (reparse-symbol function_parameters) [3841 3849])
+                ("errors" variable nil (reparse-symbol function_parameters) [3893 3899]))              ) nil [3818 3991])
+            ("_coerce_args" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [4009 4014]))              ) nil [3992 4634])
+            ("_ResultMixinStr" type
+               (:documentation "Standard approach to encoding parsed results from str to bytes"
+                :superclasses ("object")
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [4796 4810])
+                    ("encode" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4827 4831])
+                            ("encoding" variable nil (reparse-symbol function_parameters) [4833 4841])
+                            ("errors" variable nil (reparse-symbol function_parameters) [4851 4857]))                          )
+                        (reparse-symbol indented_block_body) [4816 4955]))                  
+                :type "class")
+                nil [4688 4955])
+            ("_ResultMixinBytes" type
+               (:documentation "Standard approach to decoding parsed results from bytes to str"
+                :superclasses ("object")
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [5067 5081])
+                    ("decode" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5098 5102])
+                            ("encoding" variable nil (reparse-symbol function_parameters) [5104 5112])
+                            ("errors" variable nil (reparse-symbol function_parameters) [5122 5128]))                          )
+                        (reparse-symbol indented_block_body) [5087 5226]))                  
+                :type "class")
+                nil [4957 5226])
+            ("_NetlocResultMixinBase" type
+               (:documentation "Shared methods for the parsed result objects containing a netloc element"
+                :superclasses ("object")
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [5353 5367])
+                    ("username" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5400 5404]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5373 5440])
+                    ("password" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5472 5476]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5445 5512])
+                    ("hostname" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5544 5548]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5517 5740])
+                    ("port" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5768 5772]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5745 5994]))                  
+                :type "class")
+                nil [5228 5994])
+            ("_NetlocResultMixinStr" type
+               (:superclasses ("_NetlocResultMixinBase" "_ResultMixinStr")
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [6070 6084])
+                    ("_userinfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6118 6122]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [6090 6464])
+                    ("_hostinfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6497 6501]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [6469 6914]))                  
+                :type "class")
+                nil [5996 6914])
+            ("_NetlocResultMixinBytes" type
+               (:superclasses ("_NetlocResultMixinBase" "_ResultMixinBytes")
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [6994 7008])
+                    ("_userinfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7042 7046]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [7014 7390])
+                    ("_hostinfo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7423 7427]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [7395 7845]))                  
+                :type "class")
+                nil [6916 7845])
+            ("collections" include nil nil [7847 7881])
+            ("_DefragResultBase" variable nil nil [7883 7945])
+            ("_SplitResultBase" variable nil nil [7946 8032])
+            ("_ParseResultBase" variable nil nil [8033 8126])
+            ("_DefragResultBase" variable nil nil [8128 8304])
+            ("_DefragResultBase" variable nil nil [8306 8380])
+            ("_DefragResultBase" variable nil nil [8382 8601])
+            ("_SplitResultBase" variable nil nil [8603 8799])
+            ("_SplitResultBase" variable nil nil [8801 8878])
+            ("_SplitResultBase" variable nil nil [8880 8968])
+            ("_SplitResultBase" variable nil nil [8970 9072])
+            ("_SplitResultBase" variable nil nil [9074 9285])
+            ("_SplitResultBase" variable nil nil [9287 9486])
+            ("_ParseResultBase" variable nil nil [9488 9635])
+            ("_ParseResultBase" variable nil nil [9637 9702])
+            ("_ParseResultBase" variable nil nil [9703 9768])
+            ("_ParseResultBase" variable nil nil [9769 9830])
+            ("_ParseResultBase" variable nil nil [9831 10003])
+            ("_ParseResultBase" variable nil nil [10005 10068])
+            ("_ParseResultBase" variable nil nil [10069 10138])
+            ("ResultBase" variable nil nil [10319 10353])
+            ("DefragResult" type
+               (:superclasses ("_DefragResultBase" "_ResultMixinStr")
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [10459 10473])
+                    ("geturl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10489 10493]))                          )
+                        (reparse-symbol indented_block_body) [10478 10614]))                  
+                :type "class")
+                nil [10399 10614])
+            ("SplitResult" type
+               (:superclasses ("_SplitResultBase" "_NetlocResultMixinStr")
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [10679 10693])
+                    ("geturl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10709 10713]))                          )
+                        (reparse-symbol indented_block_body) [10698 10748]))                  
+                :type "class")
+                nil [10615 10748])
+            ("ParseResult" type
+               (:superclasses ("_ParseResultBase" "_NetlocResultMixinStr")
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [10813 10827])
+                    ("geturl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10843 10847]))                          )
+                        (reparse-symbol indented_block_body) [10832 10882]))                  
+                :type "class")
+                nil [10749 10882])
+            ("DefragResultBytes" type
+               (:superclasses ("_DefragResultBase" "_ResultMixinBytes")
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [10993 11007])
+                    ("geturl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11023 11027]))                          )
+                        (reparse-symbol indented_block_body) [11012 11149]))                  
+                :type "class")
+                nil [10926 11149])
+            ("SplitResultBytes" type
+               (:superclasses ("_SplitResultBase" "_NetlocResultMixinBytes")
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [11221 11235])
+                    ("geturl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11251 11255]))                          )
+                        (reparse-symbol indented_block_body) [11240 11290]))                  
+                :type "class")
+                nil [11150 11290])
+            ("ParseResultBytes" type
+               (:superclasses ("_ParseResultBase" "_NetlocResultMixinBytes")
+                :members 
+                  ( ("__slots__" variable nil (reparse-symbol indented_block_body) [11362 11376])
+                    ("geturl" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11392 11396]))                          )
+                        (reparse-symbol indented_block_body) [11381 11431]))                  
+                :type "class")
+                nil [11291 11431])
+            ("_fix_result_transcoding" function nil nil [11472 11799])
+            ("_fix_result_transcoding" code nil nil [11800 11825])
+            ("del" code nil nil [11826 11853])
+            ("urlparse" function
+               (:documentation "Parse a URL into 6 components:
+    <scheme>://<netloc>/<path>;<params>?<query>#<fragment>
+    Return a 6-tuple: (scheme, netloc, path, params, query, fragment).
+    Note that we don't break the components up in smaller bits
+    (e.g. netloc is a single string) and we don't expand % escapes."
+                :arguments 
+                  ( ("url" variable nil (reparse-symbol function_parameters) [11868 11871])
+                    ("scheme" variable nil (reparse-symbol function_parameters) [11873 11879])
+                    ("allow_fragments" variable nil (reparse-symbol function_parameters) [11884 11899]))                  )
+                nil [11855 12601])
+            ("_splitparams" function (:arguments 
+              ( ("url" variable nil (reparse-symbol function_parameters) [12619 12622]))              ) nil [12602 12798])
+            ("_splitnetloc" function (:arguments 
+              ( ("url" variable nil (reparse-symbol function_parameters) [12816 12819])
+                ("start" variable nil (reparse-symbol function_parameters) [12821 12826]))              ) nil [12799 13247])
+            ("urlsplit" function
+               (:documentation "Parse a URL into 5 components:
+    <scheme>://<netloc>/<path>?<query>#<fragment>
+    Return a 5-tuple: (scheme, netloc, path, query, fragment).
+    Note that we don't break the components up in smaller bits
+    (e.g. netloc is a single string) and we don't expand % escapes."
+                :arguments 
+                  ( ("url" variable nil (reparse-symbol function_parameters) [13261 13264])
+                    ("scheme" variable nil (reparse-symbol function_parameters) [13266 13272])
+                    ("allow_fragments" variable nil (reparse-symbol function_parameters) [13277 13292]))                  )
+                nil [13248 15592])
+            ("urlunparse" function
+               (:documentation "Put a parsed URL back together again.  This may result in a
+    slightly different, but equivalent URL, if the URL that was parsed
+    originally had redundant delimiters, e.g. a ? with an empty query
+    (the draft states that these are equivalent)."
+                :arguments 
+                  ( ("components" variable nil (reparse-symbol function_parameters) [15608 15618]))                  )
+                nil [15593 16159])
+            ("urlunsplit" function
+               (:documentation "Combine the elements of a tuple as returned by urlsplit() into a
+    complete URL as a string. The data argument can be any five-item iterable.
+    This may result in a slightly different, but equivalent URL, if the URL that
+    was parsed originally had unnecessary delimiters (for example, a ? with an
+    empty query; the RFC states that these are equivalent)."
+                :arguments 
+                  ( ("components" variable nil (reparse-symbol function_parameters) [16175 16185]))                  )
+                nil [16160 17035])
+            ("urljoin" function
+               (:documentation "Join a base URL and a possibly relative URL to form an absolute
+    interpretation of the latter."
+                :arguments 
+                  ( ("base" variable nil (reparse-symbol function_parameters) [17048 17052])
+                    ("url" variable nil (reparse-symbol function_parameters) [17054 17057])
+                    ("allow_fragments" variable nil (reparse-symbol function_parameters) [17059 17074]))                  )
+                nil [17036 19423])
+            ("urldefrag" function
+               (:documentation "Removes any existing fragment from URL.
+
+    Returns a tuple of the defragmented URL and the fragment.  If
+    the URL contained no fragments, the second element is the
+    empty string.
+    "
+                :arguments 
+                  ( ("url" variable nil (reparse-symbol function_parameters) [19439 19442]))                  )
+                nil [19425 19906])
+            ("_hexdig" variable nil nil [19907 19941])
+            ("_hextobyte" variable nil nil [19942 19959])
+            ("unquote_to_bytes" function
+               (:documentation "unquote_to_bytes('abc%20def') -> b'abc def'."
+                :arguments 
+                  ( ("string" variable nil (reparse-symbol function_parameters) [19982 19988]))                  )
+                nil [19961 20955])
+            ("_asciire" variable nil nil [20956 20995])
+            ("unquote" function
+               (:documentation "Replace %xx escapes by their single-character equivalent. The optional
+    encoding and errors parameters specify how to decode percent-encoded
+    sequences into Unicode characters, as accepted by the bytes.decode()
+    method.
+    By default, percent-encoded sequences are decoded with UTF-8, and invalid
+    sequences are replaced by a placeholder character.
+
+    unquote('abc%20def') -> 'abc def'.
+    "
+                :arguments 
+                  ( ("string" variable nil (reparse-symbol function_parameters) [21009 21015])
+                    ("encoding" variable nil (reparse-symbol function_parameters) [21017 21025])
+                    ("errors" variable nil (reparse-symbol function_parameters) [21035 21041]))                  )
+                nil [20997 21876])
+            ("parse_qs" function
+               (:documentation "Parse a query given as a string argument.
+
+        Arguments:
+
+        qs: percent-encoded query string to be parsed
+
+        keep_blank_values: flag indicating whether blank values in
+            percent-encoded queries should be treated as blank strings.
+            A true value indicates that blanks should be retained as
+            blank strings.  The default false value indicates that
+            blank values are to be ignored and treated as if they were
+            not included.
+
+        strict_parsing: flag indicating what to do with parsing errors.
+            If false (the default), errors are silently ignored.
+            If true, errors raise a ValueError exception.
+
+        encoding and errors: specify how to decode percent-encoded sequences
+            into Unicode characters, as accepted by the bytes.decode() method.
+
+        Returns a dictionary.
+    "
+                :arguments 
+                  ( ("qs" variable nil (reparse-symbol function_parameters) [21891 21893])
+                    ("keep_blank_values" variable nil (reparse-symbol function_parameters) [21895 21912])
+                    ("strict_parsing" variable nil (reparse-symbol function_parameters) [21920 21934])
+                    ("encoding" variable nil (reparse-symbol function_parameters) [21955 21963])
+                    ("errors" variable nil (reparse-symbol function_parameters) [21973 21979]))                  )
+                nil [21878 23212])
+            ("parse_qsl" function
+               (:documentation "Parse a query given as a string argument.
+
+        Arguments:
+
+        qs: percent-encoded query string to be parsed
+
+        keep_blank_values: flag indicating whether blank values in
+            percent-encoded queries should be treated as blank strings.
+            A true value indicates that blanks should be retained as blank
+            strings.  The default false value indicates that blank values
+            are to be ignored and treated as if they were  not included.
+
+        strict_parsing: flag indicating what to do with parsing errors. If
+            false (the default), errors are silently ignored. If true,
+            errors raise a ValueError exception.
+
+        encoding and errors: specify how to decode percent-encoded sequences
+            into Unicode characters, as accepted by the bytes.decode() method.
+
+        Returns a list, as G-d intended.
+    "
+                :arguments 
+                  ( ("qs" variable nil (reparse-symbol function_parameters) [23228 23230])
+                    ("keep_blank_values" variable nil (reparse-symbol function_parameters) [23232 23249])
+                    ("strict_parsing" variable nil (reparse-symbol function_parameters) [23257 23271])
+                    ("encoding" variable nil (reparse-symbol function_parameters) [23293 23301])
+                    ("errors" variable nil (reparse-symbol function_parameters) [23311 23317]))                  )
+                nil [23214 25171])
+            ("unquote_plus" function
+               (:documentation "Like unquote(), but also replace plus signs by spaces, as required for
+    unquoting HTML form values.
+
+    unquote_plus('%7e/abc+def') -> '~/abc def'
+    "
+                :arguments 
+                  ( ("string" variable nil (reparse-symbol function_parameters) [25189 25195])
+                    ("encoding" variable nil (reparse-symbol function_parameters) [25197 25205])
+                    ("errors" variable nil (reparse-symbol function_parameters) [25215 25221]))                  )
+                nil [25172 25483])
+            ("_ALWAYS_SAFE" variable nil nil [25484 25665])
+            ("_ALWAYS_SAFE_BYTES" variable nil nil [25666 25706])
+            ("_safe_quoters" variable nil nil [25707 25725])
+            ("Quoter" type
+               (:documentation "A mapping from bytes (in range(0,256)) to strings.
+
+    String values are percent-encoded byte values, unless the key < 128, and
+    in the \"safe\" set (either the specified safe set, or default set).
+    "
+                :superclasses ("collections.defaultdict")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"safe: bytes object.\"\"\"" code nil (reparse-symbol indented_block_body) [26147 26172])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26181 26217]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26126 26130])
+                            ("safe" variable nil (reparse-symbol function_parameters) [26132 26136]))                          
+                        :documentation "safe: bytes object."
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [26113 26218])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26236 26240]))                          )
+                        (reparse-symbol indented_block_body) [26223 26367])
+                    ("__missing__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26388 26392])
+                            ("b" variable nil (reparse-symbol function_parameters) [26394 26395]))                          )
+                        (reparse-symbol indented_block_body) [26372 26575]))                  
+                :type "class")
+                nil [25727 26575])
+            ("quote" function
+               (:documentation "quote('abc def') -> 'abc%20def'
+
+    Each part of a URL, e.g. the path info, the query, etc., has a
+    different set of reserved characters that must be quoted.
+
+    RFC 2396 Uniform Resource Identifiers (URI): Generic Syntax lists
+    the following reserved characters.
+
+    reserved    = \";\" | \"/\" | \"?\" | \":\" | \"@\" | \"&\" | \"=\" | \"+\" |
+                  \"$\" | \",\"
+
+    Each of these characters is reserved in some component of a URL,
+    but not necessarily in all of them.
+
+    By default, the quote function is intended for quoting the path
+    section of a URL.  Thus, it will not encode '/'.  This character
+    is reserved, but in typical usage the quote function is being
+    called on a path where the existing slash characters are used as
+    reserved characters.
+
+    string and safe may be either str or bytes objects. encoding and errors
+    must not be specified if string is a bytes object.
+
+    The optional encoding and errors parameters specify how to deal with
+    non-ASCII characters, as accepted by the str.encode method.
+    By default, encoding='utf-8' (characters are encoded with UTF-8), and
+    errors='strict' (unsupported characters raise a UnicodeEncodeError).
+    "
+                :arguments 
+                  ( ("string" variable nil (reparse-symbol function_parameters) [26586 26592])
+                    ("safe" variable nil (reparse-symbol function_parameters) [26594 26598])
+                    ("encoding" variable nil (reparse-symbol function_parameters) [26604 26612])
+                    ("errors" variable nil (reparse-symbol function_parameters) [26619 26625]))                  )
+                nil [26576 28353])
+            ("quote_plus" function
+               (:documentation "Like quote(), but also replace ' ' with '+', as required for quoting
+    HTML form values. Plus signs in the original string are escaped unless
+    they are included in safe. It also does not have safe default to '/'.
+    "
+                :arguments 
+                  ( ("string" variable nil (reparse-symbol function_parameters) [28369 28375])
+                    ("safe" variable nil (reparse-symbol function_parameters) [28377 28381])
+                    ("encoding" variable nil (reparse-symbol function_parameters) [28386 28394])
+                    ("errors" variable nil (reparse-symbol function_parameters) [28401 28407]))                  )
+                nil [28354 29150])
+            ("quote_from_bytes" function
+               (:documentation "Like quote(), but accepts a bytes object rather than a str, and does
+    not perform string-to-bytes encoding.  It always returns an ASCII string.
+    quote_from_bytes(b'abc def\\x3f') -> 'abc%20def%3f'
+    "
+                :arguments 
+                  ( ("bs" variable nil (reparse-symbol function_parameters) [29172 29174])
+                    ("safe" variable nil (reparse-symbol function_parameters) [29176 29180]))                  )
+                nil [29151 30018])
+            ("urlencode" function
+               (:documentation "Encode a dict or sequence of two-element tuples into a URL query string.
+
+    If any values in the query arg are sequences and doseq is true, each
+    sequence element is converted to a separate parameter.
+
+    If the query arg is a sequence of two-element tuples, the order of the
+    parameters in the output will match the order of parameters in the
+    input.
+
+    The components of a query arg may each be either a string or a bytes type.
+
+    The safe, encoding, and errors parameters are passed down to the function
+    specified by quote_via (encoding and errors only if a component is a str).
+    "
+                :arguments 
+                  ( ("query" variable nil (reparse-symbol function_parameters) [30033 30038])
+                    ("doseq" variable nil (reparse-symbol function_parameters) [30040 30045])
+                    ("safe" variable nil (reparse-symbol function_parameters) [30053 30057])
+                    ("encoding" variable nil (reparse-symbol function_parameters) [30062 30070])
+                    ("errors" variable nil (reparse-symbol function_parameters) [30077 30083])
+                    ("quote_via" variable nil (reparse-symbol function_parameters) [30104 30113]))                  )
+                nil [30019 33134])
+            ("to_bytes" function
+               (:documentation "to_bytes(u\"URL\") --> 'URL'."
+                :arguments 
+                  ( ("url" variable nil (reparse-symbol function_parameters) [33148 33151]))                  )
+                nil [33135 33566])
+            ("unwrap" function
+               (:documentation "unwrap('<URL:type://host/path>') --> 'type://host/path'."
+                :arguments 
+                  ( ("url" variable nil (reparse-symbol function_parameters) [33578 33581]))                  )
+                nil [33567 33816])
+            ("_typeprog" variable nil nil [33817 33833])
+            ("splittype" function
+               (:documentation "splittype('type:opaquestring') --> 'type', 'opaquestring'."
+                :arguments 
+                  ( ("url" variable nil (reparse-symbol function_parameters) [33848 33851]))                  )
+                nil [33834 34172])
+            ("_hostprog" variable nil nil [34173 34189])
+            ("splithost" function
+               (:documentation "splithost('//host[:port]/path') --> 'host[:port]', '/path'."
+                :arguments 
+                  ( ("url" variable nil (reparse-symbol function_parameters) [34204 34207]))                  )
+                nil [34190 34595])
+            ("splituser" function
+               (:documentation "splituser('user[:passwd]@host[:port]') --> 'user[:passwd]', 'host[:port]'."
+                :arguments 
+                  ( ("host" variable nil (reparse-symbol function_parameters) [34610 34614]))                  )
+                nil [34596 34790])
+            ("splitpasswd" function
+               (:documentation "splitpasswd('user:passwd') -> 'user', 'passwd'."
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [34807 34811]))                  )
+                nil [34791 35007])
+            ("_portprog" variable nil nil [35007 35023])
+            ("splitport" function
+               (:documentation "splitport('host:port') --> 'host', 'port'."
+                :arguments 
+                  ( ("host" variable nil (reparse-symbol function_parameters) [35038 35042]))                  )
+                nil [35024 35359])
+            ("splitnport" function
+               (:documentation "Split host and port, returning numeric port.
+    Return given default port if no ':' found; defaults to -1.
+    Return numerical port if a valid number are found after ':'.
+    Return None if ':' but not a valid number."
+                :arguments 
+                  ( ("host" variable nil (reparse-symbol function_parameters) [35375 35379])
+                    ("defport" variable nil (reparse-symbol function_parameters) [35381 35388]))                  )
+                nil [35360 35869])
+            ("splitquery" function
+               (:documentation "splitquery('/path?query') --> '/path', 'query'."
+                :arguments 
+                  ( ("url" variable nil (reparse-symbol function_parameters) [35885 35888]))                  )
+                nil [35870 36056])
+            ("splittag" function
+               (:documentation "splittag('/path#tag') --> '/path', 'tag'."
+                :arguments 
+                  ( ("url" variable nil (reparse-symbol function_parameters) [36070 36073]))                  )
+                nil [36057 36231])
+            ("splitattr" function
+               (:documentation "splitattr('/path;attr1=value1;attr2=value2;...') ->
+        '/path', ['attr1=value1', 'attr2=value2', ...]."
+                :arguments 
+                  ( ("url" variable nil (reparse-symbol function_parameters) [36246 36249]))                  )
+                nil [36232 36428])
+            ("splitvalue" function
+               (:documentation "splitvalue('attr=value') --> 'attr', 'value'."
+                :arguments 
+                  ( ("attr" variable nil (reparse-symbol function_parameters) [36444 36448]))                  )
+                nil [36429 36596]))          
+      :file "parse.py"
+      :pointmax 36596
+      :fsize 36603
+      :lastmodtime '(22880 24727 0 0)
+      :unmatched-syntax '((NAME 26478 . 26481) (IF 26491 . 26493) (ELSE 26509 . 26513))))
+  :file "!drive_c!ProgramData!Anaconda3!Lib!urllib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

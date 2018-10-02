@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1698f34
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1698f34"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1698f14"
+      :major-mode python-mode
+      :tags nil
+      :file "PI_Opt.py"
+      :pointmax 61
+      :fsize 60
+      :lastmodtime '(23456 37538 701842 851000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Dropbox!EVE!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

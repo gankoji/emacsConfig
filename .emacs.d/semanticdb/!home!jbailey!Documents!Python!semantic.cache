@@ -1,0 +1,83 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [44 62])
+            ("math" include nil nil [63 74])
+            ("GNCUtilities" include nil nil [76 95])
+            ("eom" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("N" variable nil (reparse-symbol indented_block_body) [154 189])
+                            ("n_states" code nil (reparse-symbol indented_block_body) [198 238])
+                            ("self" variable nil (reparse-symbol indented_block_body) [540 575])
+                            ("att_0" variable nil (reparse-symbol indented_block_body) [584 611])
+                            ("x_0" variable nil (reparse-symbol indented_block_body) [620 652])
+                            ("v_0" variable nil (reparse-symbol indented_block_body) [661 692])
+                            ("self" variable nil (reparse-symbol indented_block_body) [701 725])
+                            ("self" variable nil (reparse-symbol indented_block_body) [734 758])
+                            ("self" variable nil (reparse-symbol indented_block_body) [767 791])
+                            ("self" code nil (reparse-symbol indented_block_body) [809 828]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [126 130])
+                            ("dt" variable nil (reparse-symbol function_parameters) [132 134])
+                            ("endTime" variable nil (reparse-symbol function_parameters) [136 143]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [113 829])
+                    ("getInputs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [848 852])
+                            ("moments" variable nil (reparse-symbol function_parameters) [854 861])
+                            ("forces" variable nil (reparse-symbol function_parameters) [863 869])
+                            ("mass" variable nil (reparse-symbol function_parameters) [871 875])
+                            ("inertia" variable nil (reparse-symbol function_parameters) [877 884]))                          )
+                        (reparse-symbol indented_block_body) [834 1534])
+                    ("updateDerivatives" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1561 1565])
+                            ("dt" variable nil (reparse-symbol function_parameters) [1567 1569]))                          )
+                        (reparse-symbol indented_block_body) [1539 3285])
+                    ("getOutputs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3397 3401]))                          )
+                        (reparse-symbol indented_block_body) [3382 3448])
+                    ("Quat2DCM" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3466 3470])
+                            ("q" variable nil (reparse-symbol function_parameters) [3472 3473]))                          )
+                        (reparse-symbol indented_block_body) [3453 4049])
+                    ("quatMult" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4067 4071])
+                            ("p" variable nil (reparse-symbol function_parameters) [4073 4074])
+                            ("q" variable nil (reparse-symbol function_parameters) [4075 4076]))                          )
+                        (reparse-symbol indented_block_body) [4054 4391])
+                    ("DCM2Quat" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4409 4413])
+                            ("dcm" variable nil (reparse-symbol function_parameters) [4415 4418]))                          )
+                        (reparse-symbol indented_block_body) [4396 4711])
+                    ("DCM2AxisAngle" function (:arguments 
+                      ( ("dcm" variable nil (reparse-symbol function_parameters) [4734 4737]))                      ) (reparse-symbol indented_block_body) [4716 5117]))                  
+                :type "class")
+                nil [97 5117]))          
+      :file "EOM.py"
+      :pointmax 5117
+      :fsize 5275
+      :lastmodtime '(23274 32668 119801 853000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

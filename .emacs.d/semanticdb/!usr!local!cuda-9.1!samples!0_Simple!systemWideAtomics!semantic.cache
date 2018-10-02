@@ -1,0 +1,71 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [491 508])
+            ("cstdio" include (:system-flag t) nil [509 526])
+            ("ctime" include (:system-flag t) nil [527 543])
+            ("stdint.h" include (:system-flag t) nil [544 563])
+            ("cuda_runtime.h" include (:system-flag t) nil [564 589])
+            ("helper_cuda.h" include (:system-flag t) nil [590 614])
+            ("min" variable (:constant-flag t) nil [624 627])
+            ("max" variable (:constant-flag t) nil [663 666])
+            ("LOOP_NUM" variable (:constant-flag t) nil [703 711])
+            ("atomicKernel" function
+               (:arguments 
+                  ( ("atom_arr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [746 760]))                  
+                :type "void")
+                nil [728 1699])
+            ("atomicKernel_CPU" function
+               (:arguments 
+                  ( ("atom_arr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1723 1737])
+                    ("no_of_threads" variable (:type "int") (reparse-symbol arg-sub-list) [1738 1756]))                  
+                :type "void")
+                nil [1701 3545])
+            ("verify" function
+               (:arguments 
+                  ( ("testData" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4005 4019])
+                    ("len" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4020 4034]))                  
+                :type "int")
+                nil [3994 6515])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6527 6536])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6537 6549]))                  
+                :type "int")
+                nil [6518 8565]))          
+      :file "systemWideAtomics.cu"
+      :pointmax 8566
+      :fsize 8565
+      :lastmodtime '(23073 59288 0 0)
+      :unmatched-syntax '((symbol 717 . 727))
+      :lexical-table 
+        '(("max" (spp-arg-list ("a" "b") 666 . 671) . 
+              ((semantic-list "(a)" 672 . 675) (punctuation ">" 676 . 677) (semantic-list "(b)" 678 . 681) (punctuation "?" 682 . 683) (semantic-list "(a)" 684 . 687) (punctuation ":" 688 . 689) (semantic-list "(b)" 690 . 693)))
+          ("min" (spp-arg-list ("a" "b") 627 . 632) . 
+              ((semantic-list "(a)" 633 . 636) (punctuation "<" 637 . 638) (semantic-list "(b)" 639 . 642) (punctuation "?" 643 . 644) (semantic-list "(a)" 645 . 648) (punctuation ":" 649 . 650) (semantic-list "(b)" 651 . 654)))
+          ("LOOP_NUM" . ((number "50" 712 . 714)))
+          )
+))
+  :file "!usr!local!cuda-9.1!samples!0_Simple!systemWideAtomics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

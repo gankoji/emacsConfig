@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [758 776])
+            ("stdint.h" include (:system-flag t) nil [777 796])
+            ("assert.h" include (:system-flag t) nil [797 816])
+            ("cuda_runtime.h" include (:system-flag t) nil [834 859])
+            ("helper_functions.h" include (:system-flag t) nil [913 942])
+            ("helper_cuda.h" include (:system-flag t) nil [943 967])
+            ("timedReduction" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1174 1193])
+                    ("output" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1194 1208])
+                    ("timer" variable
+                       (:pointer 1
+                        :type ("clock_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1209 1224]))                  
+                :type "void")
+                nil [1147 1995])
+            ("NUM_BLOCKS" variable (:constant-flag t) nil [2005 2015])
+            ("NUM_THREADS" variable (:constant-flag t) nil [2030 2041])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2666 2675])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2676 2688]))                  
+                :type "int")
+                nil [2657 4086]))          
+      :file "clock.cu"
+      :pointmax 4087
+      :fsize 4086
+      :lastmodtime '(23073 59288 0 0)
+      :unmatched-syntax '((symbol 1136 . 1146))
+      :lexical-table 
+        '(("NUM_BLOCKS" . ((number "64" 2019 . 2021)))
+          ("NUM_THREADS" . ((number "256" 2044 . 2047)))
+          )
+))
+  :file "!usr!local!cuda-9.1!samples!0_Simple!clock!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

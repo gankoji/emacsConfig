@@ -1,0 +1,316 @@
+;; Object semanticdb-project-database-file-1472060
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1472060"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-147207c"
+      :major-mode c-mode
+      :tags 
+        '( ("_H_QuatTypes" variable (:constant-flag t) nil [80 92])
+            ("Quat" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("x" variable (:type "float") (reparse-symbol classsubparts) [131 148])
+                          ("y" variable (:type "float") (reparse-symbol classsubparts) [131 148])
+                          ("z" variable (:type "float") (reparse-symbol classsubparts) [131 148])
+                          ("w" variable (:type "float") (reparse-symbol classsubparts) [131 148]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [115 155])
+            ("QuatPart" type
+               (:members 
+                  ( ("X" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [188 190])
+                    ("Y" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [191 193])
+                    ("Z" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [194 196])
+                    ("W" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [197 199]))                  
+                :type "enum")
+                nil [173 200])
+            ("HMatrix" type
+               (:typedef ("float")
+                :type "typedef")
+                nil [201 229])
+            ("EulerAngles" type
+               (:typedef ("Quat" type (:type "class") nil nil)
+                :type "typedef")
+                nil [269 294]))          
+      :file "QuatTypes.h"
+      :pointmax 344
+      :fsize 343
+      :lastmodtime '(23373 57193 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_H_QuatTypes")
+          )
+)
+    (semanticdb-table "semanticdb-table-12a1dbc"
+      :major-mode c-mode
+      :tags 
+        '( ("_H_EulerAngles" variable (:constant-flag t) nil [114 128])
+            ("QuatTypes.h" include nil nil [129 151])
+            ("EulFrmS" variable (:constant-flag t) nil [857 864])
+            ("EulFrmR" variable (:constant-flag t) nil [880 887])
+            ("EulFrm" variable (:constant-flag t) nil [903 909])
+            ("EulRepNo" variable (:constant-flag t) nil [944 952])
+            ("EulRepYes" variable (:constant-flag t) nil [967 976])
+            ("EulRep" variable (:constant-flag t) nil [990 996])
+            ("EulParEven" variable (:constant-flag t) nil [1036 1046])
+            ("EulParOdd" variable (:constant-flag t) nil [1059 1068])
+            ("EulPar" variable (:constant-flag t) nil [1082 1088])
+            ("EulSafe" variable (:constant-flag t) nil [1216 1223])
+            ("EulNext" variable (:constant-flag t) nil [1256 1263])
+            ("EulAxI" variable (:constant-flag t) nil [1296 1302])
+            ("EulAxJ" variable (:constant-flag t) nil [1360 1366])
+            ("EulAxK" variable (:constant-flag t) nil [1436 1442])
+            ("EulAxH" variable (:constant-flag t) nil [1512 1518])
+            ("EulGetOrd" variable (:constant-flag t) nil [1662 1671])
+            ("EulOrd" variable (:constant-flag t) nil [1903 1909])
+            ("EulOrdXYZs" variable (:constant-flag t) nil [1989 1999])
+            ("EulOrdXYXs" variable (:constant-flag t) nil [2049 2059])
+            ("EulOrdXZYs" variable (:constant-flag t) nil [2110 2120])
+            ("EulOrdXZXs" variable (:constant-flag t) nil [2169 2179])
+            ("EulOrdYZXs" variable (:constant-flag t) nil [2229 2239])
+            ("EulOrdYZYs" variable (:constant-flag t) nil [2289 2299])
+            ("EulOrdYXZs" variable (:constant-flag t) nil [2350 2360])
+            ("EulOrdYXYs" variable (:constant-flag t) nil [2409 2419])
+            ("EulOrdZXYs" variable (:constant-flag t) nil [2469 2479])
+            ("EulOrdZXZs" variable (:constant-flag t) nil [2529 2539])
+            ("EulOrdZYXs" variable (:constant-flag t) nil [2590 2600])
+            ("EulOrdZYZs" variable (:constant-flag t) nil [2649 2659])
+            ("EulOrdZYXr" variable (:constant-flag t) nil [2733 2743])
+            ("EulOrdXYXr" variable (:constant-flag t) nil [2793 2803])
+            ("EulOrdYZXr" variable (:constant-flag t) nil [2854 2864])
+            ("EulOrdXZXr" variable (:constant-flag t) nil [2913 2923])
+            ("EulOrdXZYr" variable (:constant-flag t) nil [2973 2983])
+            ("EulOrdYZYr" variable (:constant-flag t) nil [3033 3043])
+            ("EulOrdZXYr" variable (:constant-flag t) nil [3094 3104])
+            ("EulOrdYXYr" variable (:constant-flag t) nil [3153 3163])
+            ("EulOrdYXZr" variable (:constant-flag t) nil [3213 3223])
+            ("EulOrdZXZr" variable (:constant-flag t) nil [3273 3283])
+            ("EulOrdXYZr" variable (:constant-flag t) nil [3334 3344])
+            ("EulOrdZYZr" variable (:constant-flag t) nil [3393 3403])
+            ("Eul_" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ai" variable (:type "float") (reparse-symbol arg-sub-list) [3463 3472])
+                    ("aj" variable (:type "float") (reparse-symbol arg-sub-list) [3473 3482])
+                    ("ah" variable (:type "float") (reparse-symbol arg-sub-list) [3483 3492])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [3493 3503]))                  
+                :type ("EulerAngles" type (:type "class") nil nil))
+                nil [3446 3504])
+            ("Eul_ToQuat" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ea" variable (:type ("EulerAngles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3521 3536]))                  
+                :type ("Quat" type (:type "class") nil nil))
+                nil [3505 3537])
+            ("Eul_ToHMatrix" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ea" variable (:type ("EulerAngles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3557 3572])
+                    ("M" variable (:type ("HMatrix" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3573 3583]))                  
+                :type "void")
+                nil [3538 3584])
+            ("Eul_FromHMatrix" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable (:type ("HMatrix" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3613 3623])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [3624 3634]))                  
+                :type ("EulerAngles" type (:type "class") nil nil))
+                nil [3585 3635])
+            ("Eul_FromQuat" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("q" variable (:type ("Quat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3661 3668])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [3669 3679]))                  
+                :type ("EulerAngles" type (:type "class") nil nil))
+                nil [3636 3680]))          
+      :file "EulerAngles.h"
+      :pointmax 3688
+      :fsize 3687
+      :lastmodtime '(23373 57193 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EulFrmR" . ((number "1" 893 . 894)))
+          ("EulOrdZYXs" . ((symbol "EulOrd" 2604 . 2610) (semantic-list "(Z,EulParOdd,EulRepNo,EulFrmS)" 2610 . 2640)))
+          ("EulFrmS" . ((number "0" 870 . 871)))
+          ("EulParOdd" . ((number "1" 1072 . 1073)))
+          ("EulSafe" . ((string "\"\\000\\001\\002\\000\"" 1229 . 1247)))
+          ("EulGetOrd" (spp-arg-list ("ord" "i" "j" "k" "h" "n" "s" "f") 1671 . 1690) . ((semantic-list "{unsigned o=(unsigned)ord;f=o&1;o>>=1;s=o&1;o>>=1;\\
+    n=o&1;o>>=1;i=EulSafe[o&3];j=EulNext[i+n];k=EulNext[i+1-n];h=s?k:i;}" 1691 . 1815)))
+          ("_H_EulerAngles")
+          ("EulFrm" (spp-arg-list ("ord") 909 . 914) . ((semantic-list "((unsigned)(ord)&1)" 916 . 935)))
+          ("EulOrdXYZr" . ((symbol "EulOrd" 3348 . 3354) (semantic-list "(Z,EulParOdd,EulRepNo,EulFrmR)" 3354 . 3384)))
+          ("EulAxH" (spp-arg-list ("ord") 1518 . 1523) . ((semantic-list "((EulRep(ord)==EulRepNo)?EulAxK(ord):EulAxI(ord))" 1525 . 1574)))
+          ("EulOrdXYZs" . ((symbol "EulOrd" 2003 . 2009) (semantic-list "(X,EulParEven,EulRepNo,EulFrmS)" 2009 . 2040)))
+          ("EulAxI" (spp-arg-list ("ord") 1302 . 1307) . ((semantic-list "((int)(EulSafe[(((unsigned)(ord)>>3)&3)]))" 1309 . 1351)))
+          ("EulOrdYXYr" . ((symbol "EulOrd" 3167 . 3173) (semantic-list "(Y,EulParOdd,EulRepYes,EulFrmR)" 3173 . 3204)))
+          ("EulOrdZYZr" . ((symbol "EulOrd" 3407 . 3413) (semantic-list "(Z,EulParOdd,EulRepYes,EulFrmR)" 3413 . 3444)))
+          ("EulRepNo" . ((number "0" 957 . 958)))
+          ("EulAxJ" (spp-arg-list ("ord") 1366 . 1371) . ((semantic-list "((int)(EulNext[EulAxI(ord)+(EulPar(ord)==EulParOdd)]))" 1373 . 1427)))
+          ("EulOrdYXYs" . ((symbol "EulOrd" 2423 . 2429) (semantic-list "(Y,EulParOdd,EulRepYes,EulFrmS)" 2429 . 2460)))
+          ("EulOrdZYZs" . ((symbol "EulOrd" 2663 . 2669) (semantic-list "(Z,EulParOdd,EulRepYes,EulFrmS)" 2669 . 2700)))
+          ("EulOrdXZXr" . ((symbol "EulOrd" 2927 . 2933) (semantic-list "(X,EulParOdd,EulRepYes,EulFrmR)" 2933 . 2964)))
+          ("EulOrdZXYr" . ((symbol "EulOrd" 3108 . 3114) (semantic-list "(Y,EulParOdd,EulRepNo,EulFrmR)" 3114 . 3144)))
+          ("EulRepYes" . ((number "1" 980 . 981)))
+          ("EulAxK" (spp-arg-list ("ord") 1442 . 1447) . ((semantic-list "((int)(EulNext[EulAxI(ord)+(EulPar(ord)!=EulParOdd)]))" 1449 . 1503)))
+          ("EulOrdXZXs" . ((symbol "EulOrd" 2183 . 2189) (semantic-list "(X,EulParOdd,EulRepYes,EulFrmS)" 2189 . 2220)))
+          ("EulOrdZXYs" . ((symbol "EulOrd" 2483 . 2489) (semantic-list "(Z,EulParEven,EulRepNo,EulFrmS)" 2489 . 2520)))
+          ("EulOrdYZXr" . ((symbol "EulOrd" 2868 . 2874) (semantic-list "(X,EulParOdd,EulRepNo,EulFrmR)" 2874 . 2904)))
+          ("EulParEven" . ((number "0" 1049 . 1050)))
+          ("EulPar" (spp-arg-list ("ord") 1088 . 1093) . ((semantic-list "(((unsigned)(ord)>>2)&1)" 1095 . 1119)))
+          ("EulOrdYZXs" . ((symbol "EulOrd" 2243 . 2249) (semantic-list "(Y,EulParEven,EulRepNo,EulFrmS)" 2249 . 2280)))
+          ("EulOrdYXZr" . ((symbol "EulOrd" 3227 . 3233) (semantic-list "(Z,EulParEven,EulRepNo,EulFrmR)" 3233 . 3264)))
+          ("EulOrdYXZs" . ((symbol "EulOrd" 2364 . 2370) (semantic-list "(Y,EulParOdd,EulRepNo,EulFrmS)" 2370 . 2400)))
+          ("EulOrdXZYr" . ((symbol "EulOrd" 2987 . 2993) (semantic-list "(Y,EulParEven,EulRepNo,EulFrmR)" 2993 . 3024)))
+          ("EulOrdZXZr" . ((symbol "EulOrd" 3287 . 3293) (semantic-list "(Z,EulParEven,EulRepYes,EulFrmR)" 3293 . 3325)))
+          ("EulRep" (spp-arg-list ("ord") 996 . 1001) . ((semantic-list "(((unsigned)(ord)>>1)&1)" 1003 . 1027)))
+          ("EulNext" . ((string "\"\\001\\002\\000\\001\"" 1269 . 1287)))
+          ("EulOrd" (spp-arg-list ("i" "p" "r" "f") 1909 . 1918) . ((semantic-list "(((((((i)<<1)+(p))<<1)+(r))<<1)+(f))" 1922 . 1958)))
+          ("EulOrdXZYs" . ((symbol "EulOrd" 2124 . 2130) (semantic-list "(X,EulParOdd,EulRepNo,EulFrmS)" 2130 . 2160)))
+          ("EulOrdZXZs" . ((symbol "EulOrd" 2543 . 2549) (semantic-list "(Z,EulParEven,EulRepYes,EulFrmS)" 2549 . 2581)))
+          ("EulOrdXYXr" . ((symbol "EulOrd" 2807 . 2813) (semantic-list "(X,EulParEven,EulRepYes,EulFrmR)" 2813 . 2845)))
+          ("EulOrdYZYr" . ((symbol "EulOrd" 3047 . 3053) (semantic-list "(Y,EulParEven,EulRepYes,EulFrmR)" 3053 . 3085)))
+          ("EulOrdXYXs" . ((symbol "EulOrd" 2063 . 2069) (semantic-list "(X,EulParEven,EulRepYes,EulFrmS)" 2069 . 2101)))
+          ("EulOrdYZYs" . ((symbol "EulOrd" 2303 . 2309) (semantic-list "(Y,EulParEven,EulRepYes,EulFrmS)" 2309 . 2341)))
+          ("EulOrdZYXr" . ((symbol "EulOrd" 2747 . 2753) (semantic-list "(X,EulParEven,EulRepNo,EulFrmR)" 2753 . 2784)))
+          )
+)
+    (semanticdb-table "semanticdb-table-11dcf88"
+      :major-mode c-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [98 115])
+            ("float.h" include (:system-flag t) nil [116 134])
+            ("EulerAngles.h" include nil nil [135 159])
+            ("Eul_" function
+               (:arguments 
+                  ( ("ai" variable (:type "float") (reparse-symbol arg-sub-list) [178 187])
+                    ("aj" variable (:type "float") (reparse-symbol arg-sub-list) [188 197])
+                    ("ah" variable (:type "float") (reparse-symbol arg-sub-list) [198 207])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [208 218]))                  
+                :type ("EulerAngles" type (:type "class") nil nil))
+                nil [161 321])
+            ("Eul_ToQuat" function
+               (:arguments 
+                  ( ("ea" variable (:type ("EulerAngles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [397 412]))                  
+                :type ("Quat" type (:type "class") nil nil))
+                nil [381 1226])
+            ("Eul_ToHMatrix" function
+               (:arguments 
+                  ( ("ea" variable (:type ("EulerAngles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1302 1317])
+                    ("M" variable (:type ("HMatrix" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1318 1328]))                  
+                :type "void")
+                nil [1283 2229])
+            ("Eul_FromHMatrix" function
+               (:arguments 
+                  ( ("M" variable (:type ("HMatrix" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2310 2320])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [2321 2331]))                  
+                :type ("EulerAngles" type (:type "class") nil nil))
+                nil [2282 3212])
+            ("Eul_FromQuat" function
+               (:arguments 
+                  ( ("q" variable (:type ("Quat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3294 3301])
+                    ("order" variable (:type "int") (reparse-symbol arg-sub-list) [3302 3312]))                  
+                :type ("EulerAngles" type (:type "class") nil nil))
+                nil [3269 3946]))          
+      :file "EulerAngles.c"
+      :pointmax 3947
+      :fsize 3946
+      :lastmodtime '(23373 57193 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-16b8b44"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [723 741])
+            ("math" include nil nil [742 753])
+            ("doUnitTests" variable nil nil [755 774])
+            ("EulFrmS" variable nil nil [776 787])
+            ("EulFrmR" variable nil nil [788 799])
+            ("EulRepNo" variable nil nil [801 813])
+            ("EulRepYes" variable nil nil [814 827])
+            ("EulParEven" variable nil nil [829 843])
+            ("EulParOdd" variable nil nil [844 857])
+            ("X" variable nil nil [859 864])
+            ("Y" variable nil nil [865 870])
+            ("Z" variable nil nil [871 876])
+            ("W" variable nil nil [877 882])
+            ("EulerAngles" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2291 2301])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2310 2320])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2329 2339])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2348 2358]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2277 2281]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2264 2360]))                  
+                :type "class")
+                nil [2241 2360])
+            ("Quat" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2404 2414])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2423 2433])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2442 2452])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2461 2471]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2390 2394]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2377 2473]))                  
+                :type "class")
+                nil [2361 2473])
+            ("Eul_ToMatrix" function (:arguments 
+              ( ("ea" variable nil (reparse-symbol function_parameters) [2499 2501])
+                ("ordering" variable nil (reparse-symbol function_parameters) [2503 2511]))              ) nil [2482 3939])
+            ("Eul_FromMatrix" function (:arguments 
+              ( ("M" variable nil (reparse-symbol function_parameters) [3959 3960])
+                ("order" variable nil (reparse-symbol function_parameters) [3962 3967]))              ) nil [3940 4902])
+            ("Eul_ToQuat" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [4918 4921]))              ) nil [4903 5938])
+            ("Eul_FromQuat" function (:arguments 
+              ( ("quat" variable nil (reparse-symbol function_parameters) [5956 5960])
+                ("order" variable nil (reparse-symbol function_parameters) [5962 5967]))              ) nil [5939 6778])
+            ("Mat_FromQuat" function (:arguments 
+              ( ("quat" variable nil (reparse-symbol function_parameters) [6796 6800])
+                ("order" variable nil (reparse-symbol function_parameters) [6802 6807]))              ) nil [6779 7593])
+            ("if" code nil nil [7594 8132]))          
+      :file "EulerAngles.py"
+      :pointmax 8132
+      :fsize 4976
+      :lastmodtime '(23398 6949 333443 843000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-16f156c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [76 94])
+            ("EulerAngles.h" include nil nil [95 119])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [129 134]))                  
+                :type "int")
+                nil [120 493]))          
+      :file "EulerSample.c"
+      :pointmax 494
+      :fsize 493
+      :lastmodtime '(23373 57193 0 0)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Python!SEATN!euler_angle!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

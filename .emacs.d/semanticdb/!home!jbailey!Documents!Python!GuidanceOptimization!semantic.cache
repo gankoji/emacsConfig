@@ -1,0 +1,123 @@
+;; Object semanticdb-project-database-file-15f1110
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15f1110"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15f10b0"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("scipy.optimize" include nil nil [20 48])
+            ("matplotlib.pyplot" include nil nil [49 80])
+            ("math" include nil nil [82 93])
+            ("random" include nil nil [94 107])
+            ("costFunction" function (:arguments 
+              ( ("time" variable nil (reparse-symbol function_parameters) [565 569])
+                ("path" variable nil (reparse-symbol function_parameters) [571 575])
+                ("control" variable nil (reparse-symbol function_parameters) [577 584])
+                ("tc0" variable nil (reparse-symbol function_parameters) [586 589])
+                ("tcf" variable nil (reparse-symbol function_parameters) [591 594])
+                ("xc0" variable nil (reparse-symbol function_parameters) [596 599])
+                ("xcf" variable nil (reparse-symbol function_parameters) [601 604]))              ) nil [548 1164])
+            ("nPoints" variable nil nil [1165 1177])
+            ("tc0" variable nil nil [1178 1185])
+            ("tcf" variable nil nil [1186 1194])
+            ("xc0" variable nil nil [1195 1202])
+            ("xcf" variable nil nil [1203 1211])
+            ("control" variable nil nil [1240 1270])
+            ("print" code nil nil [1310 1370])
+            ("cfWrapper" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [1634 1635])
+                ("args" variable nil (reparse-symbol function_parameters) [1637 1642]))              ) nil [1620 1843])
+            ("x" variable nil nil [1844 1877])
+            ("x" variable nil nil [1878 1911])
+            ("print" code nil nil [1913 1961])
+            ("res" variable nil nil [1963 2042])
+            ("print" code nil nil [2044 2056]))          
+      :file "FirstCut.py"
+      :pointmax 2222
+      :fsize 2221
+      :lastmodtime '(23326 2712 952190 645000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15f10d0"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("scipy.optimize" include nil nil [20 48])
+            ("matplotlib.pyplot" include nil nil [49 80])
+            ("math" include nil nil [82 93])
+            ("random" include nil nil [94 107])
+            ("GNCUtilities" include nil nil [108 134])
+            ("tc0" variable nil nil [136 143])
+            ("tcf" variable nil nil [144 152])
+            ("rc0" variable nil nil [174 217])
+            ("rcf" variable nil nil [218 261])
+            ("nPoints" variable nil nil [263 275])
+            ("stateDim" variable nil nil [276 288])
+            ("controlDim" variable nil nil [289 303])
+            ("state" variable nil nil [304 340])
+            ("state" variable nil nil [342 387])
+            ("state" variable nil nil [388 406])
+            ("state" variable nil nil [407 425])
+            ("state" variable nil nil [426 470])
+            ("control" variable nil nil [471 512])
+            ("time" variable nil nil [513 550])
+            ("costFunction" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [569 570])
+                ("args" variable nil (reparse-symbol function_parameters) [572 577]))              ) nil [552 1590])
+            ("dynamicConstraints" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [1614 1615]))              ) nil [1591 2418])
+            ("dynamics" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [2432 2433])
+                ("u" variable nil (reparse-symbol function_parameters) [2434 2435])
+                ("t" variable nil (reparse-symbol function_parameters) [2436 2437]))              ) nil [2419 3004])
+            ("defineVelocityFrame" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [3037 3038])
+                ("v" variable nil (reparse-symbol function_parameters) [3040 3041]))              ) nil [3013 3432])
+            ("x" variable nil nil [3433 3467])
+            ("x" variable nil nil [3468 3501])
+            ("dynamicConstraints" code nil nil [3502 3523])
+            ("con" variable nil nil [3525 3572])
+            ("res" variable nil nil [3573 3674])
+            ("print" code nil nil [3808 3820]))          
+      :file "ThreeDimensions.py"
+      :pointmax 3821
+      :fsize 3820
+      :lastmodtime '(23327 51975 399323 308000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15f10f0"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("pi" variable nil nil [33 47])
+            ("r2d" code nil nil [48 62])
+            ("d2r" code nil nil [63 77])
+            ("EulD2Quat" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [93 96]))              ) nil [79 222])
+            ("Eul2Quat" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [236 239]))              ) nil [223 598])
+            ("EulD2DCM" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [612 615]))              ) nil [599 674])
+            ("Eul2DCM" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [687 690]))              ) nil [675 905])
+            ("Quat2Eul" function (:arguments 
+              ( ("q" variable nil (reparse-symbol function_parameters) [919 920]))              ) nil [906 1246])
+            ("DCM2Quat" function (:arguments 
+              ( ("dcm" variable nil (reparse-symbol function_parameters) [1260 1263]))              ) nil [1247 1500])
+            ("Quat2DCM" function (:arguments 
+              ( ("q" variable nil (reparse-symbol function_parameters) [1514 1515]))              ) nil [1501 1955])
+            ("C_x" function (:arguments 
+              ( ("theta" variable nil (reparse-symbol function_parameters) [2015 2020]))              ) nil [2007 2253])
+            ("C_y" function (:arguments 
+              ( ("theta" variable nil (reparse-symbol function_parameters) [2262 2267]))              ) nil [2254 2512])
+            ("C_z" function (:arguments 
+              ( ("theta" variable nil (reparse-symbol function_parameters) [2521 2526]))              ) nil [2513 2762]))          
+      :file "GNCUtilities.py"
+      :pointmax 2764
+      :fsize 2893
+      :lastmodtime '(23327 16943 729642 420000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Python!GuidanceOptimization!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

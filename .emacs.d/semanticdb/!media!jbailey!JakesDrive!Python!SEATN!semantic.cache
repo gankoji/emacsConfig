@@ -1,0 +1,109 @@
+;; Object semanticdb-project-database-file-19d0abc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-19d0abc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-19d0ac8"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [19 37])
+            ("matplotlib.pyplot" include nil nil [38 69])
+            ("math" include nil nil [70 81])
+            ("random" include nil nil [82 95])
+            ("EOM" include nil nil [111 121])
+            ("TOC" include nil nil [122 132])
+            ("GNCUtilities" include nil nil [133 152])
+            ("NAV" include nil nil [153 163])
+            ("ProNav" include nil nil [164 177])
+            ("HG1700" include nil nil [193 206])
+            ("Fibersense" include nil nil [207 224])
+            ("endTime" variable nil nil [249 264])
+            ("dt" variable nil nil [265 275])
+            ("navDt" variable nil nil [276 288])
+            ("simLength" variable nil nil [289 332])
+            ("Mass" variable nil nil [355 363])
+            ("att_0" variable nil nil [364 391])
+            ("x_0" variable nil nil [392 433])
+            ("v_0" variable nil nil [434 465])
+            ("xt0" variable nil nil [466 507])
+            ("vt0" variable nil nil [508 544])
+            ("Moments" variable nil nil [545 574])
+            ("Forces" variable nil nil [575 604])
+            ("Inertia" variable nil nil [605 722])
+            ("TOC" variable nil nil [772 799])
+            ("OWN" variable nil nil [800 843])
+            ("TGT" variable nil nil [844 887])
+            ("NAV" variable nil nil [888 934])
+            ("IMU" variable nil nil [935 985])
+            ("TG" variable nil nil [986 1020])
+            ("simTime" variable nil nil [1022 1070])
+            ("points" variable nil nil [1071 1103])
+            ("moments" variable nil nil [1104 1137])
+            ("errors" variable nil nil [1138 1171])
+            ("imuStore" variable nil nil [1172 1207])
+            ("yaw" code nil nil [1278 1290])
+            ("pitch" variable nil nil [1291 1302])
+            ("roll" code nil nil [1303 1315])
+            ("d2r" code nil nil [1316 1337])
+            ("eul" code nil nil [1338 1376])
+            ("los" code nil nil [1492 1507])
+            ("los" code nil nil [1508 1537])
+            ("orient" code nil nil [1538 1570])
+            ("orient" variable nil nil [1571 1601])
+            ("third" variable nil nil [1602 1631])
+            ("command_b_i" variable nil nil [1633 1725])
+            ("inertialPoint" variable nil nil [1768 1836])
+            ("inertialPoint" code nil nil [1837 1896])
+            ("q_b_i0" variable nil nil [1919 1944])
+            ("nav_b_i0" variable nil nil [1945 1985])
+            ("TOC" code nil nil [1986 2023])
+            ("for" code nil nil [2024 3306])
+            ("outputData" variable nil nil [3335 3356])
+            ("eulerData" variable nil nil [3357 3392])
+            ("for" code nil nil [3394 3494])
+            ("navOutput" variable nil nil [3495 3518])
+            ("navEulerData" variable nil nil [3519 3567])
+            ("for" code nil nil [3569 3680])
+            ("plotFigures" variable nil nil [3708 3726])
+            ("plotTru" variable nil nil [3728 3743])
+            ("plotNAV" variable nil nil [3744 3758])
+            ("plotIMU" variable nil nil [3759 3773])
+            ("plotACS" variable nil nil [3774 3789])
+            ("plotTOC" variable nil nil [3790 3804])
+            ("if" code nil nil [3806 7587]))          
+      :file "Main.py"
+      :pointmax 7587
+      :fsize 7586
+      :lastmodtime '(23381 10043 443570 100000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-118c910"
+      :file "EOM.py"
+      :fsize 5339
+      :lastmodtime '(23381 9847 426518 100000))
+    (semanticdb-table "semanticdb-table-19b2bd8"
+      :file "TOC.py"
+      :fsize 3102
+      :lastmodtime '(23381 10043 444756 300000))
+    (semanticdb-table "semanticdb-table-19c6da8"
+      :file "GNCUtilities.py"
+      :fsize 4273
+      :lastmodtime '(23381 9847 426930 200000))
+    (semanticdb-table "semanticdb-table-1a3f464"
+      :file "NAV.py"
+      :fsize 2351
+      :lastmodtime '(23381 9847 427825 400000))
+    (semanticdb-table "semanticdb-table-19db93c"
+      :file "ProNav.py"
+      :fsize 2311
+      :lastmodtime '(23381 9847 428011 0))
+    (semanticdb-table "semanticdb-table-19ef250"
+      :file "HG1700.py"
+      :fsize 4900
+      :lastmodtime '(23381 9847 427166 300000))
+    (semanticdb-table "semanticdb-table-1a435e8"
+      :file "Fibersense.py"
+      :fsize 4902
+      :lastmodtime '(23381 10043 442948 0)))
+  :file "!media!jbailey!JakesDrive!Python!SEATN!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

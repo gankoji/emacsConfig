@@ -1,0 +1,6 @@
+;; -*- emacs-lisp -*- <18/06/09 10:13:46 /home/jbailey/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+(((tramp-file-name "ssh" "ec2-user" nil "ec2-18-221-216-85.us-east-2.compute.amazonaws.com" nil nil nil)
+  nil))

@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("filter" type
+               (:members 
+                  ( ("a" variable nil (reparse-symbol indented_block_body) [93 124])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [162 202])
+                            ("self" variable nil (reparse-symbol indented_block_body) [211 228]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [147 151]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [134 229])
+                    ("doFilter" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [247 251])
+                            ("input" variable nil (reparse-symbol function_parameters) [253 258]))                          )
+                        (reparse-symbol indented_block_body) [234 515]))                  
+                :type "class")
+                nil [21 515]))          
+      :file "Filter.py"
+      :pointmax 515
+      :fsize 534
+      :lastmodtime '(23182 24060 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_c!Users!asaxp!Documents!Workspace!Python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

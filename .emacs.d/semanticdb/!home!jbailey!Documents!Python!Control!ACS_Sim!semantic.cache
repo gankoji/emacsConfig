@@ -1,0 +1,41 @@
+;; Object semanticdb-project-database-file-1849870
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1849870"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1cace54"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("pi" variable nil nil [33 47])
+            ("r2d" code nil nil [48 62])
+            ("d2r" code nil nil [63 77])
+            ("EulD2Quat" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [93 96]))              ) nil [79 222])
+            ("Eul2Quat" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [236 239]))              ) nil [223 598])
+            ("EulD2DCM" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [612 615]))              ) nil [599 674])
+            ("Eul2DCM" function (:arguments 
+              ( ("eul" variable nil (reparse-symbol function_parameters) [687 690]))              ) nil [675 905])
+            ("Quat2Eul" function (:arguments 
+              ( ("q" variable nil (reparse-symbol function_parameters) [919 920]))              ) nil [906 1246])
+            ("DCM2Quat" function (:arguments 
+              ( ("dcm" variable nil (reparse-symbol function_parameters) [1260 1263]))              ) nil [1247 1500])
+            ("Quat2DCM" function (:arguments 
+              ( ("q" variable nil (reparse-symbol function_parameters) [1514 1515]))              ) nil [1501 1955])
+            ("C_x" function (:arguments 
+              ( ("theta" variable nil (reparse-symbol function_parameters) [2015 2020]))              ) nil [2007 2253])
+            ("C_y" function (:arguments 
+              ( ("theta" variable nil (reparse-symbol function_parameters) [2262 2267]))              ) nil [2254 2512])
+            ("C_z" function (:arguments 
+              ( ("theta" variable nil (reparse-symbol function_parameters) [2521 2526]))              ) nil [2513 2762]))          
+      :file "GNCUtilities.py"
+      :pointmax 2764
+      :fsize 2893
+      :lastmodtime '(23327 16943 729642 420000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!Python!Control!ACS_Sim!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
