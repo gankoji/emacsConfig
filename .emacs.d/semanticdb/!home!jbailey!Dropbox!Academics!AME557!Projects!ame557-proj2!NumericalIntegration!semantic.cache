@@ -1,0 +1,123 @@
+;; Object semanticdb-project-database-file-1b08358
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1b08358"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1a644b4"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("deg2rad" code nil nil [33 58])
+            ("classicalElements" function (:arguments 
+              ( ("r" variable nil (reparse-symbol function_parameters) [125 126])
+                ("v" variable nil (reparse-symbol function_parameters) [127 128])
+                ("mu" variable nil (reparse-symbol function_parameters) [129 131]))              ) nil [103 3181])
+            ("trueAnomalyToMeanAnomaly" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [3260 3261])
+                ("e" variable nil (reparse-symbol function_parameters) [3262 3263]))              ) nil [3231 3497])
+            ("meanAnomalytoTrueAnomaly" function (:arguments 
+              ( ("M_f" variable nil (reparse-symbol function_parameters) [3527 3530])
+                ("n" variable nil (reparse-symbol function_parameters) [3532 3533]))              ) nil [3498 4126])
+            ("elementsToRV" function (:arguments 
+              ( ("oe0" variable nil (reparse-symbol function_parameters) [4144 4147])
+                ("mu" variable nil (reparse-symbol function_parameters) [4149 4151]))              ) nil [4127 5192]))          
+      :file "OrbitalUtilities.py"
+      :pointmax 5192
+      :fsize 5191
+      :lastmodtime '(23510 37250 278065 498000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1a644d4"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("unitTests" variable nil nil [33 50])
+            ("h" variable nil nil [78 246])
+            ("r" variable nil nil [297 624])
+            ("H" variable nil nil [647 892])
+            ("underHeight" variable nil nil [894 913])
+            ("atmosphere" function (:arguments 
+              ( ("z" variable nil (reparse-symbol function_parameters) [930 931]))              ) nil [915 1346])
+            ("if" code nil nil [1347 1439]))          
+      :file "US76.py"
+      :pointmax 1439
+      :fsize 1438
+      :lastmodtime '(23510 37250 278065 498000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b08318"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("US76" include nil nil [33 60])
+            ("mu" variable nil nil [62 75])
+            ("Re" variable nil nil [119 133])
+            ("J2" variable nil nil [165 183])
+            ("BC" code nil nil [209 239])
+            ("Bstar" variable nil nil [278 296])
+            ("rho_ref" variable nil nil [297 312])
+            ("__underHeight__" variable nil nil [314 337])
+            ("Oblateness_J2" function (:arguments 
+              ( ("r" variable nil (reparse-symbol function_parameters) [356 357])
+                ("v" variable nil (reparse-symbol function_parameters) [358 359]))              ) nil [338 737])
+            ("Drag" function (:arguments 
+              ( ("r" variable nil (reparse-symbol function_parameters) [774 775])
+                ("v" variable nil (reparse-symbol function_parameters) [776 777]))              ) nil [765 1337]))          
+      :file "Disturbances.py"
+      :pointmax 1337
+      :fsize 1336
+      :lastmodtime '(23519 36581 263054 847000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1b08338"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("matplotlib.pyplot" include nil nil [32 63])
+            ("OrbitalUtilities" include nil nil [65 125])
+            ("Disturbances" include nil nil [126 170])
+            ("debug" variable nil nil [172 185])
+            ("if" code nil nil [187 302])
+            ("N" variable nil nil [303 335])
+            ("simTime" variable nil nil [336 373])
+            ("j" variable nil nil [374 379])
+            ("mu" variable nil nil [411 424])
+            ("Re" variable nil nil [468 480])
+            ("J2" variable nil nil [512 530])
+            ("r" variable nil nil [557 576])
+            ("v" variable nil nil [577 596])
+            ("a" variable nil nil [597 616])
+            ("aJ2" variable nil nil [617 638])
+            ("aD" variable nil nil [639 659])
+            ("orbEl" variable nil nil [660 683])
+            ("alt" variable nil nil [684 703])
+            ("E" variable nil nil [704 721])
+            ("r_c" variable nil nil [723 743])
+            ("v_c" variable nil nil [744 764])
+            ("t_c" variable nil nil [765 772])
+            ("d2r" code nil nil [774 793])
+            ("oe0" variable nil nil [824 942])
+            ("n" variable nil nil [944 975])
+            ("print" code nil nil [976 1007])
+            ("T" code nil nil [1008 1023])
+            ("print" code nil nil [1024 1058])
+            ("RV" variable nil nil [1060 1086])
+            ("r0" variable nil nil [1088 1100])
+            ("v0" variable nil nil [1101 1113])
+            ("print" code nil nil [1292 1348])
+            ("print" code nil nil [1349 1407])
+            ("notCrashed" variable nil nil [1408 1425])
+            ("stateFlip" variable nil nil [1426 1443])
+            ("for" code nil nil [1444 3577])
+            ("plotFigures" variable nil nil [3578 3596])
+            ("plotFormat" variable nil nil [3597 3615])
+            ("if" code nil nil [3617 6434]))          
+      :file "NumericalIntegration.py"
+      :pointmax 6434
+      :fsize 6433
+      :lastmodtime '(23519 39449 757416 989000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Dropbox!Academics!AME557!Projects!ame557-proj2!NumericalIntegration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

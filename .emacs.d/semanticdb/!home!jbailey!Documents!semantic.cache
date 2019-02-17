@@ -1,10 +1,17 @@
-;; Object semanticdb-project-database-file
+;; Object semanticdb-project-database-file-16f01dc
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file"
+(semanticdb-project-database-file "semanticdb-project-database-file-16f01dc"
   :tables
   (list
-
-)
+    (semanticdb-table "semanticdb-table-16f01e8"
+      :major-mode python-mode
+      :tags 
+        '( ("for" code nil nil [1 205]))          
+      :file "FizzBuzz.py"
+      :pointmax 205
+      :fsize 204
+      :lastmodtime '(23447 5649 667243 886000)
+      :unmatched-syntax nil))
   :file "!home!jbailey!Documents!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

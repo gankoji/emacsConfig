@@ -1,31 +1,3 @@
-cd ../../SEATN/
-ls
-rm ./*py
-ls
-cd ../Control/
-cd ../SEATN/
-ls
-ls
-ls -al
-chmod 644 ./*
-python Main.py 
-git status
-rm ../UAVSim/#TargetStateEstimation.org\# 
-git status
-ls -a
-cd ..
-git status
-git add *
-git commit "Working on the SEATN preso"
-git commit -m "Working on the SEATN preso"
-git status
-cd SEATN/
-ls
-clear
-ls -a
-python IMU_Base.py 
-python IMU_Base.py 
-python IMU_Base.py 
 python IMU_Base.py 
 python IMU_Base.py 
 python IMU_Base.py 
@@ -112,17 +84,45 @@ git status
 ls
 unzip GraphicsGems-master.zip 
 ls
-git status
 cd ../..
-cd ..
-git status
-git add *
-git commit -m "Updated notes on the new campaign for sunday's group."
-git config --global user.email "asaxplayinghorse@gmail.com"
-git config --global user.name "Jake Bailey"
-git commit -m "Updated notes on the new campaign for sunday's group."
-git status
-git add .gitignore
-git commit -m "Readding gitignore"
-git status
+cd ../..
+cd Documents/
+ls
+mkdir GitLab
+cd GitLab/
+git pull https://gitlab.com/asaxplayinghorse/orbital-dynamics.git
+mkdir OrbDyn
+cd OrbDyn/
+git clone https://gitlab.com/asaxplayinghorse/orbital-dynamics.git
+ls
+cd orbital-dynamics/
+ls
 clear
+ssh-keygen -o -t rsa -C "asaxplayinghorse@gmail.com" -b 4096
+ssh-agent
+ssh-add ~/.ssh/id_rsa
+ssh -T git@gitlab.com
+ssh -T git@gitlab.com/asaxplayinghorse
+ssh -T git@gitlab.com/asaxplayinghorse/
+ssh -T git@gitlab.com/asaxplayinghorse/orbital-dynamics
+ssh -Tv git@gitlab.com
+git -h
+git --version
+sudo apt update
+sudo apt upgrade git
+git remote
+git -h
+git remote -h
+sit remote show origin
+git remote show origin
+git remote show origin
+git remote set-url origin git:gitlab.com/asaxplayinghorse/orbital-dynamics.git
+git pull
+git pull https://gitlab.com/asaxplayinghorse/orbital-dynamics.git
+git remote set-url origin git://gitlab.com/asaxplayinghorse/orbital-dynamics.git
+git pull
+cd ..
+rm -rf orbital-dynamics/
+git clone git@github.com/asaxplayinghorse/orbital-dynamics.git
+git clone git@gitlab.com/asaxplayinghorse/orbital-dynamics.git
+git clone git@gitlab.com:asaxplayinghorse/orbital-dynamics.git

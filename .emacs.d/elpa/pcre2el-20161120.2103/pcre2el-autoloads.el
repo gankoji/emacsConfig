@@ -22,11 +22,6 @@ or call the function `pcre-mode'.")
 (autoload 'pcre-mode "pcre2el" "\
 Use emulated PCRE syntax for regexps wherever possible.
 
-If called interactively, enable PCRE mode if ARG is positive, and
-disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it
-if ARG is `toggle'; disable the mode otherwise.
-
 Advises the `interactive' specs of `read-regexp' and the
 following other functions so that they read PCRE syntax and
 translate to its Emacs equivalent:
@@ -184,11 +179,6 @@ Convert regex at point to RX syntax. Chooses Emacs or PCRE syntax by major mode.
 
 (autoload 'rxt-mode "pcre2el" "\
 Regex translation utilities.
-
-If called interactively, enable Rxt mode if ARG is positive, and
-disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it
-if ARG is `toggle'; disable the mode otherwise.
 
 \(fn &optional ARG)" t nil)
 

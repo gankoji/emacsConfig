@@ -1,0 +1,1402 @@
+;; Object semanticdb-project-database-file-10cb220
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-10cb220"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-dbe8f4"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Three earth-gravity models for use with SGP4.\"\"\"" code nil nil [1 52])
+            ("collections" include nil nil [54 88])
+            ("sgp4.propagation" include nil nil [89 130])
+            ("EarthGravity" variable nil nil [132 233])
+            ("wgs72old" variable nil nil [235 285])
+            ("wgs72" variable nil nil [286 330])
+            ("wgs84" variable nil nil [331 375]))          
+      :file "earth_gravity.py"
+      :pointmax 376
+      :fsize 375
+      :lastmodtime '(21143 40112 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-f886b4"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"The sgp4 procedures for analytical propagation of a satellite.
+
+I have made the rather unorthodox decision to leave as much of this C++
+code alone as possible: if a line of code would run without change in
+Python, then I refused to re-indent it or remove its terminal semicolon,
+so that in the future it will be easier to keep updating this file as
+the original author's C++ continues to improve.  Thus, 5-space
+indentation (!) prevails in this file.
+
+I have even kept all of the C++ block comments (by turning them into
+Python string constants) to make this easier to navigate and maintain,
+as well as to make it more informative for people who encounter this
+code for the first time here in its Python form.
+
+| - Brandon Rhodes
+|   Common Grounds Coffee House, Bluffton, Ohio
+|   On a very hot August day in 2012
+\"\"\"" code nil nil [1 822])
+            ("math" include nil nil [824 878])
+            ("deg2rad" code nil nil [880 900])
+            ("_nan" variable nil nil [902 921])
+            ("false" variable nil nil [922 948])
+            ("true" variable nil nil [949 960])
+            ("twopi" code nil nil [961 977])
+            ("\"\"\"
+/*     ----------------------------------------------------------------
+*
+*                               sgp4unit.cpp
+*
+*    this file contains the sgp4 procedures for analytical propagation
+*    of a satellite. the code was originally released in the 1980 and 1986
+*    spacetrack papers. a detailed discussion of the theory and history
+*    may be found in the 2006 aiaa paper by vallado, crawford, hujsak,
+*    and kelso.
+*
+*                            companion code for
+*               fundamentals of astrodynamics and applications
+*                                    2007
+*                              by david vallado
+*
+*       (w) 719-573-2600, email dvallado@agi.com
+*
+*    current :
+*              30 Aug 10  david vallado
+*                           delete unused variables in initl
+*                           replace pow inetger 2, 3 with multiplies for speed
+*    changes :
+*               3 Nov 08  david vallado
+*                           put returns in for error codes
+*              29 sep 08  david vallado
+*                           fix atime for faster operation in dspace
+*                           add operationmode for afspc (a) or improved (i)
+*                           performance mode
+*              16 jun 08  david vallado
+*                           update small eccentricity check
+*              16 nov 07  david vallado
+*                           misc fixes for better compliance
+*              20 apr 07  david vallado
+*                           misc fixes for constants
+*              11 aug 06  david vallado
+*                           chg lyddane choice back to strn3, constants, misc doc
+*              15 dec 05  david vallado
+*                           misc fixes
+*              26 jul 05  david vallado
+*                           fixes for paper
+*                           note that each fix is preceded by a
+*                           comment with \"sgp4fix\" and an explanation of
+*                           what was changed
+*              10 aug 04  david vallado
+*                           2nd printing baseline working
+*              14 may 01  david vallado
+*                           2nd edition baseline
+*                     80  norad
+*                           original baseline
+*       ----------------------------------------------------------------      */
+\"\"\"" code nil nil [979 3314])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           procedure dpper
+*
+*  this procedure provides deep space long period periodic contributions
+*    to the mean elements.  by design, these periodics are zero at epoch.
+*    this used to be dscom which included initialization, but it's really a
+*    recurring function.
+*
+*  author        : david vallado                  719-573-2600   28 jun 2005
+*
+*  inputs        :
+*    e3          -
+*    ee2         -
+*    peo         -
+*    pgho        -
+*    pho         -
+*    pinco       -
+*    plo         -
+*    se2 , se3 , sgh2, sgh3, sgh4, sh2, sh3, si2, si3, sl2, sl3, sl4 -
+*    t           -
+*    xh2, xh3, xi2, xi3, xl2, xl3, xl4 -
+*    zmol        -
+*    zmos        -
+*    ep          - eccentricity                           0.0 - 1.0
+*    inclo       - inclination - needed for lyddane modification
+*    nodep       - right ascension of ascending node
+*    argpp       - argument of perigee
+*    mp          - mean anomaly
+*
+*  outputs       :
+*    ep          - eccentricity                           0.0 - 1.0
+*    inclp       - inclination
+*    nodep        - right ascension of ascending node
+*    argpp       - argument of perigee
+*    mp          - mean anomaly
+*
+*  locals        :
+*    alfdp       -
+*    betdp       -
+*    cosip  , sinip  , cosop  , sinop  ,
+*    dalf        -
+*    dbet        -
+*    dls         -
+*    f2, f3      -
+*    pe          -
+*    pgh         -
+*    ph          -
+*    pinc        -
+*    pl          -
+*    sel   , ses   , sghl  , sghs  , shl   , shs   , sil   , sinzf , sis   ,
+*    sll   , sls
+*    xls         -
+*    xnoh        -
+*    zf          -
+*    zm          -
+*
+*  coupling      :
+*    none.
+*
+*  references    :
+*    hoots, roehrich, norad spacetrack report #3 1980
+*    hoots, norad spacetrack report #6 1986
+*    hoots, schumacher and glover 2004
+*    vallado, crawford, hujsak, kelso  2006
+  ----------------------------------------------------------------------------*/
+\"\"\"" code nil nil [3316 5360])
+            ("_dpper" function (:arguments 
+              ( ("satrec" variable nil (reparse-symbol function_parameters) [5373 5379])
+                ("inclo" variable nil (reparse-symbol function_parameters) [5381 5386])
+                ("init" variable nil (reparse-symbol function_parameters) [5388 5392])
+                ("ep" variable nil (reparse-symbol function_parameters) [5394 5396])
+                ("inclp" variable nil (reparse-symbol function_parameters) [5398 5403])
+                ("nodep" variable nil (reparse-symbol function_parameters) [5405 5410])
+                ("argpp" variable nil (reparse-symbol function_parameters) [5412 5417])
+                ("mp" variable nil (reparse-symbol function_parameters) [5419 5421])
+                ("opsmode" variable nil (reparse-symbol function_parameters) [5423 5430]))              ) nil [5362 9741])
+            ("\"\"\"
+/*-----------------------------------------------------------------------------
+*
+*                           procedure dscom
+*
+*  this procedure provides deep space common items used by both the secular
+*    and periodics subroutines.  input is provided as shown. this routine
+*    used to be called dpper, but the functions inside weren't well organized.
+*
+*  author        : david vallado                  719-573-2600   28 jun 2005
+*
+*  inputs        :
+*    epoch       -
+*    ep          - eccentricity
+*    argpp       - argument of perigee
+*    tc          -
+*    inclp       - inclination
+*    nodep       - right ascension of ascending node
+*    np          - mean motion
+*
+*  outputs       :
+*    sinim  , cosim  , sinomm , cosomm , snodm  , cnodm
+*    day         -
+*    e3          -
+*    ee2         -
+*    em          - eccentricity
+*    emsq        - eccentricity squared
+*    gam         -
+*    peo         -
+*    pgho        -
+*    pho         -
+*    pinco       -
+*    plo         -
+*    rtemsq      -
+*    se2, se3         -
+*    sgh2, sgh3, sgh4        -
+*    sh2, sh3, si2, si3, sl2, sl3, sl4         -
+*    s1, s2, s3, s4, s5, s6, s7          -
+*    ss1, ss2, ss3, ss4, ss5, ss6, ss7, sz1, sz2, sz3         -
+*    sz11, sz12, sz13, sz21, sz22, sz23, sz31, sz32, sz33        -
+*    xgh2, xgh3, xgh4, xh2, xh3, xi2, xi3, xl2, xl3, xl4         -
+*    nm          - mean motion
+*    z1, z2, z3, z11, z12, z13, z21, z22, z23, z31, z32, z33         -
+*    zmol        -
+*    zmos        -
+*
+*  locals        :
+*    a1, a2, a3, a4, a5, a6, a7, a8, a9, a10         -
+*    betasq      -
+*    cc          -
+*    ctem, stem        -
+*    x1, x2, x3, x4, x5, x6, x7, x8          -
+*    xnodce      -
+*    xnoi        -
+*    zcosg  , zsing  , zcosgl , zsingl , zcosh  , zsinh  , zcoshl , zsinhl ,
+*    zcosi  , zsini  , zcosil , zsinil ,
+*    zx          -
+*    zy          -
+*
+*  coupling      :
+*    none.
+*
+*  references    :
+*    hoots, roehrich, norad spacetrack report #3 1980
+*    hoots, norad spacetrack report #6 1986
+*    hoots, schumacher and glover 2004
+*    vallado, crawford, hujsak, kelso  2006
+  ----------------------------------------------------------------------------*/
+\"\"\"" code nil nil [9742 11949])
+            ("_dscom" function (:arguments 
+              ( ("epoch" variable nil (reparse-symbol function_parameters) [11970 11975])
+                ("ep" variable nil (reparse-symbol function_parameters) [11978 11980])
+                ("argpp" variable nil (reparse-symbol function_parameters) [11986 11991])
+                ("tc" variable nil (reparse-symbol function_parameters) [11995 11997])
+                ("inclp" variable nil (reparse-symbol function_parameters) [12003 12008])
+                ("nodep" variable nil (reparse-symbol function_parameters) [12017 12022])
+                ("np" variable nil (reparse-symbol function_parameters) [12025 12027])
+                ("e3" variable nil (reparse-symbol function_parameters) [12036 12038])
+                ("ee2" variable nil (reparse-symbol function_parameters) [12044 12047])
+                ("peo" variable nil (reparse-symbol function_parameters) [12056 12059])
+                ("pgho" variable nil (reparse-symbol function_parameters) [12064 12068])
+                ("pho" variable nil (reparse-symbol function_parameters) [12071 12074])
+                ("pinco" variable nil (reparse-symbol function_parameters) [12083 12088])
+                ("plo" variable nil (reparse-symbol function_parameters) [12090 12093])
+                ("se2" variable nil (reparse-symbol function_parameters) [12095 12098])
+                ("se3" variable nil (reparse-symbol function_parameters) [12102 12105])
+                ("sgh2" variable nil (reparse-symbol function_parameters) [12114 12118])
+                ("sgh3" variable nil (reparse-symbol function_parameters) [12121 12125])
+                ("sgh4" variable nil (reparse-symbol function_parameters) [12128 12132])
+                ("sh2" variable nil (reparse-symbol function_parameters) [12136 12139])
+                ("sh3" variable nil (reparse-symbol function_parameters) [12143 12146])
+                ("si2" variable nil (reparse-symbol function_parameters) [12155 12158])
+                ("si3" variable nil (reparse-symbol function_parameters) [12162 12165])
+                ("sl2" variable nil (reparse-symbol function_parameters) [12169 12172])
+                ("sl3" variable nil (reparse-symbol function_parameters) [12177 12180])
+                ("sl4" variable nil (reparse-symbol function_parameters) [12184 12187])
+                ("xgh2" variable nil (reparse-symbol function_parameters) [12196 12200])
+                ("xgh3" variable nil (reparse-symbol function_parameters) [12203 12207])
+                ("xgh4" variable nil (reparse-symbol function_parameters) [12211 12215])
+                ("xh2" variable nil (reparse-symbol function_parameters) [12218 12221])
+                ("xh3" variable nil (reparse-symbol function_parameters) [12230 12233])
+                ("xi2" variable nil (reparse-symbol function_parameters) [12237 12240])
+                ("xi3" variable nil (reparse-symbol function_parameters) [12244 12247])
+                ("xl2" variable nil (reparse-symbol function_parameters) [12252 12255])
+                ("xl3" variable nil (reparse-symbol function_parameters) [12259 12262])
+                ("xl4" variable nil (reparse-symbol function_parameters) [12271 12274])
+                ("zmol" variable nil (reparse-symbol function_parameters) [12278 12282])
+                ("zmos" variable nil (reparse-symbol function_parameters) [12285 12289]))              ) nil [11951 18524])
+            ("\"\"\"
+/*-----------------------------------------------------------------------------
+*
+*                           procedure dsinit
+*
+*  this procedure provides deep space contributions to mean motion dot due
+*    to geopotential resonance with half day and one day orbits.
+*
+*  author        : david vallado                  719-573-2600   28 jun 2005
+*
+*  inputs        :
+*    cosim, sinim-
+*    emsq        - eccentricity squared
+*    argpo       - argument of perigee
+*    s1, s2, s3, s4, s5      -
+*    ss1, ss2, ss3, ss4, ss5 -
+*    sz1, sz3, sz11, sz13, sz21, sz23, sz31, sz33 -
+*    t           - time
+*    tc          -
+*    gsto        - greenwich sidereal time                   rad
+*    mo          - mean anomaly
+*    mdot        - mean anomaly dot (rate)
+*    no          - mean motion
+*    nodeo       - right ascension of ascending node
+*    nodedot     - right ascension of ascending node dot (rate)
+*    xpidot      -
+*    z1, z3, z11, z13, z21, z23, z31, z33 -
+*    eccm        - eccentricity
+*    argpm       - argument of perigee
+*    inclm       - inclination
+*    mm          - mean anomaly
+*    xn          - mean motion
+*    nodem       - right ascension of ascending node
+*
+*  outputs       :
+*    em          - eccentricity
+*    argpm       - argument of perigee
+*    inclm       - inclination
+*    mm          - mean anomaly
+*    nm          - mean motion
+*    nodem       - right ascension of ascending node
+*    irez        - flag for resonance           0-none, 1-one day, 2-half day
+*    atime       -
+*    d2201, d2211, d3210, d3222, d4410, d4422, d5220, d5232, d5421, d5433    -
+*    dedt        -
+*    didt        -
+*    dmdt        -
+*    dndt        -
+*    dnodt       -
+*    domdt       -
+*    del1, del2, del3        -
+*    ses  , sghl , sghs , sgs  , shl  , shs  , sis  , sls
+*    theta       -
+*    xfact       -
+*    xlamo       -
+*    xli         -
+*    xni
+*
+*  locals        :
+*    ainv2       -
+*    aonv        -
+*    cosisq      -
+*    eoc         -
+*    f220, f221, f311, f321, f322, f330, f441, f442, f522, f523, f542, f543  -
+*    g200, g201, g211, g300, g310, g322, g410, g422, g520, g521, g532, g533  -
+*    sini2       -
+*    temp        -
+*    temp1       -
+*    theta       -
+*    xno2        -
+*
+*  coupling      :
+*    getgravconst
+*
+*  references    :
+*    hoots, roehrich, norad spacetrack report #3 1980
+*    hoots, norad spacetrack report #6 1986
+*    hoots, schumacher and glover 2004
+*    vallado, crawford, hujsak, kelso  2006
+  ----------------------------------------------------------------------------*/
+\"\"\"" code nil nil [18525 21100])
+            ("_dsinit" function (:arguments 
+              ( ("whichconst" variable nil (reparse-symbol function_parameters) [21122 21132])
+                ("cosim" variable nil (reparse-symbol function_parameters) [21141 21146])
+                ("emsq" variable nil (reparse-symbol function_parameters) [21149 21153])
+                ("argpo" variable nil (reparse-symbol function_parameters) [21157 21162])
+                ("s1" variable nil (reparse-symbol function_parameters) [21166 21168])
+                ("s2" variable nil (reparse-symbol function_parameters) [21174 21176])
+                ("s3" variable nil (reparse-symbol function_parameters) [21185 21187])
+                ("s4" variable nil (reparse-symbol function_parameters) [21193 21195])
+                ("s5" variable nil (reparse-symbol function_parameters) [21201 21203])
+                ("sinim" variable nil (reparse-symbol function_parameters) [21210 21215])
+                ("ss1" variable nil (reparse-symbol function_parameters) [21218 21221])
+                ("ss2" variable nil (reparse-symbol function_parameters) [21230 21233])
+                ("ss3" variable nil (reparse-symbol function_parameters) [21238 21241])
+                ("ss4" variable nil (reparse-symbol function_parameters) [21246 21249])
+                ("ss5" variable nil (reparse-symbol function_parameters) [21255 21258])
+                ("sz1" variable nil (reparse-symbol function_parameters) [21263 21266])
+                ("sz3" variable nil (reparse-symbol function_parameters) [21275 21278])
+                ("sz11" variable nil (reparse-symbol function_parameters) [21283 21287])
+                ("sz13" variable nil (reparse-symbol function_parameters) [21291 21295])
+                ("sz21" variable nil (reparse-symbol function_parameters) [21300 21304])
+                ("sz23" variable nil (reparse-symbol function_parameters) [21308 21312])
+                ("sz31" variable nil (reparse-symbol function_parameters) [21321 21325])
+                ("sz33" variable nil (reparse-symbol function_parameters) [21329 21333])
+                ("t" variable nil (reparse-symbol function_parameters) [21337 21338])
+                ("tc" variable nil (reparse-symbol function_parameters) [21346 21348])
+                ("gsto" variable nil (reparse-symbol function_parameters) [21354 21358])
+                ("mo" variable nil (reparse-symbol function_parameters) [21367 21369])
+                ("mdot" variable nil (reparse-symbol function_parameters) [21375 21379])
+                ("no" variable nil (reparse-symbol function_parameters) [21383 21385])
+                ("nodeo" variable nil (reparse-symbol function_parameters) [21392 21397])
+                ("nodedot" variable nil (reparse-symbol function_parameters) [21400 21407])
+                ("xpidot" variable nil (reparse-symbol function_parameters) [21416 21422])
+                ("z1" variable nil (reparse-symbol function_parameters) [21424 21426])
+                ("z3" variable nil (reparse-symbol function_parameters) [21432 21434])
+                ("z11" variable nil (reparse-symbol function_parameters) [21441 21444])
+                ("z13" variable nil (reparse-symbol function_parameters) [21449 21452])
+                ("z21" variable nil (reparse-symbol function_parameters) [21461 21464])
+                ("z23" variable nil (reparse-symbol function_parameters) [21469 21472])
+                ("z31" variable nil (reparse-symbol function_parameters) [21477 21480])
+                ("z33" variable nil (reparse-symbol function_parameters) [21486 21489])
+                ("ecco" variable nil (reparse-symbol function_parameters) [21494 21498])
+                ("eccsq" variable nil (reparse-symbol function_parameters) [21507 21512])
+                ("em" variable nil (reparse-symbol function_parameters) [21515 21517])
+                ("argpm" variable nil (reparse-symbol function_parameters) [21522 21527])
+                ("inclm" variable nil (reparse-symbol function_parameters) [21530 21535])
+                ("mm" variable nil (reparse-symbol function_parameters) [21537 21539])
+                ("nm" variable nil (reparse-symbol function_parameters) [21548 21550])
+                ("nodem" variable nil (reparse-symbol function_parameters) [21555 21560])
+                ("irez" variable nil (reparse-symbol function_parameters) [21569 21573])
+                ("atime" variable nil (reparse-symbol function_parameters) [21582 21587])
+                ("d2201" variable nil (reparse-symbol function_parameters) [21589 21594])
+                ("d2211" variable nil (reparse-symbol function_parameters) [21596 21601])
+                ("d3210" variable nil (reparse-symbol function_parameters) [21604 21609])
+                ("d3222" variable nil (reparse-symbol function_parameters) [21611 21616])
+                ("d4410" variable nil (reparse-symbol function_parameters) [21625 21630])
+                ("d4422" variable nil (reparse-symbol function_parameters) [21632 21637])
+                ("d5220" variable nil (reparse-symbol function_parameters) [21639 21644])
+                ("d5232" variable nil (reparse-symbol function_parameters) [21647 21652])
+                ("d5421" variable nil (reparse-symbol function_parameters) [21654 21659])
+                ("d5433" variable nil (reparse-symbol function_parameters) [21668 21673])
+                ("dedt" variable nil (reparse-symbol function_parameters) [21675 21679])
+                ("didt" variable nil (reparse-symbol function_parameters) [21682 21686])
+                ("dmdt" variable nil (reparse-symbol function_parameters) [21690 21694])
+                ("dnodt" variable nil (reparse-symbol function_parameters) [21703 21708])
+                ("domdt" variable nil (reparse-symbol function_parameters) [21710 21715])
+                ("del1" variable nil (reparse-symbol function_parameters) [21717 21721])
+                ("del2" variable nil (reparse-symbol function_parameters) [21725 21729])
+                ("del3" variable nil (reparse-symbol function_parameters) [21732 21736])
+                ("xfact" variable nil (reparse-symbol function_parameters) [21745 21750])
+                ("xlamo" variable nil (reparse-symbol function_parameters) [21752 21757])
+                ("xli" variable nil (reparse-symbol function_parameters) [21759 21762])
+                ("xni" variable nil (reparse-symbol function_parameters) [21767 21770]))              ) nil [21102 29546])
+            ("\"\"\"
+/*-----------------------------------------------------------------------------
+*
+*                           procedure dspace
+*
+*  this procedure provides deep space contributions to mean elements for
+*    perturbing third body.  these effects have been averaged over one
+*    revolution of the sun and moon.  for earth resonance effects, the
+*    effects have been averaged over no revolutions of the satellite.
+*    (mean motion)
+*
+*  author        : david vallado                  719-573-2600   28 jun 2005
+*
+*  inputs        :
+*    d2201, d2211, d3210, d3222, d4410, d4422, d5220, d5232, d5421, d5433 -
+*    dedt        -
+*    del1, del2, del3  -
+*    didt        -
+*    dmdt        -
+*    dnodt       -
+*    domdt       -
+*    irez        - flag for resonance           0-none, 1-one day, 2-half day
+*    argpo       - argument of perigee
+*    argpdot     - argument of perigee dot (rate)
+*    t           - time
+*    tc          -
+*    gsto        - gst
+*    xfact       -
+*    xlamo       -
+*    no          - mean motion
+*    atime       -
+*    em          - eccentricity
+*    ft          -
+*    argpm       - argument of perigee
+*    inclm       - inclination
+*    xli         -
+*    mm          - mean anomaly
+*    xni         - mean motion
+*    nodem       - right ascension of ascending node
+*
+*  outputs       :
+*    atime       -
+*    em          - eccentricity
+*    argpm       - argument of perigee
+*    inclm       - inclination
+*    xli         -
+*    mm          - mean anomaly
+*    xni         -
+*    nodem       - right ascension of ascending node
+*    dndt        -
+*    nm          - mean motion
+*
+*  locals        :
+*    delt        -
+*    ft          -
+*    theta       -
+*    x2li        -
+*    x2omi       -
+*    xl          -
+*    xldot       -
+*    xnddt       -
+*    xndt        -
+*    xomi        -
+*
+*  coupling      :
+*    none        -
+*
+*  references    :
+*    hoots, roehrich, norad spacetrack report #3 1980
+*    hoots, norad spacetrack report #6 1986
+*    hoots, schumacher and glover 2004
+*    vallado, crawford, hujsak, kelso  2006
+  ----------------------------------------------------------------------------*/
+\"\"\"" code nil nil [29547 31709])
+            ("_dspace" function (:arguments 
+              ( ("irez" variable nil (reparse-symbol function_parameters) [31731 31735])
+                ("d2201" variable nil (reparse-symbol function_parameters) [31744 31749])
+                ("d2211" variable nil (reparse-symbol function_parameters) [31752 31757])
+                ("d3210" variable nil (reparse-symbol function_parameters) [31760 31765])
+                ("d3222" variable nil (reparse-symbol function_parameters) [31769 31774])
+                ("d4410" variable nil (reparse-symbol function_parameters) [31777 31782])
+                ("d4422" variable nil (reparse-symbol function_parameters) [31791 31796])
+                ("d5220" variable nil (reparse-symbol function_parameters) [31799 31804])
+                ("d5232" variable nil (reparse-symbol function_parameters) [31807 31812])
+                ("d5421" variable nil (reparse-symbol function_parameters) [31816 31821])
+                ("d5433" variable nil (reparse-symbol function_parameters) [31824 31829])
+                ("dedt" variable nil (reparse-symbol function_parameters) [31838 31842])
+                ("del1" variable nil (reparse-symbol function_parameters) [31846 31850])
+                ("del2" variable nil (reparse-symbol function_parameters) [31854 31858])
+                ("del3" variable nil (reparse-symbol function_parameters) [31863 31867])
+                ("didt" variable nil (reparse-symbol function_parameters) [31871 31875])
+                ("dmdt" variable nil (reparse-symbol function_parameters) [31884 31888])
+                ("dnodt" variable nil (reparse-symbol function_parameters) [31892 31897])
+                ("domdt" variable nil (reparse-symbol function_parameters) [31900 31905])
+                ("argpo" variable nil (reparse-symbol function_parameters) [31909 31914])
+                ("argpdot" variable nil (reparse-symbol function_parameters) [31917 31924])
+                ("t" variable nil (reparse-symbol function_parameters) [31933 31934])
+                ("tc" variable nil (reparse-symbol function_parameters) [31941 31943])
+                ("gsto" variable nil (reparse-symbol function_parameters) [31949 31953])
+                ("xfact" variable nil (reparse-symbol function_parameters) [31958 31963])
+                ("xlamo" variable nil (reparse-symbol function_parameters) [31966 31971])
+                ("no" variable nil (reparse-symbol function_parameters) [31980 31982])
+                ("atime" variable nil (reparse-symbol function_parameters) [31991 31996])
+                ("em" variable nil (reparse-symbol function_parameters) [31998 32000])
+                ("argpm" variable nil (reparse-symbol function_parameters) [32005 32010])
+                ("inclm" variable nil (reparse-symbol function_parameters) [32013 32018])
+                ("xli" variable nil (reparse-symbol function_parameters) [32020 32023])
+                ("mm" variable nil (reparse-symbol function_parameters) [32032 32034])
+                ("xni" variable nil (reparse-symbol function_parameters) [32039 32042])
+                ("nodem" variable nil (reparse-symbol function_parameters) [32046 32051])
+                ("nm" variable nil (reparse-symbol function_parameters) [32054 32056]))              ) nil [31711 36575])
+            ("\"\"\"
+/*-----------------------------------------------------------------------------
+*
+*                           procedure initl
+*
+*  this procedure initializes the spg4 propagator. all the initialization is
+*    consolidated here instead of having multiple loops inside other routines.
+*
+*  author        : david vallado                  719-573-2600   28 jun 2005
+*
+*  inputs        :
+*    ecco        - eccentricity                           0.0 - 1.0
+*    epoch       - epoch time in days from jan 0, 1950. 0 hr
+*    inclo       - inclination of satellite
+*    no          - mean motion of satellite
+*    satn        - satellite number
+*
+*  outputs       :
+*    ainv        - 1.0 / a
+*    ao          - semi major axis
+*    con41       -
+*    con42       - 1.0 - 5.0 cos(i)
+*    cosio       - cosine of inclination
+*    cosio2      - cosio squared
+*    eccsq       - eccentricity squared
+*    method      - flag for deep space                    'd', 'n'
+*    omeosq      - 1.0 - ecco * ecco
+*    posq        - semi-parameter squared
+*    rp          - radius of perigee
+*    rteosq      - square root of (1.0 - ecco*ecco)
+*    sinio       - sine of inclination
+*    gsto        - gst at time of observation               rad
+*    no          - mean motion of satellite
+*
+*  locals        :
+*    ak          -
+*    d1          -
+*    del         -
+*    adel        -
+*    po          -
+*
+*  coupling      :
+*    getgravconst
+*    gstime      - find greenwich sidereal time from the julian date
+*
+*  references    :
+*    hoots, roehrich, norad spacetrack report #3 1980
+*    hoots, norad spacetrack report #6 1986
+*    hoots, schumacher and glover 2004
+*    vallado, crawford, hujsak, kelso  2006
+  ----------------------------------------------------------------------------*/
+\"\"\"" code nil nil [36576 38361])
+            ("_initl" function (:arguments 
+              ( ("satn" variable nil (reparse-symbol function_parameters) [38382 38386])
+                ("whichconst" variable nil (reparse-symbol function_parameters) [38393 38403])
+                ("ecco" variable nil (reparse-symbol function_parameters) [38412 38416])
+                ("epoch" variable nil (reparse-symbol function_parameters) [38420 38425])
+                ("inclo" variable nil (reparse-symbol function_parameters) [38428 38433])
+                ("no" variable nil (reparse-symbol function_parameters) [38437 38439])
+                ("method" variable nil (reparse-symbol function_parameters) [38448 38454])
+                ("opsmode" variable nil (reparse-symbol function_parameters) [38463 38470]))              ) nil [38363 40410])
+            ("\"\"\"
+/*-----------------------------------------------------------------------------
+*
+*                             procedure sgp4init
+*
+*  this procedure initializes variables for sgp4.
+*
+*  author        : david vallado                  719-573-2600   28 jun 2005
+*
+*  inputs        :
+*    opsmode     - mode of operation afspc or improved 'a', 'i'
+*    whichconst  - which set of constants to use  72, 84
+*    satn        - satellite number
+*    bstar       - sgp4 type drag coefficient              kg/m2er
+*    ecco        - eccentricity
+*    epoch       - epoch time in days from jan 0, 1950. 0 hr
+*    argpo       - argument of perigee (output if ds)
+*    inclo       - inclination
+*    mo          - mean anomaly (output if ds)
+*    no          - mean motion
+*    nodeo       - right ascension of ascending node
+*
+*  outputs       :
+*    satrec      - common values for subsequent calls
+*    return code - non-zero on error.
+*                   1 - mean elements, ecc >= 1.0 or ecc < -0.001 or a < 0.95 er
+*                   2 - mean motion less than 0.0
+*                   3 - pert elements, ecc < 0.0  or  ecc > 1.0
+*                   4 - semi-latus rectum < 0.0
+*                   5 - epoch elements are sub-orbital
+*                   6 - satellite has decayed
+*
+*  locals        :
+*    cnodm  , snodm  , cosim  , sinim  , cosomm , sinomm
+*    cc1sq  , cc2    , cc3
+*    coef   , coef1
+*    cosio4      -
+*    day         -
+*    dndt        -
+*    em          - eccentricity
+*    emsq        - eccentricity squared
+*    eeta        -
+*    etasq       -
+*    gam         -
+*    argpm       - argument of perigee
+*    nodem       -
+*    inclm       - inclination
+*    mm          - mean anomaly
+*    nm          - mean motion
+*    perige      - perigee
+*    pinvsq      -
+*    psisq       -
+*    qzms24      -
+*    rtemsq      -
+*    s1, s2, s3, s4, s5, s6, s7          -
+*    sfour       -
+*    ss1, ss2, ss3, ss4, ss5, ss6, ss7         -
+*    sz1, sz2, sz3
+*    sz11, sz12, sz13, sz21, sz22, sz23, sz31, sz32, sz33        -
+*    tc          -
+*    temp        -
+*    temp1, temp2, temp3       -
+*    tsi         -
+*    xpidot      -
+*    xhdot1      -
+*    z1, z2, z3          -
+*    z11, z12, z13, z21, z22, z23, z31, z32, z33         -
+*
+*  coupling      :
+*    getgravconst-
+*    initl       -
+*    dscom       -
+*    dpper       -
+*    dsinit      -
+*    sgp4        -
+*
+*  references    :
+*    hoots, roehrich, norad spacetrack report #3 1980
+*    hoots, norad spacetrack report #6 1986
+*    hoots, schumacher and glover 2004
+*    vallado, crawford, hujsak, kelso  2006
+  ----------------------------------------------------------------------------*/
+\"\"\"" code nil nil [40411 43086])
+            ("sgp4init" function
+               (:documentation "
+     /* ------------------------ initialization --------------------- */
+     // sgp4fix divisor for divide by zero check on inclination
+     // the old check used 1.0 + cos(pi-1.0e-9), but then compared it to
+     // 1.5 e-12, so the threshold was changed to 1.5e-12 for consistency
+     "
+                :arguments 
+                  ( ("whichconst" variable nil (reparse-symbol function_parameters) [43109 43119])
+                    ("opsmode" variable nil (reparse-symbol function_parameters) [43121 43128])
+                    ("satn" variable nil (reparse-symbol function_parameters) [43132 43136])
+                    ("epoch" variable nil (reparse-symbol function_parameters) [43142 43147])
+                    ("xbstar" variable nil (reparse-symbol function_parameters) [43156 43162])
+                    ("xecco" variable nil (reparse-symbol function_parameters) [43165 43170])
+                    ("xargpo" variable nil (reparse-symbol function_parameters) [43172 43178])
+                    ("xinclo" variable nil (reparse-symbol function_parameters) [43187 43193])
+                    ("xmo" variable nil (reparse-symbol function_parameters) [43196 43199])
+                    ("xno" variable nil (reparse-symbol function_parameters) [43203 43206])
+                    ("xnodeo" variable nil (reparse-symbol function_parameters) [43215 43221])
+                    ("satrec" variable nil (reparse-symbol function_parameters) [43224 43230]))                  )
+                nil [43088 56250])
+            ("\"\"\"
+/*-----------------------------------------------------------------------------
+*
+*                             procedure sgp4
+*
+*  this procedure is the sgp4 prediction model from space command. this is an
+*    updated and combined version of sgp4 and sdp4, which were originally
+*    published separately in spacetrack report #3. this version follows the
+*    methodology from the aiaa paper (2006) describing the history and
+*    development of the code.
+*
+*  author        : david vallado                  719-573-2600   28 jun 2005
+*
+*  inputs        :
+*    satrec	 - initialised structure from sgp4init() call.
+*    tsince	 - time eince epoch (minutes)
+*
+*  outputs       :
+*    r           - position vector                     km
+*    v           - velocity                            km/sec
+*  return code - non-zero on error.
+*                   1 - mean elements, ecc >= 1.0 or ecc < -0.001 or a < 0.95 er
+*                   2 - mean motion less than 0.0
+*                   3 - pert elements, ecc < 0.0  or  ecc > 1.0
+*                   4 - semi-latus rectum < 0.0
+*                   5 - epoch elements are sub-orbital
+*                   6 - satellite has decayed
+*
+*  locals        :
+*    am          -
+*    axnl, aynl        -
+*    betal       -
+*    cosim   , sinim   , cosomm  , sinomm  , cnod    , snod    , cos2u   ,
+*    sin2u   , coseo1  , sineo1  , cosi    , sini    , cosip   , sinip   ,
+*    cosisq  , cossu   , sinsu   , cosu    , sinu
+*    delm        -
+*    delomg      -
+*    dndt        -
+*    eccm        -
+*    emsq        -
+*    ecose       -
+*    el2         -
+*    eo1         -
+*    eccp        -
+*    esine       -
+*    argpm       -
+*    argpp       -
+*    omgadf      -
+*    pl          -
+*    r           -
+*    rtemsq      -
+*    rdotl       -
+*    rl          -
+*    rvdot       -
+*    rvdotl      -
+*    su          -
+*    t2  , t3   , t4    , tc
+*    tem5, temp , temp1 , temp2  , tempa  , tempe  , templ
+*    u   , ux   , uy    , uz     , vx     , vy     , vz
+*    inclm       - inclination
+*    mm          - mean anomaly
+*    nm          - mean motion
+*    nodem       - right asc of ascending node
+*    xinc        -
+*    xincp       -
+*    xl          -
+*    xlm         -
+*    mp          -
+*    xmdf        -
+*    xmx         -
+*    xmy         -
+*    nodedf      -
+*    xnode       -
+*    nodep       -
+*    np          -
+*
+*  coupling      :
+*    getgravconst-
+*    dpper
+*    dpspace
+*
+*  references    :
+*    hoots, roehrich, norad spacetrack report #3 1980
+*    hoots, norad spacetrack report #6 1986
+*    hoots, schumacher and glover 2004
+*    vallado, crawford, hujsak, kelso  2006
+  ----------------------------------------------------------------------------*/
+\"\"\"" code nil nil [56252 58982])
+            ("sgp4" function (:arguments 
+              ( ("satrec" variable nil (reparse-symbol function_parameters) [58993 58999])
+                ("tsince" variable nil (reparse-symbol function_parameters) [59001 59007])
+                ("whichconst" variable nil (reparse-symbol function_parameters) [59009 59019]))              ) nil [58984 68226])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           function gstime
+*
+*  this function finds the greenwich sidereal time.
+*
+*  author        : david vallado                  719-573-2600    1 mar 2001
+*
+*  inputs          description                    range / units
+*    jdut1       - julian date in ut1             days from 4713 bc
+*
+*  outputs       :
+*    gstime      - greenwich sidereal time        0 to 2pi rad
+*
+*  locals        :
+*    temp        - temporary variable for doubles   rad
+*    tut1        - julian centuries from the
+*                  jan 1, 2000 12 h epoch (ut1)
+*
+*  coupling      :
+*    none
+*
+*  references    :
+*    vallado       2004, 191, eq 3-45
+* --------------------------------------------------------------------------- */
+\"\"\"" code nil nil [68227 69053])
+            ("_gstime" function (:arguments 
+              ( ("jdut1" variable nil (reparse-symbol function_parameters) [69067 69072]))              ) nil [69055 69480])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           function getgravconst
+*
+*  this function gets constants for the propagator. note that mu is identified to
+*    facilitiate comparisons with newer models. the common useage is wgs72.
+*
+*  author        : david vallado                  719-573-2600   21 jul 2006
+*
+*  inputs        :
+*    whichconst  - which set of constants to use  wgs72old, wgs72, wgs84
+*
+*  outputs       :
+*    tumin       - minutes in one time unit
+*    mu          - earth gravitational parameter
+*    radiusearthkm - radius of the earth in km
+*    xke         - reciprocal of tumin
+*    j2, j3, j4  - un-normalized zonal harmonic values
+*    j3oj2       - j3 divided by j2
+*
+*  locals        :
+*
+*  coupling      :
+*    none
+*
+*  references    :
+*    norad spacetrack report #3
+*    vallado, crawford, hujsak, kelso  2006
+  --------------------------------------------------------------------------- */
+\"\"\"" code nil nil [69481 70475])
+            ("getgravconst" function (:arguments 
+              ( ("whichconst" variable nil (reparse-symbol function_parameters) [70494 70504]))              ) nil [70477 71816]))          
+      :file "propagation.py"
+      :pointmax 71816
+      :fsize 71815
+      :lastmodtime '(21582 49148 0 0)
+      :unmatched-syntax '((NAME 65235 . 65239) (IF 65247 . 65249) (ELSE 65261 . 65265)))
+    (semanticdb-table "semanticdb-table-12b6588"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Read the TLE earth satellite file format.
+
+This is a minimally-edited copy of \"sgp4io.cpp\".
+
+\"\"\"" code nil nil [1 100])
+            ("re" include nil nil [101 110])
+            ("datetime" include nil nil [111 140])
+            ("math" include nil nil [141 165])
+            ("sgp4.ext" include nil nil [166 203])
+            ("sgp4.model" include nil nil [204 236])
+            ("sgp4.propagation" include nil nil [237 274])
+            ("INT_RE" variable nil nil [276 308])
+            ("FLOAT_RE" variable nil nil [309 351])
+            ("LINE1" variable nil nil [353 432])
+            ("LINE2" variable nil nil [433 512])
+            ("error_message" variable nil nil [514 820])
+            ("\"\"\"
+/*     ----------------------------------------------------------------
+*
+*                               sgp4io.cpp
+*
+*    this file contains a function to read two line element sets. while 
+*    not formerly part of the sgp4 mathematical theory, it is 
+*    required for practical implemenation.
+*
+*                            companion code for
+*               fundamentals of astrodynamics and applications
+*                                    2007
+*                              by david vallado
+*
+*       (w) 719-573-2600, email dvallado@agi.com
+*
+*    current :
+*              27 Aug 10  david vallado
+*                           fix input format and delete unused variables in twoline2rv
+*    changes :
+*               3 sep 08  david vallado
+*                           add operationmode for afspc (a) or improved (i)
+*               9 may 07  david vallado
+*                           fix year correction to 57
+*              27 mar 07  david vallado
+*                           misc fixes to manual inputs
+*              14 aug 06  david vallado
+*                           original baseline
+*       ----------------------------------------------------------------      */
+\"\"\"" code nil nil [822 2013])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           function twoline2rv
+*
+*  this function converts the two line element set character string data to
+*    variables and initializes the sgp4 variables. several intermediate varaibles
+*    and quantities are determined. note that the result is a structure so multiple
+*    satellites can be processed simultaneously without having to reinitialize. the
+*    verification mode is an important option that permits quick checks of any
+*    changes to the underlying technical theory. this option works using a
+*    modified tle file in which the start, stop, and delta time values are
+*    included at the end of the second line of data. this only works with the
+*    verification mode. the catalog mode simply propagates from -1440 to 1440 min
+*    from epoch and is useful when performing entire catalog runs.
+*
+*  author        : david vallado                  719-573-2600    1 mar 2001
+*
+*  inputs        :
+*    longstr1    - first line of the tle
+*    longstr2    - second line of the tle
+*    typerun     - type of run                    verification 'v', catalog 'c', 
+*                                                 manual 'm'
+*    typeinput   - type of manual input           mfe 'm', epoch 'e', dayofyr 'd'
+*    opsmode     - mode of operation afspc or improved 'a', 'i'
+*    whichconst  - which set of constants to use  72, 84
+*
+*  outputs       :
+*    satrec      - structure containing all the sgp4 satellite information
+*
+*  coupling      :
+*    getgravconst-
+*    days2mdhms  - conversion of days to month, day, hour, minute, second
+*    jday        - convert day month year hour minute second into julian date
+*    sgp4init    - initialize the sgp4 variables
+*
+*  references    :
+*    norad spacetrack report #3
+*    vallado, crawford, hujsak, kelso  2006
+  --------------------------------------------------------------------------- */
+\"\"\"" code nil nil [2015 3981])
+            ("twoline2rv" function
+               (:documentation "Return a Satellite imported from two lines of TLE data.
+
+    Provide the two TLE lines as strings `longstr1` and `longstr2`,
+    and select which standard set of gravitational constants you want
+    by providing `gravity_constants`:
+
+    `sgp4.earth_gravity.wgs72` - Standard WGS 72 model
+    `sgp4.earth_gravity.wgs84` - More recent WGS 84 model
+    `sgp4.earth_gravity.wgs72old` - Legacy support for old SGP4 behavior
+
+    Normally, computations are made using various recent improvements
+    to the algorithm.  If you want to turn some of these off and go
+    back into \"afspc\" mode, then set `afspc_mode` to `True`.
+
+    "
+                :arguments 
+                  ( ("longstr1" variable nil (reparse-symbol function_parameters) [3998 4006])
+                    ("longstr2" variable nil (reparse-symbol function_parameters) [4008 4016])
+                    ("whichconst" variable nil (reparse-symbol function_parameters) [4018 4028])
+                    ("afspc_mode" variable nil (reparse-symbol function_parameters) [4030 4040]))                  )
+                nil [3983 8771]))          
+      :file "io.py"
+      :pointmax 8771
+      :fsize 8770
+      :lastmodtime '(21688 43739 0 0)
+      :unmatched-syntax '((NAME 4689 . 4696) (IF 4703 . 4705) (ELSE 4717 . 4721)))
+    (semanticdb-table "semanticdb-table-195ad44"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Utility routines from \"sgp4ext.cpp\".\"\"\"" code nil nil [25 67])
+            ("" code nil nil [86 177])
+            ("undefined" variable nil nil [179 195])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           function mag
+*
+*  this procedure finds the magnitude of a vector.  the tolerance is set to
+*    0.000001, thus the 1.0e-12 for the squared test of underflows.
+*
+*  author        : david vallado                  719-573-2600    1 mar 2001
+*
+*  inputs          description                    range / units
+*    vec         - vector
+*
+*  outputs       :
+*    vec         - answer stored in fourth component
+*
+*  locals        :
+*    none.
+*
+*  coupling      :
+*    none.
+* --------------------------------------------------------------------------- */
+\"\"\"" code nil nil [197 864])
+            ("mag" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [874 875]))              ) nil [866 931])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           procedure cross
+*
+*  this procedure crosses two vectors.
+*
+*  author        : david vallado                  719-573-2600    1 mar 2001
+*
+*  inputs          description                    range / units
+*    vec1        - vector number 1
+*    vec2        - vector number 2
+*
+*  outputs       :
+*    outvec      - vector result of a x b
+*
+*  locals        :
+*    none.
+*
+*  coupling      :
+*    mag           magnitude of a vector
+ ---------------------------------------------------------------------------- */
+\"\"\"" code nil nil [932 1560])
+            ("cross" function (:arguments 
+              ( ("vec1" variable nil (reparse-symbol function_parameters) [1572 1576])
+                ("vec2" variable nil (reparse-symbol function_parameters) [1578 1582])
+                ("outvec" variable nil (reparse-symbol function_parameters) [1584 1590]))              ) nil [1562 1746])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           function dot
+*
+*  this function finds the dot product of two vectors.
+*
+*  author        : david vallado                  719-573-2600    1 mar 2001
+*
+*  inputs          description                    range / units
+*    vec1        - vector number 1
+*    vec2        - vector number 2
+*
+*  outputs       :
+*    dot         - result
+*
+*  locals        :
+*    none.
+*
+*  coupling      :
+*    none.
+*
+* --------------------------------------------------------------------------- */
+\"\"\"" code nil nil [1747 2344])
+            ("dot" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [2354 2355])
+                ("y" variable nil (reparse-symbol function_parameters) [2357 2358]))              ) nil [2346 2410])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           procedure angle
+*
+*  this procedure calculates the angle between two vectors.  the output is
+*    set to 999999.1 to indicate an undefined value.  be sure to check for
+*    this at the output phase.
+*
+*  author        : david vallado                  719-573-2600    1 mar 2001
+*
+*  inputs          description                    range / units
+*    vec1        - vector number 1
+*    vec2        - vector number 2
+*
+*  outputs       :
+*    theta       - angle between the two vectors  -pi to pi
+*
+*  locals        :
+*    temp        - temporary real variable
+*
+*  coupling      :
+*    dot           dot product of two vectors
+* --------------------------------------------------------------------------- */
+\"\"\"" code nil nil [2411 3236])
+            ("angle" function (:arguments 
+              ( ("vec1" variable nil (reparse-symbol function_parameters) [3248 3252])
+                ("vec2" variable nil (reparse-symbol function_parameters) [3254 3258]))              ) nil [3238 3590])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           function newtonnu
+*
+*  this function solves keplers equation when the true anomaly is known.
+*    the mean and eccentric, parabolic, or hyperbolic anomaly is also found.
+*    the parabolic limit at 168° is arbitrary. the hyperbolic anomaly is also
+*    limited. the hyperbolic sine is used because it's not double valued.
+*
+*  author        : david vallado                  719-573-2600   27 may 2002
+*
+*  revisions
+*    vallado     - fix small                                     24 sep 2002
+*
+*  inputs          description                    range / units
+*    ecc         - eccentricity                   0.0  to
+*    nu          - true anomaly                   -2pi to 2pi rad
+*
+*  outputs       :
+*    e0          - eccentric anomaly              0.0  to 2pi rad       153.02 °
+*    m           - mean anomaly                   0.0  to 2pi rad       151.7425 °
+*
+*  locals        :
+*    e1          - eccentric anomaly, next value  rad
+*    sine        - sine of e
+*    cose        - cosine of e
+*    ktr         - index
+*
+*  coupling      :
+*    asinh       - arc hyperbolic sine
+*
+*  references    :
+*    vallado       2007, 85, alg 5
+* --------------------------------------------------------------------------- */
+\"\"\"" code nil nil [3591 4934])
+            ("newtonnu" function (:arguments 
+              ( ("ecc" variable nil (reparse-symbol function_parameters) [4949 4952])
+                ("nu" variable nil (reparse-symbol function_parameters) [4954 4956]))              ) nil [4936 6308])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           function rv2coe
+*
+*  this function finds the classical orbital elements given the geocentric
+*    equatorial position and velocity vectors.
+*
+*  author        : david vallado                  719-573-2600   21 jun 2002
+*
+*  revisions
+*    vallado     - fix special cases                              5 sep 2002
+*    vallado     - delete extra check in inclination code        16 oct 2002
+*    vallado     - add constant file use                         29 jun 2003
+*    vallado     - add mu                                         2 apr 2007
+*
+*  inputs          description                    range / units
+*    r           - ijk position vector            km
+*    v           - ijk velocity vector            km / s
+*    mu          - gravitational parameter        km3 / s2
+*
+*  outputs       :
+*    p           - semilatus rectum               km
+*    a           - semimajor axis                 km
+*    ecc         - eccentricity
+*    incl        - inclination                    0.0  to pi rad
+*    omega       - longitude of ascending node    0.0  to 2pi rad
+*    argp        - argument of perigee            0.0  to 2pi rad
+*    nu          - true anomaly                   0.0  to 2pi rad
+*    m           - mean anomaly                   0.0  to 2pi rad
+*    arglat      - argument of latitude      (ci) 0.0  to 2pi rad
+*    truelon     - true longitude            (ce) 0.0  to 2pi rad
+*    lonper      - longitude of periapsis    (ee) 0.0  to 2pi rad
+*
+*  locals        :
+*    hbar        - angular momentum h vector      km2 / s
+*    ebar        - eccentricity     e vector
+*    nbar        - line of nodes    n vector
+*    c1          - v**2 - u/r
+*    rdotv       - r dot v
+*    hk          - hk unit vector
+*    sme         - specfic mechanical energy      km2 / s2
+*    i           - index
+*    e           - eccentric, parabolic,
+*                  hyperbolic anomaly             rad
+*    temp        - temporary variable
+*    typeorbit   - type of orbit                  ee, ei, ce, ci
+*
+*  coupling      :
+*    mag         - magnitude of a vector
+*    cross       - cross product of two vectors
+*    angle       - find the angle between two vectors
+*    newtonnu    - find the mean anomaly
+*
+*  references    :
+*    vallado       2007, 126, alg 9, ex 2-5
+* --------------------------------------------------------------------------- */
+\"\"\"" code nil nil [6310 8784])
+            ("rv2coe" function (:arguments 
+              ( ("r" variable nil (reparse-symbol function_parameters) [8797 8798])
+                ("v" variable nil (reparse-symbol function_parameters) [8800 8801])
+                ("mu" variable nil (reparse-symbol function_parameters) [8803 8805]))              ) nil [8786 13248])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           procedure jday
+*
+*  this procedure finds the julian date given the year, month, day, and time.
+*    the julian date is defined by each elapsed day since noon, jan 1, 4713 bc.
+*
+*  algorithm     : calculate the answer in one step for efficiency
+*
+*  author        : david vallado                  719-573-2600    1 mar 2001
+*
+*  inputs          description                    range / units
+*    year        - year                           1900 .. 2100
+*    mon         - month                          1 .. 12
+*    day         - day                            1 .. 28,29,30,31
+*    hr          - universal time hour            0 .. 23
+*    min         - universal time min             0 .. 59
+*    sec         - universal time sec             0.0 .. 59.999
+*
+*  outputs       :
+*    jd          - julian date                    days from 4713 bc
+*
+*  locals        :
+*    none.
+*
+*  coupling      :
+*    none.
+*
+*  references    :
+*    vallado       2007, 189, alg 14, ex 3-14
+*
+* --------------------------------------------------------------------------- */
+\"\"\"" code nil nil [13249 14427])
+            ("jday" function (:arguments 
+              ( ("year" variable nil (reparse-symbol function_parameters) [14438 14442])
+                ("mon" variable nil (reparse-symbol function_parameters) [14444 14447])
+                ("day" variable nil (reparse-symbol function_parameters) [14449 14452])
+                ("hr" variable nil (reparse-symbol function_parameters) [14454 14456])
+                ("minute" variable nil (reparse-symbol function_parameters) [14458 14464])
+                ("sec" variable nil (reparse-symbol function_parameters) [14466 14469]))              ) nil [14429 14759])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           procedure days2mdhms
+*
+*  this procedure converts the day of the year, days, to the equivalent month
+*    day, hour, minute and second.
+*
+*  algorithm     : set up array for the number of days per month
+*                  find leap year - use 1900 because 2000 is a leap year
+*                  loop through a temp value while the value is < the days
+*                  perform int conversions to the correct day and month
+*                  convert remainder into h m s using type conversions
+*
+*  author        : david vallado                  719-573-2600    1 mar 2001
+*
+*  inputs          description                    range / units
+*    year        - year                           1900 .. 2100
+*    days        - julian day of the year         0.0  .. 366.0
+*
+*  outputs       :
+*    mon         - month                          1 .. 12
+*    day         - day                            1 .. 28,29,30,31
+*    hr          - hour                           0 .. 23
+*    min         - minute                         0 .. 59
+*    sec         - second                         0.0 .. 59.999
+*
+*  locals        :
+*    dayofyr     - day of year
+*    temp        - temporary extended values
+*    inttemp     - temporary int value
+*    i           - index
+*    lmonth[12]  - int array containing the number of days per month
+*
+*  coupling      :
+*    none.
+* --------------------------------------------------------------------------- */
+\"\"\"" code nil nil [14760 16313])
+            ("days2mdhms" function (:arguments 
+              ( ("year" variable nil (reparse-symbol function_parameters) [16330 16334])
+                ("days" variable nil (reparse-symbol function_parameters) [16336 16340]))              ) nil [16315 17070])
+            ("\"\"\"
+/* -----------------------------------------------------------------------------
+*
+*                           procedure invjday
+*
+*  this procedure finds the year, month, day, hour, minute and second
+*  given the julian date. tu can be ut1, tdt, tdb, etc.
+*
+*  algorithm     : set up starting values
+*                  find leap year - use 1900 because 2000 is a leap year
+*                  find the elapsed days through the year in a loop
+*                  call routine to find each individual value
+*
+*  author        : david vallado                  719-573-2600    1 mar 2001
+*
+*  inputs          description                    range / units
+*    jd          - julian date                    days from 4713 bc
+*
+*  outputs       :
+*    year        - year                           1900 .. 2100
+*    mon         - month                          1 .. 12
+*    day         - day                            1 .. 28,29,30,31
+*    hr          - hour                           0 .. 23
+*    min         - minute                         0 .. 59
+*    sec         - second                         0.0 .. 59.999
+*
+*  locals        :
+*    days        - day of year plus fractional
+*                  portion of a day               days
+*    tu          - julian centuries from 0 h
+*                  jan 0, 1900
+*    temp        - temporary double values
+*    leapyrs     - number of leap years from 1900
+*
+*  coupling      :
+*    days2mdhms  - finds month, day, hour, minute and second given days and year
+*
+*  references    :
+*    vallado       2007, 208, alg 22, ex 3-13
+* --------------------------------------------------------------------------- */
+\"\"\"" code nil nil [17071 18726])
+            ("invjday" function (:arguments 
+              ( ("jd" variable nil (reparse-symbol function_parameters) [18740 18742]))              ) nil [18728 19545]))          
+      :file "ext.py"
+      :pointmax 19545
+      :fsize 19547
+      :lastmodtime '(21582 49148 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-175580c"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"The Satellite class.\"\"\"" code nil nil [1 27])
+            ("sgp4.ext" include nil nil [29 54])
+            ("sgp4.propagation" include nil nil [55 88])
+            ("minutes_per_day" variable nil nil [90 113])
+            ("Satellite" type
+               (:documentation "An earth-orbiting satellite as represented by the SGP4 model.
+
+    Most of this class's hundred-plus attributes are intermediate values
+    of interest only to the propagation algorithm itself.  Here are the
+    attributes set by ``sgp4.io.twoline2rv()`` in which users are likely
+    to be interested:
+
+    ``satnum``
+        Unique satellite number given in the TLE file.
+    ``epochyr``
+        Full four-digit year of this element set's epoch moment.
+    ``epochdays``
+        Fractional days into the year of the epoch moment.
+    ``jdsatepoch``
+        Julian date of the epoch (computed from ``epochyr`` and ``epochdays``).
+    ``ndot``
+        First time derivative of the mean motion (ignored by SGP4).
+    ``nddot``
+        Second time derivative of the mean motion (ignored by SGP4).
+    ``bstar``
+        Ballistic drag coefficient B* in inverse earth radii.
+    ``inclo``
+        Inclination in radians.
+    ``nodeo``
+        Right ascension of ascending node in radians.
+    ``ecco``
+        Eccentricity.
+    ``argpo``
+        Argument of perigee in radians.
+    ``mo``
+        Mean anomaly in radians.
+    ``no``
+        Mean motion in radians per minute.
+
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("propagate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1346 1350])
+                            ("year" variable nil (reparse-symbol function_parameters) [1352 1356])
+                            ("month" variable nil (reparse-symbol function_parameters) [1358 1363])
+                            ("day" variable nil (reparse-symbol function_parameters) [1367 1370])
+                            ("hour" variable nil (reparse-symbol function_parameters) [1374 1378])
+                            ("minute" variable nil (reparse-symbol function_parameters) [1382 1388])
+                            ("second" variable nil (reparse-symbol function_parameters) [1392 1398]))                          
+                        :documentation "Return a position and velocity vector for a given date and time.")
+                        (reparse-symbol indented_block_body) [1332 1643]))                  
+                :type "class")
+                nil [115 1643]))          
+      :file "model.py"
+      :pointmax 1643
+      :fsize 1642
+      :lastmodtime '(21143 40112 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!local!lib!python2.7!dist-packages!sgp4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

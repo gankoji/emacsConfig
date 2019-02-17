@@ -1,0 +1,383 @@
+;; Object semanticdb-project-database-file-17ffdbc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17ffdbc"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table-17f58cc"
+      :major-mode c++-mode
+      :tags 
+        '( ("ZemGuidance_h" variable (:constant-flag t) nil [2322 2335])
+            ("genMath.h" include nil nil [2398 2418])
+            ("Guidance_common_types.h" include nil nil [2467 2501])
+            ("ModNavEcef_common_types.h" include nil nil [2502 2538])
+            ("TseMessages_common_types.h" include nil nil [2539 2576])
+            ("Host_common_types.h" include nil nil [2577 2607])
+            ("guidelawbase" type
+               (:prototype t
+                :type "class")
+                nil [2656 2675])
+            ("ZemGuidance" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3015 3022])
+                    ("ZemGuidance" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"ZemGuidance\""
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3054 3087]))                          
+                        :type ("ZemGuidance" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3042 3089])
+                    ("ZemGuidance" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3107 3130])
+                    ("initialize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3158 3176])
+                    ("update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3181 3195])
+                    ("finalize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3200 3216])
+                    ("setInputData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("NavSolutionLowRateType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3240 3272]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3222 3273])
+                    ("setInputData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inData" variable
+                               (:reference 1
+                                :type ("TseMidcourseData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3296 3322]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3278 3323])
+                    ("getOutputData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("outData" variable
+                               (:reference 1
+                                :type ("GuidanceCmdType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3495 3521]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3476 3522])
+                    ("private" label nil (reparse-symbol classsubparts) [3524 3532])
+                    ("DcmBodyFromEci" variable (:type ("genMath::Matrix3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3537 3570])
+                    ("rotEcefFromBody" variable (:type ("genMath::Matrix3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3575 3609])
+                    ("rotEciFromEcef" variable (:type ("genMath::Matrix3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3614 3647])
+                    ("KvPosEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3652 3679])
+                    ("KvVelEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3684 3711])
+                    ("KvGravBodyFromEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3716 3752])
+                    ("tgtPosEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3757 3785])
+                    ("tgtVelEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3790 3818])
+                    ("tgtGravBodyFromEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3823 3860])
+                    ("relPosBodyFromEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3865 3901])
+                    ("relVelBodyFromEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3906 3942])
+                    ("relAccBodyFromEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3947 3983])
+                    ("relDeltaAccBodyFromEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3988 4029])
+                    ("effAccBodyFromEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4034 4070])
+                    ("RxV" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4075 4097])
+                    ("r2" variable (:type "double") (reparse-symbol classsubparts) [4102 4112])
+                    ("sysTime" variable (:type "double") (reparse-symbol classsubparts) [4117 4132])
+                    ("discriminant" variable (:type "double") (reparse-symbol classsubparts) [4137 4157])
+                    ("tgo_Flag" variable (:type "bool") (reparse-symbol classsubparts) [4162 4176])
+                    ("zemPrev" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4182 4208])
+                    ("range" variable (:type "double") (reparse-symbol classsubparts) [4213 4226])
+                    ("speed" variable (:type "double") (reparse-symbol classsubparts) [4231 4244])
+                    ("lambda" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4249 4274])
+                    ("MIN_TGO" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0.1"
+                        :type "double")
+                        (reparse-symbol classsubparts) [4331 4365])
+                    ("MIN_MAGRELPOSBODY" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0.1"
+                        :type "double")
+                        (reparse-symbol classsubparts) [4370 4414])
+                    ("MIN_R2" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0.1"
+                        :type "double")
+                        (reparse-symbol classsubparts) [4419 4452])
+                    ("GAIN" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "3.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [4457 4488])
+                    ("DT" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "0.1"
+                        :type "double")
+                        (reparse-symbol classsubparts) [4524 4553])
+                    ("accCmdBodyFromEci" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4570 4606])
+                    ("tgo" variable (:type "double") (reparse-symbol classsubparts) [4611 4622])
+                    ("zem" variable (:type ("genMath::Vector3d" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4627 4649])
+                    ("CalculateZem" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("relPosBody" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("genMath::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4820 4856])
+                            ("relVelBody" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("genMath::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4857 4893])
+                            ("relAccBody" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("genMath::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4906 4942])
+                            ("relDeltaAccBody" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("genMath::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4943 4984])
+                            ("tgo" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [4985 4997])
+                            ("zem" variable
+                               (:reference 1
+                                :type ("genMath::Vector3d" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5010 5033]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4802 5034]))                  
+                :type "class")
+                nil [2995 5038]))          
+      :file "ZemGuidance.h"
+      :pointmax 5317
+      :fsize 5316
+      :lastmodtime '(23514 33884 977487 106000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ZemGuidance_h")
+          )
+)
+    (semanticdb-table "semanticdb-table-17f58ec"
+      :major-mode c++-mode
+      :tags 
+        '( ("ZemGuidance.h" include nil nil [2403 2427])
+            ("GncAlgorithmHelper.h" include nil nil [2429 2460])
+            ("GlobalConstants.h" include nil nil [2462 2490])
+            ("SimLog.h" include (:system-flag t) nil [2492 2511])
+            ("ZemGuidance" function
+               (:constructor-flag t
+                :parent "ZemGuidance"
+                :arguments 
+                  ( ("Guidance" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2772 2794]))                  
+                :type ("ZemGuidance" type (:type "class") nil nil))
+                nil [2747 3262])
+            ("ZemGuidance" function
+               (:destructor-flag t
+                :parent "ZemGuidance"
+                :type "void")
+                nil [3474 3563])
+            ("initialize" function
+               (:parent "ZemGuidance"
+                :type "void")
+                nil [3842 4511])
+            ("CalculateZem" function
+               (:parent "ZemGuidance"
+                :arguments 
+                  ( ("relPosBodyFromEci" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("genMath::Vector3d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5101 5144])
+                    ("relVelBodyFromEci" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("genMath::Vector3d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5145 5188])
+                    ("relAccBodyFromEci" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("genMath::Vector3d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5198 5241])
+                    ("relDeltaAccBodyFromEci" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("genMath::Vector3d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5242 5290])
+                    ("tgo" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5291 5303])
+                    ("zem" variable
+                       (:reference 1
+                        :type ("genMath::Vector3d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5313 5336]))                  
+                :type "void")
+                nil [5070 6821])
+            ("update" function
+               (:parent "ZemGuidance"
+                :type "void")
+                nil [7221 8583])
+            ("finalize" function
+               (:parent "ZemGuidance"
+                :type "void")
+                nil [8790 8824])
+            ("setInputData" function
+               (:parent "ZemGuidance"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("NavSolutionLowRateType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9130 9162]))                  
+                :type "void")
+                nil [9099 9397])
+            ("setInputData" function
+               (:parent "ZemGuidance"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("TseMidcourseData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9707 9733]))                  
+                :type "void")
+                nil [9676 9858])
+            ("getOutputData" function
+               (:parent "ZemGuidance"
+                :arguments 
+                  ( ("outData" variable
+                       (:reference 1
+                        :type ("GuidanceCmdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11219 11245]))                  
+                :type "void")
+                nil [11187 11475]))          
+      :file "ZemGuidance.cpp"
+      :pointmax 11747
+      :fsize 12287
+      :lastmodtime '(23514 33608 583681 723000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17ffdc8"
+      :major-mode c++-mode
+      :tags 
+        '( ("ZemGuidance.h" include nil nil [2396 2420])
+            ("GncAlgorithmHelper.h" include nil nil [2421 2452])
+            ("GlobalConstants.h" include nil nil [2453 2481])
+            ("SimLog.h" include (:system-flag t) nil [2482 2501])
+            ("ZemGuidance" function
+               (:constructor-flag t
+                :parent "ZemGuidance"
+                :arguments 
+                  ( ("Guidance" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2755 2777]))                  
+                :type ("ZemGuidance" type (:type "class") nil nil))
+                nil [2730 3374])
+            ("ZemGuidance" function
+               (:destructor-flag t
+                :parent "ZemGuidance"
+                :type "void")
+                nil [3579 3665])
+            ("initialize" function
+               (:parent "ZemGuidance"
+                :type "void")
+                nil [3936 4648])
+            ("CalculateZem" function
+               (:parent "ZemGuidance"
+                :arguments 
+                  ( ("relPosBodyFromEci" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("genMath::Vector3d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5222 5265])
+                    ("relVelBodyFromEci" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("genMath::Vector3d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5266 5309])
+                    ("relAccBodyFromEci" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("genMath::Vector3d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5318 5361])
+                    ("relDeltaAccBodyFromEci" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("genMath::Vector3d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5362 5410])
+                    ("tgo" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5411 5423])
+                    ("zem" variable
+                       (:reference 1
+                        :type ("genMath::Vector3d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5432 5455]))                  
+                :type "void")
+                nil [5191 6900])
+            ("update" function
+               (:parent "ZemGuidance"
+                :type "void")
+                nil [7291 8963])
+            ("finalize" function
+               (:parent "ZemGuidance"
+                :type "void")
+                nil [9162 9194])
+            ("setInputData" function
+               (:parent "ZemGuidance"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("NavSolutionLowRateType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9492 9524]))                  
+                :type "void")
+                nil [9461 9752])
+            ("setInputData" function
+               (:parent "ZemGuidance"
+                :arguments 
+                  ( ("inData" variable
+                       (:reference 1
+                        :type ("TseMidcourseData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10054 10080]))                  
+                :type "void")
+                nil [10023 10201])
+            ("getOutputData" function
+               (:parent "ZemGuidance"
+                :arguments 
+                  ( ("outData" variable
+                       (:reference 1
+                        :type ("GuidanceCmdType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11526 11552]))                  
+                :type "void")
+                nil [11494 11774]))          
+      :file "ZemGuidance(1).cpp"
+      :pointmax 12045
+      :fsize 12044
+      :lastmodtime '(23514 33807 752980 400000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

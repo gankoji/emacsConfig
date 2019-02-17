@@ -2,6 +2,17 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj3/Rosengren_LambertSolvers/" . "MATLAB_final_proj/")
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj3/" . "Rosengren_LambertSolvers/")
+ ("/home/jbailey/Dropbox/Academics/AME559/" . "ResearchProject/")
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj1/" . "ProjectReport/")
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/" . "ame557-proj1/")
+ ("/home/jbailey/Dropbox/Academics/AME557/" . "Projects/")
+ ("/home/jbailey/Dropbox/DnD/PCNotes/" . "DiscordWednesdays/")
+ ("/home/jbailey/Dropbox/DnD/" . "PCNotes/")
+ ("/home/jbailey/Dropbox/Academics/" . "AME559/")
+ ("/home/jbailey/Dropbox/" . "Academics/")
+ ("/home/jbailey/Documents/DnD/DMNotes/DiscordSaturdayGroup/" . "Campaign2/")
  ("/home/jbailey/Documents/Python/SEATN/" . "pymath3d-master/")
  ("/media/jbailey/JakesDrive/Python/" . "SEATN/")
  ("/media/jbailey/JakesDrive/" . "Python/")
@@ -25,10 +36,10 @@
  ("/ssh:ec2-user@ec2-18-221-216-85.us-east-2.compute.amazonaws.com:/" . "workspace/")
  ("/home/jbailey/Documents/Python/KalmanFiltering/" . "PlainJane/")
  ("/home/jbailey/Documents/DnD/PCNotes/" . "DiscordWednesdays/")
- ("/home/jbailey/Documents/DnD/DMNotes/" . "RMSGroup/")
- ("/home/jbailey/Documents/DnD/" . "PCNotes/")
+ ("/home/jbailey/Documents/DnD/DMNotes/" . "DiscordSaturdayGroup/")
+ ("/home/jbailey/Documents/DnD/" . "DMNotes/")
  ("/home/jbailey/Documents/Python/" . "Control/")
- ("/home/jbailey/" . "Downloads/")
+ ("/home/jbailey/" . "Dropbox/")
  ("/home/jbailey/Documents/Lambert/Python/pykep_src/pykep/" . "build/")
  ("/home/jbailey/Documents/Lambert/Python/pykep_src/" . "pykep/")
  ("/home/jbailey/Documents/Lambert/Python/" . "pykep_src/")
@@ -41,7 +52,7 @@
  ("/media/jbailey/" . "2BC6-2F5B/")
  ("/home/jbailey/Documents/Workspace/Python/" . "ACS_Sim/")
  ("/home/jbailey/Documents/Workspace/" . "Python/")
- ("/home/jbailey/Documents/" . "Academics/")
+ ("/home/jbailey/Documents/" . "DnD/")
  ("/media/jbailey/LINUX MINT/DMNotes/" . "DiscordSaturdayGroup/")
  ("/media/" . "jbailey/")
  ("/" . "media/")
@@ -60,18 +71,35 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/jbailey/Documents/Academics/"
- "/home/jbailey/Documents/Academics/AME557/"
- "/media/jbailey/2BC6-2F5B/"
+ "/home/jbailey/Dropbox/Academics/AME557/ResearchProject/PythonCode/"
+ "/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj3/NumericalIntegration/"
+ "/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj3/Rosengren_LambertSolvers/MATLAB_final_proj/"
+ "/home/jbailey/Dropbox/Academics/AME559/ResearchProject/"
+ "/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj2/NumericalIntegration/"
+ "/home/jbailey/Dropbox/Academics/AME557/Projects/"
+ "/home/jbailey/Downloads/"
+ "/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj1/ProjectReport/"
+ "/home/jbailey/Dropbox/DnD/PCNotes/DiscordWednesdays/"
+ "/home/jbailey/Dropbox/Lisp/"
  "/home/jbailey/"
- "/home/jbailey/Documents/DnD/PCNotes/DiscordWednesdays/"
+ "/home/jbailey/Dropbox/Academics/AME557/Homework/"
+ "/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj1/"
+ "/home/jbailey/Dropbox/Academics/AME557/"
+ "/media/jbailey/2BC6-2F5B/"
+ "/home/jbailey/Dropbox/EVE/"
+ "/home/jbailey/Documents/DnD/"
+ "/home/jbailey/Dropbox/Python/"
+ "/home/jbailey/Dropbox/"
+ "/home/jbailey/Documents/DnD/DMNotes/DiscordSaturdayGroup/Campaign2/"
+ "/home/jbailey/Documents/"
+ "/home/jbailey/Documents/DnD/DMNotes/DiscordSaturdayGroup/"
  "/home/jbailey/Documents/Python/SEATN/"
  "/home/jbailey/Downloads/InertialNav-master/"
  "/home/jbailey/Documents/Python/Control/ACS_Sim/"
  "/home/jbailey/Documents/Python/SEATN/pymath3d-master/"
  "/media/jbailey/JakesDrive/Python/SEATN/"
+ "/home/jbailey/Documents/DnD/PCNotes/DiscordWednesdays/"
  "/home/jbailey/Documents/Python/"
- "/home/jbailey/Documents/"
  "/home/jbailey/Org/"
  "/home/jbailey/.wine/drive_c/Program Files (x86)/Steam/config/"
  "/home/jbailey/.steam/config/"
@@ -89,98 +117,123 @@
  "/mnt/raid/Sync/Academics/Thesis Files/Code/"
  "/home/jbailey/Documents/Python/KalmanFiltering/PlainJane/"
  "/etc/init.d/"
- "/home/jbailey/Documents/DnD/"
  "/home/jbailey/Documents/DnD/DMNotes/RMSGroup/"
  "/ssh:ec2-user@ec2-18-221-216-85.us-east-2.compute.amazonaws.com:/workspace/PlainJane/"
  "/home/jbailey/Documents/Python/KalmanFiltering/"
  "/home/jbailey/Documents/Workspace/Python/ACS_Sim/"
- "/home/jbailey/Downloads/"
- "/home/jbailey/Documents/Workspace/Python/3D RefModel/"
- "/home/jbailey/Documents/DnD/DMNotes/DiscordSaturdayGroup/"
- "/home/jbailey/Documents/Lambert/Python/"
- "/home/jbailey/Documents/Lambert/"
- "/home/jbailey/Documents/Org/"
- "/home/jbailey/Documents/Lambert/Python/pykep_src/pykep/build/"
- "/home/jbailey/Documents/Lambert/Python/pykep_src/pykep/src/"
- "/home/jbailey/Documents/Workspace/Python/"
- "/ssh:ubuntu@ec2-18-218-129-143.us-east-2.compute.amazonaws.com:/home/ubuntu/"
- "/usr/local/cuda-9.1/samples/"
- "/media/jbailey/LINUX MINT/DMNotes/DiscordSaturdayGroup/"
- "/media/jbailey/"
- "/home/jbailey/Documents/Workspace/"
- "/media/jbailey/LINUX MINT/DMNotes/RMSGroup/"
- "/mnt/windows/Users/asaxp/Documents/Workspace/Python/RefModel/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "20180821_ClassNotes.org"
+ "Main_KS.py"
+ "lamberti.m"
+ "findLambertPair.m"
+ "M2E.m"
+ "Project3.m"
+ "ZemGuidance.h"
+ "projectReport.tex"
  ".emacs"
- "MEMS.py"
- "EulerAngles.py"
- "Main_ManyIMU.py"
- "IMU_Perfect.py"
- "setup.py"
- "SimNotes.org"
- "HG1700.py"
- "Main.py"
+ "Bailey_Homework2_20180929.py"
+ "Homework1_Output.txt"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/jbailey/Documents/Academics/AME557/" (23422 65069 635979 511000) "20180821_ClassNotes.org" "../" "./")
+ ("/home/jbailey/Documents/LinuxSrc/" (23585 15350 833287 696000) "./" "../")
 
- ("/home/jbailey/Documents/Academics/" (23422 65069 631979 511000) "AME557/" "../" "./")
+ ("/home/jbailey/Dropbox/DnD/" (23584 60559 974545 567000) "AndiesNotes.txt" "PZO1114 GameMastery Guide (2nd printing).pdf" "PZO1110 Core Rulebook (5th Printing).pdf" "PZO1115 Advanced Player's Guide (2nd printing).pdf" "./" "DMNotes/" "../" "PZO1121 Advanced Race Guide.pdf" "PFRPG_SRD (1).pdf" "PCNotes/")
 
- ("/home/jbailey/Documents/" (23422 65069 631979 511000) "Workspace/" "Brewing/" "Academics/" "Haskell/" "EmacsSrc/" "Reference_DnD/" "../" "Python/" "#stuff.org#" "DnD/" "./")
+ ("/home/jbailey/.emacs.d/" (23560 42894 655445 335000) "session.1014513813cb3000153970458900000027890014" "ido.last~" "org-secretary.el" "tramp" "auto-save-list/" "session.1014513813cb3000153188052200000018290011" "ivy-rich.el" "session.10d36f6aed426bcc43154082415540961300000014990094" "eshell/" "session.1014513813cb3000153221313500000110640013" "session.1014513813cb3000152881003400000013780015" "session.1014513813cb3000152954923700000013470013" "session.1014513813cb3000153309614200000017070023" "session.1014513813cb3000153946061100000028050015" "recentf" "semanticdb/" "ido.last" "session.1014513813cb3000152856587600000020450051" "magithub/" "ac-comphist.dat" "session.1014513813cb3000153261875200000017750014" "session.1014513813cb3000153927514000000017250016" "session.1014513813cb3000152320842100000011910009" "session.1036dcbe43c06269b154359575344777900000025580093" "session.1014513813cb3000152930104800000013550025" "session.1014513813cb3000153560460600000026720018" ".emacs.desktop" "snippets/" "session.1014513813cb3000153048868900000015070016" "session.1014513813cb3000153041039800000038420019" "session.1014513813cb3000153275145600000224550015" "session.1014513813cb3000153341485300000017410025" "session.1014513813cb3000152865227900000013500016" "network-security.data" "./" "mu4e/" ".emacs.desktop.lock" "session.1014513813cb3000153272846400000016960012" "session.10a601dcf3d5fdf8eb154318823454496300000096860093" "session.1014513813cb3000153949292400000028050019" "session.1014513813cb3000153766799600000016990016" "image-dired/" "../" "session.1014513813cb3000153248806400000018120022" "ede-projects.el" "var/" "thumbs/" "bookmarks" "eww-bookmarks" "session.1014513813cb3000153464974000000016780030" "session.1014513813cb3000153309011600000016660012" "elpa/" "url/" "session.1014513813cb3000154009370500000027730023" "srecode-map.el" "#ido.last#" "recentf~" "session.10bc60a0de27d4186f154212715024673500000015160096")
 
- ("/media/jbailey/" (23422 64573 195999 869000) "../" "./")
+ ("/home/jbailey/Dropbox/Academics/AME557/ResearchProject/PythonCode/" (23560 40967 527573 498000) "Dynamics_KS.py" "rkf45.py~" "Main.py~" "rkf45.pyc" "Dynamics.py~" "Dynamics_KS.pyc" "Dynamics.pyc" "Dynamics_KS.py~" "Makefile" "PlanarPath.png" "./" "Main_KS.py" "ReportThought.org~" "../" "ReportThought.org" "rkf45.py" "Hamiltonian.png" "Main.py" "Main_KS.py~" "Dynamics.py")
 
- ("/home/jbailey/Downloads/" (23414 60590 898525 545000) "JuliaPro-0.6.4.1_mkl_build-21(1).sh" "julia-1.0.0-linux-x86_64.tar.gz" "../" "./")
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj3/NumericalIntegration/" (23560 37265 987437 132000) "Disturbances.py" "SGP4/" "stumpC.m" "CrashSite.xcf" "min3d.m" "Project3.m" "stumpS.m" "lambertc.m" "E2f.m" "Plots/" "ImpulsiveManeuverPlanning.py" "TLE.txt" "lamberti.m" "OrbitalUtilities.py" "findLambertPair.m~" "M2E.m" "f2E.m" "findLambertPair.m" "rv2coe.m" "#Analysis_Discussion.txt#" "lambertb.m" "atmosphere.m" "Makefile" "Lambert.py" "constmath.m" "./" "Discussion.txt" "constastro.m" "End_Cost.fig" ".gitignore" "Start_Cost.fig" "US76.py" "../" "CrashSite.png" "Results_30Days.txt" "results_maneuvers.txt" "ToF_Cost.fig" "NumericalIntegration.py" "coe2rv.m" "Bailey_ICs.txt" "E2M.m" ".#Analysis_Discussion.txt")
 
- ("/home/jbailey/Documents/DnD/DMNotes/RMSGroup/" (23408 60588 355681 873000) "HoardOfTheDragonQueen/" "LMoP/" "../" "./")
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj3/Rosengren_LambertSolvers/MATLAB_final_proj/" (23556 20110 704986 562000) "stumpC.m" "stumpS.m" "lambertc.m" "lamberti.m" "rv2coe.m" "lambertb.m" "atmosphere.m" "./" "ame457_proj_2_main.m" "../" "reentryEvents.m" "dynamics_newton.m" "coe2rv.m")
 
- ("/etc/" (23414 60981 3559 459000) "inputrc" "selinux/" "fuse.conf" "bash.bashrc" "ltrace.conf" "services" "host.conf" "zsh_command_not_found" "mpd.conf" "sudoers" "lsb-release" "subgid-" "rc5.d/" "mysql/" "kernel-img.conf" "texmf/" "udisks2/" "acpi/" "magic.mime" "ca-certificates/" "sysctl.d/" "debconf.conf" "apparmor.d/" "updatedb.conf" "rsyslog.conf" "emacs/" "gconf/" "libaudit.conf" "group" "securetty" "udev/" "rc2.d/" "cryptsetup-initramfs/" "groff/" "sddm.conf" "timidity/" "hdparm.conf" "adduser.conf" "xml/" "bash_completion.d/" "lighttpd/" "pki/" "init.d/" "passwd" "ksysguarddrc" "signon-ui/" "java-11-openjdk/" "cupshelpers/" "gshadow-" "kubuntu-default-settings/" "profile.d/" "sysctl.conf" "rc3.d/" "ifplugd/" "gdb/" "libao.conf" "python3/" "insserv.conf.d/" "chatscripts/" "PackageKit/" "bash_completion" "UPower/" "libnl-3/" "locale.gen" "initramfs-tools/" "pam.conf" "rc6.d/" "logrotate.conf" "sensors3.conf" "popularity-contest.conf" "resolv.conf" "protocols" "iproute2/" "dbus-1/" "vdpau_wrapper.cfg" "avahi/" "sane.d/" "gtk-2.0/" "anacrontab" "polkit-1/" "cron.weekly/" "networks" "rcS.d/" "ca-certificates.conf" "fonts/" "bindresvport.blacklist" "hosts.deny" "update-motd.d/" "tmpfiles.d/" "geoclue/" "ufw/" "network/" "python2.7/" "fwupd/" "libpaper.d/" "rsyslog.d/" "calendar/" "rc4.d/" "profile" "netplan/" "X11/" "subgid" "wgetrc" "pm/" "libblockdev/" "timezone" "python3.6/" "terminfo/" "security/" "pam.d/" "sudoers.d/" "ssh/" "mtab" "apport/" ".java/" "deluser.conf" "pnm2ppa.conf" "shadow" "update-manager/" "opt/" "logcheck/" "apparmor/" "kde4rc" "subuid-" "pulse/" "mke2fs.conf" "cron.daily/" "hp/" "locale.alias" "kernel/" "appstream.conf" "gai.conf" "localtime" "subuid" "drirc" "apm/" ".pwd.lock" "usb_modeswitch.d/" "xdg/" "modules-load.d/" "perl/" "kerneloops.conf" "vtrgb" "sddm/" "binfmt.d/" "debian_version" "dpkg/" "login.defs" "papersize" "wildmidi/" "magic" "ld.so.conf" "rpc" "pcmcia/" "cron.hourly/" "resolvconf/" "systemd/" "python/" "cron.monthly/" "shadow-" "wpa_supplicant/" "hostname" "hosts.allow" "logrotate.d/" "nsswitch.conf" "openal/" "hosts" "gss/" "wodim.conf" "passwd-" "modules" "manpath.config" "glvnd/" "firefox/" "sensors.d/" "rmt" "os-release" "thermald/" "ppp/" "ld.so.cache" "catdocrc" "rc0.d/" "init/" "bluetooth/" "fstab" "signond.conf" "dhcp/" "gshadow" "oracle-java9-jdk/" "ucf.conf" "modprobe.d/" "group-" "environment" "shells" "netscsid.conf" "apt/" "cups/" "vim/" "depmod.d/" "issue" "mime.types" "default/" "legal" "ghostscript/" "mailcap.order" "nanorc" "rc1.d/" "grub.d/" "gtk-3.0/" "mailcap" "cron.d/" "newt/" "libreoffice/" "NetworkManager/" "usb_modeswitch.conf" "machine-id" "apache2/" "console-setup/" "aliases" "ImageMagick-6/" "ssl/" "ldap/" "issue.net" "crontab" "sgml/" "postfix/" "cracklib/" "skel/" "ld.so.conf.d/" "alternatives/" "dictionaries-common/" "../" "./")
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj3/Rosengren_LambertSolvers/" (23556 20110 704986 562000) "__MACOSX/" "./" "../" "MATLAB_final_proj/")
 
- ("/home/jbailey/Documents/DnD/PCNotes/DiscordWednesdays/" (23413 4301 353770 583000) "20180613_PostKightstone.org" ".emacs.desktop" "../" "CheatSheet.org" "RiardonSiannodel.org" "gankoji_3033401(2).pdf" "./")
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj3/" (23556 20148 981203 584000) "Rosengren_LambertSolvers/" "README.md" "AME457_project_final.pdf" "NumericalIntegration/" ".git/" "LICENSE" "./" ".gitignore" "../")
 
- ("/media/jbailey/2BC6-2F5B/" (23420 26903 0 0) ".emacs" "Calibre Library/" "Academics/" "Python/" "../" "./")
+ ("/home/jbailey/Documents/Workspace/Python/3D RefModel/" (23267 17992 118068 700000) "__pycache__/" "TOC.pyc" "TOC.py" "Main.py" "GNCUtilities.pyc" "GNCUtilities.py" "EOM.pyc" "EOM.py" "1D_TimeOptimal.py" ".gitignore" ".git/" "../" "./")
 
- ("/media/jbailey/2BC6-2F5B/Academics/" (23420 26903 0 0) "../" "./")
+ ("/etc/init.d/" (23547 20405 748115 519000) "cron" "razerd" "pppd-dns" "saned" "cryptdisks-early" "dns-clean" "anacron" "ufw" "hddtemp" "irqbalance" "whoopsie" "console-setup.sh" "rsync" "networking" "avahi-daemon" "alsa-utils" "gdm3" "kmod" "rsyslog" "cryptdisks" "mpd" "spice-vdagent" "unattended-upgrades" "plymouth" "hwclock.sh" "dbus" "acpid" "./" "procps" "cups-browsed" "uuidd" "sddm" "cups" "mdadm" "../" "bluetooth" "keyboard-setup.sh" "x11-common" "udev" "grub-common" "lm-sensors" "speech-dispatcher" "plymouth-log" "kerneloops" "mdadm-waitidle" "thermald" "network-manager" "apparmor" "bumblebeed" "apport" "lightdm")
 
- ("/media/" (23408 30945 912071 900000) ".hidden" ".directory" "jbailey/" "../" "./")
+ ("/mnt/windows/" (23552 1634 511831 100000) "Windows/" "Users/" "System Volume Information/" "swapfile.sys" "Recovery/" "ProgramData/" "Program Files (x86)/" "Program Files/" "PerfLogs/" "pagefile.sys" "Nexon/" "MinGW/" "hiberfil.sys" "EVE/" "end" "Documents and Settings/" "cygwin64/" "BOOTNXT" "bootmgr" "aerosoft/" "$Recycle.Bin/" "../" "./")
 
- ("/home/" (23407 20041 151603 496000) ".directory" "jbailey/" "../" "./")
+ ("/etc/" (23553 16408 348058 5000) "insserv.conf.d/" "sddm.conf" "ca-certificates/" "libaudit.conf" "ltrace.conf" "tmpfiles.d/" "libnl-3/" "modprobe.d/" "brltty.conf" "pam.conf" "skel/" "apache2/" "udisks2/" "firefox/" "sysctl.d/" "cron.monthly/" "sensors.d/" "calendar/" "xml/" "ODBCDataSources/" "UPower/" "VisualBoyAdvance.cfg" "pulse/" "fstab.bak" "update-manager/" "mke2fs.conf" "openmpi/" "ld.so.cache" "PackageKit/" "usb_modeswitch.conf" "dkms/" "login.defs" "profile" "terminfo/" "emacs/" "debconf.conf" "xfce4/" "update-motd.d/" "signond.conf" "fstab~" "crontab" "host.conf" "fstab" "ufw/" "texmf/" "systemd/" "apg.conf" "profile.d/" "whoopsie" "timezone" "sound/" "hosts" "gdb/" "java-8-openjdk/" "lintianrc" "vulkan/" "newt/" "dpkg/" "init.d/" "init/" "sudoers" ".pwd.lock" "ssl/" "binfmt.d/" "mailcap" "shadow" "subgid" "cron.hourly/" "purple/" "openmw/" "lighttpd/" "rsyslog.conf" "mtab" "chatscripts/" "mime.types" "rc1.d/" "ldap/" "os-release" "cracklib/" "networks" "timidity/" "polkit-1/" "anacrontab" "rsyslog.d/" "securetty" "libpaper.d/" "ucf.conf" "vtrgb" "papersize" "inxi.conf" "gtk-3.0/" "initramfs-tools/" "ImageMagick-6/" "manpath.config" "gdm3/" "issue.net" "acpi/" "gnome/" "mpd.conf" "passwd-" "sane.d/" "wpa_supplicant/" "ca-certificates.conf" "sysctl.conf" "fonts/" "deluser.conf" "geoclue/" "hosts.allow" "grub.d.bak/" "libreoffice/" "pki/" "fuse.conf" "opt/" "updatedb.conf" "alternatives/" "perl/" "grub.d/" "inputrc" "fop.conf.d/" "java-11-openjdk/" "kde4rc" "appstream.conf" "bash_completion" "dhcp/" "network/" "zsh_command_not_found" "logcheck/" "cron.d/" "gss/" "group-" "cryptsetup-initramfs/" "glvnd/" "printcap" "issue" "rc3.d/" "rcS.d/" "update-notifier/" "gshadow-" "pam.d/" "wildmidi/" "gshadow" "bonobo-activation/" "NetworkManager/" "python2.7/" "mysql/" "localtime" "dconf/" "hosts.deny" "gtk-2.0/" "popularity-contest.conf" "mailcap.order" "gimp/" "libao.conf" "magic" "gai.conf" "brltty/" "python3.6/" "shadow-" "odbc.ini" "pnm2ppa.conf" "razer.conf" "magic.mime" "ssh/" "dictionaries-common/" "fwupd/" "protocols" "resolvconf/" "apt/" "gnome-vfs-2.0/" "legal" "ifplugd/" "rc4.d/" "hp/" "rc6.d/" "rmt" "libibverbs.d/" "doc-base/" "subgid-" "iproute2/" "gconf/" "sddm/" "group" "rpc" ".java/" "libblockdev/" "ghostscript/" "cupshelpers/" "resolv.conf" "services" "cups/" "security/" "modules" "mdadm/" "drirc" "ksysguarddrc" "hostname" "adduser.conf" "logrotate.conf" "machine-id" "signon-ui/" "julia/" "bluetooth/" "locale.gen" "kerneloops.conf" "hdparm.conf" "su-to-rootrc" "environment" "locale.alias" "ca-certificates.conf.dpkg-old" "brlapi.key" "rc5.d/" "menu/" "vim/" "udev/" "kernel/" "ld.so.conf.d/" "chromium-browser/" "rc0.d/" "dbus-1/" "kubuntu-default-settings/" "python/" "cron.weekly/" "speech-dispatcher/" "wodim.conf" "OpenCL/" "kernel-img.conf" "rc2.d/" "sgml/" "hddtemp.db" "bash.bashrc" "sudoers.d/" "apparmor.d/" "wgetrc" "default/" "netplan/" "ppp/" "cron.daily/" "netscsid.conf" "mtools.conf" "gnome-system-tools/" "groff/" "thunderbird/" "depmod.d/" "odbcinst.ini" "debian_version" "menu-methods/" "sensors3.conf" "catdocrc" "vdpau_wrapper.cfg" "nanorc" "bindresvport.blacklist" "console-setup/" "pm/" "bash_completion.d/" "selinux/" "bumblebee/" "thermald/" "networkd-dispatcher/" "ld.so.conf" "openal/" "guest-session/" "modules-load.d/" "apm/" "X11/" "subuid-" "apparmor/" "shells" "apport/" "pcmcia/" "nsswitch.conf" "lightdm/" "passwd" "lsb-release" "logrotate.d/" "subuid" "avahi/" "usb_modeswitch.d/" "python3/" "xdg/" "../" "./")
 
- ("/home/jbailey/" (23420 26612 799975 936000) "Downloads/" ".steam/" ".bashrc" ".steampid" "Videos/" ".pulse-cookie" "Calibre Library/" ".bash_logout" ".dropbox/" "Pictures/" "Documents/" "Templates/" ".config/" ".juliapro-0.6.4.1/" ".gnupg/" ".emacs~" ".gitconfig" "Dropbox/" ".pki/" ".profile" ".Xauthority" ".local/" "Music/" ".steampath" ".cache/" ".sudo_as_admin_successful" ".face.icon" ".dropbox-dist/" ".fonts/" ".xsession-errors" ".mozilla/" ".gtkrc-2.0" ".dbus/" ".emacs.d/" "../" ".gconf/" "Desktop/" ".bash_history" "Public/" ".jupyter/" ".kde/" ".julia_history" "./" ".emacs" ".face" ".emacs.d.bak/")
+ ("/etc/grub.d/" (23547 10401 822379 880000) "40_custom" "10_linux" "./" "README" "20_linux_xen" "30_uefi-firmware" "05_debian_theme" "../" "25_custom" "00_header" "41_custom" "30_os-prober")
 
- ("/home/jbailey/Documents/Workspace/" (23407 52061 599548 904000) "EmacsMain/" "../" "./")
+ ("/home/jbailey/Org/" (23511 15419 480055 160000) "Brewing.org~" "ProjectIdeas.org" "TechnicalGoals.org_archive" "TechnicalGoals.org" "TechnicalGoals.org_archive~" "Notes/" "./" "Brewing.org" "../" "MealPlanning.org" "Personal.org")
 
- ("/home/jbailey/Documents/DnD/DMNotes/DiscordSaturdayGroup/" (23408 28884 0 0) "Session0.org" "Session0Recap.txt" "20180519_SummaryToDate.org" "Character Sheets/" "../" "./")
+ ("/home/jbailey/Dropbox/Python/" (23547 9071 80173 164000) "UAVSim/" "Astrodynamics/" "Control/" "Mathematics/" ".git/" "./" ".gitignore" "KalmanFiltering/" "../" "Guidance/" "EulerAngles.py" "CUDA/")
 
- ("/home/jbailey/Documents/Python/KalmanFiltering/" (23408 28888 0 0) "../" "PlainJane/" "./")
+ ("/home/jbailey/Dropbox/Academics/AME557/" (23534 20594 362972 522000) "Projects/" "./" "ResearchProject/" "../" "557_Notes.org" "Homework/")
 
- ("/home/jbailey/Documents/DnD/" (23408 28888 0 0) "PCNotes/" "DnD 5e - Player's Handbook.pdf" "Lost Mine of Phandelver.pdf" "DnD 5e - Monsters Manual.pdf" "DnD 5e - Dungeon Master's Guide.pdf" ".gitignore" "../" "DMNotes/" "HumbleBundleBooks/" ".git/" "./")
+ ("/home/jbailey/" (23556 21135 422809 588000) ".steampid" ".gconf/" ".bash_logout" "startup.sh" ".jupyter/" ".rnd" ".julia_history" ".emacs.d/" ".mozilla/" ".profile" ".slime/" "PersonalFromDropbox/" ".adobe/" ".hplip/" ".gitconfig" ".dmrc" ".macromedia/" ".astropy/" ".steam/" ".matlab/" "sublimehq-pub.gpg" ".steampath" ".gtkrc-2.0" ".gnupg/" ".JarClassLoader" ".gnome/" "Qt/" ".frozenbyte/" ".pki/" ".bash_profile" ".viminfo" "mountRaid.sh" ".emacs" "MATLAB Add-Ons/" "PDF/" "Org/" ".x-plane/" ".mono/" ".lesshst" ".juliapro-0.6.4.1/" "Screenshot from 2018-11-04 18-04-38.png" ".face" "Calibre Library/" ".offlineimaprc" "PlayOnLinux's virtual drives" ".xsession-errors.old" ".pulse-cookie" ".wget-hsts" ".vba/" ".nvidia-settings-rc" "Templates/" ".config/" ".emacs~" ".Xauthority" "Downloads/" ".conda/" ".emacs.desktop" ".nv/" ".ICEauthority" "Maildir/" ".bash_history" ".cache/" "Desktop/" ".mu/" ".subversion/" ".bashrc" "./" ".gphoto/" ".sbcl_history" ".dropbox/" ".dbus/" ".ssh/" ".dropbox-dist/" ".local/" ".java/" ".purple/" ".sage/" ".gyazo.id" "../" ".oracle_jre_usage/" ".recently-used" ".ccache/" ".xsession-errors" "anaconda2/" ".thumbnails/" "Dropbox/" ".gimp-2.8/" "java.log.9625" "evelauncher-1104891.tar.gz" "ROMs/" ".authinfo" ".wine/" "mail.log" ".kde/" ".face.icon" ".vbam/" ".sudo_as_admin_successful" "Documents/" "Workspace/" "evelauncher/" ".offlineimap/" "Screenshot from 2018-11-04 18-08-06.png")
 
- ("/etc/init.d/" (23407 54062 756821 597000) "irqbalance" "cryptdisks" "rsync" "plymouth-log" "udev" "kerneloops" "grub-common" "console-setup.sh" "saned" "unattended-upgrades" "ufw" "anacron" "plymouth" "acpid" "apport" "cryptdisks-early" "apparmor" "alsa-utils" "mpd" "sddm" "hwclock.sh" "procps" "rsyslog" "dbus" "kmod" "bluetooth" "spice-vdagent" "cron" "../" "keyboard-setup.sh" "network-manager" "cups" "uuidd" "whoopsie" "avahi-daemon" "x11-common" "cups-browsed" "pppd-dns" "postfix" "./")
+ ("/home/jbailey/Downloads/" (23550 8769 143848 512000) "[1971]Stiefel E.L. and Scheifele G. - Linear and Regular Celestial Mechanics.pdf" "Regularization.pdf" "NexonLauncherSetup.exe" "2015_Book_UnderstandingAnalysis.pdf" "SGP4/" "confirmation (1).pdf" "Linear algebra and its applications.pdf" "visualboyadvance-m-master/" "confirmation.pdf" "The_Levi-Civita_Problem_and_the_Kustaanheimo-Stief.pdf" "Calculus.pdf" "sgp4-1.4/" "sgp4-1.4.tar.gz" "GraphicsGems-master/" "TAoCP/" "Bailey_ame457_project_2_graded_96.pdf" "Sage/" "[1971]Stiefel E.L. and Scheifele G. - Linear and Regular Celestial Mechanics (1).pdf" "[2008]Araujo R. A. N. et al. - Sphere of influence and gravitational capture radius.pdf" "./" "../" "Binaries/" ".directory" "AME557_f18_research_paper.pdf" "Propagation_Close_Encounters_MNRAS_REV3_clean.pdf")
 
- ("/home/jbailey/Documents/Python/KalmanFiltering/PlainJane/" (23408 28888 0 0) "BaseRadarSim.py" "FilteredTargets.jpg" "EstimationProblem.org" "../" "FilteredTargets.png" "./")
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/" (23556 20189 797435 80000) "ame557-proj3/" "ame557-proj2/" "./" "../" "ame557-proj1/")
 
- ("/home/jbailey/Documents/Python/Astrodynamics/" (23408 28888 0 0) "Lambert/" "Chapter2.py" ".gitignore" "../" "Chapter1.py" "Utilities.py" "./")
+ ("/home/jbailey/Dropbox/Academics/AME559/ResearchProject/" (23534 20615 659201 881000) "HW4_Report_Bailey.pdf" "NAPLES/" "Bailey_HW4_20181113/" "PythonCode/" "./" "../" "Bailey_HW4_20181113.zip" "HW4_Report_Bailey.odt")
 
- ("/home/jbailey/Documents/EmacsSrc/emacs/" (23408 28880 0 0) "INSTALL.REPO" "test/" "Makefile.in" ".clang-format" "lwlib/" "GNUmakefile" "config.status" "msdos/" "CONTRIBUTE" "lib-src/" "make-dist" "config.log" "autogen.sh" "aclocal.m4" "etc/" "nt/" "Makefile" "leim/" ".dir-locals.el" "INSTALL" "autom4te.cache/" "myConfigure.sh" "lib/" "README" "config.bat" "BUGS" "COPYING" "ChangeLog.2" "modules/" "info/" "src/" ".gitignore" ".gitattributes" "../" "doc/" "configure.ac" "oldXMenu/" "m4/" "build-aux/" "ChangeLog.3" "nextstep/" ".git/" "ChangeLog.1" "lisp/" "configure" "./" ".gitlab-ci.yml" "myConfigure.sh~" "admin/")
+ ("/home/jbailey/Dropbox/Academics/AME559/ResearchProject/PythonCode/" (23530 31130 640763 239000) ".#Main.py" "rkf45.py~" "Main.py~" "rkf45.pyc" "Dynamics.py~" "Dynamics.pyc" "Makefile" "PlanarPath.png" ".#ReportThought.org" "./" "ReportThought.org~" "../" "ReportThought.org" "rkf45.py" "Main.py" "Dynamics.py")
 
- ("/home/jbailey/Documents/DnD/PCNotes/" (23408 28888 0 0) "DiscordWednesdays/" "../" "./")
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj2/NumericalIntegration/" (23526 6175 912285 967000) "Disturbances.py" "SGP4/" "CrashSite.xcf" "Disturbances.pyc" "Discussion.txt~" "Omega" "Plots/" "TLE.txt" "OrbitalUtilities.py" "US76.pyc" "AME457_project_2.pdf" "Drag" "Altitude" "Path" "atmosphere.m" "Makefile" "./" "Discussion.txt" ".gitignore" "Semimajor" "US76.py" "../" "Eccentricity" "CrashSite.png" "Energy" "Oblateness" "Periapsis" "OrbitalUtilities.pyc" "NumericalIntegration.py" "Bailey_ICs.txt")
 
- ("/home/jbailey/Documents/DnD/DMNotes/" (23408 28884 0 0) "RMSGroup/" "20180603_DiabloIII_Heaven_OneShot.org" "../" "DiscordSaturdayGroup/" "./")
+ ("/home/jbailey/Dropbox/Academics/AME559/" (23528 41177 716397 994000) "Lecture Materials/" "Videos/" "HW/" "References/" "./" ".gitignore" "559_Notes.org" "ResearchProject/" "../")
 
- ("/etc/grub.d/" (23383 59973 0 0) "40_custom" "20_linux_xen" "30_uefi-firmware" "10_linux" "05_debian_theme" "00_header" "README" "30_os-prober" "../" "20_memtest86+" "41_custom" "./")
+ ("/home/jbailey/Dropbox/Academics/" (23509 14333 719978 118000) "AME557/" ".git/" "./" "AME500A/" ".gitignore" "../" ".gitmodules" "AME559/")
 
- ("/home/jbailey/Documents/Python/" (23408 28888 0 0) "CUDA/" "Control/" "Astrodynamics/" ".gitignore" "../" "UAVSim/" "SEATN/" "Guidance/" ".git/" "KalmanFiltering/" "./")
+ ("/home/jbailey/Dropbox/" (23519 61388 354886 515000) "ORg/" "DnD/" ".bashrc" "./" ".dropbox" "Crypto/" "EVE/" "../" "Academics/" "Lisp/" "CostOfOwnership.ods" "Python/" ".dropbox.cache/" "Workspace/")
 
- ("/home/jbailey/Documents/Python/Control/ACS_Sim/" (23408 28888 0 0) "TOC.py" "Main.py" "__pycache__/" "../" "EOM.pyc" "GNCUtilities.py" "EOM.py" "./")
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj2/NumericalIntegration/Plots/" (23510 32270 273139 722000) "./" "../")
 
- ("/home/jbailey/Documents/Python/SEATN/" (23408 60502 106073 799000) "FOVM.py" "MEMS.py" "NAV.py" "IMUGyro.png" "ACS.pyc" "NAV.pyc" "ManyIMUs/" "IMUAccel.png" "HG1700.py" "Research/" "TOC.py" "MEMS.py~" "Nav Attitude.png" "NavAttErrors.png" "TOC.pyc" "IMU_Base.py" "MEMS.pyc" "SimNotes.org" "Main_TwoIMU.py" "GNCUtilities.pyc" "NavVelErrors.png" "Fibersense.py" "FOVM.pyc" "euler_angle/" "PerfectIMU/" "EulerAngles.py" "EulerAngles.pyc" "ProNav.py" "IMU_Perfect.pyc" "ACS.py" "Consensus1/" ".directory" "NavPosErrors.png" "NavPosition.png" "Main.py" "Fibersense.pyc" "Fibersense/" "HG1700/" "../" "EOM.pyc" "ConsensusFiltering.pyc" "ProNav.pyc" "HG1700.pyc" "IMU_Perfect.py" "Main_ManyIMU.py" "GNCUtilities.py" "MEMs/" "EOM.py" "NavVelocity.png" "1D_TimeOptimal.py" "ConsensusFiltering.py" "./" "ZEMMagnitude.png")
+ ("/home/jbailey/Documents/DnD/PCNotes/DiscordWednesdays/" (23434 44463 828277 913000) "20180613_PostKightstone.org" "CheatSheet.org" "./" "../" "RiardonSiannodel.org" "gankoji_3033401(2).pdf")
+
+ ("/home/jbailey/Documents/" (23468 23086 116331 709000) "GitLab/" "FizzBuzz.py~" "FizzBuzz.py" "Somerpointe_Rent_20180904.pdf" "DnD/" "emacsBooks/" "Reference_DnD/" "SEATN/" "Brewing/" "./" "Lisp Books/" "hack-emacs-notes-master/" "../" "20180818_Session0.org" "Haskell/" "MATLAB/" "Python/" "EmacsSrc/" "Workspace/")
+
+ ("/home/jbailey/Documents/DnD/DMNotes/DiscordSaturdayGroup/Campaign2/" (23454 31904 467289 630000) "20180901_NPCsAndDMPrep.org" "20180916_CharacterDeepBackgrounds.org" "20180818_Session0.org~" "./" "20180916_CharacterDeepBackgrounds.org~" "../" "20180818_Session0.org")
+
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj1/" (23494 3310 407824 456000) "GaussMethod/" "README.md" "BaileyLeeLesnewskiProject1_v2.zip" "LaplaceMethod/" "ProjectReport/" ".git/" "./" ".gitignore" "../")
+
+ ("/home/jbailey/Dropbox/Academics/AME557/Homework/" (23471 46515 34215 110000) "./" "../" "Homework2/" "Homework1/")
+
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj1/ProjectReport/" (23494 2542 903348 622000) "projectReport.log" "projectReport.pdf" "projectReport.dvi" "./" "projectReport.aux" "bibliography.bib.aux" "bibliography.bib" "../" "projectReport.bbl" "projectReport.tex" "projectReport.blg")
+
+ ("/home/jbailey/Dropbox/Academics/AME557/Projects/ame557-proj2/" (23509 14459 381095 412000) "README.md" "NumericalIntegration/" ".git" "./" "../")
+
+ ("/home/jbailey/Dropbox/DnD/PCNotes/DiscordWednesdays/" (23471 137 390877 90000) "20180613_PostKightstone.org" "CheatSheet.org" "./" "../" "RiardonSiannodel.org" "gankoji_3033401(2).pdf")
+
+ ("/home/jbailey/Dropbox/Lisp/" (23478 42701 429133 549000) "HelloLisp.lisp~" "./" "HelloLisp.lisp" "../")
+
+ ("/home/jbailey/Dropbox/DnD/PCNotes/" (23436 11364 308853 109000) "./" "../" "DiscordWednesdays/")
+
+ ("/media/jbailey/" (23462 63306 921203 197000) "./" "../" "2BC6-2F5B/")
+
+ ("/home/" (23238 58850 391355 268000) "jbailey/" "./" "../" ".directory")
+
+ ("/home/jbailey/Dropbox/EVE/" (23462 57120 161298 937000) "./" "PI_OptimizerNotes.org_archive" "PI_Optimizer.ods" "../" "PI_Opt.py" "PI_OptimizerNotes.org")
+
+ ("/home/jbailey/Documents/GitLab/" (23446 57622 77557 547000) "OrbDyn/" "./" "../")
+
+ ("/home/jbailey/Documents/GitLab/OrbDyn/" (23446 57627 117599 309000) "orbital-dynamics/" "./" "../")
+
+ ("/home/jbailey/Documents/GitLab/OrbDyn/orbital-dynamics/" (23446 57718 722349 995000) "README.md" ".git/" "./" "../")
+
+ ("/home/jbailey/Documents/DnD/DMNotes/DiscordSaturdayGroup/" (23416 58827 514121 121000) "Campaign2/" "./" "Campaign1/" "../")
+
+ ("/home/jbailey/Documents/DnD/" (23436 4863 974813 309000) "DnD 5e - Monsters Manual.pdf" "DnD 5e - Player's Handbook.pdf" ".git/" "./" ".gitignore" "DMNotes/" "../" "PCNotes/" "Lost Mine of Phandelver.pdf" "DnD 5e - Dungeon Master's Guide.pdf")
+
+ ("/home/jbailey/.steam/config/" (23397 43406 517357 181000) "./" "../" "coplay_76561198133080985.vdf")
+
+ ("/home/jbailey/.wine/drive_c/Program Files (x86)/Steam/config/" (23409 35109 502908 40000) "loginusers.vdf" "config.vdf" "config.vdf~" "./" "DialogConfig.vdf" "../")
+
+ ("/home/jbailey/Documents/Python/" (23385 59958 539763 206000) "UAVSim/" "Astrodynamics/" "Control/" ".git/" "SEATN/" "./" ".gitignore" "KalmanFiltering/" "../" "Guidance/" "CUDA/")
+
+ ("/home/jbailey/Documents/Python/SEATN/" (23398 27086 262979 315000) "IMUAccel.png" "NavPosition.png" "IMU_Perfect.pyc" "Main_ManyIMU.py" "MEMS.pyc" "TOC.py" "FOVM.py" "Fibersense/" "ConsensusFiltering.pyc" "EulerAngles.pyc" "NavVelErrors.png" "NAV.py" "ACS.py" "MEMS.py~" "SimNotes.org" "TOC.pyc" "euler_angle/" "1D_TimeOptimal.py" "Consensus1/" "IMUGyro.png" "Main_TwoIMU.py" "Nav Attitude.png" "ConsensusFiltering.py" "HG1700.py" "EOM.pyc" "GNCUtilities.py" "EOM.py" "ProNav.pyc" "IMU_Perfect.py" "MEMs/" "MEMS.py" "ACS.pyc" "NAV.pyc" "ManyIMUs/" "HG1700.pyc" "ZEMMagnitude.png" "NavVelocity.png" "./" "HG1700/" "NavAttErrors.png" "PerfectIMU/" "ProNav.py" "FOVM.pyc" "../" "Fibersense.pyc" "NavPosErrors.png" ".directory" "Fibersense.py" "GNCUtilities.pyc" "Main.py" "EulerAngles.py" "Research/" "IMU_Base.py")
 
  ("/home/jbailey/Documents/Python/SEATN/euler_angle/" (23398 6949 333443 843000) "CMakeLists.txt" "EulerAngles.c" "Makefile" "./" "README" "EulerSample.c" "../" "EulerAngles.py~" "EulerAngles.py" "QuatTypes.h" "EulerAngles.h")
 
@@ -188,7 +241,7 @@
 
  ("/home/jbailey/Downloads/InertialNav-master/" (22554 56677 0 0) "models/" "TestData/" "README.md" "PX4 Load Estimation.ods" "derivations/" "./" "LICENSE.md" ".gitignore" ".travis.yml" "../" "scripts/" "plots/" "code/")
 
- ("/home/jbailey/.emacs.d/" (23385 59394 660683 385000) "ido.last~" "org-secretary.el" "tramp" "auto-save-list/" "session.1014513813cb3000153188052200000018290011" "ivy-rich.el" "eshell/" "session.1014513813cb3000153221313500000110640013" "session.1014513813cb3000152881003400000013780015" "session.1014513813cb3000152954923700000013470013" "recentf" "semanticdb/" "ido.last" "session.1014513813cb3000152856587600000020450051" "ac-comphist.dat" "session.1014513813cb3000152320842100000011910009" "session.1014513813cb3000152930104800000013550025" ".emacs.desktop" "snippets/" "session.1014513813cb3000153048868900000015070016" "session.1014513813cb3000153041039800000038420019" "session.1014513813cb3000152865227900000013500016" "network-security.data" "./" "mu4e/" ".emacs.desktop.lock" "image-dired/" "../" "session.1014513813cb3000153248806400000018120022" "ede-projects.el" "thumbs/" "bookmarks" "eww-bookmarks" "elpa/" "url/" "#ido.last#")
+ ("/home/jbailey/Documents/Python/Control/ACS_Sim/" (23379 47390 676352 673000) "TOC.py" "EOM.pyc" "GNCUtilities.py" "EOM.py" "./" "__pycache__/" "../" "Main.py")
 
  ("/home/jbailey/.emacs.d/elpa/" (23382 38361 61769 784000) "csv-mode-readme.txt" "flycheck-inline-readme.txt" "flymake-google-cpplint-20140205.525/" "company-lsp-20180518.1810/" "minimap-1.2/" "flycheck-irony-readme.txt" "lsp-java-20180531.1229/" "lsp-python-20180404.819/" "flycheck-irony-20180604.1452/" "projectile-readme.txt" "parsebib-20180116.627/" "flycheck-pkg-config-readme.txt" "pkg-info-20150517.443/" "flycheck-popup-tip-readme.txt" "ivy-0.10.0/" "ht-20180129.1434/" "projectile-20180602.2253/" "gnupg/" "archives/" "with-editor-20180414.757/" "auctex-12.1.1/" "flymake-css-readme.txt" "python-0.26.1/" "pylint-20170402.555/" "python-readme.txt" "flycheck-cython-20170724.258/" "flymake-easy-20140818.55/" "iedit-20180207.219/" "flycheck-color-mode-line-readme.txt" "flycheck-20180509.845/" "flycheck-clojure-readme.txt" "popup-20160709.729/" "minimap-readme.txt" "flycheck-haskell-readme.txt" "flycheck-haskell-20180321.1340/" "context-coloring-readme.txt" "magit-popup-20180509.1041/" "auctex-12.1.1.signed" "flycheck-readme.txt" "minimap-1.2.signed" "mu4e-maildirs-extension-readme.txt" "lsp-haskell-20180131.459/" "academic-phrases-20180318.438/" "magit-20180519.1008/" "js2-mode-readme.txt" "lsp-ui-20180604.244/" "flycheck-cython-readme.txt" "company-c-headers-20170531.1330/" "company-math-20171016.814/" "mu4e-alert-readme.txt" "lsp-intellij-20180501.1852/" "flycheck-20180609.159/" "company-20180501.11/" "cider-20180608.352/" "s-20180406.108/" "company-bibtex-20171104.2344/" "pos-tip-20150318.813/" "flycheck-cstyle-20160905.1641/" "csv-mode-1.7/" "company-eshell-autosuggest-20171209.1109/" "dash-20180413.30/" "csv-mode-1.7.signed" "context-coloring-8.1.0/" "auto-complete-20170124.1845/" "company-irony-c-headers-20151018.209/" "markdown-mode-20180607.913/" "math-symbol-lists-20170221.553/" "ht-readme.txt" "mu-cite-readme.txt" "flycheck-irony-20160317.1536/" "spinner-1.7.3.signed" "use-package-20180314.1143/" "promise-readme.txt" "irony-20180519.422/" "let-alist-1.0.5/" "academic-phrases-readme.txt" "haskell-mode-20180406.2222/" "js2-mode-20180521.1523/" "flycheck-pycheckers-readme.txt" "flycheck-pkg-config-20180430.1543/" "auto-complete-c-headers-20150911.2023/" "./" "clojure-mode-20180608.507/" "company-auctex-20180330.1118/" "lsp-ui-readme.txt" "async-20180424.2250/" "flycheck-color-mode-line-20171121.2307/" "git-commit-20180411.1649/" "flycheck-clang-tidy-20171024.108/" "dash-functional-20180107.818/" "flycheck-pos-tip-readme.txt" "pylint-readme.txt" "../" "context-coloring-8.1.0.signed" "queue-0.2/" "lsp-intellij-readme.txt" "flycheck-clang-analyzer-20180225.2039/" "flycheck-clojure-20170221.1354/" "company-irony-20170905.1346/" "queue-0.2.signed" "epl-20180205.1249/" "counsel-ebdb-1/" "python-0.26.1.signed" "ghub-20180417.1527/" "flycheck-inline-20180529.614/" "flycheck-pos-tip-20170504.1504/" "polymode-readme.txt" "hydra-0.14.0/" "spinner-1.7.3/" "python-mode-readme.txt" "flycheck-popup-tip-20170812.1651/" "nov-readme.txt" "yasnippet-20180513.1004/" "ace-window-readme.txt" "lsp-mode-20180607.2306/" "company-lsp-readme.txt" "ebdb-0.5.2/" "bind-key-20180512.2130/" "flycheck-pycheckers-20180608.1005/")
 
@@ -202,25 +255,27 @@
 
  ("/media/jbailey/JakesDrive/" (23381 6173 837261 500000) "System Volume Information/" "Python/" "../" "./")
 
- ("/mnt/windows/" (23377 41718 301385 800000) "Windows.old/" "Windows/" "Users/" "System Volume Information/" "swapfile.sys" "Recovery/" "ProgramData/" "Program Files (x86)/" "Program Files/" "PerfLogs/" "pagefile.sys" "MinGW/" "hiberfil.sys" "Documents and Settings/" "cygwin64/" "BOOTNXT" "bootmgr" "aerosoft/" "$Recycle.Bin/" "../" "./")
-
  ("/home/jbailey/Documents/Python/Control/RefModel/" (23374 45206 84589 438000) "Attitude.png" "TOC.py" "TOC.pyc" "1D_TimeOptimal.py" "EOM.pyc" "GNCUtilities.py" "EOM.py" "TOC.png" "./" "__pycache__/" ".gitignore" "PointingCommands.png" "../" "GNCUtilities.pyc" "Main.py")
 
  ("/home/jbailey/Documents/Python/Control/3D RefModel/" (23374 45159 776157 753000) "TOC.py" "TOC.pyc" "1D_TimeOptimal.py" "EOM.pyc" "GNCUtilities.py" "EOM.py" "./" "__pycache__/" ".gitignore" "../" "GNCUtilities.pyc" "Main.py")
 
  ("/home/jbailey/Documents/Python/Control/" (23363 4872 648276 558000) "RefModel/" "PlotIt.py" "OptimalControlNotes.org" "NewIntegration/" "./" "../" "Main.py" "ACS_Sim/" "3D RefModel/")
 
+ ("/home/jbailey/Documents/Python/KalmanFiltering/" (23355 3462 115216 712000) "PlainJane/" "./" "../")
+
+ ("/home/jbailey/Documents/Python/Astrodynamics/" (23355 3331 866095 437000) "Chapter1.py" "Utilities.py" "./" ".gitignore" "Lambert/" "../" "Chapter2.py")
+
  ("/home/jbailey/Documents/Python/UAVSim/" (23365 30369 369246 48000) "TargetStateEstimation.org" "EOM.py" "./" "#TargetStateEstimation.org#" "../")
 
  ("/home/jbailey/Documents/Python/Guidance/" (23355 3136 720566 126000) "Guidance.org" "ThreeDimensions.py" "FirstCut.py" "GNCUtilities.py" "./" "../" "GNCUtilities.pyc")
 
- ("/home/jbailey/Org/" (23355 2387 238895 295000) "MealPlanning.org~" "Brewing.org~" "ProjectIdeas.org" "TechnicalGoals.org_archive" "TechnicalGoals.org~" "Personal.org~" "TechnicalGoals.org" "TechnicalGoals.org_archive~" "Notes/" "./" "Brewing.org" "../" "ProjectIdeas.org~" "MealPlanning.org" "Personal.org" "notes.org")
+ ("/home/jbailey/Documents/DnD/DMNotes/RMSGroup/" (23335 20509 883373 92000) "20180603_FinallyOutOfPhandalin.org" "20180410_PrePhandelver.org" "LostMineOfPhandelver.org" "./" "20180519_CampaignSummary_BANDITS.org" "../" "20180422_TheRoadToPhandalin.org")
+
+ ("/home/jbailey/Documents/DnD/DMNotes/" (23335 18440 648752 837000) "RMSGroup/" "DiscordSaturdayGroup/" "./" "20180603_DiabloIII_Heaven_OneShot.org" "../")
 
  ("/home/jbailey/Documents/Python/GuidanceOptimization/" (23337 50310 687093 825000) "Guidance.org" "ThreeDimensions.py" "FirstCut.py" "GNCUtilities.py" "./" "../" "GNCUtilities.pyc")
 
  ("/home/jbailey/Documents/Projects/" (23351 51870 841402 238000) "./" "../" "Ideas.org")
-
- ("/home/jbailey/.wine/drive_c/Program Files (x86)/Steam/config/" (23352 33786 960610 529000) "loginusers.vdf" "config.vdf" "config.vdf~" "./" "DialogConfig.vdf" "../")
 
  ("/home/jbailey/.wine/drive_c/Program Files (x86)/Steam/steam/" (23352 13545 758910 882000) "cached/" "games/" "./" "../" "legacydepotdata.vdf")
 
@@ -238,8 +293,6 @@
 
  ("/home/jbailey/.steam/steam/config/" (23348 38619 526325 717000) "widevine/" "DialogConfigOverlay_1920x1080.vdf" "steamapps.vrmanifest" "htmlcache/" "loginusers.vdf" "DialogConfigOverlay_1920x1011.vdf" "DialogConfigOverlay_9840x3840.vdf" "config.vdf" "DialogConfigOverlay_2560x1440.vdf" "./" "DialogConfig.vdf" "../")
 
- ("/home/jbailey/.steam/config/" (23250 35310 452146 300000) "./" "../" "coplay_76561198133080985.vdf")
-
  ("/home/jbailey/.steam/" (23343 53688 157075 344000) "sdk64/" "root/" "steam.sh" "ubuntu12_64/" "graphics/" "legacycompat/" "friends/" "bin/" "steam_install_agreement.txt" "steam.pid" "fontconfig/" "steamdeps.txt" "ubuntu12_32/" "bin_steam.sh" "registry.vdf" "bin_steamdeps.py" "steam_msg.sh" "steam.pipe" "linux64/" "skins/" "public/" "servers/" "./" "ThirdPartyLegalNotices.doc" "tenfoot/" "steam/" "../" "package/" "linux32/" "html5app/" "error.log" "config/" "sdk32/" "resource/" "bin32/" "bin64/" "controller_base/" "ThirdPartyLegalNotices.css" "ThirdPartyLegalNotices.html")
 
  ("/mnt/windows/Users/asaxp/Downloads/Crypto/" (23233 5812 15249 800000) "xmr-stak-win64/" "Windows_x64_nheqminer-5c/" "Stuff.txt" "monero-gui-v0.11.1.0/" "Exodus Recovery Phrase.pdf" "../" "./")
@@ -247,6 +300,8 @@
  ("/mnt/windows/Users/asaxp/Downloads/" (23351 50006 311455 600000) "desktop.ini" "Crypto/" "Books/" "emacs-25.2-x86_64/" "DnD/" "../" "./")
 
  ("/home/jbailey/Documents/Python/ACS_Sim/" (23327 16943 729642 420000) "TOC.py" "GNCUtilities.py" "EOM.py" "./" "__pycache__/" "../" "Main.py")
+
+ ("/home/jbailey/Documents/Python/KalmanFiltering/PlainJane/" (23325 25359 481391 540000) "FilteredTargets.jpg" "BaseRadarSim.py" "FilteredTargets.png" "./" "EstimationProblem.org" "../")
 
  ("/mnt/windows/Users/asaxp/" (23296 40190 270930 700000) "Contacts/" "Canopy/" "camguest.id" "Application Data/" "AppData/" "3D Objects/" ".VirtualBox/" "Videos/" "Tracing/" "Templates/" "Start Menu/" "source/" "SendTo/" "Searches/" "Scelight Replay Backup/" "Saved Games/" "Recent/" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "MicrosoftEdgeBackups/" "Local Settings/" "Links/" "Favorites/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Pictures/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{5d023df7-fcb2-11e7-9459-704d7b25fcd8}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{5d023df7-fcb2-11e7-9459-704d7b25fcd8}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{5d023df7-fcb2-11e7-9459-704d7b25fcd8}.TM.blf" "ntuser.dat.LOG2" ".TeamSpeak 3/" ".Scelight/" ".QtWebEngineProcess/" ".pyfa/" ".oracle_jre_usage/" ".nuget/" ".matplotlib/" ".jupyter/" ".ipython/" ".idlerc/" ".gnucash/" ".gitconfig" ".gimp-2.8/" ".Evernus/" ".EVE/" ".dotnet/" ".condarc" ".conda/" ".canopy_runtimes.json" ".bash_history" ".atom/" ".anaconda/" "PrintHood/" "ntuser.dat.LOG1" "Cookies/" ".thumbnails/" "../" "./")
 
@@ -270,63 +325,19 @@
 
  ("/mnt/" (23240 65184 724010 837000) "boot-sav/" "windows/" "./" "BootInfo/" "../" "raid/")
 
+ ("/home/jbailey/Documents/EmacsSrc/emacs/" (23311 28791 396768 998000) "leim/" "test/" "lisp/" ".gitlab-ci.yml" "configure.ac" "config.status" "Makefile.in" "config.bat" "ChangeLog.1" "CONTRIBUTE" "INSTALL" "nextstep/" "info/" "make-dist" "etc/" ".dir-locals.el" "config.log" "configure" "myConfigure.sh~" "myConfigure.sh" ".git/" "lib-src/" "autom4te.cache/" "Makefile" "lwlib/" "doc/" "./" "README" "lib/" "oldXMenu/" ".gitignore" "ChangeLog.3" "modules/" "../" "autogen.sh" "src/" "BUGS" "m4/" ".clang-format" ".gitattributes" "GNUmakefile" "ChangeLog.2" "aclocal.m4" "nt/" "INSTALL.REPO" "admin/" "COPYING" "msdos/" "build-aux/")
+
  ("/home/jbailey/Documents/EmacsSrc/" (23302 6377 175886 607000) "emacs/" "./" "../")
 
  ("/home/jbailey/Documents/Workspace/Python/ACS_Sim/" (23230 40637 550443 0) "__pycache__/" "TOC.py~" "TOC.py" "Main.py~" "Main.py" "GNCUtilities.py~" "GNCUtilities.py" "EOM.py~" "EOM.py" "../" "./")
 
  ("/home/jbailey/Documents/EmacsSrc/emacs/src/" (23302 7219 886586 99000) "ChangeLog.8" "dispnew.c" "region-cache.o" "xselect.o" "composite.o" "unexsol.c" "module-env-26.h" "fontset.h" "widget.h" "chartab.c" "globals.h" "minibuf.o" "font.o" "w32common.h" "window.c" "nsmenu.m" "regex.o" "sysdep.c" "msdos.c" "unexelf.c" "gfilenotify.c" "doprnt.c" "gtkutil.c" "unexcw.c" "xdisp.o" "textprop.c" "inotify.c" "w32fns.c" "keyboard.o" "dbusbind.c" "sheap.o" "module-env-25.h" "ccl.h" "commands.h" "callint.c" "macfont.m" "unexmacosx.c" "charset.o" "syntax.o" "w16select.c" "dynlib.c" "w32select.c" ".gdbinit" "Makefile.in" "emacs" "term.o" "xgselect.c" ".dbxinit" "editfns.o" "w32font.h" "thread.c" "ftfont.h" "bidi.c" "dynlib.h" "unexelf.o" "xfont.c" "frame.c" "profiler.o" "w32cygwinx.c" "xterm.c" "xsmfns.o" "alloc.c" "terminfo.o" "nsselect.m" "w32heap.h" "buildobj.h" "lread.c" "fileio.o" "xml.o" "unexec.h" "ChangeLog.5" "w32notify.c" "ChangeLog.1" "emacs-27.0.50.1" "scroll.c" "cm.h" "gnutls.o" "macros.c" "w32reg.c" "nsimage.m" "nsterm.h" "editfns.c" "w32.h" "callproc.c" "lastfile.c" "insdel.o" "menu.o" "w32term.h" "w32uniscribe.c" "w32inevt.h" "systhread.c" "ChangeLog.11" "ChangeLog.10" "region-cache.c" "systhread.h" "indent.c" "callproc.o" "character.h" "regex.h" "w32console.c" "w32gui.h" "cmds.c" "inotify.o" "xrdb.o" "macros.h" "xfont.o" "category.o" "config.h" "doc.o" "lastfile.o" "ChangeLog.13" "emacs-icon.h" "ChangeLog.6" "marker.o" "config.in" "print.c" "indent.h" "ChangeLog.9" "term.c" "indent.o" "xmenu.o" "region-cache.h" "xsettings.h" "image.o" "xgselect.o" "frame.o" "bitmaps/" "unexw32.c" "sysstdio.h" "bootstrap-emacs" "blockinput.h" "bytecode.c" "w32inevt.c" "conf_post.h" "filelock.c" "xml.c" "nsfont.m" "terminal.c" "charset.c" "ftcrfont.c" "keyboard.h" "fontset.c" "ftfont.c" "widgetprv.h" "fns.o" "window.h" "systhread.o" "xterm.h" "dosfns.h" "composite.h" "bidi.o" "alloc.o" "thread.h" "undo.c" "termchar.h" "floatfns.o" "w32menu.c" "cygw32.c" "cmds.o" "window.o" "undo.o" "getpagesize.h" "emacs.c" "menu.h" "w32font.c" "xterm.o" "sysdep.o" "fringe.c" "xgselect.h" "xmenu.c" "xsmfns.c" "frame.h" "data.o" "atimer.o" "print.o" "deps.mk" "process.c" "termopts.h" "terminal.o" "msdos.h" "w32heap.c" "macuvs.h" "profiler.c" "w32proc.c" "buffer.o" "eval.o" "cm.o" "composite.c" "bytecode.o" "dired.c" "macros.o" "keymap.o" "dosfns.c" "fringe.o" "xwidget.h" "thread.o" "ChangeLog.12" "gmalloc.c" "lread.o" "sheap.h" "Makefile" "keymap.c" "fileio.c" "character.o" "epaths.h" "keymap.h" "buffer.c" "filelock.o" "emacs-module.c" "sound.o" "xfaces.o" "ftxfont.c" "menu.c" "chartab.o" "coding.h" "marker.c" "xftfont.o" "doprnt.o" "font.h" "emacsgtkfixed.c" "floatfns.c" "gnutls.c" "systty.h" "minibuf.c" "category.c" "atimer.c" "ccl.o" "README" "systime.h" "keyboard.c" "xselect.c" "tparam.h" "intervals.h" "intervals.c" "sheap.c" "disptab.h" "regex.c" "nsgui.h" "intervals.o" "puresize.h" "fns.c" "macfont.h" "w32select.h" "terminfo.c" "dispextern.h" "xrdb.c" "xftfont.c" "ftxfont.o" "process.h" "ccl.c" "dired.o" "ChangeLog.3" "atimer.h" "ChangeLog.7" "sysselect.h" "xfns.o" "kqueue.c" "coding.c" "termhooks.h" "emacsgtkfixed.h" "decompress.o" "temacs" "firstfile.c" "gtkutil.o" "cygw32.h" "decompress.c" "buffer.h" "xfns.c" "casetab.o" "callint.o" "cm.c" "syssignal.h" "search.o" "vm-limit.c" "ptr-bounds.h" "nsfns.m" "image.c" "gmalloc.o" "lcms.o" "tparam.c" "font.c" "gnutls.h" "lisp.h" "doc.c" "deps/" "w32.c" "ChangeLog.2" "scroll.o" "ralloc.c" "epaths.in" "xwidget.c" "ftfont.o" "emacs-module.h" "casefiddle.c" "nsterm.m" "charset.h" "emacs.o" "gtkutil.h" "emacs-module.h.in" "xsettings.c" "lcms.c" "syswait.h" "widget.c" "syntax.c" "textprop.o" "process.o" "xfaces.c" "syntax.h" "xsettings.o" "xdisp.c" "dispnew.o" "sound.c" "unexcoff.c" "character.c" "category.h" "data.c" "fontset.o" "COPYING" "casetab.c" "coding.o" "search.c" "unexaix.c" "w32xfns.c" "casefiddle.o" "unexhp9k800.c" "json.c" "ChangeLog.4" "eval.c" "insdel.c" "termcap.c" "lisp.mk" "w32term.c" "gl-stamp" "../" "./")
 
+ ("/home/jbailey/Documents/DnD/PCNotes/" (23298 56263 205487 555000) "./" "../" "DiscordWednesdays/")
+
  ("/home/jbailey/Org/Notes/" (23286 10724 88860 993000) "20180507_AmazonWebServices.org" "./" "20180507_AmazonWebServices.org~" "../")
 
  ("/usr/local/cuda-9.1/samples/" (23286 11877 769297 267000) "6_Advanced/" "7_CUDALibraries/" "bin/" "0_Simple/" "4_Finance/" "2_Graphics/" "1_Utilities/" "./" "5_Simulations/" "../" "3_Imaging/")
-
- ("/home/jbailey/Documents/Python/CUDA/" (23285 61991 102216 203000) "tags" "numbaJitTest.py" "TAGS" "pycudaTest.py" "./" "../")
-
- ("/home/jbailey/Documents/Org/" (23285 59806 528925 410000) "20180507_AmazonWebServices.org" "20180430_PersonalGoalsAndMusing.org" "./" "20180430_PersonalGoalsAndMusing.org~" "../")
-
- ("/home/jbailey/Documents/Lambert/Python/" (23285 59595 743363 348000) "NumbaExamples/" "./" "../" "lambert.py" "CUDA/" "pykep_src/")
-
- ("/home/jbailey/Documents/Lambert/Python/pykep_src/pykep/build/" (23282 27616 173991 615000) "CTestTestfile.cmake" "wheel/" "cmake_install.cmake" "CMakeCache.txt" "main" "pykep/" "install_manifest.txt" "Makefile" "tests/" "./" "../" "src/" "CMakeFiles/")
-
- ("/home/jbailey/Documents/Lambert/Python/pykep_src/pykep/" (23282 26897 85122 874000) "build/" "CMakeLists.txt" "README.md" "cmake_modules/" "pykep/" ".git/" "build.sh" "doc/" "tests/" "./" ".gitignore" ".travis.yml" "LICENSE.txt" "../" "src/" "tools/" ".clang-format" "main.cpp" "appveyor.yml")
-
- ("/home/jbailey/Documents/Lambert/Python/pykep_src/" (23282 25585 458013 79000) "pykep/" "./" "../")
-
- ("/home/jbailey/Documents/Lambert/Python/pykep_src/pykep/src/" (23282 25587 494031 355000) "epoch.cpp" "lambert_problemOLD.h" "epoch.h" "keplerian_toolbox.h" "CMakeLists.txt" "config.h" "lambert_problem.h" "lambert_problem.cpp" "numerics/" "util/" "planet/" "exceptions.h" "sims_flanagan/" "./" "astro_constants.h" "serialization.h" "../" "third_party/" "io.h" "core_functions/" "lambert_problemOLD.cpp")
-
- ("/home/jbailey/Documents/Lambert/" (23281 6849 543362 26000) "./" "../" "Python/")
-
- ("/usr/local/cuda-9.1/samples/0_Simple/clock/" (23279 25837 138899 104000) "readme.txt" "clock" "clock.cu" "NsightEclipse.xml" "clock.o" "Makefile" "./" "../")
-
- ("/usr/local/cuda-9.1/" (23279 24679 634818 339000) "nvvm/" "extras/" "include/" "version.txt" "bin/" "targets/" "lib64/" "samples/" "nvml/" "share/" "LICENSE" "doc/" "./" "README" "libnvvp/" "../" "src/" "tools/" "libnsight/" "nsightee_plugins/")
-
- ("/usr/local/" (23279 24722 463075 791000) "cuda/" "sbin/" "include/" "bin/" "etc/" "share/" "games/" "cuda-9.1/" "man/" "./" "lib/" "../" "src/")
-
- ("/usr/" (23238 59108 557271 356000) "sbin/" "include/" "bin/" "lib32/" "local/" "share/" "games/" "./" "lib/" "../" "src/")
-
- ("/media/jbailey/LINUX MINT/DMNotes/DiscordSaturdayGroup/" (23278 30163 0 0) "20180428_CragmawHideout.org" "20180421_CharacterCreation.org" "Character Sheets/" "20180421_PR_Recap.txt" "../" "./")
-
- ("/media/jbailey/LINUX MINT/DMNotes/" (23271 64912 0 0) "RMSGroup/" "DiscordSaturdayGroup/" ".git/" "../" "./")
-
- ("/home/jbailey/Documents/Workspace/Python/3D RefModel/" (23267 17992 118068 700000) "__pycache__/" "TOC.pyc" "TOC.py" "Main.py" "GNCUtilities.pyc" "GNCUtilities.py" "EOM.pyc" "EOM.py" "1D_TimeOptimal.py" ".gitignore" ".git/" "../" "./")
-
- ("/home/jbailey/Documents/Workspace/Python/" (23262 34309 998392 100000) "__pycache__/" "RefModel.tar.gz" "RefModel/" "NewIntegration/" "Autopilot/" "ACS_Sim/" "3D RefModel/" "../" "./")
-
- ("/media/jbailey/LINUX MINT/DMNotes/RMSGroup/" (23272 496 0 0) "20180430_CragmawCleanup.org" "20180422_TheRoadToPhandalin.org" "20180408_CharacterCreationatCurtis.org" "Org/" "20180410_PrePhandelver.org" "../" "./")
-
- ("/mnt/windows/Users/asaxp/Documents/Workspace/Python/RefModel/" (23240 62234 472288 100000) "__pycache__/" "TOC.py~" "TOC.pyc" "TOC.py" "TOC.png" "PointingCommands.png" "Main.py~" "Main.py" "GNCUtilities.py~" "GNCUtilities.pyc" "GNCUtilities.py" "EOM.py~" "EOM.pyc" "EOM.py" "Attitude.png" "1D_TimeOptimal.py~" "1D_TimeOptimal.py" ".gitignore~" ".gitignore" ".git/" "../" "./")
-
- ("/mnt/windows/Users/asaxp/Documents/Workspace/Python/" (23234 15061 693868 900000) "__pycache__/" "RefModel.tar.gz" "RefModel/" "ACS_Sim/" "../" "./")
-
- ("/mnt/windows/Users/asaxp/Documents/Workspace/" (23233 5844 310248 200000) "Stuff.txt" "Python/" "Haskell/" "Git/" "Brewing/" "../" "./")
-
- ("/mnt/windows/Users/" (23137 16607 492218 800000) "Public/" "desktop.ini" "Default User/" "Default/" "asaxp/" "All Users/" "../" "./")
-
- ("c:/Users/" (23137 16607 0 0) "Public/" "desktop.ini" "Default User/" "Default/" "asaxp/" "All Users/" "../" "./")
-
- ("c:/Users/asaxp/AppData/" (23137 16619 0 0) "Roaming/" "LocalLow/" "Local/" "../" "./")
-
- ("c:/Users/asaxp/AppData/Roaming/" (23229 27999 0 0) "ZcashParams/" "Zcash/" "vstelemetry/" "VoiceMeeterDefault.xml" "Visual Studio Setup/" "uTorrent/" "Skype/" "RAASPRO/" "PMDG/" "Org/" "OpenOffice/" "obs-studio/" "NVIDIA/" "NuGet/" "News/" "Mozilla/" "MiKTeX/" "Microsoft FxCop/" "Microsoft/" "Mail/" "Macromedia/" "Logitech/" "Logishrd/" "local/" "jupyter/" "InstallShield/" "HiFi/" "Gyazo/" "Google/" "Godbert/" "GitHubVisualStudio/" "ghc/" "Exodus/" "EVEMon/" "Dropbox/" "discord/" "com.ffl.logs/" "Citra/" "calibre/" "Bungie/" "Battle.net/" "Advanced Combat Tracker/" "Adobe/" "10tons/" ".newsrc-dribble~" ".newsrc-dribble" ".matplotlib/" ".gnus.el~" ".gnus.el" ".gitconfig" ".emacs~" ".emacs.d/" ".emacs" ".#meh" "#meh#" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

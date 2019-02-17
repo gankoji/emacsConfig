@@ -1,0 +1,363 @@
+;; Object semanticdb-project-database-file-18b90dc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18b90dc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18b90e8"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Translation of fortran 77 rkf45 to python via matlab \"\"\"" code nil nil [24 83])
+            ("numpy" include nil nil [84 103])
+            ("sys" include nil nil [104 124])
+            ("r8_rkf45" function
+               (:documentation "
+    y, yp, t, flag  = r8_rkf45 ( f, neqn, y, yp, t, tout, relerr, abserr, flag )
+#********************************************
+#
+## R8_RKF45 carries out the Runge-Kutta-Fehlberg method (double precision).
+#
+#  Discussion:
+#
+#    This routine is primarily designed to solve non-stiff and mildly stiff
+#    differential equations when derivative evaluations are inexpensive.
+#    It should generally not be used when the user is demanding
+#    high accuracy.
+#
+#    This function integrates a system of NEQN first-order ordinary differential
+#    equations of the form:
+#
+#      dY(i)/dT = F(T,Y(1),Y(2), ...  ,Y(NEQN))
+#
+#    where the Y(1:NEQN) are given at T.
+#    Typically the subroutine is used to integrate from T to TOUT but it
+#    can be used as a one-step integrator to advance the solution a
+#    single step in the direction of TOUT.  On return, the parameters in
+#    the call list are set for continuing the integration.  The user has
+#    only to call again (and perhaps define a new value for TOUT).
+#
+#    Before the first call, the user must
+#
+#    * supply the function  F(T,Y) to evaluate the right hand side YP;
+#
+#    * initialize the parameters:
+#      NEQN, Y(1:NEQN), T, TOUT, RELERR, ABSERR, FLAG.
+#      In particular, T should initially be the starting point for integration,
+#      Y should be the value of the initial conditions, and FLAG should
+#      normally be +1.
+#
+#    Normally, the user only sets the value of FLAG before the first call, and
+#    thereafter, the program manages the value.  On the first call, FLAG should
+#    normally be +1 (or -1 for single step mode.)  On normal return, FLAG will
+#    have been reset by the program to the value of 2 (or -2 in single
+#    step mode), and the user can continue to call the routine with that
+#    value of FLAG.
+#
+#    (When the input magnitude of FLAG is 1, this indicates to the program
+#    that it is necessary to do some initialization work.  An input magnitude
+#    of 2 lets the program know that that initialization can be skipped,
+#    and that useful information was computed earlier.)
+#
+#    The function returns with all the information needed to continue
+#    the integration.  If the integration reached TOUT, the user need only
+#    define a new TOUT and call again.  In the one-step integrator
+#    mode, returning with FLAG = -2, the user must keep in mind that
+#    each step taken is in the direction of the current TOUT.  Upon
+#    reaching TOUT, indicated by the output value of FLAG switching to 2,
+#    the user must define a new TOUT and reset FLAG to -2 to continue
+#    in the one-step integrator mode.
+#
+#    In some cases, an error or difficulty occurs during a call.  In that case,
+#    the output value of FLAG is used to indicate that there is a problem
+#    that the user must address.  These values include:
+#
+#    * 3, integration was not completed because the input value of RELERR, the
+#      relative error tolerance, was too small.  RELERR has been increased
+#      appropriately for continuing.  If the user accepts the output value of
+#      RELERR, then simply reset FLAG to 2 and continue.
+#
+#    * 4, integration was not completed because more than MAXNFE derivative
+#      evaluations were needed.  This is approximately (MAXNFE/6) steps.
+#      The user may continue by simply calling again.  The function counter
+#      will be reset to 0, and another MAXNFE function evaluations are allowed.
+#
+#    * 5, integration was not completed because the solution vanished,
+#      making a pure relative error test impossible.  The user must use
+#      a non-zero ABSERR to continue.  Using the one-step integration mode
+#      for one step is a good way to proceed.
+#
+#    * 6, integration was not completed because the requested accuracy
+#      could not be achieved, even using the smallest allowable stepsize.
+#      The user must increase the error tolerances ABSERR or RELERR before
+#      continuing.  It is also necessary to reset FLAG to 2 (or -2 when
+#      the one-step integration mode is being used).  The occurrence of
+#      FLAG = 6 indicates a trouble spot.  The solution is changing
+#      rapidly, or a singularity may be present.  It often is inadvisable
+#      to continue.
+#
+#    * 7, it is likely that this routine is inefficient for solving
+#      this problem.  Too much output is restricting the natural stepsize
+#      choice.  The user should use the one-step integration mode with
+#      the stepsize determined by the code.  If the user insists upon
+#      continuing the integration, reset FLAG to 2 before calling
+#      again.  Otherwise, execution will be terminated.
+#
+#    * 8, invalid input parameters, indicates one of the following:
+#      NEQN <= 0;
+#      T = TOUT and |FLAG| /= 1;
+#      RELERR < 0 or ABSERR < 0;
+#      FLAG == 0  or FLAG < -2 or 8 < FLAG.
+#
+#  Licensing:
+#
+#    This code is distributed under the GNU LGPL license.
+#
+#  Modified:
+#
+#    05 April 2011
+#
+#  Author:
+#
+#    Original FORTRAN77 version by Herman Watts, Lawrence Shampine.
+#    MATLAB version by John Burkardt and then to Python by Peter Monk
+#
+#  Reference:
+#
+#    Erwin Fehlberg,
+#    Low-order Classical Runge-Kutta Formulas with Stepsize Control,
+#    NASA Technical Report R-315, 1969.
+#
+#    Lawrence Shampine, Herman Watts, S Davenport,
+#    Solving Non-stiff Ordinary Differential Equations - The State of the Art,
+#    SIAM Review,
+#    Volume 18, pages 376-411, 1976.
+#
+#  Parameters:
+#
+#    Input, function F, a user-supplied function to evaluate the
+#    derivatives dYdT(T), of the form:
+#     def f ( t, y ):
+#         <statements>
+#         return(yp)
+#
+#    Input, integer NEQN, the number of equations to be integrated.
+#
+#    Input/output, real Y(NEQN), the current solution vector at T.
+#
+#    Input/output, real YP(NEQN), the current value of the
+#    derivative of the dependent variable.  The user should not set or alter
+#    this information%
+#
+#    Input/output, real T, the current value of the independent
+#    variable.
+#
+#    Input, real TOUT, the output point at which solution is
+#    desired.  TOUT = T is allowed on the first call only, in which case
+#    the routine returns with FLAG = 2 if continuation is possible.
+#
+#    Input, real RELERR, ABSERR, the relative and absolute
+#    error tolerances for the local error test.  At each step the code
+#    requires:
+#      abs ( local error ) <= RELERR * abs ( Y ) + ABSERR
+#    for each component of the local error and the solution vector Y.
+#    RELERR cannot be \"too small\".  If the routine believes RELERR has been
+#    set too small, it will reset RELERR to an acceptable value and return
+#    immediately for user action.
+#
+#    Input/output, integer FLAG, indicator for status of integration.
+#    On the first call, set FLAG to +1 for normal use, or to -1 for single
+#    step mode.  On return, a value of 2 or -2 indicates normal progress,
+#    while any other value indicates a problem that should be addressed.
+#
+    "
+                :arguments 
+                  ( ("f" variable nil (reparse-symbol function_parameters) [140 141])
+                    ("neqn" variable nil (reparse-symbol function_parameters) [143 147])
+                    ("y" variable nil (reparse-symbol function_parameters) [149 150])
+                    ("yp" variable nil (reparse-symbol function_parameters) [152 154])
+                    ("t" variable nil (reparse-symbol function_parameters) [156 157])
+                    ("tout" variable nil (reparse-symbol function_parameters) [159 163])
+                    ("relerr" variable nil (reparse-symbol function_parameters) [165 171])
+                    ("abserr" variable nil (reparse-symbol function_parameters) [173 179])
+                    ("flag" variable nil (reparse-symbol function_parameters) [181 185]))                  )
+                nil [125 17623])
+            ("r8_fehl" function
+               (:documentation "
+#*****************************************************************************80
+#
+## R8_FEHL takes one Fehlberg fourth-fifth order step.
+#
+#  Discussion:
+#
+#    This routine integrates a system of NEQN first order ordinary differential
+#    equations of the form
+#      dY(i)/dT = F(T,Y(1:NEQN))
+#    where the initial values Y and the initial derivatives
+#    YP are specified at the starting point T.
+#
+#    The routine advances the solution over the fixed step H and returns
+#    the fifth order (sixth order accurate locally) solution
+#    approximation at T+H in array S.
+#
+#    The formulas have been grouped to control loss of significance.
+#    The routine should be called with an H not smaller than 13 units of
+#    roundoff in T so that the various independent arguments can be
+#    distinguished.
+#
+#  Licensing:
+#
+#    This code is distributed under the GNU LGPL license.
+#
+#  Modified:
+#
+#    30 August 2010
+#
+#  Author:
+#
+#    Original FORTRAN77 version by Herman Watts, Lawrence Shampine.
+#    MATLAB version by John Burkardt.
+#
+#  Reference:
+#
+#    Erwin Fehlberg,
+#    Low-order Classical Runge-Kutta Formulas with Stepsize Control,
+#    NASA Technical Report R-315, 1969.
+#
+#    Lawrence Shampine, Herman Watts, S Davenport,
+#    Solving Non-stiff Ordinary Differential Equations - The State of the Art,
+#    SIAM Review,
+#    Volume 18, pages 376-411, 1976.
+#
+#  Parameters:
+#
+#    Input, function F, a user-supplied function to evaluate the
+#    derivatives dYdT, of the form:
+#
+#      function yp = f ( t, y )
+#
+#    Input, integer NEQN, the number of equations to be integrated.
+#
+#    Input, real Y(NEQN), the current value of the
+#    dependent variable.
+#
+#    Input, real T, the current value of the independent
+#    variable.
+#
+#    Input, real H, the step size to take.
+#
+#    Input, real YP(NEQN), the current value of the
+#    derivative of the dependent variable.
+#
+#    Output, real F1(NEQN), F2(NEQN), F3(NEQN), F4(NEQN),
+#    F5(NEQN), derivative values needed for the computation.
+#
+#    Output, real S(NEQN), the estimate of the solution at T+H.
+#
+    "
+                :arguments 
+                  ( ("f" variable nil (reparse-symbol function_parameters) [17638 17639])
+                    ("neqn" variable nil (reparse-symbol function_parameters) [17641 17645])
+                    ("y" variable nil (reparse-symbol function_parameters) [17647 17648])
+                    ("t" variable nil (reparse-symbol function_parameters) [17650 17651])
+                    ("h" variable nil (reparse-symbol function_parameters) [17653 17654])
+                    ("yp" variable nil (reparse-symbol function_parameters) [17656 17658]))                  )
+                nil [17624 20595])
+            ("error" function
+               (:documentation "
+    Simple error handling
+    "
+                :arguments 
+                  ( ("string" variable nil (reparse-symbol function_parameters) [20606 20612]))                  )
+                nil [20596 20702]))          
+      :file "rkf45.py"
+      :pointmax 20702
+      :fsize 20701
+      :lastmodtime '(23530 28179 558993 224000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155b61c"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("matplotlib.pyplot" include nil nil [32 63])
+            ("orbital.elements" include nil nil [64 87])
+            ("time" include nil nil [88 99])
+            ("rkf45" include nil nil [118 137])
+            ("Dynamics" include nil nil [138 180])
+            ("print" code nil nil [182 228])
+            ("mu_e" variable nil nil [251 266])
+            ("R_e" variable nil nil [310 323])
+            ("debug" variable nil nil [380 393])
+            ("if" code nil nil [395 513])
+            ("N" variable nil nil [514 546])
+            ("simTime" variable nil nil [547 584])
+            ("flag" variable nil nil [585 593])
+            ("relerr" variable nil nil [594 607])
+            ("abserr" variable nil nil [608 621])
+            ("y_out" variable nil nil [644 668])
+            ("H_out" variable nil nil [669 691])
+            ("r_e0" variable nil nil [714 748])
+            ("v_e0" variable nil nil [887 915])
+            ("r_sc0" code nil nil [1016 1054])
+            ("v_sc0" code nil nil [1148 1186])
+            ("r_e0" code nil nil [1470 1485])
+            ("v_e0" code nil nil [1486 1501])
+            ("r_sc0" code nil nil [1502 1519])
+            ("v_sc0" code nil nil [1520 1537])
+            ("y0" variable nil nil [1582 1608])
+            ("y0" variable nil nil [1609 1634])
+            ("y0" variable nil nil [1635 1660])
+            ("y_out" variable nil nil [1662 1677])
+            ("yp" variable nil nil [1678 1698])
+            ("for" code nil nil [1700 2119])
+            ("print" code nil nil [2120 2167])
+            ("fig, ax" code nil nil [2169 2193])
+            ("ax" code nil nil [2194 2224])
+            ("ax" code nil nil [2225 2255])
+            ("ax" code nil nil [2256 2281])
+            ("ax" code nil nil [2282 2383])
+            ("ax" code nil nil [2384 2423])
+            ("fig" code nil nil [2424 2453])
+            ("fig1, ax1" code nil nil [2455 2481])
+            ("ax1" code nil nil [2482 2506])
+            ("ax1" code nil nil [2507 2589])
+            ("fig1" code nil nil [2590 2621])
+            ("plt" code nil nil [2623 2633]))          
+      :file "Main.py"
+      :pointmax 2634
+      :fsize 2633
+      :lastmodtime '(23530 31678 92099 771000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1a1be1c"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("all" function nil nil [1 22]))          
+      :file "Makefile"
+      :pointmax 22
+      :fsize 21
+      :lastmodtime '(23530 24303 686287 851000)
+      :unmatched-syntax '((shell-command 7 . 21) (bol 6 . 6)))
+    (semanticdb-table "semanticdb-table-1672bb8"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("mu_e" variable nil nil [33 48])
+            ("mu_s" variable nil nil [92 107])
+            ("R_e" variable nil nil [149 162])
+            ("m_e" variable nil nil [194 210])
+            ("m_sc" variable nil nil [229 240])
+            ("mu_e" code nil nil [295 315])
+            ("mu_s" code nil nil [316 336])
+            ("dynamics" function (:arguments 
+              ( ("t" variable nil (reparse-symbol function_parameters) [351 352])
+                ("y" variable nil (reparse-symbol function_parameters) [354 355]))              ) nil [338 817])
+            ("hamiltonian" function (:arguments 
+              ( ("y" variable nil (reparse-symbol function_parameters) [834 835]))              ) nil [818 1519]))          
+      :file "Dynamics.py"
+      :pointmax 1525
+      :fsize 1524
+      :lastmodtime '(23530 31450 804246 458000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Dropbox!Academics!AME559!ResearchProject!PythonCode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

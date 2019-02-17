@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-14c67a0
+;; Object semanticdb-project-database-file-18dc504
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-14c67a0"
+(semanticdb-project-database-file "semanticdb-project-database-file-18dc504"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-14c3898"
+    (semanticdb-table "semanticdb-table-19058f0"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -41,9 +41,9 @@
       :file "1D_TimeOptimal.py"
       :pointmax 1183
       :fsize 1251
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23394 35117 800505 124000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c38b8"
+    (semanticdb-table "semanticdb-table-1905910"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [44 62])
@@ -100,9 +100,9 @@
       :file "EOM.py"
       :pointmax 5340
       :fsize 5339
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23394 35117 800505 124000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c38d8"
+    (semanticdb-table "semanticdb-table-1905930"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -130,26 +130,21 @@
               ( ("theta" variable nil (reparse-symbol function_parameters) [3172 3177]))              ) nil [3164 3422])
             ("C_z" function (:arguments 
               ( ("theta" variable nil (reparse-symbol function_parameters) [3431 3436]))              ) nil [3423 3672])
-            ("QuatMult" function (:arguments 
+            ("quatMult" function (:arguments 
               ( ("p" variable nil (reparse-symbol function_parameters) [3686 3687])
                 ("q" variable nil (reparse-symbol function_parameters) [3688 3689]))              ) nil [3673 3952])
             ("DCM2Eul" function (:arguments 
-              ( ("dcm" variable nil (reparse-symbol function_parameters) [3965 3968]))              ) nil [3953 4652])
+              ( ("dcm" variable nil (reparse-symbol function_parameters) [3965 3968]))              ) nil [3953 4318])
             ("DCM2AxisAngle" function (:arguments 
-              ( ("dcm" variable nil (reparse-symbol function_parameters) [4671 4674]))              ) nil [4653 5371])
+              ( ("dcm" variable nil (reparse-symbol function_parameters) [4337 4340]))              ) nil [4319 5037])
             ("Quat2AxisAngle" function (:arguments 
-              ( ("q" variable nil (reparse-symbol function_parameters) [5391 5392]))              ) nil [5372 5778])
-            ("DifferenceQuaternion" function (:arguments 
-              ( ("q1" variable nil (reparse-symbol function_parameters) [5804 5806])
-                ("q2" variable nil (reparse-symbol function_parameters) [5808 5810]))              ) nil [5779 5919])
-            ("QuatConj" function (:arguments 
-              ( ("q" variable nil (reparse-symbol function_parameters) [5933 5934]))              ) nil [5920 5997]))          
+              ( ("q" variable nil (reparse-symbol function_parameters) [5057 5058]))              ) nil [5038 5444]))          
       :file "GNCUtilities.py"
-      :pointmax 6003
+      :pointmax 5444
       :fsize 6264
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23394 35117 800505 124000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c38f8"
+    (semanticdb-table "semanticdb-table-1905950"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -213,9 +208,9 @@
       :file "TOC.py"
       :pointmax 2892
       :fsize 2891
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23394 35117 804505 156000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c3918"
+    (semanticdb-table "semanticdb-table-1905970"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [19 37])
@@ -284,9 +279,9 @@
       :file "Main.py"
       :pointmax 13453
       :fsize 13452
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23398 13466 153370 941000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c3938"
+    (semanticdb-table "semanticdb-table-1905990"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -373,9 +368,9 @@
       :file "IMU_Base.py"
       :pointmax 4904
       :fsize 4896
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23394 35117 800505 124000)
       :unmatched-syntax '(($EOI 4904 . 4904)))
-    (semanticdb-table "semanticdb-table-14c3958"
+    (semanticdb-table "semanticdb-table-18dc444"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -432,9 +427,9 @@
       :file "NAV.py"
       :pointmax 2352
       :fsize 2351
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23394 35117 804505 156000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c3978"
+    (semanticdb-table "semanticdb-table-18dc464"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -521,9 +516,9 @@
       :file "HG1700.py"
       :pointmax 4909
       :fsize 4908
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23398 25159 628759 461000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c3998"
+    (semanticdb-table "semanticdb-table-18dc484"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -574,9 +569,9 @@
       :file "ProNav.py"
       :pointmax 2478
       :fsize 2477
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23394 35117 804505 156000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c39b8"
+    (semanticdb-table "semanticdb-table-18dc4a4"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -603,9 +598,9 @@
                             ("self" variable nil (reparse-symbol indented_block_body) [1358 1388])
                             ("self" variable nil (reparse-symbol indented_block_body) [1397 1427])
                             ("self" variable nil (reparse-symbol indented_block_body) [1436 1461])
-                            ("for" code nil (reparse-symbol indented_block_body) [1479 1690])
-                            ("self" code nil (reparse-symbol indented_block_body) [1699 1733])
-                            ("self" code nil (reparse-symbol indented_block_body) [1749 1772]))                          
+                            ("for" code nil (reparse-symbol indented_block_body) [1479 1688])
+                            ("self" code nil (reparse-symbol indented_block_body) [1697 1731])
+                            ("self" code nil (reparse-symbol indented_block_body) [1747 1770]))                          
                         :parent "dummy"
                         :arguments 
                           ( ("self" variable nil (reparse-symbol function_parameters) [623 627])
@@ -613,61 +608,61 @@
                             ("dtnav" variable nil (reparse-symbol function_parameters) [633 638])
                             ("time" variable nil (reparse-symbol function_parameters) [640 644]))                          
                         :constructor-flag t)
-                        (reparse-symbol indented_block_body) [610 1780])
+                        (reparse-symbol indented_block_body) [610 1778])
                     ("getHighRate" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [1809 1813])
-                            ("time" variable nil (reparse-symbol function_parameters) [1815 1819])
-                            ("truthAcc" variable nil (reparse-symbol function_parameters) [1821 1829])
-                            ("truthRate" variable nil (reparse-symbol function_parameters) [1831 1840]))                          )
-                        (reparse-symbol indented_block_body) [1793 2339])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1807 1811])
+                            ("time" variable nil (reparse-symbol function_parameters) [1813 1817])
+                            ("truthAcc" variable nil (reparse-symbol function_parameters) [1819 1827])
+                            ("truthRate" variable nil (reparse-symbol function_parameters) [1829 1838]))                          )
+                        (reparse-symbol indented_block_body) [1791 2337])
                     ("getLowRate" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2359 2363])
-                            ("time" variable nil (reparse-symbol function_parameters) [2365 2369]))                          )
-                        (reparse-symbol indented_block_body) [2344 2604])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2357 2361])
+                            ("time" variable nil (reparse-symbol function_parameters) [2363 2367]))                          )
+                        (reparse-symbol indented_block_body) [2342 2602])
                     ("getAccel" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2622 2626])
-                            ("truthAcc" variable nil (reparse-symbol function_parameters) [2628 2636]))                          )
-                        (reparse-symbol indented_block_body) [2609 2681])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2620 2624])
+                            ("truthAcc" variable nil (reparse-symbol function_parameters) [2626 2634]))                          )
+                        (reparse-symbol indented_block_body) [2607 2679])
                     ("getGyro" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2702 2706])
-                            ("truthRate" variable nil (reparse-symbol function_parameters) [2708 2717]))                          )
-                        (reparse-symbol indented_block_body) [2690 2764])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2700 2704])
+                            ("truthRate" variable nil (reparse-symbol function_parameters) [2706 2715]))                          )
+                        (reparse-symbol indented_block_body) [2688 2762])
                     ("doLimit" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2781 2785])
-                            ("value" variable nil (reparse-symbol function_parameters) [2787 2792])
-                            ("limit" variable nil (reparse-symbol function_parameters) [2794 2799]))                          )
-                        (reparse-symbol indented_block_body) [2769 2966])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2779 2783])
+                            ("value" variable nil (reparse-symbol function_parameters) [2785 2790])
+                            ("limit" variable nil (reparse-symbol function_parameters) [2792 2797]))                          )
+                        (reparse-symbol indented_block_body) [2767 2964])
                     ("getGyroNoise" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2988 2992])
-                            ("truth" variable nil (reparse-symbol function_parameters) [2994 2999]))                          )
-                        (reparse-symbol indented_block_body) [2971 3364])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2986 2990])
+                            ("truth" variable nil (reparse-symbol function_parameters) [2992 2997]))                          )
+                        (reparse-symbol indented_block_body) [2969 3362])
                     ("getAccNoise" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [3385 3389])
-                            ("truth" variable nil (reparse-symbol function_parameters) [3391 3396]))                          )
-                        (reparse-symbol indented_block_body) [3369 3662]))                  
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3383 3387])
+                            ("truth" variable nil (reparse-symbol function_parameters) [3389 3394]))                          )
+                        (reparse-symbol indented_block_body) [3367 3660]))                  
                 :type "class")
-                nil [95 3662])
-            ("if" code nil nil [3663 5134]))          
+                nil [95 3660])
+            ("if" code nil nil [3661 5132]))          
       :file "Fibersense.py"
-      :pointmax 5148
+      :pointmax 5146
       :fsize 5147
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23398 11657 547852 247000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c39d8"
+    (semanticdb-table "semanticdb-table-18dc4c4"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -689,15 +684,15 @@
                           ( ("self" variable nil (reparse-symbol function_parameters) [149 153])
                             ("ownPos" variable nil (reparse-symbol function_parameters) [155 161])
                             ("tgtPos" variable nil (reparse-symbol function_parameters) [163 169]))                          )
-                        (reparse-symbol indented_block_body) [121 1277]))                  
+                        (reparse-symbol indented_block_body) [121 511]))                  
                 :type "class")
-                nil [60 1277]))          
+                nil [60 511]))          
       :file "FOVM.py"
-      :pointmax 1282
+      :pointmax 516
       :fsize 1281
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23394 35117 800505 124000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c6700"
+    (semanticdb-table "semanticdb-table-18dc4e4"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -739,28 +734,28 @@
                             ("cmd_b_i" variable nil (reparse-symbol function_parameters) [705 712])
                             ("navRates" variable nil (reparse-symbol function_parameters) [714 722])
                             ("rateCmd" variable nil (reparse-symbol function_parameters) [724 731]))                          )
-                        (reparse-symbol indented_block_body) [670 2043])
+                        (reparse-symbol indented_block_body) [670 2414])
                     ("getOutputs" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2063 2067]))                          )
-                        (reparse-symbol indented_block_body) [2048 2118])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2434 2438]))                          )
+                        (reparse-symbol indented_block_body) [2419 2489])
                     ("doLimit" function
                        (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2139 2143])
-                            ("value" variable nil (reparse-symbol function_parameters) [2145 2150])
-                            ("limit" variable nil (reparse-symbol function_parameters) [2152 2157]))                          )
-                        (reparse-symbol indented_block_body) [2127 2328]))                  
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2510 2514])
+                            ("value" variable nil (reparse-symbol function_parameters) [2516 2521])
+                            ("limit" variable nil (reparse-symbol function_parameters) [2523 2528]))                          )
+                        (reparse-symbol indented_block_body) [2498 2699]))                  
                 :type "class")
-                nil [81 2328])
-            ("if" code nil nil [2329 2600]))          
+                nil [81 2699])
+            ("if" code nil nil [2700 2971]))          
       :file "ACS.py"
-      :pointmax 2619
+      :pointmax 2990
       :fsize 2618
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23394 35117 800505 124000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c6720"
+    (semanticdb-table "semanticdb-table-19b6714"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -847,9 +842,9 @@
       :file "IMU_Perfect.py"
       :pointmax 4904
       :fsize 4903
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23394 35117 800505 124000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c6740"
+    (semanticdb-table "semanticdb-table-19b6734"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [19 37])
@@ -930,9 +925,9 @@
       :file "Main_TwoIMU.py"
       :pointmax 14147
       :fsize 14146
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23398 14907 89907 517000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c6760"
+    (semanticdb-table "semanticdb-table-19b6754"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -954,9 +949,9 @@
       :file "ConsensusFiltering.py"
       :pointmax 2324
       :fsize 2323
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23397 57504 759670 237000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c6780"
+    (semanticdb-table "semanticdb-table-19b6774"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [723 741])
@@ -1020,9 +1015,9 @@
       :file "EulerAngles.py"
       :pointmax 8132
       :fsize 8131
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23398 14212 264110 502000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-14c67e8"
+    (semanticdb-table "semanticdb-table-19b6794"
       :major-mode python-mode
       :tags 
         '( ("numpy" include nil nil [1 19])
@@ -1111,7 +1106,90 @@
       :file "MEMS.py"
       :pointmax 5146
       :fsize 5145
-      :lastmodtime '(23408 28888 0 0)
+      :lastmodtime '(23398 26347 121478 964000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-19b67b4"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [19 37])
+            ("matplotlib.pyplot" include nil nil [38 69])
+            ("math" include nil nil [70 81])
+            ("random" include nil nil [82 95])
+            ("pylab" include nil nil [96 108])
+            ("EOM" include nil nil [124 134])
+            ("TOC" include nil nil [135 145])
+            ("NAV" include nil nil [146 156])
+            ("ProNav" include nil nil [157 170])
+            ("FOVM" include nil nil [171 182])
+            ("ACS" include nil nil [183 193])
+            ("GNCUtilities" include nil nil [194 220])
+            ("ConsensusFiltering" include nil nil [221 253])
+            ("EulerAngles" include nil nil [254 279])
+            ("HG1700" include nil nil [295 308])
+            ("Fibersense" include nil nil [309 326])
+            ("IMU_Perfect" include nil nil [327 345])
+            ("MEMS" include nil nil [346 357])
+            ("endTime" variable nil nil [382 396])
+            ("dt" variable nil nil [397 407])
+            ("simLength" variable nil nil [408 451])
+            ("Mass" variable nil nil [474 482])
+            ("att_0" variable nil nil [483 510])
+            ("x_0" variable nil nil [511 552])
+            ("v_0" variable nil nil [553 579])
+            ("xt0" variable nil nil [580 621])
+            ("vt0" variable nil nil [622 651])
+            ("Moments" variable nil nil [652 681])
+            ("Forces" variable nil nil [682 711])
+            ("Inertia" variable nil nil [712 829])
+            ("scenario" variable nil nil [974 986])
+            ("if" code nil nil [988 1218])
+            ("if" code nil nil [1218 1452])
+            ("if" code nil nil [1452 1693])
+            ("if" code nil nil [1693 1929])
+            ("if" code nil nil [1929 2197])
+            ("if" code nil nil [2197 2435])
+            ("navDt" variable nil nil [2439 2449])
+            ("ACS" variable nil nil [2450 2489])
+            ("imu" variable nil nil [2491 2498])
+            ("simTime" variable nil nil [2499 2547])
+            ("points" variable nil nil [2548 2580])
+            ("moments" variable nil nil [2581 2614])
+            ("errors" variable nil nil [2615 2648])
+            ("imuStore" variable nil nil [2649 2684])
+            ("ZEMs" variable nil nil [2685 2716])
+            ("losPosStore" variable nil nil [2717 2755])
+            ("losVelStore" variable nil nil [2756 2794])
+            ("FOV" variable nil nil [2796 2813])
+            ("command_b_i" variable nil nil [2814 2865])
+            ("att_0" variable nil nil [2866 2895])
+            ("OWN" variable nil nil [2945 2988])
+            ("TGT" variable nil nil [2989 3032])
+            ("NAV" variable nil nil [3033 3079])
+            ("TG" variable nil nil [3080 3115])
+            ("inertialPoint" variable nil nil [3117 3185])
+            ("inertialPoint" code nil nil [3186 3245])
+            ("for" code nil nil [3263 5700])
+            ("outputData" variable nil nil [5725 5746])
+            ("eulerData" variable nil nil [5747 5782])
+            ("for" code nil nil [5784 5871])
+            ("navOutput" variable nil nil [5872 5895])
+            ("navEulerData" variable nil nil [5896 5944])
+            ("for" code nil nil [5946 6044])
+            ("plotFigures" variable nil nil [6072 6090])
+            ("plotTru" variable nil nil [6092 6107])
+            ("plotNAV" variable nil nil [6108 6122])
+            ("plotIMU" variable nil nil [6123 6137])
+            ("plotACS" variable nil nil [6138 6153])
+            ("plotTOC" variable nil nil [6154 6169])
+            ("plotTGT" variable nil nil [6170 6185])
+            ("plotPerf" variable nil nil [6186 6201])
+            ("plotCons" variable nil nil [6202 6218])
+            ("tgtOutput" variable nil nil [6220 6240])
+            ("if" code nil nil [6242 14733]))          
+      :file "Main_ManyIMU.py"
+      :pointmax 14733
+      :fsize 14732
+      :lastmodtime '(23398 26492 262535 250000)
       :unmatched-syntax nil))
   :file "!home!jbailey!Documents!Python!SEATN!semantic.cache"
   :semantic-tag-version "2.0"

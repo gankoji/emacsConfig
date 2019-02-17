@@ -1,0 +1,51 @@
+;; Object semanticdb-project-database-file-1937550
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1937550"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-193756c"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [723 741])
+            ("math" include nil nil [742 753])
+            ("doUnitTests" variable nil nil [755 773])
+            ("EulFrmS" variable nil nil [775 786])
+            ("EulFrmR" variable nil nil [787 798])
+            ("EulRepNo" variable nil nil [800 812])
+            ("EulRepYes" variable nil nil [813 826])
+            ("EulParEven" variable nil nil [828 842])
+            ("EulParOdd" variable nil nil [843 856])
+            ("X" variable nil nil [858 863])
+            ("Y" variable nil nil [864 869])
+            ("Z" variable nil nil [870 875])
+            ("W" variable nil nil [876 881])
+            ("EulerAngles" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2290 2300])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2309 2319])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2328 2338])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2347 2357]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2275 2279]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2262 2358]))                  
+                :type "class")
+                nil [2239 2358])
+            ("Eul_ToMatrix" function (:arguments 
+              ( ("ea" variable nil (reparse-symbol function_parameters) [2384 2386])
+                ("ordering" variable nil (reparse-symbol function_parameters) [2388 2396]))              ) nil [2367 3824])
+            ("Eul_FromMatrix" function (:arguments 
+              ( ("M" variable nil (reparse-symbol function_parameters) [3844 3845])
+                ("order" variable nil (reparse-symbol function_parameters) [3847 3852]))              ) nil [3825 4787])
+            ("if" code nil nil [4788 4977]))          
+      :file "EulerAngles.py"
+      :pointmax 4977
+      :fsize 4976
+      :lastmodtime '(23411 32555 24765 688000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Dropbox!Python!SEATN!euler_angle!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

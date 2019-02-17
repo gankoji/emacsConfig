@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file-2078d64
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-2078d64"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-21369c8"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("sgp4.earth_gravity" include nil nil [33 69])
+            ("sgp4.io" include nil nil [70 100])
+            ("line1" variable nil nil [102 183])
+            ("line2" variable nil nil [184 265])
+            ("satellite" variable nil nil [267 310])
+            ("print" code nil nil [311 333])
+            ("print" code nil nil [334 364])
+            ("position, velocity" code nil nil [365 428])
+            ("print" code nil nil [429 444])
+            ("print" code nil nil [445 460]))          
+      :file "tiangong1_prop.py"
+      :pointmax 504
+      :fsize 503
+      :lastmodtime '(23511 16722 937765 644000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Dropbox!Academics!AME557!Projects!ame557-proj2!NumericalIntegration!SGP4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

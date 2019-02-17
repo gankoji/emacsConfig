@@ -18,8 +18,35 @@
   (when (< emacs-major-version 24)
     ;; For important compatibility libraries like cl-lib
     (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
-
+;;(package-initialize)
 (setq package-check-signature nil)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes '(tango-dark))
+ '(display-time-day-and-date t)
+ '(font-latex-fontify-sectioning 'color)
+ '(minimap-display-semantic-overlays nil)
+ '(minimap-enlarge-certain-faces nil)
+ '(minimap-hide-fringes t)
+ '(minimap-hide-scroll-bar nil)
+ '(minimap-minimum-width 10)
+ '(minimap-window-location 'right)
+ '(package-selected-packages
+   '(pdf-tools diminish slime slime-company matlab-mode magithub magit-filenotify magit-find-file magit-gerrit magit-gh-pulls magit-org-todos magit-todos counsel swiper counsel-ebdb hydra ivy pylint flycheck-pycheckers flycheck-pos-tip flycheck-popup-tip flycheck-pkg-config flycheck-inline flycheck-haskell flycheck-cython flycheck-color-mode-line flycheck-clojure use-package projectile lsp-haskell lsp-intellij lsp-java lsp-ui lsp-python company-lsp lsp-mode academic-phrases python csv-mode context-coloring js2-mode mu4e-maildirs-extension ht mu4e-alert mu-cite nov minimap haskell-mode magit company company-auctex company-bibtex company-c-headers company-eshell-autosuggest company-irony company-irony-c-headers company-math flycheck flycheck-clang-analyzer flycheck-clang-tidy flycheck-cstyle flycheck-irony flymake-google-cpplint iedit irony auto-complete-c-headers yasnippet auto-complete auctex))
+ '(send-mail-function 'smtpmail-send-it)
+ '(tool-bar-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+;; '(default ((t (:inherit nil :stipple nil :background "#2e3436" :foreground "#eeeeec" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "outline" :family "Courier")))))
+)
+(require 'magit)
 
 ;; Yasnippet config
 (require 'yasnippet)
@@ -29,47 +56,24 @@
 ;; Set .cu files to open in C mode automagically
 (add-to-list 'auto-mode-alist '("\\.cu\\'" . c-mode))
 ;; Company
+(require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
+;; IEdit
+(require 'iedit)
 
-;; CEDET
-;;(global-ede-mode 1)
-;(semantic-load-enable-code-helpers)
-;(global-srecode-minor-mode 1)
 (semantic-mode 1)
 (require 'semantic/bovine/gcc)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(misterioso))
- '(display-time-day-and-date t)
- '(minimap-display-semantic-overlays nil)
- '(minimap-enlarge-certain-faces nil)
- '(minimap-hide-fringes t)
- '(minimap-hide-scroll-bar nil)
- '(minimap-minimum-width 10)
- '(minimap-window-location 'right)
- '(package-selected-packages
-   '(pyimpsort slime slime-company counsel-ebdb hydra ivy pylint flycheck-pycheckers flycheck-pos-tip flycheck-popup-tip flycheck-pkg-config flycheck-inline flycheck-haskell flycheck-cython flycheck-color-mode-line flycheck-clojure use-package projectile lsp-haskell lsp-intellij lsp-java lsp-ui lsp-python company-lsp lsp-mode academic-phrases python csv-mode context-coloring js2-mode mu4e-maildirs-extension ht mu4e-alert mu-cite nov minimap haskell-mode magit company company-auctex company-bibtex company-c-headers company-eshell-autosuggest company-irony company-irony-c-headers company-math flycheck flycheck-clang-analyzer flycheck-clang-tidy flycheck-cstyle flycheck-irony flymake-google-cpplint iedit irony auto-complete-c-headers yasnippet auto-complete auctex))
- '(send-mail-function 'smtpmail-send-it)
- '(tool-bar-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#2e3436" :foreground "#eeeeec" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "outline" :family "Courier")))))
-
-(setq TeX-auto-save t)
-(setq TeX-parse-self t)
+;; Add capability to handle matlab files
+(autoload 'matlab-mode "matlab" "Matlab Editing Mode" t)
+(add-to-list
+ 'auto-mode-alist
+ '("\\.m$" . matlab-mode))
+(setq matlab-indent-function t)
+(setq matlab-shell-command "matlab")
 
 ; This sets a keybinding for the recompile command to make life easier
 (global-set-key (kbd "C-M-a") 'recompile)
-
-; Get rid of that stupid beeping
-(setq visible-bell t)
 
 ; Enable IDO
 (require 'ido)
@@ -78,24 +82,29 @@
 (ido-mode t)
 
 ;; Org-Mode Configuration
-
 (require 'org)
-
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (define-key global-map "\C-cc" 'org-capture)
 (define-key global-map "\C-cb" 'org-iswitchb)
 (setq org-log-done t)
 
-(setq org-agenda-files nil)
-(setq org-agenda-files '("/home/jbailey/Dropbox/Org/"))
-(add-to-list 'org-agenda-files '"/home/jbailey/Dropbox/Academics/AME557/")
-(add-to-list 'org-agenda-files '"/home/jbailey/Dropbox/Academics/AME559/")
+(setq org-agenda-files '("/home/jbailey/Org/"))
 (setq org-default-notes-file (expand-file-name "~/Org/notes.org"))
 
-;; Org-secretary
-;(load "~/.emacs.d/org-secretary")
+; Make Org mode show the scheduled tasks two weeks before their deadlines.
+(setq org-deadline-warning-days 14)
 
+;; Add keybinding for imenu
+(global-set-key (kbd "M-i") 'imenu)
+
+(require 'diminish)
+(diminish 'ivy-mode)
+(diminish 'company-mode)
+(diminish 'eldoc-mode)
+
+;; Org-secretary
+(load "~/.emacs.d/org-secretary")
 
 ;;; Configuration
 ;;;;;;;;;;;;;;;;;
@@ -152,8 +161,8 @@
 
 ;; EWW Configuration
 
-;; (setq shr-external-broswer (executable-find "conkeror"))
-;; (setq browse-url-generic-program (executable-find "conkeror"))
+(setq shr-external-broswer (executable-find "conkeror"))
+(setq browse-url-generic-program (executable-find "conkeror"))
 
 (defun xah-rename-eww-hook ()
   "Rename eww browser's buffer so sites open in a new buffer."
@@ -162,66 +171,67 @@
 
 ;; C-u M-x eww will force a new eww buffer
 (defun modi/force-new-eww-buffer (orig-fun &rest args)
-  "ORIG-FUN When prefix argument is used, a new eww buffer will be created,
+  "When prefix argument is used, a new eww buffer will be created,
 regardless of whether the current buffer is in `eww-mode'."
   (if current-prefix-arg
       (with-temp-buffer
         (apply orig-fun args))
-    (apply orig-fun args)))
+    (apply orig-fun args)))  
 (advice-add 'eww :around #'modi/force-new-eww-buffer)
 
 ;; Other fun stuff
 (setq desktop-save-mode 1)
+(setq desktop-auto-save-set-timer 60)
 
-;; (add-to-list 'load-path "~/.emacs.d/mu4e")
-;; ;; mu4e configuration
-;; (require 'mu4e)
+(add-to-list 'load-path "~/.emacs.d/mu4e")
+;; mu4e configuration
+(require 'mu4e)
 
-;; ;; I have my "default" parameters from Gmail
-;; (setq mu4e-sent-folder "/home/jbailey/Maildir/sent"
-;;       ;; mu4e-sent-messages-behavior 'delete ;; Unsure how this should be configured
-;;       mu4e-drafts-folder "/home/jbailey/Maildir/drafts"
-;;       user-mail-address "asaxplayinghorse@gmail.com"
-;;       smptmail-smtp-user "asaxplayinghorse"
-;;       smtpmail-default-smtp-server "smtp.gmail.com"
-;;       smtpmail-smtp-server "smtp.gmail.com"
-;;       smtpmail-smtp-service 587)
+;; I have my "default" parameters from Gmail
+(setq mu4e-sent-folder "/home/jbailey/Maildir/sent"
+      ;; mu4e-sent-messages-behavior 'delete ;; Unsure how this should be configured
+      mu4e-drafts-folder "/home/jbailey/Maildir/drafts"
+      user-mail-address "asaxplayinghorse@gmail.com"
+      smptmail-smtp-user "asaxplayinghorse"
+      smtpmail-default-smtp-server "smtp.gmail.com"
+      smtpmail-smtp-server "smtp.gmail.com"
+      smtpmail-smtp-service 587)
 
-;; ;; Now I set a list of 
-;; (defvar my-mu4e-account-alist
-;;   '(("Gmail"
-;;      (mu4e-sent-folder "/Gmail/sent")
-;;      (user-mail-address "asaxplayinghorse@gmail.com")
-;;      (smtpmail-smtp-user "asaxplayinghorse")
-;;      (smtpmail-local-domain "gmail.com")
-;;      (smtpmail-default-smtp-server "smtp.gmail.com")
-;;      (smtpmail-smtp-server "smtp.gmail.com")
-;;      (smtpmail-smtp-service 587)
-;;      )
-;;      ;; Include any other accounts here ...
-;;     ))
+;; Now I set a list of 
+(defvar my-mu4e-account-alist
+  '(("Gmail"
+     (mu4e-sent-folder "/Gmail/sent")
+     (user-mail-address "asaxplayinghorse@gmail.com")
+     (smtpmail-smtp-user "asaxplayinghorse")
+     (smtpmail-local-domain "gmail.com")
+     (smtpmail-default-smtp-server "smtp.gmail.com")
+     (smtpmail-smtp-server "smtp.gmail.com")
+     (smtpmail-smtp-service 587)
+     )
+     ;; Include any other accounts here ...
+    ))
 
-;; (defun my-mu4e-set-account ()
-;;   "Set the account for composing a message.
-;;    This function is taken from: 
-;;      https://www.djcbsoftware.nl/code/mu/mu4e/Multiple-accounts.html"
-;;   (let* ((account
-;;     (if mu4e-compose-parent-message
-;;         (let ((maildir (mu4e-message-field mu4e-compose-parent-message :maildir)))
-;;     (string-match "/\\(.*?\\)/" maildir)
-;;     (match-string 1 maildir))
-;;       (completing-read (format "Compose with account: (%s) "
-;;              (mapconcat #'(lambda (var) (car var))
-;;             my-mu4e-account-alist "/"))
-;;            (mapcar #'(lambda (var) (car var)) my-mu4e-account-alist)
-;;            nil t nil nil (caar my-mu4e-account-alist))))
-;;    (account-vars (cdr (assoc account my-mu4e-account-alist))))
-;;     (if account-vars
-;;   (mapc #'(lambda (var)
-;;       (set (car var) (cadr var)))
-;;         account-vars)
-;;       (error "No email account found"))))
-;; (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
+(defun my-mu4e-set-account ()
+  "Set the account for composing a message.
+   This function is taken from: 
+     https://www.djcbsoftware.nl/code/mu/mu4e/Multiple-accounts.html"
+  (let* ((account
+    (if mu4e-compose-parent-message
+        (let ((maildir (mu4e-message-field mu4e-compose-parent-message :maildir)))
+    (string-match "/\\(.*?\\)/" maildir)
+    (match-string 1 maildir))
+      (completing-read (format "Compose with account: (%s) "
+             (mapconcat #'(lambda (var) (car var))
+            my-mu4e-account-alist "/"))
+           (mapcar #'(lambda (var) (car var)) my-mu4e-account-alist)
+           nil t nil nil (caar my-mu4e-account-alist))))
+   (account-vars (cdr (assoc account my-mu4e-account-alist))))
+    (if account-vars
+  (mapc #'(lambda (var)
+      (set (car var) (cadr var)))
+        account-vars)
+      (error "No email account found"))))
+(add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
 
 ;; Add important files to registers on boot
 (set-register ?1 '(file . "/home/jbailey/.emacs"))
@@ -263,11 +273,12 @@ regardless of whether the current buffer is in `eww-mode'."
   (let ((split-width-threshold 80))  ; or whatever width makes sense for you
     ad-do-it))
 
-(set-face-attribute 'default nil :font "Iosevka-14")
+(set-face-attribute 'default nil :font "Iosevka-16")
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (toggle-scroll-bar -1)
+(setq ring-bell-function 'ignore)
 
 ;;LSP For Python
 (use-package lsp-mode
@@ -329,48 +340,55 @@ regardless of whether the current buffer is in `eww-mode'."
 ;; This is just a convenience keybind. It's nice to have recompile
 ;; stuck to a single keychord
 (global-set-key (kbd "C-M-a") 'recompile)
-
+(global-set-key (quote [f5]) 'ps-print-buffer)
 ;; Some Ivy/Counsel configuration
 (use-package counsel
-:after ivy
-:bind (("C-x C-f" . counsel-find-file)
-       ("M-x" . counsel-M-x)
-       ("M-y" . counsel-yank-pop)))
+  :after ivy
+  :bind (("C-x C-f" . counsel-find-file)
+         ("M-x" . counsel-M-x)
+         ("M-y" . counsel-yank-pop)))
 
 (use-package ivy
- :defer 0.1
- :diminish
- :bind (("C-c C-r" . ivy-resume)
-        ("C-x b" . ivy-switch-buffer)
-        ("C-x B" . ivy-switch-buffer-other-window))
- :custom
- (ivy-count-format "(%d/%d) ")
- (ivy-display-style 'fancy)
- (ivy-use-virtual-buffers t)
- :config (ivy-mode))
+  :defer 0.1
+  :diminish
+  :bind (("C-c C-r" . ivy-resume)
+         ("C-x b" . ivy-switch-buffer)
+         ("C-x B" . ivy-switch-buffer-other-window))
+  :custom
+  (ivy-count-format "(%d/%d) ")
+  (ivy-display-style 'fancy)
+  (ivy-use-virtual-buffers t)
+  :config (ivy-mode))
 
-;(load-file "~/.emacs.d/ivy-rich.el")
+(load-file "~/.emacs.d/ivy-rich.el")
 
 (use-package ivy-rich
- :after ivy
- :custom
-(ivy-virtual-abbreviate 'full
-                         ivy-rich-switch-buffer-align-virtual-buffer t
-                         ivy-rich-path-style 'abbrev)
- :config
- (ivy-set-display-transformer 'ivy-switch-buffer
-                              'ivy-rich-switch-buffer-transformer))
+  :after ivy
+  :custom
+  (ivy-virtual-abbreviate 'full
+                          ivy-rich-switch-buffer-align-virtual-buffer t
+                          ivy-rich-path-style 'abbrev)
+  :config
+  (ivy-set-display-transformer 'ivy-switch-buffer
+                               'ivy-rich-switch-buffer-transformer))
 
 (use-package swiper
- :after ivy
- :bind (("C-s" . swiper)
-        ("C-r" . swiper)))
+  :after ivy
+  :bind (("C-s" . swiper)
+         ("C-r" . swiper)))
 
 (setq global-display-line-numbers-mode t)
 
-;Lisp/SLIME Configuraiton
-(setq inferior-lisp-program "/usr/bin/sbcl")
-(setq slime-contribs '(slime-fancy))
-
+;; SLIME Configuration
+(setq inferior-lisp-program "/usr/local/bin/sbcl")
 (provide '.emacs)
+
+(setq TeX-view-program-selection '((output-pdf "PDF Tools"))
+      TeX-source-correlate-start-server t
+      )
+
+;; revert pdf-view after compilation
+(add-hook 'TeX-after-compilation-finished-functions #'TeX-revert-document-buffer)
+
 ;;; .emacs ends here
+

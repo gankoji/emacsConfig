@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: NPC Description
+# key: NPC
+# --
+** NPC NAME
+DESCRIPTION:
+
+*** Appearance
+
+*** Personality
+
+*** Motivation
+
+*** Background
+
+*** Traits
+
+*** Dark Secret
+
+*** Plot Hooks
+
+*** Connections

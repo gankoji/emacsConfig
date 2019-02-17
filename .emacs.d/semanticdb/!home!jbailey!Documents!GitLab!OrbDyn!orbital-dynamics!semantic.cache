@@ -1,0 +1,36 @@
+;; Object semanticdb-project-database-file-19523b0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-19523b0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-19523cc"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("muE" variable nil nil [43 55])
+            ("keplerFromRV" function (:arguments 
+              ( ("r" variable nil (reparse-symbol function_parameters) [85 86])
+                ("v" variable nil (reparse-symbol function_parameters) [88 89])
+                ("mu" variable nil (reparse-symbol function_parameters) [91 93]))              ) nil [68 798])
+            ("r1" variable nil nil [803 830])
+            ("v1" variable nil nil [831 865])
+            ("kepEl" variable nil nil [866 894])
+            ("print" code nil nil [896 951])
+            ("print" code nil nil [952 1008])
+            ("print" code nil nil [1009 1058])
+            ("print" code nil nil [1059 1103])
+            ("print" code nil nil [1104 1143])
+            ("print" code nil nil [1144 1188])
+            ("print" code nil nil [1189 1231])
+            ("print" code nil nil [1232 1273])
+            ("print" code nil nil [1274 1341])
+            ("print" code nil nil [1342 1391]))          
+      :file "basicFunctions.py"
+      :pointmax 1392
+      :fsize 1391
+      :lastmodtime '(23446 59460 741823 713000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Documents!GitLab!OrbDyn!orbital-dynamics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

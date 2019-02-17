@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file
+;; Object semanticdb-project-database-file-195dfbc
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file"
+(semanticdb-project-database-file "semanticdb-project-database-file-195dfbc"
   :tables
   (list
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195bffc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Random variable generators.
@@ -544,9 +544,9 @@ General notes on the underlying Mersenne Twister core generator:
       :file "random.py"
       :pointmax 32458
       :fsize 32457
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax '((NAME 14659 . 14660) (IF 14667 . 14669) (ELSE 14683 . 14687)))
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c33c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Record of phased-in incompatible language changes.
@@ -657,9 +657,9 @@ No feature line is ever to be deleted from this file.
       :file "__future__.py"
       :pointmax 4381
       :fsize 4380
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c35c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Python part of the warnings subsystem.\"\"\"" code nil nil [1 45])
@@ -864,9 +864,9 @@ No feature line is ever to be deleted from this file.
       :file "warnings.py"
       :pointmax 14824
       :fsize 14823
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax '((NAME 12175 . 12179) (IF 12214 . 12216) (ELSE 12232 . 12236) (NAME 10827 . 10831) (IF 10867 . 10869) (ELSE 10879 . 10883) (NAME 1681 . 1685) (IF 1724 . 1726) (ELSE 1740 . 1744)))
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c37c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Define names for all type symbols known in the standard interpreter.
@@ -925,9 +925,9 @@ Types that are part of optional modules (e.g. array) are not listed.
       :file "types.py"
       :pointmax 2095
       :fsize 2094
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c39c"
       :major-mode python-mode
       :tags 
         '( ("r\"\"\"OS routines for NT or Posix depending on what system we're on.
@@ -1173,9 +1173,9 @@ and opendir), and leave all pathname manipulation to os.path
       :file "os.py"
       :pointmax 25911
       :fsize 25910
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c3bc"
       :major-mode python-mode
       :tags 
         '( ("__doc__" variable nil nil [122 2181])
@@ -1212,9 +1212,9 @@ and opendir), and leave all pathname manipulation to os.path
       :file "hashlib.py"
       :pointmax 7843
       :fsize 7842
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c3dc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Cache lines from files.
@@ -1256,9 +1256,9 @@ that name.
       :file "linecache.py"
       :pointmax 4028
       :fsize 4027
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c3fc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Helper to provide extensibility for pickle/cPickle.
@@ -1324,9 +1324,9 @@ C, not for instances of user-defined classes.
       :file "copy_reg.py"
       :pointmax 6975
       :fsize 6974
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c73c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"functools.py - Tools for working with functions and callable objects
@@ -1379,9 +1379,9 @@ C, not for instances of user-defined classes.
       :file "functools.py"
       :pointmax 4807
       :fsize 4806
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c75c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Generic (shallow and deep) copying operations.
@@ -1550,9 +1550,9 @@ __getstate__() and __setstate__().  See the documentation for module
       :file "copy.py"
       :pointmax 11534
       :fsize 11533
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c77c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Utilities for with-statement contexts.  See PEP 343.\"\"\"" code nil nil [1 59])
@@ -1682,9 +1682,9 @@ __getstate__() and __setstate__().  See the documentation for module
       :file "contextlib.py"
       :pointmax 4425
       :fsize 4424
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax '((INDENT_BLOCK 3452 . 3912) (NEWLINE 3451 . 3452) (COLON 3450 . 3451) (FINALLY 3443 . 3450)))
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c79c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"The io module provides the Python interfaces to stream handling. The
@@ -1762,9 +1762,9 @@ DEFAULT_BUFFER_SIZE
       :file "io.py"
       :pointmax 3323
       :fsize 3322
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c7bc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Weak reference support for Python.
@@ -2152,9 +2152,9 @@ http://www.python.org/dev/peps/pep-0205/
       :file "weakref.py"
       :pointmax 14831
       :fsize 14830
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax '((NAME 7801 . 7805) (IF 7816 . 7818) (ELSE 7824 . 7828)))
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c7dc"
       :major-mode python-mode
       :tags 
         '( ("r\"\"\"Support for regular expressions (RE).
@@ -2340,9 +2340,9 @@ This module also defines an exception 'error'.
       :file "re.py"
       :pointmax 13424
       :fsize 13423
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195c7fc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Get useful information from live Python objects.
@@ -2890,9 +2890,9 @@ Here are some of the useful functions provided by this module:
       :file "inspect.py"
       :pointmax 42782
       :fsize 42781
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax '((NAME 37726 . 37738) (IF 37755 . 37757) (ELSE 37767 . 37771) (NAME 21182 . 21186) (IF 21200 . 21202) (ELSE 21214 . 21218)))
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cb3c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Locale support module.
@@ -3101,9 +3101,9 @@ also includes default encodings for all supported locale names.
       :file "locale.py"
       :pointmax 99919
       :fsize 99918
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cb5c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Abstract Base Classes (ABCs) according to PEP 3119.\"\"\"" code nil nil [102 159])
@@ -3217,9 +3217,9 @@ also includes default encodings for all supported locale names.
       :file "abc.py"
       :pointmax 7146
       :fsize 7145
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cb7c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"A more or less complete user-defined wrapper around dictionary objects.\"\"\"" code nil nil [1 78])
@@ -3482,9 +3482,9 @@ also includes default encodings for all supported locale names.
       :file "UserDict.py"
       :pointmax 7061
       :fsize 7060
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cb9c"
       :major-mode python-mode
       :tags 
         '( ("_weakref" include nil nil [145 169])
@@ -3720,9 +3720,9 @@ also includes default encodings for all supported locale names.
       :file "_weakrefset.py"
       :pointmax 5912
       :fsize 5911
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cbbc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"
@@ -3759,9 +3759,9 @@ One public function, register, is defined.
       :file "atexit.py"
       :pointmax 1706
       :fsize 1705
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cbdc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Internal support module for sre\"\"\"" code nil nil [249 286])
@@ -3822,9 +3822,9 @@ One public function, register, is defined.
       :file "sre_compile.py"
       :pointmax 19797
       :fsize 19823
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cbfc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Internal support module for sre\"\"\"" code nil nil [240 277])
@@ -3988,9 +3988,9 @@ One public function, register, is defined.
       :file "sre_parse.py"
       :pointmax 30701
       :fsize 30700
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax '((ASSIGN 30008 . 30009) (INDENT_BLOCK 8608 . 8621) (NEWLINE 8607 . 8608) (COLON 8606 . 8607)))
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cf3c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"A collection of string operations (most are no longer used).
@@ -4521,9 +4521,9 @@ printable -- a string containing all characters considered printable
       :file "string.py"
       :pointmax 21549
       :fsize 21548
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cf5c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Disassembler of Python byte code into mnemonics.\"\"\"" code nil nil [1 55])
@@ -4584,9 +4584,9 @@ printable -- a string containing all characters considered printable
       :file "dis.py"
       :pointmax 6500
       :fsize 6499
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cf7c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Tokenization help for Python programs.
@@ -4785,13 +4785,378 @@ each time a new token is found.\"\"\"" code nil nil [1 967])
       :file "tokenize.py"
       :pointmax 17484
       :fsize 17483
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cf9c"
+      :major-mode python-mode
+      :tags 
+        '( ("'''This module implements specialized container datatypes providing
+alternatives to Python's general purpose built-in containers, dict,
+list, set, and tuple.
+
+* namedtuple   factory function for creating tuple subclasses with named fields
+* deque        list-like container with fast appends and pops on either end
+* Counter      dict subclass for counting hashable objects
+* OrderedDict  dict subclass that remembers the order entries were added
+* defaultdict  dict subclass that calls a factory function to supply missing values
+
+'''" code nil nil [1 536])
+            ("__all__" variable nil nil [538 612])
+            ("_abcoll" include nil nil [761 782])
+            ("_abcoll" include nil nil [783 797])
+            ("__all__" variable nil nil [798 824])
+            ("_collections" include nil nil [826 869])
+            ("operator" include nil nil [870 927])
+            ("keyword" include nil nil [928 971])
+            ("sys" include nil nil [972 990])
+            ("heapq" include nil nil [991 1013])
+            ("itertools" include nil nil [1014 1091])
+            ("itertools" include nil nil [1092 1127])
+            ("try" code nil nil [1129 1254])
+            ("OrderedDict" type
+               (:superclasses ("dict")
+                :members 
+                  ( ("'Dictionary that remembers insertion order'" code nil (reparse-symbol indented_block_body) [1464 1507])
+                    ("__init__" function
+                       (:suite 
+                          ( ("'''Initialize an ordered dictionary.  The signature is the same as
+        regular dictionaries, but keyword arguments are not recommended because
+        their insertion order is arbitrary.
+
+        '''" code nil (reparse-symbol indented_block_body) [2110 2313])
+                            ("if" code nil (reparse-symbol indented_block_body) [2322 2461])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2469 2483])
+                            ("args" variable nil (reparse-symbol indented_block_body) [2492 2507])
+                            ("if" code nil (reparse-symbol indented_block_body) [2516 2614])
+                            ("try" code nil (reparse-symbol indented_block_body) [2622 2823])
+                            ("self" code nil (reparse-symbol indented_block_body) [2831 2859]))                          
+                        :arguments 
+                          ( ("args" variable nil (reparse-symbol function_parameters) [2086 2091])
+                            ("kwds" variable nil (reparse-symbol function_parameters) [2093 2099]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2073 2860])
+                    ("__setitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2881 2885])
+                            ("key" variable nil (reparse-symbol function_parameters) [2887 2890])
+                            ("value" variable nil (reparse-symbol function_parameters) [2892 2897])
+                            ("dict_setitem" variable nil (reparse-symbol function_parameters) [2899 2911]))                          )
+                        (reparse-symbol indented_block_body) [2865 3333])
+                    ("__delitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3354 3358])
+                            ("key" variable nil (reparse-symbol function_parameters) [3360 3363])
+                            ("dict_delitem" variable nil (reparse-symbol function_parameters) [3365 3377]))                          )
+                        (reparse-symbol indented_block_body) [3338 3848])
+                    ("__iter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3866 3870]))                          )
+                        (reparse-symbol indented_block_body) [3853 4251])
+                    ("__reversed__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4273 4277]))                          )
+                        (reparse-symbol indented_block_body) [4256 4677])
+                    ("clear" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4692 4696]))                          )
+                        (reparse-symbol indented_block_body) [4682 4872])
+                    ("keys" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4961 4965]))                          )
+                        (reparse-symbol indented_block_body) [4952 5036])
+                    ("values" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5052 5056]))                          )
+                        (reparse-symbol indented_block_body) [5041 5148])
+                    ("items" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5163 5167]))                          )
+                        (reparse-symbol indented_block_body) [5153 5277])
+                    ("iterkeys" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5295 5299]))                          )
+                        (reparse-symbol indented_block_body) [5282 5387])
+                    ("itervalues" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5407 5411]))                          )
+                        (reparse-symbol indented_block_body) [5392 5524])
+                    ("iteritems" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5543 5547]))                          )
+                        (reparse-symbol indented_block_body) [5529 5676])
+                    ("update" variable nil (reparse-symbol indented_block_body) [5681 5711])
+                    ("__update" variable nil (reparse-symbol indented_block_body) [5717 5734])
+                    ("__marker" variable nil (reparse-symbol indented_block_body) [5799 5818])
+                    ("pop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5832 5836])
+                            ("key" variable nil (reparse-symbol function_parameters) [5838 5841])
+                            ("default" variable nil (reparse-symbol function_parameters) [5843 5850]))                          )
+                        (reparse-symbol indented_block_body) [5824 6254])
+                    ("setdefault" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6274 6278])
+                            ("key" variable nil (reparse-symbol function_parameters) [6280 6283])
+                            ("default" variable nil (reparse-symbol function_parameters) [6285 6292]))                          )
+                        (reparse-symbol indented_block_body) [6259 6483])
+                    ("popitem" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6500 6504])
+                            ("last" variable nil (reparse-symbol function_parameters) [6506 6510]))                          )
+                        (reparse-symbol indented_block_body) [6488 6872])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6890 6894])
+                            ("_repr_running" variable nil (reparse-symbol function_parameters) [6896 6909]))                          )
+                        (reparse-symbol indented_block_body) [6877 7318])
+                    ("__reduce__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7338 7342]))                          )
+                        (reparse-symbol indented_block_body) [7323 7668])
+                    ("copy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7682 7686]))                          )
+                        (reparse-symbol indented_block_body) [7673 7769])
+                    ("fromkeys" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [7804 7807])
+                            ("iterable" variable nil (reparse-symbol function_parameters) [7809 7817])
+                            ("value" variable nil (reparse-symbol function_parameters) [7819 7824]))                          )
+                        (reparse-symbol indented_block_body) [7774 8074])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8090 8094])
+                            ("other" variable nil (reparse-symbol function_parameters) [8096 8101]))                          )
+                        (reparse-symbol indented_block_body) [8079 8426])
+                    ("__ne__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8442 8446])
+                            ("other" variable nil (reparse-symbol function_parameters) [8448 8453]))                          )
+                        (reparse-symbol indented_block_body) [8431 8523])
+                    ("viewkeys" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8618 8622]))                          )
+                        (reparse-symbol indented_block_body) [8605 8730])
+                    ("viewvalues" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8750 8754]))                          )
+                        (reparse-symbol indented_block_body) [8735 8860])
+                    ("viewitems" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8879 8883]))                          )
+                        (reparse-symbol indented_block_body) [8865 8994]))                  
+                :type "class")
+                nil [1435 8994])
+            ("_class_template" variable nil nil [9174 10622])
+            ("_repr_template" variable nil nil [10624 10652])
+            ("_field_template" variable nil nil [10654 10767])
+            ("namedtuple" function
+               (:documentation "Returns a new subclass of tuple with named fields.
+
+    >>> Point = namedtuple('Point', ['x', 'y'])
+    >>> Point.__doc__                   # docstring for the new class
+    'Point(x, y)'
+    >>> p = Point(11, y=22)             # instantiate with positional args or keywords
+    >>> p[0] + p[1]                     # indexable like a plain tuple
+    33
+    >>> x, y = p                        # unpack like a regular tuple
+    >>> x, y
+    (11, 22)
+    >>> p.x + p.y                       # fields also accessible by name
+    33
+    >>> d = p._asdict()                 # convert to a dictionary
+    >>> d['x']
+    11
+    >>> Point(**d)                      # convert from a dictionary
+    Point(x=11, y=22)
+    >>> p._replace(x=100)               # _replace() is like str.replace() but targets named fields
+    Point(x=100, y=22)
+
+    "
+                :arguments 
+                  ( ("typename" variable nil (reparse-symbol function_parameters) [10784 10792])
+                    ("field_names" variable nil (reparse-symbol function_parameters) [10794 10805])
+                    ("verbose" variable nil (reparse-symbol function_parameters) [10807 10814])
+                    ("rename" variable nil (reparse-symbol function_parameters) [10822 10828]))                  )
+                nil [10769 14954])
+            ("Counter" type
+               (:superclasses ("dict")
+                :members 
+                  ( ("'''Dict subclass for counting hashable items.  Sometimes called a bag
+    or multiset.  Elements are stored as dictionary keys and their counts
+    are stored as dictionary values.
+
+    >>> c = Counter('abcdeabcdabcaba')  # count elements from a string
+
+    >>> c.most_common(3)                # three most common elements
+    [('a', 5), ('b', 4), ('c', 3)]
+    >>> sorted(c)                       # list all unique elements
+    ['a', 'b', 'c', 'd', 'e']
+    >>> ''.join(sorted(c.elements()))   # list elements with repetitions
+    'aaaaabbbbcccdde'
+    >>> sum(c.values())                 # total of all counts
+    15
+
+    >>> c['a']                          # count of letter 'a'
+    5
+    >>> for elem in 'shazam':           # update counts from an iterable
+    ...     c[elem] += 1                # by adding 1 to each element's count
+    >>> c['a']                          # now there are seven 'a'
+    7
+    >>> del c['b']                      # remove all 'b'
+    >>> c['b']                          # now there are zero 'b'
+    0
+
+    >>> d = Counter('simsalabim')       # make another counter
+    >>> c.update(d)                     # add in the second counter
+    >>> c['a']                          # now there are nine 'a'
+    9
+
+    >>> c.clear()                       # empty the counter
+    >>> c
+    Counter()
+
+    Note:  If a count is set to zero or reduced to zero, it will remain
+    in the counter until the entry is deleted or the counter is cleared:
+
+    >>> c = Counter('aaabbc')
+    >>> c['b'] -= 2                     # reduce the count of 'b' by two
+    >>> c.most_common()                 # 'b' is still in, but its count is zero
+    [('a', 3), ('c', 1), ('b', 0)]
+
+    '''" code nil (reparse-symbol indented_block_body) [15141 16842])
+                    ("__init__" function
+                       (:suite 
+                          ( ("'''Create a new, empty Counter object.  And if given, count elements
+        from an input iterable.  Or, initialize the count from another mapping
+        of elements to their counts.
+
+        >>> c = Counter()                           # a new, empty counter
+        >>> c = Counter('gallahad')                 # a new counter from an iterable
+        >>> c = Counter({'a': 4, 'b': 2})           # a new counter from a mapping
+        >>> c = Counter(a=4, b=2)                   # a new counter from keyword args
+
+        '''" code nil (reparse-symbol indented_block_body) [17213 17740])
+                            ("if" code nil (reparse-symbol indented_block_body) [17749 17884])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17892 17906])
+                            ("args" variable nil (reparse-symbol indented_block_body) [17915 17930])
+                            ("if" code nil (reparse-symbol indented_block_body) [17939 18037])
+                            ("super" code nil (reparse-symbol indented_block_body) [18045 18076])
+                            ("self" code nil (reparse-symbol indented_block_body) [18085 18111]))                          
+                        :arguments 
+                          ( ("args" variable nil (reparse-symbol function_parameters) [17189 17194])
+                            ("kwds" variable nil (reparse-symbol function_parameters) [17196 17202]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [17176 18112])
+                    ("__missing__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18133 18137])
+                            ("key" variable nil (reparse-symbol function_parameters) [18139 18142]))                          )
+                        (reparse-symbol indented_block_body) [18117 18290])
+                    ("most_common" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18311 18315])
+                            ("n" variable nil (reparse-symbol function_parameters) [18317 18318]))                          )
+                        (reparse-symbol indented_block_body) [18295 18804])
+                    ("elements" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18822 18826]))                          )
+                        (reparse-symbol indented_block_body) [18809 19627])
+                    ("fromkeys" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [19707 19710])
+                            ("iterable" variable nil (reparse-symbol function_parameters) [19712 19720])
+                            ("v" variable nil (reparse-symbol function_parameters) [19722 19723]))                          )
+                        (reparse-symbol indented_block_body) [19677 19986])
+                    ("update" function (:arguments 
+                      ( ("args" variable nil (reparse-symbol function_parameters) [20002 20007])
+                        ("kwds" variable nil (reparse-symbol function_parameters) [20009 20015]))                      ) (reparse-symbol indented_block_body) [19991 21857])
+                    ("subtract" function (:arguments 
+                      ( ("args" variable nil (reparse-symbol function_parameters) [21875 21880])
+                        ("kwds" variable nil (reparse-symbol function_parameters) [21882 21888]))                      ) (reparse-symbol indented_block_body) [21862 23325])
+                    ("copy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23339 23343]))                          )
+                        (reparse-symbol indented_block_body) [23330 23415])
+                    ("__reduce__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23435 23439]))                          )
+                        (reparse-symbol indented_block_body) [23420 23487])
+                    ("__delitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23508 23512])
+                            ("elem" variable nil (reparse-symbol function_parameters) [23514 23518]))                          )
+                        (reparse-symbol indented_block_body) [23492 23679])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23697 23701]))                          )
+                        (reparse-symbol indented_block_body) [23684 23907])
+                    ("__add__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24264 24268])
+                            ("other" variable nil (reparse-symbol function_parameters) [24270 24275]))                          )
+                        (reparse-symbol indented_block_body) [24252 24825])
+                    ("__sub__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24842 24846])
+                            ("other" variable nil (reparse-symbol function_parameters) [24848 24853]))                          )
+                        (reparse-symbol indented_block_body) [24830 25432])
+                    ("__or__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25448 25452])
+                            ("other" variable nil (reparse-symbol function_parameters) [25454 25459]))                          )
+                        (reparse-symbol indented_block_body) [25437 26106])
+                    ("__and__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26123 26127])
+                            ("other" variable nil (reparse-symbol function_parameters) [26129 26134]))                          )
+                        (reparse-symbol indented_block_body) [26111 26630]))                  
+                :type "class")
+                nil [15116 26630])
+            ("if" code nil nil [26632 27799]))          
       :file "collections.py"
+      :pointmax 27799
       :fsize 27798
-      :lastmodtime '(23251 51558 0 0))
-    (semanticdb-table "semanticdb-table"
+      :lastmodtime '(23529 36531 0 0)
+      :unmatched-syntax '((NAME 27257 . 27267) (PAREN_BLOCK 27267 . 27283) (NAME 26915 . 26925) (PAREN_BLOCK 26925 . 26941) (NAME 26482 . 26490) (IF 26499 . 26501) (ELSE 26522 . 26526) (NAME 25832 . 25840) (IF 25855 . 25857) (ELSE 25878 . 25882) (NAME 22905 . 22913) (IF 22924 . 22926) (ELSE 22932 . 22936) (NAME 21244 . 21252) (IF 21263 . 21265) (ELSE 21271 . 21275) (INDENT_BLOCK 14392 . 14456) (NEWLINE 14391 . 14392) (COLON 14390 . 14391) (TRY 14315 . 14318) (AS 14386 . 14388)))
+    (semanticdb-table "semanticdb-table-195cfbc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Thread module emulating a subset of Java's threading model.\"\"\"" code nil nil [1 66])
@@ -5723,9 +6088,9 @@ each time a new token is found.\"\"\"" code nil nil [1 967])
       :file "threading.py"
       :pointmax 47133
       :fsize 47132
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax '((INDENT_BLOCK 31326 . 31361) (NEWLINE 31110 . 31111) (COLON 31109 . 31110) (FINALLY 31102 . 31109)))
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cfdc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Filename globbing utility.\"\"\"" code nil nil [1 33])
@@ -5771,9 +6136,9 @@ each time a new token is found.\"\"\"" code nil nil [1 967])
       :file "glob.py"
       :pointmax 3115
       :fsize 3114
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195cffc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Utility functions for copying and archiving files and directory trees.
@@ -5980,7 +6345,8 @@ XXX The functions here don't copy the resource fork or other metadata on Mac.
               ( ("base_dir" variable nil (reparse-symbol function_parameters) [12807 12815])
                 ("zip_filename" variable nil (reparse-symbol function_parameters) [12817 12829])
                 ("verbose" variable nil (reparse-symbol function_parameters) [12831 12838])
-                ("dry_run" variable nil (reparse-symbol function_parameters) [12846 12853]))              ) nil [12784 13513])
+                ("dry_run" variable nil (reparse-symbol function_parameters) [12840 12847])
+                ("logger" variable nil (reparse-symbol function_parameters) [12849 12855]))              ) nil [12784 13558])
             ("_make_zipfile" function
                (:documentation "Create a zip file from all the files under 'base_dir'.
 
@@ -5991,19 +6357,19 @@ XXX The functions here don't copy the resource fork or other metadata on Mac.
     file.
     "
                 :arguments 
-                  ( ("base_name" variable nil (reparse-symbol function_parameters) [13532 13541])
-                    ("base_dir" variable nil (reparse-symbol function_parameters) [13543 13551])
-                    ("verbose" variable nil (reparse-symbol function_parameters) [13553 13560])
-                    ("dry_run" variable nil (reparse-symbol function_parameters) [13564 13571])
-                    ("logger" variable nil (reparse-symbol function_parameters) [13575 13581]))                  )
-                nil [13514 15773])
-            ("_ARCHIVE_FORMATS" variable nil nil [15774 15918])
-            ("if" code nil nil [15920 16064])
-            ("if" code nil nil [16065 16210])
+                  ( ("base_name" variable nil (reparse-symbol function_parameters) [13577 13586])
+                    ("base_dir" variable nil (reparse-symbol function_parameters) [13588 13596])
+                    ("verbose" variable nil (reparse-symbol function_parameters) [13598 13605])
+                    ("dry_run" variable nil (reparse-symbol function_parameters) [13609 13616])
+                    ("logger" variable nil (reparse-symbol function_parameters) [13620 13626]))                  )
+                nil [13559 15826])
+            ("_ARCHIVE_FORMATS" variable nil nil [15827 15971])
+            ("if" code nil nil [15973 16117])
+            ("if" code nil nil [16118 16263])
             ("get_archive_formats" function (:documentation "Returns a list of supported formats for archiving and unarchiving.
 
     Each element of the returned sequence is a tuple (name, description)
-    ") nil [16211 16530])
+    ") nil [16264 16583])
             ("register_archive_format" function
                (:documentation "Registers an archive format.
 
@@ -6014,13 +6380,13 @@ XXX The functions here don't copy the resource fork or other metadata on Mac.
     by the get_archive_formats() function.
     "
                 :arguments 
-                  ( ("name" variable nil (reparse-symbol function_parameters) [16559 16563])
-                    ("function" variable nil (reparse-symbol function_parameters) [16565 16573])
-                    ("extra_args" variable nil (reparse-symbol function_parameters) [16575 16585])
-                    ("description" variable nil (reparse-symbol function_parameters) [16592 16603]))                  )
-                nil [16531 17522])
+                  ( ("name" variable nil (reparse-symbol function_parameters) [16612 16616])
+                    ("function" variable nil (reparse-symbol function_parameters) [16618 16626])
+                    ("extra_args" variable nil (reparse-symbol function_parameters) [16628 16638])
+                    ("description" variable nil (reparse-symbol function_parameters) [16645 16656]))                  )
+                nil [16584 17575])
             ("unregister_archive_format" function (:arguments 
-              ( ("name" variable nil (reparse-symbol function_parameters) [17553 17557]))              ) nil [17523 17591])
+              ( ("name" variable nil (reparse-symbol function_parameters) [17606 17610]))              ) nil [17576 17644])
             ("make_archive" function
                (:documentation "Create an archive file (eg. zip or tar).
 
@@ -6039,22 +6405,22 @@ XXX The functions here don't copy the resource fork or other metadata on Mac.
     uses the current owner and group.
     "
                 :arguments 
-                  ( ("base_name" variable nil (reparse-symbol function_parameters) [17609 17618])
-                    ("format" variable nil (reparse-symbol function_parameters) [17620 17626])
-                    ("root_dir" variable nil (reparse-symbol function_parameters) [17628 17636])
-                    ("base_dir" variable nil (reparse-symbol function_parameters) [17643 17651])
-                    ("verbose" variable nil (reparse-symbol function_parameters) [17658 17665])
-                    ("dry_run" variable nil (reparse-symbol function_parameters) [17686 17693])
-                    ("owner" variable nil (reparse-symbol function_parameters) [17697 17702])
-                    ("group" variable nil (reparse-symbol function_parameters) [17709 17714])
-                    ("logger" variable nil (reparse-symbol function_parameters) [17721 17727]))                  )
-                nil [17592 19463]))          
+                  ( ("base_name" variable nil (reparse-symbol function_parameters) [17662 17671])
+                    ("format" variable nil (reparse-symbol function_parameters) [17673 17679])
+                    ("root_dir" variable nil (reparse-symbol function_parameters) [17681 17689])
+                    ("base_dir" variable nil (reparse-symbol function_parameters) [17696 17704])
+                    ("verbose" variable nil (reparse-symbol function_parameters) [17711 17718])
+                    ("dry_run" variable nil (reparse-symbol function_parameters) [17739 17746])
+                    ("owner" variable nil (reparse-symbol function_parameters) [17750 17755])
+                    ("group" variable nil (reparse-symbol function_parameters) [17762 17767])
+                    ("logger" variable nil (reparse-symbol function_parameters) [17774 17780]))                  )
+                nil [17645 19516]))          
       :file "shutil.py"
-      :pointmax 19463
-      :fsize 19462
-      :lastmodtime '(23251 51558 0 0)
+      :pointmax 19516
+      :fsize 19515
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax '((NAME 11742 . 11754) (IF 11779 . 11781) (ELSE 11791 . 11795)))
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195d33c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Abstract Base Classes (ABCs) for collections, according to PEP 3119.
@@ -6738,9 +7104,9 @@ bootstrapping issues.  Unit tests are in test_collections.
       :file "_abcoll.py"
       :pointmax 18620
       :fsize 18619
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195d35c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Internal support module for sre\"\"\"" code nil nil [296 333])
@@ -6845,9 +7211,9 @@ bootstrapping issues.  Unit tests are in test_collections.
       :file "sre_constants.py"
       :pointmax 7198
       :fsize 7197
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195d37c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"
@@ -7012,9 +7378,9 @@ operate on bytecodes (e.g. peephole optimizers).
       :file "opcode.py"
       :pointmax 5475
       :fsize 5474
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195d39c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Token constants (from \"token.h\").\"\"\"" code nil nil [1 40])
@@ -7087,9 +7453,9 @@ operate on bytecodes (e.g. peephole optimizers).
       :file "token.py"
       :pointmax 2923
       :fsize 2922
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195d3bc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Extract, format and print information about Python stack traces.\"\"\"" code nil nil [1 71])
@@ -7278,9 +7644,9 @@ operate on bytecodes (e.g. peephole optimizers).
       :file "traceback.py"
       :pointmax 11286
       :fsize 11285
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195d3dc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Filename matching with shell patterns.
@@ -7345,9 +7711,9 @@ corresponding to PATTERN.  (It does not compile it.)
       :file "fnmatch.py"
       :pointmax 3316
       :fsize 3315
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195d3fc"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Constants/functions for interpreting results of os.stat() and os.lstat().
@@ -7423,9 +7789,9 @@ Suggested usage: from stat import *
       :file "stat.py"
       :pointmax 1843
       :fsize 1842
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195df3c"
       :major-mode python-mode
       :tags 
         '( ("_struct" include nil nil [1 22])
@@ -7434,9 +7800,9 @@ Suggested usage: from stat import *
       :file "struct.py"
       :pointmax 83
       :fsize 82
-      :lastmodtime '(23251 51558 0 0)
+      :lastmodtime '(23529 36531 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table"
+    (semanticdb-table "semanticdb-table-195df5c"
       :major-mode python-mode
       :tags 
         '( ("\"\"\"Text wrapping and filling.
@@ -7682,8 +8048,180 @@ Suggested usage: from stat import *
       :file "textwrap.py"
       :pointmax 17216
       :fsize 17215
-      :lastmodtime '(23251 51558 0 0)
-      :unmatched-syntax nil))
+      :lastmodtime '(23529 36531 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-195df7c"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Keywords (from \"graminit.c\")
+
+This file is automatically generated; please don't muck it up!
+
+To update the symbols in this file, 'cd' to the top directory of
+the python source tree after building the interpreter and run:
+
+    ./python Lib/keyword.py
+\"\"\"" code nil nil [24 281])
+            ("__all__" variable nil nil [283 316])
+            ("kwlist" variable nil nil [318 881])
+            ("iskeyword" variable nil nil [883 925])
+            ("main" function nil nil [927 1957])
+            ("if" code nil nil [1958 1996]))          
+      :file "keyword.py"
+      :pointmax 1996
+      :fsize 1995
+      :lastmodtime '(23529 36531 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-195df9c"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Heap queue algorithm (a.k.a. priority queue).
+
+Heaps are arrays for which a[k] <= a[2*k+1] and a[k] <= a[2*k+2] for
+all k, counting elements from 0.  For the sake of comparison,
+non-existing elements are considered to be infinite.  The interesting
+property of a heap is that a[0] is always its smallest element.
+
+Usage:
+
+heap = []            # creates an empty heap
+heappush(heap, item) # pushes a new item on the heap
+item = heappop(heap) # pops the smallest item from the heap
+item = heap[0]       # smallest item on the heap without popping it
+heapify(x)           # transforms list into a heap, in-place, in linear time
+item = heapreplace(heap, item) # pops and returns smallest item, and adds
+                               # new item; the heap size is unchanged
+
+Our API differs from textbook heap algorithms as follows:
+
+- We use 0-based indexing.  This makes the relationship between the
+  index for a node and the indexes for its children slightly less
+  obvious, but is more suitable since Python uses 0-based indexing.
+
+- Our heappop() method returns the smallest item, not the largest.
+
+These two make it possible to view the heap as a regular Python list
+without surprises: heap[0] is the smallest item, and heap.sort()
+maintains the heap invariant!
+\"\"\"" code nil nil [28 1297])
+            ("__about__" variable nil nil [1381 6117])
+            ("__all__" variable nil nil [6119 6238])
+            ("itertools" include nil nil [6240 6299])
+            ("operator" include nil nil [6300 6331])
+            ("cmp_lt" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [6344 6345])
+                ("y" variable nil (reparse-symbol function_parameters) [6347 6348]))              ) nil [6333 6510])
+            ("heappush" function
+               (:documentation "Push item onto heap, maintaining the heap invariant."
+                :arguments 
+                  ( ("heap" variable nil (reparse-symbol function_parameters) [6524 6528])
+                    ("item" variable nil (reparse-symbol function_parameters) [6530 6534]))                  )
+                nil [6511 6658])
+            ("heappop" function
+               (:documentation "Pop the smallest item off the heap, maintaining the heap invariant."
+                :arguments 
+                  ( ("heap" variable nil (reparse-symbol function_parameters) [6671 6675]))                  )
+                nil [6659 6987])
+            ("heapreplace" function
+               (:documentation "Pop and return the current smallest value, and add the new item.
+
+    This is more efficient than heappop() followed by heappush(), and can be
+    more appropriate when using a fixed-size heap.  Note that the value
+    returned may be larger than item!  That constrains reasonable uses of
+    this routine unless written as part of a conditional replacement:
+
+        if item > heap[0]:
+            item = heapreplace(heap, item)
+    "
+                :arguments 
+                  ( ("heap" variable nil (reparse-symbol function_parameters) [7004 7008])
+                    ("item" variable nil (reparse-symbol function_parameters) [7010 7014]))                  )
+                nil [6988 7601])
+            ("heappushpop" function
+               (:documentation "Fast version of a heappush followed by a heappop."
+                :arguments 
+                  ( ("heap" variable nil (reparse-symbol function_parameters) [7618 7622])
+                    ("item" variable nil (reparse-symbol function_parameters) [7624 7628]))                  )
+                nil [7602 7809])
+            ("heapify" function
+               (:documentation "Transform list into a heap, in-place, in O(len(x)) time."
+                :arguments 
+                  ( ("x" variable nil (reparse-symbol function_parameters) [7822 7823]))                  )
+                nil [7810 8338])
+            ("_heappushpop_max" function
+               (:documentation "Maxheap version of a heappush followed by a heappop."
+                :arguments 
+                  ( ("heap" variable nil (reparse-symbol function_parameters) [8360 8364])
+                    ("item" variable nil (reparse-symbol function_parameters) [8366 8370]))                  )
+                nil [8339 8558])
+            ("_heapify_max" function
+               (:documentation "Transform list into a maxheap, in-place, in O(len(x)) time."
+                :arguments 
+                  ( ("x" variable nil (reparse-symbol function_parameters) [8576 8577]))                  )
+                nil [8559 8727])
+            ("nlargest" function
+               (:documentation "Find the n largest elements in a dataset.
+
+    Equivalent to:  sorted(iterable, reverse=True)[:n]
+    "
+                :arguments 
+                  ( ("n" variable nil (reparse-symbol function_parameters) [8741 8742])
+                    ("iterable" variable nil (reparse-symbol function_parameters) [8744 8752]))                  )
+                nil [8728 9152])
+            ("nsmallest" function
+               (:documentation "Find the n smallest elements in a dataset.
+
+    Equivalent to:  sorted(iterable)[:n]
+    "
+                :arguments 
+                  ( ("n" variable nil (reparse-symbol function_parameters) [9167 9168])
+                    ("iterable" variable nil (reparse-symbol function_parameters) [9170 9178]))                  )
+                nil [9153 9563])
+            ("_siftdown" function (:arguments 
+              ( ("heap" variable nil (reparse-symbol function_parameters) [9747 9751])
+                ("startpos" variable nil (reparse-symbol function_parameters) [9753 9761])
+                ("pos" variable nil (reparse-symbol function_parameters) [9763 9766]))              ) nil [9733 10138])
+            ("_siftup" function (:arguments 
+              ( ("heap" variable nil (reparse-symbol function_parameters) [12213 12217])
+                ("pos" variable nil (reparse-symbol function_parameters) [12219 12222]))              ) nil [12201 12941])
+            ("_siftdown_max" function (:arguments 
+              ( ("heap" variable nil (reparse-symbol function_parameters) [12960 12964])
+                ("startpos" variable nil (reparse-symbol function_parameters) [12966 12974])
+                ("pos" variable nil (reparse-symbol function_parameters) [12976 12979]))              ) nil [12942 13386])
+            ("_siftup_max" function (:arguments 
+              ( ("heap" variable nil (reparse-symbol function_parameters) [13403 13407])
+                ("pos" variable nil (reparse-symbol function_parameters) [13409 13412]))              ) nil [13387 14165])
+            ("try" code nil nil [14203 14262])
+            ("merge" function (:arguments 
+              ( ("iterables" variable nil (reparse-symbol function_parameters) [14273 14283]))              ) nil [14263 15563])
+            ("_nsmallest" variable nil nil [15642 15664])
+            ("nsmallest" function
+               (:documentation "Find the n smallest elements in a dataset.
+
+    Equivalent to:  sorted(iterable, key=key)[:n]
+    "
+                :arguments 
+                  ( ("n" variable nil (reparse-symbol function_parameters) [15679 15680])
+                    ("iterable" variable nil (reparse-symbol function_parameters) [15682 15690])
+                    ("key" variable nil (reparse-symbol function_parameters) [15692 15695]))                  )
+                nil [15665 16816])
+            ("_nlargest" variable nil nil [16817 16837])
+            ("nlargest" function
+               (:documentation "Find the n largest elements in a dataset.
+
+    Equivalent to:  sorted(iterable, key=key, reverse=True)[:n]
+    "
+                :arguments 
+                  ( ("n" variable nil (reparse-symbol function_parameters) [16851 16852])
+                    ("iterable" variable nil (reparse-symbol function_parameters) [16854 16862])
+                    ("key" variable nil (reparse-symbol function_parameters) [16864 16867]))                  )
+                nil [16838 18014])
+            ("if" code nil nil [18015 18296]))          
+      :file "heapq.py"
+      :pointmax 18296
+      :fsize 18295
+      :lastmodtime '(23529 36531 0 0)
+      :unmatched-syntax '((RETURN 6453 . 6459) (IF 6468 . 6470) (ELSE 6492 . 6496))))
   :file "!usr!lib!python2.7!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

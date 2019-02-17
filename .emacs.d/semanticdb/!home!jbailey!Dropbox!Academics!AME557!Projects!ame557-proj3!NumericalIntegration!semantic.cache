@@ -1,0 +1,104 @@
+;; Object semanticdb-project-database-file-1d9e714
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1d9e714"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1c7df60"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("d2r" code nil nil [33 52])
+            ("r0" variable nil nil [117 190])
+            ("v0" variable nil nil [191 256])
+            ("oe0" variable nil nil [257 384])
+            ("oef" variable nil nil [415 533])
+            ("print" code nil nil [535 551]))          
+      :file "ImpulsiveManeuverPlanning.py"
+      :pointmax 553
+      :fsize 552
+      :lastmodtime '(23556 20110 712986 608000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-19da108"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("deg2rad" code nil nil [33 58])
+            ("classicalElements" function (:arguments 
+              ( ("r" variable nil (reparse-symbol function_parameters) [125 126])
+                ("v" variable nil (reparse-symbol function_parameters) [127 128])
+                ("mu" variable nil (reparse-symbol function_parameters) [129 131]))              ) nil [103 3181])
+            ("trueAnomalyToMeanAnomaly" function (:arguments 
+              ( ("f" variable nil (reparse-symbol function_parameters) [3260 3261])
+                ("e" variable nil (reparse-symbol function_parameters) [3262 3263]))              ) nil [3231 3497])
+            ("meanAnomalytoTrueAnomaly" function (:arguments 
+              ( ("M_f" variable nil (reparse-symbol function_parameters) [3527 3530])
+                ("n" variable nil (reparse-symbol function_parameters) [3532 3533]))              ) nil [3498 4126])
+            ("elementsToRV" function (:arguments 
+              ( ("oe0" variable nil (reparse-symbol function_parameters) [4144 4147])
+                ("mu" variable nil (reparse-symbol function_parameters) [4149 4151]))              ) nil [4127 5192]))          
+      :file "OrbitalUtilities.py"
+      :pointmax 5192
+      :fsize 5191
+      :lastmodtime '(23556 20110 708986 584000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18d4624"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("math" include nil nil [20 31])
+            ("matplotlib.pyplot" include nil nil [32 63])
+            ("OrbitalUtilities" include nil nil [65 125])
+            ("Disturbances" include nil nil [126 170])
+            ("debug" variable nil nil [172 185])
+            ("if" code nil nil [187 301])
+            ("N" variable nil nil [302 334])
+            ("simTime" variable nil nil [335 372])
+            ("j" variable nil nil [373 378])
+            ("mu" variable nil nil [410 423])
+            ("Re" variable nil nil [467 479])
+            ("J2" variable nil nil [511 529])
+            ("r" variable nil nil [556 575])
+            ("v" variable nil nil [576 595])
+            ("a" variable nil nil [596 615])
+            ("aJ2" variable nil nil [616 637])
+            ("aD" variable nil nil [638 658])
+            ("orbEl" variable nil nil [659 682])
+            ("alt" variable nil nil [683 702])
+            ("E" variable nil nil [703 720])
+            ("r_c" variable nil nil [722 742])
+            ("v_c" variable nil nil [743 763])
+            ("t_c" variable nil nil [764 771])
+            ("d2r" code nil nil [773 792])
+            ("oe0" variable nil nil [823 941])
+            ("n" variable nil nil [943 974])
+            ("print" code nil nil [975 1006])
+            ("T" code nil nil [1007 1022])
+            ("print" code nil nil [1023 1057])
+            ("RV" variable nil nil [1059 1085])
+            ("r0" variable nil nil [1087 1099])
+            ("v0" variable nil nil [1100 1112])
+            ("print" code nil nil [1291 1347])
+            ("print" code nil nil [1348 1406])
+            ("notCrashed" variable nil nil [1407 1424])
+            ("stateFlip" variable nil nil [1425 1442])
+            ("for" code nil nil [1443 3576])
+            ("print" code nil nil [3578 3611])
+            ("print" code nil nil [3612 3645])
+            ("print" code nil nil [3646 3691])
+            ("plotFigures" variable nil nil [3693 3712])
+            ("plotFormat" variable nil nil [3713 3731])
+            ("if" code nil nil [3733 6550]))          
+      :file "NumericalIntegration.py"
+      :pointmax 6550
+      :fsize 6549
+      :lastmodtime '(23556 20110 712986 608000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1bb85ac"
+      :file "Disturbances.py"
+      :fsize 1336
+      :lastmodtime '(23556 20110 708986 584000)))
+  :file "!home!jbailey!Dropbox!Academics!AME557!Projects!ame557-proj3!NumericalIntegration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

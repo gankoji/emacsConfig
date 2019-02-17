@@ -1,0 +1,491 @@
+;; Object semanticdb-project-database-file-171e7cc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-171e7cc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1859c6c"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Translation of fortran 77 rkf45 to python via matlab \"\"\"" code nil nil [24 83])
+            ("numpy" include nil nil [84 103])
+            ("sys" include nil nil [104 124])
+            ("r8_rkf45" function
+               (:documentation "
+    y, yp, t, flag  = r8_rkf45 ( f, neqn, y, yp, t, tout, relerr, abserr, flag )
+#********************************************
+#
+## R8_RKF45 carries out the Runge-Kutta-Fehlberg method (double precision).
+#
+#  Discussion:
+#
+#    This routine is primarily designed to solve non-stiff and mildly stiff
+#    differential equations when derivative evaluations are inexpensive.
+#    It should generally not be used when the user is demanding
+#    high accuracy.
+#
+#    This function integrates a system of NEQN first-order ordinary differential
+#    equations of the form:
+#
+#      dY(i)/dT = F(T,Y(1),Y(2), ...  ,Y(NEQN))
+#
+#    where the Y(1:NEQN) are given at T.
+#    Typically the subroutine is used to integrate from T to TOUT but it
+#    can be used as a one-step integrator to advance the solution a
+#    single step in the direction of TOUT.  On return, the parameters in
+#    the call list are set for continuing the integration.  The user has
+#    only to call again (and perhaps define a new value for TOUT).
+#
+#    Before the first call, the user must
+#
+#    * supply the function  F(T,Y) to evaluate the right hand side YP;
+#
+#    * initialize the parameters:
+#      NEQN, Y(1:NEQN), T, TOUT, RELERR, ABSERR, FLAG.
+#      In particular, T should initially be the starting point for integration,
+#      Y should be the value of the initial conditions, and FLAG should
+#      normally be +1.
+#
+#    Normally, the user only sets the value of FLAG before the first call, and
+#    thereafter, the program manages the value.  On the first call, FLAG should
+#    normally be +1 (or -1 for single step mode.)  On normal return, FLAG will
+#    have been reset by the program to the value of 2 (or -2 in single
+#    step mode), and the user can continue to call the routine with that
+#    value of FLAG.
+#
+#    (When the input magnitude of FLAG is 1, this indicates to the program
+#    that it is necessary to do some initialization work.  An input magnitude
+#    of 2 lets the program know that that initialization can be skipped,
+#    and that useful information was computed earlier.)
+#
+#    The function returns with all the information needed to continue
+#    the integration.  If the integration reached TOUT, the user need only
+#    define a new TOUT and call again.  In the one-step integrator
+#    mode, returning with FLAG = -2, the user must keep in mind that
+#    each step taken is in the direction of the current TOUT.  Upon
+#    reaching TOUT, indicated by the output value of FLAG switching to 2,
+#    the user must define a new TOUT and reset FLAG to -2 to continue
+#    in the one-step integrator mode.
+#
+#    In some cases, an error or difficulty occurs during a call.  In that case,
+#    the output value of FLAG is used to indicate that there is a problem
+#    that the user must address.  These values include:
+#
+#    * 3, integration was not completed because the input value of RELERR, the
+#      relative error tolerance, was too small.  RELERR has been increased
+#      appropriately for continuing.  If the user accepts the output value of
+#      RELERR, then simply reset FLAG to 2 and continue.
+#
+#    * 4, integration was not completed because more than MAXNFE derivative
+#      evaluations were needed.  This is approximately (MAXNFE/6) steps.
+#      The user may continue by simply calling again.  The function counter
+#      will be reset to 0, and another MAXNFE function evaluations are allowed.
+#
+#    * 5, integration was not completed because the solution vanished,
+#      making a pure relative error test impossible.  The user must use
+#      a non-zero ABSERR to continue.  Using the one-step integration mode
+#      for one step is a good way to proceed.
+#
+#    * 6, integration was not completed because the requested accuracy
+#      could not be achieved, even using the smallest allowable stepsize.
+#      The user must increase the error tolerances ABSERR or RELERR before
+#      continuing.  It is also necessary to reset FLAG to 2 (or -2 when
+#      the one-step integration mode is being used).  The occurrence of
+#      FLAG = 6 indicates a trouble spot.  The solution is changing
+#      rapidly, or a singularity may be present.  It often is inadvisable
+#      to continue.
+#
+#    * 7, it is likely that this routine is inefficient for solving
+#      this problem.  Too much output is restricting the natural stepsize
+#      choice.  The user should use the one-step integration mode with
+#      the stepsize determined by the code.  If the user insists upon
+#      continuing the integration, reset FLAG to 2 before calling
+#      again.  Otherwise, execution will be terminated.
+#
+#    * 8, invalid input parameters, indicates one of the following:
+#      NEQN <= 0;
+#      T = TOUT and |FLAG| /= 1;
+#      RELERR < 0 or ABSERR < 0;
+#      FLAG == 0  or FLAG < -2 or 8 < FLAG.
+#
+#  Licensing:
+#
+#    This code is distributed under the GNU LGPL license.
+#
+#  Modified:
+#
+#    05 April 2011
+#
+#  Author:
+#
+#    Original FORTRAN77 version by Herman Watts, Lawrence Shampine.
+#    MATLAB version by John Burkardt and then to Python by Peter Monk
+#
+#  Reference:
+#
+#    Erwin Fehlberg,
+#    Low-order Classical Runge-Kutta Formulas with Stepsize Control,
+#    NASA Technical Report R-315, 1969.
+#
+#    Lawrence Shampine, Herman Watts, S Davenport,
+#    Solving Non-stiff Ordinary Differential Equations - The State of the Art,
+#    SIAM Review,
+#    Volume 18, pages 376-411, 1976.
+#
+#  Parameters:
+#
+#    Input, function F, a user-supplied function to evaluate the
+#    derivatives dYdT(T), of the form:
+#     def f ( t, y ):
+#         <statements>
+#         return(yp)
+#
+#    Input, integer NEQN, the number of equations to be integrated.
+#
+#    Input/output, real Y(NEQN), the current solution vector at T.
+#
+#    Input/output, real YP(NEQN), the current value of the
+#    derivative of the dependent variable.  The user should not set or alter
+#    this information%
+#
+#    Input/output, real T, the current value of the independent
+#    variable.
+#
+#    Input, real TOUT, the output point at which solution is
+#    desired.  TOUT = T is allowed on the first call only, in which case
+#    the routine returns with FLAG = 2 if continuation is possible.
+#
+#    Input, real RELERR, ABSERR, the relative and absolute
+#    error tolerances for the local error test.  At each step the code
+#    requires:
+#      abs ( local error ) <= RELERR * abs ( Y ) + ABSERR
+#    for each component of the local error and the solution vector Y.
+#    RELERR cannot be \"too small\".  If the routine believes RELERR has been
+#    set too small, it will reset RELERR to an acceptable value and return
+#    immediately for user action.
+#
+#    Input/output, integer FLAG, indicator for status of integration.
+#    On the first call, set FLAG to +1 for normal use, or to -1 for single
+#    step mode.  On return, a value of 2 or -2 indicates normal progress,
+#    while any other value indicates a problem that should be addressed.
+#
+    "
+                :arguments 
+                  ( ("f" variable nil (reparse-symbol function_parameters) [140 141])
+                    ("neqn" variable nil (reparse-symbol function_parameters) [143 147])
+                    ("y" variable nil (reparse-symbol function_parameters) [149 150])
+                    ("yp" variable nil (reparse-symbol function_parameters) [152 154])
+                    ("t" variable nil (reparse-symbol function_parameters) [156 157])
+                    ("tout" variable nil (reparse-symbol function_parameters) [159 163])
+                    ("relerr" variable nil (reparse-symbol function_parameters) [165 171])
+                    ("abserr" variable nil (reparse-symbol function_parameters) [173 179])
+                    ("flag" variable nil (reparse-symbol function_parameters) [181 185]))                  )
+                nil [125 17621])
+            ("r8_fehl" function
+               (:documentation "
+#*****************************************************************************80
+#
+## R8_FEHL takes one Fehlberg fourth-fifth order step.
+#
+#  Discussion:
+#
+#    This routine integrates a system of NEQN first order ordinary differential
+#    equations of the form
+#      dY(i)/dT = F(T,Y(1:NEQN))
+#    where the initial values Y and the initial derivatives
+#    YP are specified at the starting point T.
+#
+#    The routine advances the solution over the fixed step H and returns
+#    the fifth order (sixth order accurate locally) solution
+#    approximation at T+H in array S.
+#
+#    The formulas have been grouped to control loss of significance.
+#    The routine should be called with an H not smaller than 13 units of
+#    roundoff in T so that the various independent arguments can be
+#    distinguished.
+#
+#  Licensing:
+#
+#    This code is distributed under the GNU LGPL license.
+#
+#  Modified:
+#
+#    30 August 2010
+#
+#  Author:
+#
+#    Original FORTRAN77 version by Herman Watts, Lawrence Shampine.
+#    MATLAB version by John Burkardt.
+#
+#  Reference:
+#
+#    Erwin Fehlberg,
+#    Low-order Classical Runge-Kutta Formulas with Stepsize Control,
+#    NASA Technical Report R-315, 1969.
+#
+#    Lawrence Shampine, Herman Watts, S Davenport,
+#    Solving Non-stiff Ordinary Differential Equations - The State of the Art,
+#    SIAM Review,
+#    Volume 18, pages 376-411, 1976.
+#
+#  Parameters:
+#
+#    Input, function F, a user-supplied function to evaluate the
+#    derivatives dYdT, of the form:
+#
+#      function yp = f ( t, y )
+#
+#    Input, integer NEQN, the number of equations to be integrated.
+#
+#    Input, real Y(NEQN), the current value of the
+#    dependent variable.
+#
+#    Input, real T, the current value of the independent
+#    variable.
+#
+#    Input, real H, the step size to take.
+#
+#    Input, real YP(NEQN), the current value of the
+#    derivative of the dependent variable.
+#
+#    Output, real F1(NEQN), F2(NEQN), F3(NEQN), F4(NEQN),
+#    F5(NEQN), derivative values needed for the computation.
+#
+#    Output, real S(NEQN), the estimate of the solution at T+H.
+#
+    "
+                :arguments 
+                  ( ("f" variable nil (reparse-symbol function_parameters) [17636 17637])
+                    ("neqn" variable nil (reparse-symbol function_parameters) [17639 17643])
+                    ("y" variable nil (reparse-symbol function_parameters) [17645 17646])
+                    ("t" variable nil (reparse-symbol function_parameters) [17648 17649])
+                    ("h" variable nil (reparse-symbol function_parameters) [17651 17652])
+                    ("yp" variable nil (reparse-symbol function_parameters) [17654 17656]))                  )
+                nil [17622 20593])
+            ("error" function
+               (:documentation "
+    Simple error handling
+    "
+                :arguments 
+                  ( ("string" variable nil (reparse-symbol function_parameters) [20604 20610]))                  )
+                nil [20594 20700]))          
+      :file "RKF45.py"
+      :pointmax 20700
+      :fsize 20699
+      :lastmodtime '(23526 504 179449 800000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-184a9d8"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"rkf45 test\"\"\"" code nil nil [24 40])
+            ("numpy" include nil nil [41 60])
+            ("rkf45" include nil nil [61 80])
+            ("datetime" include nil nil [81 110])
+            ("rkf45_test" function (:documentation "
+    #********************************************************************
+    #
+    ## RKF45_TEST tests the RKF45 ODE integrator.
+    #
+    #  Licensing:
+    #
+    #    This code is distributed under the GNU LGPL license.
+    #
+    #  Modified:
+    #
+    #    05 April 2011
+    #
+    #  Author:
+    #
+    #    John Burkardt
+    #
+    ") nil [111 802])
+            ("timestamp" function (:documentation "
+    #*****************************************************************************80
+    #
+    ## TIMESTAMP prints the current YMDHMS date as a timestamp.
+    #
+    #  Licensing:
+    #
+    #    This code is distributed under the GNU LGPL license.
+    #
+    #  Modified:
+    #
+    #    14 February 2003
+    #
+    #  Author:
+    #
+    #    John Burkardt
+    #
+    ") nil [805 1286])
+            ("rkf45_test04" function (:documentation "
+    #*****************************************************************************80
+    #
+    ## RKF45_TEST04 solves a scalar ODE.
+    #
+    #  Licensing:
+    #
+    #    This code is distributed under the GNU LGPL license.
+    #
+    #  Modified:
+    #
+    #    17 June 2006
+    #
+    #  Author:
+    #
+    #    John Burkardt
+    #
+    ") nil [1287 2683])
+            ("r8_f1" function
+               (:documentation "
+    #*****************************************************************************80
+    #
+    #% R8_F1 evaluates the derivative for the ODE.
+    #
+    #  Licensing:
+    #
+    #    This code is distributed under the GNU LGPL license.
+    #
+    #  Modified:
+    #
+    #    30 August 2010
+    #
+    #  Author:
+    #
+    #    John Burkardt
+    #
+    #  Parameters:
+    #
+    #    Input, real T, the value of the independent variable.
+    #
+    #    Input, real Y, the value of the dependent variable.
+    #
+    #    Output, real YP, the value of the derivative
+    #    dY(1:NEQN)/dT.
+    #
+    "
+                :arguments 
+                  ( ("t" variable nil (reparse-symbol function_parameters) [2696 2697])
+                    ("y" variable nil (reparse-symbol function_parameters) [2699 2700]))                  )
+                nil [2684 3401])
+            ("rkf45_test05" function (:documentation "
+    #*****************************************************************************80
+    #
+    #% RKF45_TEST05 solves a vector ODE.
+    #
+    #  Licensing:
+    #
+    #    This code is distributed under the GNU LGPL license.
+    #
+    #  Modified:
+    #
+    #    17 June 2006
+    #
+    #  Author:
+    #
+    #    John Burkardt
+    #
+    ") nil [3402 4781])
+            ("r8_f2" function
+               (:documentation "
+    #*****************************************************************************80
+    #
+    #% R8_F2 evaluates the derivative for the ODE.
+    #
+    #  Licensing:
+    #
+    #    This code is distributed under the GNU LGPL license.
+    #
+    #  Modified:
+    #
+    #    30 August 2010
+    #
+    #  Author:
+    #
+    #    John Burkardt
+    #
+    #  Parameters:
+    #
+    #    Input, real T, the value of the independent variable.
+    #
+    #    Input, real Y(NEQN), the value of the dependent variable.
+    #
+    #    Output, real YP(NEQN), the value of the derivative
+    #    dY(1:NEQN)/dT.
+    #
+    "
+                :arguments 
+                  ( ("t" variable nil (reparse-symbol function_parameters) [4794 4795])
+                    ("y" variable nil (reparse-symbol function_parameters) [4797 4798]))                  )
+                nil [4782 5491])
+            ("r8_y1x" function
+               (:documentation "
+    #*****************************************************************************80
+    #
+    #% R8_Y1X evaluates the exact solution of the ODE.
+    #
+    #  Licensing:
+    #
+    #    This code is distributed under the GNU LGPL license.
+    #
+    #  Modified:
+    #
+    #    30 August 2010
+    #
+    #  Author:
+    #
+    #    John Burkardt
+    #
+    #  Parameters:
+    #
+    #    Input, real T, the value of the independent variable.
+    #
+    #    Output, real Y1X, the exact solution.
+    #
+    "
+                :arguments 
+                  ( ("t" variable nil (reparse-symbol function_parameters) [5505 5506]))                  )
+                nil [5492 6089])
+            ("rkf45_test06" function (:documentation "
+    #*******************************
+    #
+    #% RKF45_TEST06 solves a scalar ODE and uses one-step integration.
+    #
+    #  Licensing:
+    #
+    #    This code is distributed under the GNU LGPL license.
+    #
+    #  Modified:
+    #
+    #    30 August 2010
+    #
+    #  Author:
+    #
+    #    John Burkardt
+    #
+    ") nil [6090 8030])
+            ("if" code nil nil [8031 8111]))          
+      :file "RKF45_Test.py"
+      :pointmax 8111
+      :fsize 8110
+      :lastmodtime '(23526 558 402004 100000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-170fd90"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\" Lorentz oscillator function \"\"\"" code nil nil [25 60])
+            ("numpy" include nil nil [62 81])
+            ("f_lor" function
+               (:documentation "
+    Right hand side for the Lorenz system
+    "
+                :arguments 
+                  ( ("t" variable nil (reparse-symbol function_parameters) [95 96])
+                    ("y" variable nil (reparse-symbol function_parameters) [98 99]))                  )
+                nil [83 314]))          
+      :file "f_lor.py"
+      :pointmax 314
+      :fsize 313
+      :lastmodtime '(23526 574 496286 500000)
+      :unmatched-syntax nil))
+  :file "!mnt!raid!Misc Data!KVs!EKV!3D Ref Model!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

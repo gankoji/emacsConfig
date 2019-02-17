@@ -1,0 +1,34 @@
+;; Object semanticdb-project-database-file-160a6d4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-160a6d4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-160a6e0"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [83 101])
+            ("math" include nil nil [102 113])
+            ("matplotlib.pyplot" include nil nil [114 145])
+            ("mu" variable nil nil [159 167])
+            ("ft2DU" code nil nil [168 190])
+            ("nm2DU" code nil nil [191 214])
+            ("s2TU" code nil nil [215 240])
+            ("d2r" code nil nil [241 260])
+            ("problem1" function nil nil [366 892])
+            ("problem1" code nil nil [893 903])
+            ("problem2" function nil nil [1005 1759])
+            ("problem2" code nil nil [1760 1770])
+            ("problem3" function nil nil [1844 2164])
+            ("problem3" code nil nil [2165 2175])
+            ("problem5" function nil nil [2323 2839])
+            ("problem5" code nil nil [2840 2850])
+            ("problem14" function nil nil [3166 3553])
+            ("problem14" code nil nil [3555 3566]))          
+      :file "Chapter1.py"
+      :pointmax 3600
+      :fsize 3599
+      :lastmodtime '(23411 32554 944765 90000)
+      :unmatched-syntax nil))
+  :file "!home!jbailey!Dropbox!Python!Astrodynamics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
