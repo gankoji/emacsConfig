@@ -10,9 +10,7 @@
 ;;; Generated autoloads from cedet-matlab.el
 
 (autoload 'matlab-cedet-setup "cedet-matlab" "\
-Update various paths to get SRecode to identify our macros.
-
-\(fn)" t nil)
+Update various paths to get SRecode to identify our macros." t nil)
 
 ;;;***
 
@@ -38,9 +36,7 @@ Bind the viss bookmark functions to F2 related keys.
 \\[viss-bookmark-toggle]     - To=ggle a bookmark on this line.
 \\[viss-bookmark-next-buffer]   - Move to the next bookmark.
 \\[viss-bookmark-prev-buffer]   - Move to the previous bookmark.
-\\[viss-bookmark-clear-all-buffer] - Clear all bookmarks.
-
-\(fn)" t nil)
+\\[viss-bookmark-clear-all-buffer] - Clear all bookmarks." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "linemark" '("linemark-" "viss-bookmark-")))
 
@@ -103,17 +99,13 @@ Variables:
   `matlab-handle-simulink'      If t, enable simulink keyword highlighting.
 
 All Key Bindings:
-\\{matlab-mode-map}
-
-\(fn)" t nil)
+\\{matlab-mode-map}" t nil)
 
 (autoload 'matlab-shell "matlab" "\
 Create a buffer with MATLAB running as a subprocess.
 
 MATLAB shell cannot work on the MS Windows platform because MATLAB is not
-a console application.
-
-\(fn)" t nil)
+a console application." t nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "matlab" '("gud-matlab-" "matlab-")))
 
@@ -146,9 +138,7 @@ With prefix ARG, turn mlint minor mode on iff ARG is positive.
 ;;; Generated autoloads from semantic-matlab.el
 
 (autoload 'semantic-default-matlab-setup "semantic-matlab" "\
-Set up a buffer for parsing of MATLAB files.
-
-\(fn)" nil nil)
+Set up a buffer for parsing of MATLAB files." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "semantic-matlab" '("matlab-mode" "semantic-")))
 
@@ -186,9 +176,7 @@ match, for example @foo/foo.m then foo should be a classdef.
 ;;; Generated autoloads from tlc.el
 
 (autoload 'tlc-mode "tlc" "\
-Major mode for editing Tlc files, or files found in tlc directories.
-
-\(fn)" t nil)
+Major mode for editing Tlc files, or files found in tlc directories." t nil)
 (add-to-list 'auto-mode-alist '("\\.tlc$" . tlc-mode))
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "tlc" '("tlc-")))

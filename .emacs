@@ -36,7 +36,7 @@
  '(minimap-minimum-width 10)
  '(minimap-window-location 'right)
  '(package-selected-packages
-   '(pdf-tools diminish slime slime-company matlab-mode magithub magit-filenotify magit-find-file magit-gerrit magit-gh-pulls magit-org-todos magit-todos counsel swiper counsel-ebdb hydra ivy pylint flycheck-pycheckers flycheck-pos-tip flycheck-popup-tip flycheck-pkg-config flycheck-inline flycheck-haskell flycheck-cython flycheck-color-mode-line flycheck-clojure use-package projectile lsp-haskell lsp-intellij lsp-java lsp-ui lsp-python company-lsp lsp-mode academic-phrases python csv-mode context-coloring js2-mode mu4e-maildirs-extension ht mu4e-alert mu-cite nov minimap haskell-mode magit company company-auctex company-bibtex company-c-headers company-eshell-autosuggest company-irony company-irony-c-headers company-math flycheck flycheck-clang-analyzer flycheck-clang-tidy flycheck-cstyle flycheck-irony flymake-google-cpplint iedit irony auto-complete-c-headers yasnippet auto-complete auctex))
+   '(pdf-tools diminish slime slime-company matlab-mode magithub magit-filenotify magit-find-file magit-gerrit magit-gh-pulls magit-org-todos magit-todos counsel swiper counsel-ebdb hydra ivy pylint flycheck-pycheckers flycheck-pos-tip flycheck-popup-tip flycheck-pkg-config flycheck-inline flycheck-haskell flycheck-cython flycheck-color-mode-line flycheck-clojure use-package projectile lsp-haskell lsp-intellij lsp-java lsp-ui lsp-python company-lsp lsp-mode academic-phrases python csv-mode context-coloring js2-mode nov minimap haskell-mode magit company company-auctex company-bibtex company-c-headers company-eshell-autosuggest company-irony company-irony-c-headers company-math iedit irony auto-complete-c-headers yasnippet auto-complete auctex))
  '(send-mail-function 'smtpmail-send-it)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -102,9 +102,6 @@
 (diminish 'ivy-mode)
 (diminish 'company-mode)
 (diminish 'eldoc-mode)
-
-;; Org-secretary
-(load "~/.emacs.d/org-secretary")
 
 ;;; Configuration
 ;;;;;;;;;;;;;;;;;
@@ -183,56 +180,6 @@ regardless of whether the current buffer is in `eww-mode'."
 (setq desktop-save-mode 1)
 (setq desktop-auto-save-set-timer 60)
 
-(add-to-list 'load-path "~/.emacs.d/mu4e")
-;; mu4e configuration
-(require 'mu4e)
-
-;; I have my "default" parameters from Gmail
-(setq mu4e-sent-folder "/home/jbailey/Maildir/sent"
-      ;; mu4e-sent-messages-behavior 'delete ;; Unsure how this should be configured
-      mu4e-drafts-folder "/home/jbailey/Maildir/drafts"
-      user-mail-address "asaxplayinghorse@gmail.com"
-      smptmail-smtp-user "asaxplayinghorse"
-      smtpmail-default-smtp-server "smtp.gmail.com"
-      smtpmail-smtp-server "smtp.gmail.com"
-      smtpmail-smtp-service 587)
-
-;; Now I set a list of 
-(defvar my-mu4e-account-alist
-  '(("Gmail"
-     (mu4e-sent-folder "/Gmail/sent")
-     (user-mail-address "asaxplayinghorse@gmail.com")
-     (smtpmail-smtp-user "asaxplayinghorse")
-     (smtpmail-local-domain "gmail.com")
-     (smtpmail-default-smtp-server "smtp.gmail.com")
-     (smtpmail-smtp-server "smtp.gmail.com")
-     (smtpmail-smtp-service 587)
-     )
-     ;; Include any other accounts here ...
-    ))
-
-(defun my-mu4e-set-account ()
-  "Set the account for composing a message.
-   This function is taken from: 
-     https://www.djcbsoftware.nl/code/mu/mu4e/Multiple-accounts.html"
-  (let* ((account
-    (if mu4e-compose-parent-message
-        (let ((maildir (mu4e-message-field mu4e-compose-parent-message :maildir)))
-    (string-match "/\\(.*?\\)/" maildir)
-    (match-string 1 maildir))
-      (completing-read (format "Compose with account: (%s) "
-             (mapconcat #'(lambda (var) (car var))
-            my-mu4e-account-alist "/"))
-           (mapcar #'(lambda (var) (car var)) my-mu4e-account-alist)
-           nil t nil nil (caar my-mu4e-account-alist))))
-   (account-vars (cdr (assoc account my-mu4e-account-alist))))
-    (if account-vars
-  (mapc #'(lambda (var)
-      (set (car var) (cadr var)))
-        account-vars)
-      (error "No email account found"))))
-(add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
-
 ;; Add important files to registers on boot
 (set-register ?1 '(file . "/home/jbailey/.emacs"))
 
@@ -273,74 +220,18 @@ regardless of whether the current buffer is in `eww-mode'."
   (let ((split-width-threshold 80))  ; or whatever width makes sense for you
     ad-do-it))
 
-(set-face-attribute 'default nil :font "Iosevka-16")
+;;(set-face-attribute 'default nil :font "Iosevka-16")
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (toggle-scroll-bar -1)
 (setq ring-bell-function 'ignore)
 
-;;LSP For Python
-(use-package lsp-mode
-  :ensure t
-  :config
-  
-  ;; make sure we have lsp-imenu everywhere we have LSP
-  (require 'lsp-imenu)
-  (add-hook 'lsp-after-open-hook 'lsp-enable-imenu)  
-  ;; get lsp-python-enable defined
-  ;; NB: use either projectile-project-root or ffip-get-project-root-directory
-  ;;     or any other function that can be used to find the root directory of a project
-  (lsp-define-stdio-client lsp-python "python"
-                           #'projectile-project-root
-                           '("pyls"))
-
-  ;; make sure this is activated when python-mode is activated
-  ;; lsp-python-enable is created by macro above 
-  (add-hook 'python-mode-hook
-            (lambda ()
-              (lsp-python-enable)))
-
-  ;; lsp extras
-  (use-package lsp-ui
-    :ensure t
-    :config
-    (setq lsp-ui-sideline-ignore-duplicate t)
-    (add-hook 'lsp-mode-hook 'lsp-ui-mode))
-
-  (use-package company-lsp
-    :config
-    (push 'company-lsp company-backends))
-
-  ;; NB: only required if you prefer flake8 instead of the default
-  ;; send pyls config via lsp-after-initialize-hook -- harmless for
-  ;; other servers due to pyls key, but would prefer only sending this
-  ;; when pyls gets initialised (:initialize function in
-  ;; lsp-define-stdio-client is invoked too early (before server
-  ;; start)) -- cpbotha
-  (defun lsp-set-cfg ()
-    (let ((lsp-cfg `(:pyls (:configurationSources ("flake8")))))
-      ;; TODO: check lsp--cur-workspace here to decide per server / project
-      (lsp--set-configuration lsp-cfg)))
-
-  (add-hook 'lsp-after-initialize-hook 'lsp-set-cfg))
-
-(global-flycheck-mode 1)
-;; (with-eval-after-load 'flycheck		;
-;;   (add-hook 'flycheck-mode-hook #'flycheck-pycheckers-setup))
-
-(use-package flycheck
- :ensure t
- :init (global-flycheck-mode))
-
-(autoload 'pylint "pylint")
-(add-hook 'python-mode-hook 'pylint-add-menu-items)
-(add-hook 'python-mode-hook 'pylint-add-key-bindings)
-
 ;; This is just a convenience keybind. It's nice to have recompile
 ;; stuck to a single keychord
 (global-set-key (kbd "C-M-a") 'recompile)
 (global-set-key (quote [f5]) 'ps-print-buffer)
+
 ;; Some Ivy/Counsel configuration
 (use-package counsel
   :after ivy
@@ -359,25 +250,6 @@ regardless of whether the current buffer is in `eww-mode'."
   (ivy-display-style 'fancy)
   (ivy-use-virtual-buffers t)
   :config (ivy-mode))
-
-(load-file "~/.emacs.d/ivy-rich.el")
-
-(use-package ivy-rich
-  :after ivy
-  :custom
-  (ivy-virtual-abbreviate 'full
-                          ivy-rich-switch-buffer-align-virtual-buffer t
-                          ivy-rich-path-style 'abbrev)
-  :config
-  (ivy-set-display-transformer 'ivy-switch-buffer
-                               'ivy-rich-switch-buffer-transformer))
-
-(use-package swiper
-  :after ivy
-  :bind (("C-s" . swiper)
-         ("C-r" . swiper)))
-
-(setq global-display-line-numbers-mode t)
 
 ;; SLIME Configuration
 (setq inferior-lisp-program "/usr/local/bin/sbcl")

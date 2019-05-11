@@ -36,9 +36,7 @@ company-auctex-bibs backend
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
 
 (autoload 'company-auctex-init "company-auctex" "\
-Add backends provided by company-auctex to company-backends.
-
-\(fn)" nil nil)
+Add backends provided by company-auctex to company-backends." nil nil)
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-auctex" '("car-or" "company-auctex-")))
 
